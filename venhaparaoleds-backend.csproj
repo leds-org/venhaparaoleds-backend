@@ -1,0 +1,112 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{449CA8AD-F5CA-489E-AC15-CF9E17476084}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>venhaparaoleds_backend</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="src\Data\candidatos.txt" />
+    <Content Include="src\Data\concursos.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="src\Application\Application.cs" />
+    <Compile Include="src\Services\GenerateDB\GenerateDB.cs" />
+    <Compile Include="src\Services\ReadData\Interface\IReadCandidato.cs" />
+    <Compile Include="src\Services\ReadData\Interface\IReadConcurso.cs" />
+    <Compile Include="src\Services\ReadData\Interface\IReadDom.cs" />
+    <Compile Include="src\Services\ReadData\ReadData\ReadCandidato.cs" />
+    <Compile Include="src\Services\ReadData\ReadData\ReadConcurso.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\sendemail-validate.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\main" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\pack\pack-e3094dfce5a3d6bab694fe5422caac571ab43102.idx" />
+    <None Include=".git\objects\pack\pack-e3094dfce5a3d6bab694fe5422caac571ab43102.pack" />
+    <None Include=".git\objects\pack\pack-e3094dfce5a3d6bab694fe5422caac571ab43102.rev" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\main" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\venhaparaoleds-backend\copilot-chat\3d8a2a9b\sessions\7a70932f-a7a8-4fa3-834b-69ef7fa4c34b" />
+    <None Include=".vs\venhaparaoleds-backend\CopilotIndices\17.12.68.61481\CodeChunks.db" />
+    <None Include=".vs\venhaparaoleds-backend\CopilotIndices\17.12.68.61481\SemanticSymbols.db" />
+    <None Include=".vs\venhaparaoleds-backend\CopilotIndices\17.12.68.61481\SemanticSymbols.db-shm" />
+    <None Include=".vs\venhaparaoleds-backend\CopilotIndices\17.12.68.61481\SemanticSymbols.db-wal" />
+    <None Include=".vs\venhaparaoleds-backend\FileContentIndex\b0352f64-66df-414c-a63f-d952d8aa1ace.vsidx" />
+    <None Include=".vs\venhaparaoleds-backend\FileContentIndex\d3e55ff2-b481-4061-afbd-2d639c664af3.vsidx" />
+    <None Include=".vs\venhaparaoleds-backend\v17\.wsuo" />
+    <None Include=".vs\venhaparaoleds-backend\v17\DocumentLayout.backup.json" />
+    <None Include=".vs\venhaparaoleds-backend\v17\DocumentLayout.json" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include="src\Db\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
