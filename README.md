@@ -52,3 +52,45 @@ Utilizei essas tecnologias por estar fazendo um curso da Udemy sobre **ASP.NET C
 
 ### Armazenamento de Listas
 - Profissões e vagas são armazenadas como strings no formato `item1,item2,item3` e convertidas para listas no código.
+
+---
+
+#Execução do Projeto
+Para executar o projeto, siga os passos descritos abaixo:
+
+1. **Clone o repositório:**  
+   Abra o terminal ou prompt de comando e execute:
+
+   ```bash
+   git clone https://github.com/guihocosta/venhaparaoleds-backend.git
+   ```
+
+2. **Acesse a pasta do projeto:**  
+   Entre na pasta clonada:
+
+   ```bash
+   cd venhaparaoleds-backend
+   ```
+
+3. **Verifique a instalação do .NET 8:**  
+   Certifique-se de que o **.NET 8 SDK** está instalado em sua máquina. Caso não tenha, baixe-o através do [site oficial](https://dotnet.microsoft.com/download/dotnet/8.0).
+
+4. **Restaure os pacotes:**  
+   No terminal, execute:
+
+   ```bash
+   dotnet restore
+   ```
+
+5. **Execute o projeto:**  
+   Inicie a aplicação com o comando:
+
+   ```bash
+   dotnet run
+   ```
+
+6. **Acesse a aplicação:**  
+   Abra o navegador e acesse o endereço informado no terminal (geralmente `http://localhost:5000` ou outro especificado).
+
+> **Observação:**  
+> O projeto utiliza SQLite como banco de dados. Ao executá-lo, o arquivo `projeto.db` (ou o nome configurado) será criado automaticamente na pasta do projeto, permitindo o armazenamento dos dados localmente.
