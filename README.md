@@ -22,8 +22,8 @@ Solução desenvolvida para o desafio do LEDS Academy, com o objetivo de demonst
 - **Bootstrap 5.1.0** (Estilização)
 
 ## Justificativa do Uso destas Tecnologias
-Utilizei essas tecnologias por estar fazendo um curso da Udemy sobre **ASP.NET CORE + ENTITY FRAMEWORK + DDD (Domain-Driven Design)**. Como estou na metade do curso, a abordagem que o professor utilizou foi de primeiro implementar a aplicação com o uso do MVC e ao final fazer toda a refatoração do projeto, migrando para a arquitetura em camadas. Para que houvesse a integração com um banco de dados local sem a necessidade de instalações "extra", pesquisei e, com a ajuda do Deepseek, fiz a implementação usando SQLite e LINQ, tecnologias que eu nunca havia utilizado.
-
+Utilizei essas tecnologias por estar fazendo um curso da Udemy sobre **ASP.NET CORE + ENTITY FRAMEWORK + DDD (Domain-Driven Design)**. Como estou na metade do curso, a abordagem que o professor utilizou foi de primeiro implementar a aplicação com o uso do MVC e ao final fazer toda a refatoração do projeto. Para que houvesse a integração com um banco de dados local sem a necessidade de instalações "extra", pesquisei e, com a ajuda do Deepseek, fiz a implementação usando SQLite e LINQ, tecnologias que eu nunca havia utilizado.
+ 
 ---
 
 ## Diferenciais Implementados
