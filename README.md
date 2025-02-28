@@ -26,7 +26,29 @@ Utilizei essas tecnologias por estar fazendo um curso da Udemy sobre **ASP.NET C
 
 ---
 
-## 🏆 Diferenciais Implementados
+## Diferenciais Implementados
 - **Utilizar banco de dados** Implementei o SQLite como banco de dados local, armazenando dados em projeto.db. Optei por essa solução por ser leve, não exigir instalação adicional e ser ideal para projetos pequenos.
 - **Implementar Clean Code**
 - **Padrão de programação da tecnologia** Segui o padrão MVC do ASP.NET Core
+
+---
+
+## Detalhes da Implementação
+
+### Lógica de Busca
+- **Busca de concursos por CPF**: O sistema verifica as profissões do candidato e busca concursos que tenham vagas compatíveis.
+  ```csharp
+  var concursos = await _context.Concursos
+      .Where(c => c.Vagas.Any(v => candidato.Profissoes.Contains(v)))
+      .ToListAsync();
+  ```
+
+- **Busca de candidatos por código de concurso**: O sistema verifica as vagas do concurso e busca candidatos com profissões compatíveis.
+  ```csharp
+  var candidatos = await _context.Candidatos
+      .Where(c => c.Profissoes.Any(p => concurso.Vagas.Contains(p))))
+      .ToListAsync();
+  ```
+
+### Armazenamento de Listas
+- Profissões e vagas são armazenadas como strings no formato `item1,item2,item3` e convertidas para listas no código.
