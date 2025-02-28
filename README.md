@@ -27,9 +27,9 @@ Utilizei essas tecnologias por estar fazendo um curso da Udemy sobre **ASP.NET C
 ---
 
 ## Diferenciais Implementados
-- **Utilizar banco de dados** -- Implementei o SQLite como banco de dados local, armazenando dados em projeto.db. Optei por essa solução por ser leve, não exigir instalação adicional e ser ideal para projetos pequenos.
+- **Utilizar banco de dados** - Implementei o SQLite como banco de dados local, armazenando dados em projeto.db. Optei por essa solução por ser leve, não exigir instalação adicional e ser ideal para projetos pequenos.
 - **Implementar Clean Code**
-- **Padrão de programação da tecnologia** -- Segui o padrão MVC do ASP.NET Core
+- **Padrão de programação da tecnologia** - Segui o padrão MVC do ASP.NET Core
 
 ---
 
