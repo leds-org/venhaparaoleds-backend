@@ -1,0 +1,36 @@
+﻿@model List<DesafioLeds.Models.Concurso>
+
+@{
+	ViewData["Title"] = "Concursos Encontrados";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (Model.Any())
+{
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Órgão</th>
+				<th>Edital</th>
+				<th>Código</th>
+				<th>Vagas</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var concurso in Model)
+			{
+				<tr>
+					<td>@concurso.Orgao</td>
+					<td>@concurso.Edital</td>
+					<td>@concurso.Codigo</td>
+					<td>@string.Join(",", concurso.Vagas)</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}
+else
+{
+	<div class="alert alert-warning">Nenhum concurso encontrado!</div>
+}
