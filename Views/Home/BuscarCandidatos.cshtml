@@ -1,0 +1,36 @@
+﻿@model List<DesafioLeds.Models.Candidato>
+
+@{
+	ViewData["Title"] = "Candidatos Encontrados";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (Model.Any())
+{
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>CPF</th>
+				<th>Data de Nascimento</th>
+				<th>Profissões</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var candidato in Model)
+			{
+				<tr>
+					<td>@candidato.Nome</td>
+					<td>@candidato.CPF</td>
+					<td>@candidato.DataNascimento</td>
+					<td>@string.Join(",", candidato.Profissoes)</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}
+else
+{
+	<div class="alert alert-warning">Nenhum candidato encontrado!</div>
+}

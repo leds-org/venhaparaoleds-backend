@@ -1,98 +1,96 @@
 # Desafio Backend - LEDS
-*Bem-vindo!* 👋
 
-Neste desafio, você terá a oportunidade de demonstrar que possui as habilidades necessárias para atuar no time de backend do laboratório.
+**Candidato:** Guilherme Henrique Omena Costa  
+**Data de Entrega:** 28/02/2025  
 
-# Contextualização
+---
 
-O desafio é desenvolver um programa que permita realizar as seguintes buscas: 
-1. Listar os **órgãos, códigos e editais dos concursos públicos** que se encaixam no perfil do candidato, tomando como base o seu **CPF**; 
-2. Listar o **nome, data de nascimento e o CPF** dos candidatos que se encaixam no perfil do concurso tomando com base o **Código do Concurso** do concurso público;
+## Visão Geral do Projeto
+Solução desenvolvida para o desafio do LEDS Academy, com o objetivo de demonstrar habilidades em desenvolvimento backend utilizando **ASP.NET Core MVC**, **Entity Framework** e **SQLite**. A aplicação permite:
 
-O arquivo **candidatos.txt** contém as informações dos candidatos:
+1. **Buscar concursos públicos compatíveis** com as profissões de um candidato, com base em seu CPF.
+2. **Buscar candidatos compatíveis** com as vagas de um concurso, com base no código do concurso.
 
-| Nome  | Data de Nascimento  | CPF |  Profissões|
-|---|---|---|---|
-| Lindsey Craft  |  19/05/1976  |  182.845.084-34  |  [carpinteiro]  | 
-| Jackie Dawson  |  14/08/1970  |  311.667.973-47  |  [marceneiro, assistente administrativo]  |
-| Cory Mendoza |   11/02/1957 |  565.512.353-92  |  [carpinteiro, marceneiro] |
+---
 
-O arquivo **concursos.txt** contém as informações dos concursos públicos:
+## Tecnologias Utilizadas
+- **ASP.NET Core 8.0.13** (MVC Pattern)
+- **Entity Framework Core 9.0.2**
+- **SQLite** (Banco de dados embutido)
+- **LINQ** (Consultas à base de dados)
+- **HTML5/Razor** (Interface de usuário)
+- **Bootstrap 5.1.0** (Estilização)
 
-| Órgão  | Edital  | Código do Concurso | Lista de vagas|
-|---|---|---|---|
-| SEDU  | 9/2016  |  61828450843  |  [analista de sistemas, marceneiro]  | 
-| SEJUS | 15/2017  |  61828450843  |  [carpinteiro,professor de matemática,assistente administrativo] |
-| SEJUS | 17/2017 |  95655123539  |  [professor de matemática] |
+## Justificativa do Uso destas Tecnologias
+Utilizei essas tecnologias por estar fazendo um curso da Udemy sobre **ASP.NET CORE + ENTITY FRAMEWORK + DDD (Domain-Driven Design)**. Como estou na metade do curso, a abordagem que o professor utilizou foi de primeiro implementar a aplicação com o uso do MVC e ao final fazer toda a refatoração do projeto. Para que houvesse a integração com um banco de dados local sem a necessidade de instalações "extra", pesquisei e, com a ajuda do Deepseek, fiz a implementação usando SQLite e LINQ, tecnologias que eu nunca havia utilizado.
+ 
+---
 
-🤩 **As tecnologias a serem utilizadas na implementação da solução ficam a seu critério!**
+## Diferenciais Implementados
+- **Utilizar banco de dados** - Implementei o SQLite como banco de dados local, armazenando dados em projeto.db. Optei por essa solução por ser leve, não exigir instalação adicional e ser ideal para projetos pequenos.
+- **Implementar Clean Code**
+- **Padrão de programação da tecnologia** - Segui o padrão MVC do ASP.NET Core
 
-# Como entregar?
-1. Faça um **fork** do repositório. Nesse fork esperamos encontrar uma documentação completa da solução e a listagem dos diferenciais implementados.
-2. Abra um **pull request (PR)** do seu fork para o nome repositório com o seu nome como título. Assim conseguimos te localizar melhor e ver que você já finalizou o desafio!
+---
 
-🚨 **Atenção**: você deve enviar apenas o código fonte. Não serão aceitos códigos compilados.
+## Detalhes da Implementação
 
-## Avaliação
+### Lógica de Busca
+- **Busca de concursos por CPF**: O sistema verifica as profissões do candidato e busca concursos que tenham vagas compatíveis.
+  ```csharp
+  var concursos = await _context.Concursos
+      .Where(c => c.Vagas.Any(v => candidato.Profissoes.Contains(v)))
+      .ToListAsync();
+  ```
 
-O programa será avaliado levando em conta os seguintes critérios:
+- **Busca de candidatos por código de concurso**: O sistema verifica as vagas do concurso e busca candidatos com profissões compatíveis.
+  ```csharp
+  var candidatos = await _context.Candidatos
+      .Where(c => c.Profissoes.Any(p => concurso.Vagas.Contains(p))))
+      .ToListAsync();
+  ```
 
-| Critério  | Valor | 
-|---|---|
-| Legibilidade do Código |  10  |
-| Documentação do código |  10  |
-| Documentação da solução |  10  |
-| Tratamento de Erros | 10 | 
-| Total | 40 |
+### Armazenamento de Listas
+- Profissões e vagas são armazenadas como strings no formato `item1,item2,item3` e convertidas para listas no código.
 
-A sua pontuação será a soma dos valores obtidos nos critérios acima.
+---
 
-## Diferenciais 
-Você pode **aumentar sua pontuação** implementando os seguintes diferenciais:
+## Execução do Projeto
+Para executar o projeto, siga os passos descritos abaixo:
 
-| Item  | Pontos Ganhos | 
-|---|---|
-| Criar um [serviço](https://martinfowler.com/articles/microservices.html) com o problema |  30  |
-| Utilizar banco de dados |  30  |
-| Implementar Clean Code |  20  |
-| Implementar o padrão de programação da tecnologia escolhida |  20  |
-| Qualidade de [Código com SonarQube](https://about.sonarcloud.io/) |  15  |
-| Implementar testes unitários |  15  |
-| Implementar testes comportamentais |  15  |
-| Implementar integração com [Github Action](https://github.com/features/actions)  |  10  |
-| Implementar integração com Github Action + SonarQube |  10  |
-| Implementar usando Docker | 5 |
-| Total| 170 |
+1. **Clone o repositório:**  
+   Abra o terminal ou prompt de comando e execute:
 
-A pontuação final será calculada somando os critérios obrigatórios e os diferenciais implementados corretamente.
+   ```bash
+   git clone https://github.com/guihocosta/venhaparaoleds-backend.git
+   ```
 
-# Penalizações
+2. **Acesse a pasta do projeto:**  
+   Entre na pasta clonada:
 
-Você será desclassificado se:
+   ```bash
+   cd venhaparaoleds-backend
+   ```
 
-1. Enviar uma solução que não funcione.
-2. Não cumprir os critérios da seção **Avaliação**.
-3. For identificado plágio.
-   
-***Que a força esteja com você. Boa sorte!***
+3. **Verifique a instalação do .NET 8:**  
+   Certifique-se de que o **.NET 8 SDK** está instalado em sua máquina. Caso não tenha, baixe-o através do [site oficial](https://dotnet.microsoft.com/download/dotnet/8.0).
 
-<div align="left">
-</div>
+4. **Restaure os pacotes:**  
+   No terminal, execute:
 
-###
+   ```bash
+   dotnet restore
+   ```
 
-<br clear="both">
+5. **Execute o projeto:**  
+   Inicie a aplicação com o comando:
 
-<div align="center">
-  <a href="https://www.linkedin.com/school/ledsifes" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="https://www.instagram.com/ledsifes/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="instagram logo"  />
-  </a>
-  <a href="https://www.youtube.com/@ledsifes/?sub_confirmation=1" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
-  </a>
-</div>
+   ```bash
+   dotnet run
+   ```
 
-###
+6. **Acesse a aplicação:**  
+   Abra o navegador e acesse o endereço informado no terminal (geralmente `http://localhost:5000` ou outro especificado).
+
+> **Observação:**  
+> O projeto utiliza SQLite como banco de dados. Ao executá-lo, o arquivo `projeto.db` (ou o nome configurado) será criado automaticamente na pasta do projeto, permitindo o armazenamento dos dados localmente.

@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Buscar Concursos e Candidatos";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="BuscarConcursos" method="post">
+    <div class="form-group">
+        <label>Buscar Concursos por CPF:</label>
+        <input type="text" name="cpf" class="form-control" placeholder="Digite o CPF">
+        <button type="submit" class="btn btn-primary mt-2">Buscar</button>
+    </div>
+</form>
+
+<hr />
+
+<form asp-action="BuscarCandidatos" method="post">
+    <div class="form-group">
+        <label> Buscar Candidatos por Código de Concurso:</label>
+        <input type="text" name="codigoConcurso" class="form-control" placeholder="Digite o Código">
+        <button type="submit" class="btn btn-primary mt-2">Buscar</button>
+    </div>
+</form>
+
+@if (ViewBag.Mensagem != null)
+{
+    <div class="alert alert-danger mt-3">@ViewBag.Mensagem</div>
+}
