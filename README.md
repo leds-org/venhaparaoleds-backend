@@ -66,10 +66,7 @@
 2. **Abra o Terminal (ou o Git Bash, se estiver no Windows).**    
 
 3. **Clonar o repositório**  
-   Clone o projeto do GitHub:
-   ```bash
-   git clone https://github.com/Victor-Marins-Dev/venhaparaoleds-backend.git
-   ```
+   Clone o projeto do GitHub
 
 4. **Ir para o diretório do projeto**  
    Navegue até a pasta do projeto clonado
