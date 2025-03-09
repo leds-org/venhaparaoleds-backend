@@ -2,13 +2,11 @@ def f_LerArquivos():
     candidatos = []
     concursos = []
 
-    #lista de candidatos
+    # Lista de candidatos
     with open("candidatos.txt", "r", encoding="utf-8") as can:
-
         for linha in can.readlines()[1:]:
             linha = linha.strip()
             dados = linha.split(" | ")
-
             nome = dados[0]
             data_nasc = dados[1]
             cpf = dados[2]
@@ -21,13 +19,11 @@ def f_LerArquivos():
                 "profissoes": profissoes
             })
 
-    #lista dos concursos
+    # Lista de concursos
     with open("concursos.txt", "r", encoding="utf-8") as con:
-
         for linha in con.readlines()[1:]:
             linha = linha.strip()
             dados = linha.split(" | ")
-
             orgao = dados[0]
             edital = dados[1]
             codigo = dados[2]
@@ -42,7 +38,7 @@ def f_LerArquivos():
         
     return candidatos, concursos
 
-def f_ConcursoPorCpf(candidatos,concursos,cpf):
+def f_ConcursoPorCpf(candidatos, concursos, cpf):
     cpf = cpf.replace(".", "").replace("-", "")
     candidato = None
 
@@ -50,55 +46,45 @@ def f_ConcursoPorCpf(candidatos,concursos,cpf):
         if i["Cpf"] == cpf:
             candidato = i
             break
-    
-    if candidato is None:
-        print("Candidato inexistente")
 
+    if candidato is None:
+        return []  # Retorna uma lista vazia, caso o candidato não seja encontrado
+
+    resultados = []
     for concurso in concursos:
         lista = concurso["lista_vagas"]
-
-        #Tira as aspas e colchetes
-        lista = lista.strip("[]")
-        lista = lista.replace("'", "")
-
-        #Transforma em lista
-        lista = lista.split(",")
+        lista = lista.strip("[]").replace("'", "").split(",")
 
         for vaga in lista:
             if vaga.strip().lower() in candidato["profissoes"].lower():
-                print(f"Órgão: {concurso['orgao']}")
-                print(f"Código: {concurso['codigo']}")
-                print(f"Edital: {concurso['edital']}")
-                print("-" * 30)
-                print("\n")
+                resultados.append({
+                    "Órgão": concurso["orgao"],
+                    "Código": concurso["codigo"],
+                    "Edital": concurso["edital"]
+                })
+    return resultados
 
-def f_CandidatoPorConcurso(candidatos,concursos,codigoC):
-    encontrou = int()
+
+def f_CandidatoPorConcurso(candidatos, concursos, codigoC):
+    resultados = []
+
     for concurso in concursos:
         if concurso["codigo"] == codigoC:
             lista = concurso["lista_vagas"]
-    
-            lista = lista.strip("[]")
-            lista = lista.replace("'", "")
-
-            #Transforma em lista
-            lista = lista.split(",")
+            lista = lista.strip("[]").replace("'", "").split(",")
 
             for vaga in lista:
                 for candidato in candidatos:
-                        if vaga.strip().lower() in candidato["profissoes"].lower():
-                            encontrou += 1 
-                            print(f"Concurso: {concurso['orgao']} - {concurso['edital']}")
+                    if vaga.strip().lower() in candidato["profissoes"].lower():
+                        resultados.append({
+                            "Concurso": f"{concurso['orgao']} - {concurso['edital']}",
+                            "Nome": candidato["nome"],
+                            "Data de Nascimento": candidato["data_nasc"],
+                            "CPF": candidato["Cpf"]
+                        })
 
-                            print(f"Nome: {candidato['nome']}")
-                            print(f"Data de Nascimento: {candidato['data_nasc']}")
-                            print(f"CPF: {candidato['Cpf']}")
-                            print("-" * 30)
-                            print("\n")
-    
-    if encontrou == 0:
-        print("Não há candidatos compatíveis com este concurso!")
-        print("\n")
+    return resultados
+
 def main():
     candidatos, concursos = f_LerArquivos()
 
