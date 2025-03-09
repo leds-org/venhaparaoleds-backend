@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: desafioleds
+  datasource:
+    url: jdbc:postgresql://localhost:5432/desafioleds
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.PostgreSQLDialect

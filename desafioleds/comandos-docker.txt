@@ -1,0 +1,8 @@
+# Criando rede
+docker network create desafioleds-network
+
+# Criando banco
+docker run -d --name desafioledsdb -p 5432:5432 -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -e POSTGRES_DB=desafioleds --network desafioleds-network postgres:16.3
+
+# Criando pgadmin
+docker run -d --name pgadmin -p 15432:80 -e PGADMIN_DEFAULT_EMAIL=admin@admin.com -e PGADMIN_DEFAULT_PASSWORD=admin --network desafioleds-network dpage/pgadmin4:8.9
