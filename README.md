@@ -1,98 +1,112 @@
 # Desafio Backend - LEDS
-*Bem-vindo!* 👋
+**Candidato:** Jesse Paiva Carvalho Junior  
+**Email:** jessepcarvalhojunior02@gmail.com
 
-Neste desafio, você terá a oportunidade de demonstrar que possui as habilidades necessárias para atuar no time de backend do laboratório.
+---
 
-# Contextualização
+## Visão Geral
+Solução desenvolvida para o Desafio LEDS Academy, com objetivo de demonstrar habilidades em desenvolvimento backend. 
 
-O desafio é desenvolver um programa que permita realizar as seguintes buscas: 
-1. Listar os **órgãos, códigos e editais dos concursos públicos** que se encaixam no perfil do candidato, tomando como base o seu **CPF**; 
-2. Listar o **nome, data de nascimento e o CPF** dos candidatos que se encaixam no perfil do concurso tomando com base o **Código do Concurso** do concurso público;
+A aplicação oferece uma API para realizar buscas entre candidatos e concursos públicos, de acordo com os seguintes endpoints:
 
-O arquivo **candidatos.txt** contém as informações dos candidatos:
+- **Listar concursos por CPF do candidato**: `/api/candidato/concursos/{cpf}`
+- **Listar candidatos por Código do Concurso**: `/api/concurso/candidatos/{codigoConcurso}`
 
-| Nome  | Data de Nascimento  | CPF |  Profissões|
-|---|---|---|---|
-| Lindsey Craft  |  19/05/1976  |  182.845.084-34  |  [carpinteiro]  | 
-| Jackie Dawson  |  14/08/1970  |  311.667.973-47  |  [marceneiro, assistente administrativo]  |
-| Cory Mendoza |   11/02/1957 |  565.512.353-92  |  [carpinteiro, marceneiro] |
+---
 
-O arquivo **concursos.txt** contém as informações dos concursos públicos:
+## Tecnologias (Pré-requisitos)
+- **[JDK 21](https://www.oracle.com/br/java/technologies/downloads/#java21)**
+- **Spring Boot 3.4.3**
+- **PostgreSQL 16.3**
+- **Maven**
 
-| Órgão  | Edital  | Código do Concurso | Lista de vagas|
-|---|---|---|---|
-| SEDU  | 9/2016  |  61828450843  |  [analista de sistemas, marceneiro]  | 
-| SEJUS | 15/2017  |  61828450843  |  [carpinteiro,professor de matemática,assistente administrativo] |
-| SEJUS | 17/2017 |  95655123539  |  [professor de matemática] |
+---
 
-🤩 **As tecnologias a serem utilizadas na implementação da solução ficam a seu critério!**
+## Diferenciais
+- **API** (Criar um serviço com o problema)
+- **Banco de Dados** (Utilizar banco de dados)
+- **Padrão da Tech** (Implementar o padrão de programação da tecnologia escolhida)
 
-# Como entregar?
-1. Faça um **fork** do repositório. Nesse fork esperamos encontrar uma documentação completa da solução e a listagem dos diferenciais implementados.
-2. Abra um **pull request (PR)** do seu fork para o nome repositório com o seu nome como título. Assim conseguimos te localizar melhor e ver que você já finalizou o desafio!
+---
+## Endpoints
 
-🚨 **Atenção**: você deve enviar apenas o código fonte. Não serão aceitos códigos compilados.
+1. **Listar concursos por CPF do candidato**  
+   Retorna órgãos, códigos e editais dos concursos com base no CPF do candidato.
+    ```java
+    @GetMapping("/concursos/{cpf}")
+    public ResponseEntity<Object> findCandidatoByCpf(@PathVariable String cpf) {
+        if (cpf == null || cpf.length() != 11 || !cpf.matches("\\d+")) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body("O CPF deve conter exatamente 11 números");
+        }
 
-## Avaliação
+        List<Concurso> concursos = candidatoService.findConcursoByCpf(cpf);
 
-O programa será avaliado levando em conta os seguintes critérios:
+        if (concursos == null || concursos.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body("Nenhum concurso encontrado para o CPF informado");
+        }
 
-| Critério  | Valor | 
-|---|---|
-| Legibilidade do Código |  10  |
-| Documentação do código |  10  |
-| Documentação da solução |  10  |
-| Tratamento de Erros | 10 | 
-| Total | 40 |
+        return ResponseEntity.ok(concursos);
+    }
+   ```
+2. **Listar candidatos por Código do Concurso**  
+   Retorna nome, data de nascimento e CPF dos candidatos compatíveis com o concurso, baseado no código do concurso.
+   ```java
+    @GetMapping("/candidatos/{codigoConcurso}")
+    public ResponseEntity<Object> findByCodigoConcurso(@PathVariable String codigoConcurso) {
+        if (codigoConcurso == null || codigoConcurso.length() != 11 || !codigoConcurso.matches("\\d+")) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body("O código deve conter 11 digitos");
+        }
 
-A sua pontuação será a soma dos valores obtidos nos critérios acima.
+        Set<Candidato> candidatos = concursoService.findCandidatoByCodigoConcurso(codigoConcurso);
 
-## Diferenciais 
-Você pode **aumentar sua pontuação** implementando os seguintes diferenciais:
+        if (candidatos == null || candidatos.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body("Nenhum candidato encontrado para o concurso de código: " + codigoConcurso);
+        }
 
-| Item  | Pontos Ganhos | 
-|---|---|
-| Criar um [serviço](https://martinfowler.com/articles/microservices.html) com o problema |  30  |
-| Utilizar banco de dados |  30  |
-| Implementar Clean Code |  20  |
-| Implementar o padrão de programação da tecnologia escolhida |  20  |
-| Qualidade de [Código com SonarQube](https://about.sonarcloud.io/) |  15  |
-| Implementar testes unitários |  15  |
-| Implementar testes comportamentais |  15  |
-| Implementar integração com [Github Action](https://github.com/features/actions)  |  10  |
-| Implementar integração com Github Action + SonarQube |  10  |
-| Implementar usando Docker | 5 |
-| Total| 170 |
-
-A pontuação final será calculada somando os critérios obrigatórios e os diferenciais implementados corretamente.
-
-# Penalizações
-
-Você será desclassificado se:
-
-1. Enviar uma solução que não funcione.
-2. Não cumprir os critérios da seção **Avaliação**.
-3. For identificado plágio.
+        return ResponseEntity.ok(candidatos);
+    }
+    ```
    
-***Que a força esteja com você. Boa sorte!***
+---
 
-<div align="left">
-</div>
+## Configuração
+1. **Clonar o repositório**
+    ``` git
+    git clone https://github.com/jessejuniordev/venhaparaoleds-backend/desafioleds
+    cd desafioleds
+    ```
+2. **Configurar o banco de dados**  
+   Certifique-se de que o **PostgreSQL** está rodando!  
+   Rode o script para criação do banco
+   ```
+   src/main/resources/schema.sql
+    ```
+   
+3. **Configurar as credenciais no** ```application.yml```   
+    Edite ```src/main/resources/application.yml``` com suas credenciasi do **PostgresSQL**
+    ```yml
+    spring:
+        datasource:
+          url: jdbc:postgresql://localhost:5432/desafioleds
+          username: seu_usuario
+          password: sua_senha
+   ```
+4. **Executar a aplicação**   
+Lembrando que para executar com o maven, é necessário ter a versão do **JDK 21** instalada corretamente em sua máquina. [Instalação JDK 21](https://www.oracle.com/br/java/technologies/downloads/#java21)  
+#### Compilar o projeto   
+``` mvn clean install -DskipTests ```   
 
-###
+Rode o projeto no arquivo ```Application```
 
-<br clear="both">
+A **API** estará disponível em ```http://localhost:8080```
 
-<div align="center">
-  <a href="https://www.linkedin.com/school/ledsifes" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="https://www.instagram.com/ledsifes/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="instagram logo"  />
-  </a>
-  <a href="https://www.youtube.com/@ledsifes/?sub_confirmation=1" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
-  </a>
-</div>
+---
 
-###
+## Autor
+Jesse Paiva Carvalho Junior   
+jessepcarvalhojunior02@gmail.com   
+[LinkedIn](linkedin.com/in/jessejuniordev) | [Whatsapp](wa.me/27996160231)
