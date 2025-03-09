@@ -1,0 +1,4 @@
+Nome | Data de Nascimento | CPF | Profissões
+Lindsey Craft | 19/05/1976 | 182.845.084-34 | ['carpinteiro']
+Jackie Dawson | 14/08/1970 | 311.667.973-47 | ['marceneiro', 'assistente administrativo']
+Cory Mendoza | 11/02/1957 | 565.512.353-92 | ['carpinteiro', 'marceneiro']
