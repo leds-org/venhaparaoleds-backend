@@ -42,6 +42,7 @@ def f_ConcursoPorCpf(candidatos, concursos, cpf):
     cpf = cpf.replace(".", "").replace("-", "")
     candidato = None
 
+    # Procurando o candidato pelo CPF
     for i in candidatos:
         if i["Cpf"] == cpf:
             candidato = i
@@ -51,6 +52,8 @@ def f_ConcursoPorCpf(candidatos, concursos, cpf):
         return []  # Retorna uma lista vazia, caso o candidato não seja encontrado
 
     resultados = []
+
+    # Procurando os concursos que o candidato pode participar
     for concurso in concursos:
         lista = concurso["lista_vagas"]
         lista = lista.strip("[]").replace("'", "").split(",")
@@ -58,11 +61,13 @@ def f_ConcursoPorCpf(candidatos, concursos, cpf):
         for vaga in lista:
             if vaga.strip().lower() in candidato["profissoes"].lower():
                 resultados.append({
-                    "Órgão": concurso["orgao"],
-                    "Código": concurso["codigo"],
-                    "Edital": concurso["edital"]
+                    "Código do Concurso": concurso["codigo"],
+                    "Edital": concurso["edital"],
+                    "Órgão": concurso["orgao"]
                 })
+
     return resultados
+
 
 
 def f_CandidatoPorConcurso(candidatos, concursos, codigoC):
@@ -84,22 +89,3 @@ def f_CandidatoPorConcurso(candidatos, concursos, codigoC):
                         })
 
     return resultados
-
-def main():
-    candidatos, concursos = f_LerArquivos()
-
-    CpfTeste ="311.667.973-47" 
-    #cpf = input("Digite o CPF do candidato: ")
-
-    CodigoTeste = "61828450843"
-    #Codigo = input("Digite o código do concurso: ")
-
-
-    #f_ConcursoPorCpf(candidatos,concursos,CpfTeste)
-
-    f_CandidatoPorConcurso(candidatos,concursos,CodigoTeste)
-
-
-
-if __name__ == "__main__":
-    main()

@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from Projeto import f_LerArquivos, f_ConcursoPorCpf, f_CandidatoPorConcurso
+from projeto import f_LerArquivos, f_ConcursoPorCpf, f_CandidatoPorConcurso
 
 app = Flask(__name__)
 
@@ -8,7 +8,13 @@ def concursos_por_cpf():
     cpf = request.args.get('cpf')
     candidatos, concursos = f_LerArquivos()
     resultados = f_ConcursoPorCpf(candidatos, concursos, cpf)
-    return jsonify(resultados)
+
+    if not resultados:
+        return jsonify({"mensagem": "Nenhum concurso encontrado para este CPF"}), 404
+
+    response = jsonify(resultados)
+    response.headers['Content-Type'] = 'application/json; charset=utf-8'
+    return response
 
 @app.route('/candidatos/concursos', methods=['GET'])
 def candidatos_por_concurso():
