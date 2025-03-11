@@ -11,17 +11,20 @@ A aplicação lhe oferece duas opções de utilização que lhe permite:
 1. Buscar concursos públicos compatíveis com as profissões de um candidato, com base em seu CPF.
 2. Buscar candidatos compatíveis com as vagas de um concurso, com base no código do concurso.
 
-### Tecnologias utilizadas
+### Tecnologias utilizadas 
+___
 
 - .NET 9 Framework
 - C#
 
 
 ### Diferenciais utilizados
+___
 
 - Implementar o padrão de programação da tecnologia escolhida.
 
 ### Justificativa de escolha
+___
 
 Na solução desenvolvida, optamos por utilizar os padrões de projeto Template Method e Strategy, que são padrões de projeto de software que visam a reutilização de código e a organização de classes.
 
@@ -32,6 +35,7 @@ Quanto ao Strategy, é um padrão de projeto comportamental que permite definir 
 Em algumas etapas, foi realizada uma escolha de não seguir a risca o Princípio de Responsabilidade Única, aja vista que criação de classes para cada responsabilidade, como a impressão das informações obtidas da busca, pouco agregaria ao projeto além de interpretar que faz parte do escopo do das classes opções, a realização da busca.
 
 ### Alimentando o projeto com dados
+___
 
 Como os arquivos candidatos.txt e concursos.txt estão originalmente vazios, tomei a liberdade de preenchê-los com dados fictícios para que fosse possível realizar os testes. Na minha interpretação, um arquivo json, apesar de mais simples de ser manipulado, foge do esperado para um txt, dessa forma, optei por alimentá-lo com linhas cujo conteúdo é separado por ponto-e-vírgula (;), além da lista de vagas e profissões estar delimitada por colchetes ([]) e as vagas e profissões separadas por vírgula (,).
 
@@ -46,6 +50,7 @@ SEDU;123/2023;12345678901;[professor de inglês, assistente administrativo, anal
 ```
 
 ### Executando o projeto
+___
 
 Para executar o projeto, é necessário dar clone no repositorio e executar o comando `dotnet run` no terminal, dentro da pasta do projeto.
 
