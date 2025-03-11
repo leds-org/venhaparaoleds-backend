@@ -8,27 +8,27 @@ namespace DesafioBackEnd.src.Domain
 {
     public class Concurso
     {
-        public int id { get; private set; }
-        public string orgao { get; private set; }
-        public string edital { get; private set; }
-        public string codigo { get; private set; }
-        public List<string> vaga { get; private set; }
+        public int Id { get; private set; }
+        public string Orgao { get; private set; }
+        public string Edital { get; private set; }
+        public string Codigo { get; private set; }
+        public List<string> Vaga { get; private set; }
 
         public Concurso()
         {
-            orgao = string.Empty;
-            edital = string.Empty;
-            codigo = string.Empty;
-            vaga = new List<string>();
+            Orgao = string.Empty;
+            Edital = string.Empty;
+            Codigo = string.Empty;
+            Vaga = [];
         }
 
         public Concurso(int id, string orgao, string edital, string codigo, List<string> vaga)
         {
-            this.id = id;
-            this.orgao = orgao;
-            this.edital = edital;
-            this.codigo = codigo;
-            this.vaga = vaga;
+            this.Id = id;
+            this.Orgao = orgao;
+            this.Edital = edital;
+            this.Codigo = codigo;
+            this.Vaga = vaga;
         }
     }
 }

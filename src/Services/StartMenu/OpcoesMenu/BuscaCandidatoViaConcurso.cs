@@ -10,11 +10,11 @@ namespace DesafioBackEnd.src.Services.StartMenu.OpcoesMenu
 {
     internal class BuscaCandidatoViaConcurso : OpcaoMenu, IOpcaoMenu
     {   
-        private Concurso concursoAlvo { get; set; }
+        private Concurso ConcursoAlvo { get; set; }
 
         public BuscaCandidatoViaConcurso(List<Candidato> candidatos, List<Concurso> concursos) : base("Buscar potenciais candidatos por código de concurso", candidatos, concursos)
         {
-            this.concursoAlvo = new Concurso();
+            this.ConcursoAlvo = new Concurso();
         }
 
         /*Método para posicionar no concurso alvo da busca.*/
@@ -42,7 +42,7 @@ namespace DesafioBackEnd.src.Services.StartMenu.OpcoesMenu
             }
             try
             {
-                this.concursoAlvo = concursos.Find(x => x.codigo == concursoAlvo) ?? throw new InvalidOperationException("Concurso não encontrado.");
+                this.ConcursoAlvo = concursos.Find(x => x.Codigo == concursoAlvo) ?? throw new InvalidOperationException("Concurso não encontrado.");
                 return true;
             }
             catch (InvalidOperationException e)
@@ -55,14 +55,14 @@ namespace DesafioBackEnd.src.Services.StartMenu.OpcoesMenu
         protected void BuscaCandidato()
         {
 
-            List<Candidato> candidatosEncontrados = new List<Candidato>();
-            List<string> profissaoDoCandidato = new List<string>();
+            List<Candidato> candidatosEncontrados = [];
+            List<string> profissaoDoCandidato = [];
 
             foreach (Candidato candidato in this.candidatos)
             {
-                foreach (string vaga in this.concursoAlvo.vaga)
+                foreach (string vaga in this.ConcursoAlvo.Vaga)
                 {
-                    if (candidato.profissao.Contains(vaga))
+                    if (candidato.Profissao.Contains(vaga))
                     {
                         candidatosEncontrados.Add(candidato);
                         profissaoDoCandidato.Add(vaga);
@@ -77,14 +77,14 @@ namespace DesafioBackEnd.src.Services.StartMenu.OpcoesMenu
             }
             else
             {
-                Console.WriteLine("\nExiste um total de " + candidatosEncontrados.Count.ToString() + " candidato " + (candidatosEncontrados.Count > 1 ? "s aptos" : "apto") + " para concorrer no concurso " + concursoAlvo.codigo + " do órgão " + concursoAlvo.orgao + " e edital " + concursoAlvo.edital + ".");
+                Console.WriteLine("\nExiste um total de " + candidatosEncontrados.Count.ToString() + " candidato " + (candidatosEncontrados.Count > 1 ? "s aptos" : "apto") + " para concorrer no concurso " + ConcursoAlvo.Codigo + " do órgão " + ConcursoAlvo.Orgao + " e edital " + ConcursoAlvo.Edital + ".");
 
                 for (int i = 0; i < candidatosEncontrados.Count; i++)
                 {
                     Console.WriteLine("Candidato " + (i + 1) + ":");
-                    Console.WriteLine("Nome: " + candidatosEncontrados[i].nome);
-                    Console.WriteLine("Data de Nascimento: " + candidatosEncontrados[i].dtNascimento);
-                    Console.WriteLine("CPF: " + candidatosEncontrados[i].cpf);
+                    Console.WriteLine("Nome: " + candidatosEncontrados[i].Nome);
+                    Console.WriteLine("Data de Nascimento: " + candidatosEncontrados[i].DtNascimento);
+                    Console.WriteLine("CPF: " + candidatosEncontrados[i].Cpf);
                     Console.WriteLine("Vaga: " + profissaoDoCandidato[i] + "\n");
                 }
             }

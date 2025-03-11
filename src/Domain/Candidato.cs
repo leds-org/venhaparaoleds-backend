@@ -7,27 +7,27 @@ namespace DesafioBackEnd.src.Domain
 {
     public class Candidato
     {
-        public int id { get; private set; }
-        public string nome { get; private set; }
-        public string dtNascimento { get; private set; }
-        public string cpf { get; private set; }
-        public List<string> profissao { get; private set; }
+        public int Id { get; private set; }
+        public string Nome { get; private set; }
+        public string DtNascimento { get; private set; }
+        public string Cpf { get; private set; }
+        public List<string> Profissao { get; private set; }
 
         public Candidato()
         {   
-            nome = string.Empty;
-            dtNascimento = string.Empty;
-            cpf = string.Empty;
-            profissao = new List<string>();
+            Nome = string.Empty;
+            DtNascimento = string.Empty;
+            Cpf = string.Empty;
+            Profissao = [];
         }
 
         public Candidato(int id, string nome, string dtNascimento, string cpf, List<string> profissao)
         {
-            this.id = id;
-            this.nome = nome;
-            this.dtNascimento = dtNascimento;
-            this.cpf = cpf;
-            this.profissao = profissao;
+            this.Id = id;
+            this.Nome = nome;
+            this.DtNascimento = dtNascimento;
+            this.Cpf = cpf;
+            this.Profissao = profissao;
         }
     }
 }
