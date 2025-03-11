@@ -11,7 +11,7 @@ namespace DesafioBackEnd.src.Services.ReadData.ReadData
 {
     public class ReadConcurso : ReadDom<Concurso>, IReadConcurso
     {
-        public ReadConcurso() : base($"../../../src/Data/concursos.txt") { }
+        public ReadConcurso() : base($"src/Data/concursos.txt") { }
 
         public override (string, List<Concurso>) Process()
         {
