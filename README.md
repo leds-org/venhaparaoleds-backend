@@ -47,22 +47,32 @@ SEDU;123/2023;12345678901;[professor de inglês, assistente administrativo, anal
 
 ## Executando o projeto
 
-Para executar o projeto, é necessário dar clone no repositorio e executar o comando `dotnet run` no terminal, dentro da pasta do projeto.
+Para executar o projeto, é necessário seguir o passo-a-passo descrito a baixo.
 
-##
+1. Clone o repositório em sua máquina local.
+Abra o terminal e execute o comando:
+```bash
+git clone https://github.com/project-lc/venhaparaoleds-backend.git
+```
 
-<br clear="both">
+2. Acesse a pasta do projeto.
+```bash
+cd venhaparaoleds-backend
+```
 
-<div align="center">
-  <a href="https://www.linkedin.com/school/ledsifes" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="https://www.instagram.com/ledsifes/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="instagram logo"  />
-  </a>
-  <a href="https://www.youtube.com/@ledsifes/?sub_confirmation=1" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
-  </a>
-</div>
+3. Verifique a instalação do .NET 9
+Existem diversas formas de verificar se o .NET 9 está instalado em sua máquina, a Microsoft disponibiliza algumas dessas maneiras [nesse site](https://learn.microsoft.com/pt-br/dotnet/core/install/how-to-detect-installed-versions?pivots=os-windows).
 
-##
+Caso não disponha, segue o link para instalação do .NET 9 [aqui](https://dotnet.microsoft.com/pt-br/download/dotnet/9.0).
+
+4. Restaure os pacotes do projeto.
+```bash
+dotnet restore
+```
+
+5. Execute o projeto.
+```bash
+dotnet run
+```
+
+E pronto! O projeto estará rodando em sua máquina local. Começará imprimindo o menu de opções e aguardará a sua escolha.
