@@ -2,26 +2,31 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using venhaparaoleds_backend.src.Services.ReadData.Interface;
-using venhaparaoleds_backend.src.Services.ReadData.ReadData;
+using DesafioBackEnd.src.Domain;
+using DesafioBackEnd.src.Services.ReadData.Interface;
+using DesafioBackEnd.src.Services.ReadData.ReadData;
 
-namespace venhaparaoleds_backend.src.Services.GenerateDB
+namespace DesafioBackEnd.src.Services.GenerateDB
 {
     public static class GenerateDB
     {
-        public static void GenerateData()
+        public static (List<Candidato>, List<Concurso>) GenerateData()
         {
             string result;
+            List<Candidato> candidatos;
+            List<Concurso> concursos;
 
             Console.WriteLine("Gerando banco de dados...");
 
-            IReadCandidato readCandidato = new ReadCandidato();
-            result = readCandidato.Process();
+            ReadCandidato readCandidato = new();
+            (result, candidatos) = readCandidato.Process();
             Console.WriteLine(result);
 
-            IReadConcurso readConcurso = new ReadConcurso();
-            result = readConcurso.Process();
+            ReadConcurso readConcurso = new();
+            (result, concursos) = readConcurso.Process();
             Console.WriteLine(result);
+
+            return (candidatos, concursos);
         }
     }
 }

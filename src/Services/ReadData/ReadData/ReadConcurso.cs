@@ -1,41 +1,49 @@
-﻿using System;
+﻿using DesafioBackEnd.src.Services.ReadData.ReadData;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using venhaparaoleds_backend.src.Services.ReadData.Interface;
+using DesafioBackEnd.src.Domain;
+using DesafioBackEnd.src.Services.ReadData.Interface;
 
-namespace venhaparaoleds_backend.src.Services.ReadData.ReadData
+namespace DesafioBackEnd.src.Services.ReadData.ReadData
 {
-    public class ReadConcurso : IReadConcurso
+    public class ReadConcurso : ReadDom<Concurso>, IReadConcurso
     {
-        private string caminho = $"../../src/Data/concursos.txt";
+        public ReadConcurso() : base($"../../../src/Data/concursos.txt") { }
 
-        private bool ValidateArchive()
+        public override (string, List<Concurso>) Process()
         {
+            StreamReader arquivo = new StreamReader(caminho);
+            string? line;
+            Concurso concurso;
+            string[] dados;
+            int n = 0;
+            List<string> vaga;
+            List<Concurso> concursos = new List<Concurso>();
 
-            string line;
-
-            StreamReader sr = new StreamReader(this.caminho);
-
-            line = sr.ReadLine();
-
-            if (line == null)
+            if (ValidateArchive())
             {
-                return false;
-            }
+                line = arquivo.ReadLine();
 
-            return true;
-        }
-        public string Process()
-        {
-            if (!ValidateArchive())
-            {
-                return "Arquivo de concursos vazio";
+                while (line != null)
+                {
+                    dados = line.Split(';');
+                    dados[3] = dados[3].Replace("[", "").Replace("]", "").Replace(", ", ",");
+                    vaga = dados[3].Split(',').ToList();
+                    concurso = new Concurso(n, dados[0], dados[1], dados[2], vaga);
+
+                    concursos.Add(concurso);
+
+                    n += 1;
+                    line = arquivo.ReadLine();
+                }
+                return ("Arquivo de concursos lido com sucesso", concursos);
             }
             else
             {
-                return "Arquivo de concursos lido";
+                return ("Arquivo de concursos vazio", concursos);
             }
         }
     }

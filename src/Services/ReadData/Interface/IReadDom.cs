@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DesafioBackEnd.src.Domain;
 
-namespace venhaparaoleds_backend.src.Services.ReadData.Interface
+namespace DesafioBackEnd.src.Services.ReadData.Interface
 {
-    internal interface IReadDom
+    internal interface IReadDom <T>
     {
-        string Process();
+        (string, List<T>) Process();
     }
 }

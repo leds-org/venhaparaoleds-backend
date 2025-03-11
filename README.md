@@ -1,5 +1,5 @@
 # Desafio Backend - LEDS
-*Bem-vindo!* 👋
+___
 
 Neste desafio, você terá a oportunidade de demonstrar que possui as habilidades necessárias para atuar no time de backend do laboratório.
 

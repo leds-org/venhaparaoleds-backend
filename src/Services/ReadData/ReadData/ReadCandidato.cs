@@ -1,40 +1,50 @@
-﻿using System;
+﻿using DesafioBackEnd.src.Services.ReadData.ReadData;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using venhaparaoleds_backend.src.Services.ReadData.Interface;
+using DesafioBackEnd.src.Domain;
+using DesafioBackEnd.src.Services.ReadData.Interface;
 
-namespace venhaparaoleds_backend.src.Services.ReadData.ReadData
+namespace DesafioBackEnd.src.Services.ReadData.ReadData
 {
-    public class ReadCandidato : IReadCandidato
+    public class ReadCandidato : ReadDom<Candidato>, IReadCandidato
     {
-        private string caminho = $"../../src/Data/candidatos.txt";
+        public ReadCandidato() : base($"../../../src/Data/candidatos.txt") { }
 
-        private bool ValidateArchive() {
-
-            string line;
-
-            StreamReader sr = new StreamReader(this.caminho);
-
-            line = sr.ReadLine();
-
-            if (line == null)
-            {
-                return false;
-            }
-
-            return true;
-        }
-        public string Process()
+        public override (string, List<Candidato>) Process()
         {
-            if (!ValidateArchive())
+            StreamReader arquivo = new StreamReader(caminho);
+            string? line;
+            Candidato candidato;
+            string[] dados;
+            int n = 0;
+            List<string> profissao;
+            List<Candidato> candidatos = new List<Candidato>();
+
+            if (ValidateArchive())
             {
-                return "Arquivo de candidatos vazio";
+                line = arquivo.ReadLine();
+
+                while (line != null)
+                {
+                    dados = line.Split(';');
+                    dados[3] = dados[3].Replace("[", "").Replace("]", "").Replace(", ", ",");
+                    profissao = dados[3].Split(',').ToList();
+                    candidato = new Candidato(n, dados[0], dados[1], dados[2], profissao);
+
+                    candidatos.Add(candidato);
+
+                    n += 1;
+                    line = arquivo.ReadLine();
+                }
+
+                return ("Arquivo de candidatos lido com sucesso", candidatos);
             }
             else
             {
-                return "Arquivo de candidatos lido";
+                return ("Arquivo de candidatos vazio", candidatos);
             }
         }
     }

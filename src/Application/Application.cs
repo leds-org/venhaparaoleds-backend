@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using venhaparaoleds_backend.src.Services.GenerateDB;
+using DesafioBackEnd.src.Domain;
+using DesafioBackEnd.src.Services.GenerateDB;
+using DesafioBackEnd.src.Services.StartMenu;
 
-namespace venhaparaoleds_backend.src.Application
+namespace DesafioBackEnd.src.Application
 {
     internal class Application
     {
@@ -12,7 +14,11 @@ namespace venhaparaoleds_backend.src.Application
         {
             Console.WriteLine("Inicializando aplicação...");
 
-            GenerateDB.GenerateData();
+            (List<Candidato> candidatos, List<Concurso> concursos) = GenerateDB.GenerateData();
+
+            GenerateMenu.Generate(candidatos, concursos);
+
+            Console.WriteLine("Aplicação finalizada.");
         }
     }
 }
