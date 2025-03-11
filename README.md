@@ -26,7 +26,6 @@ O arquivo **concursos.txt** contém as informações dos concursos públicos:
 | SEJUS | 17/2017 |  95655123539  |  [professor de matemática] |
 
 🤩 **As tecnologias a serem utilizadas na implementação da solução ficam a seu critério!**
-
 # Como entregar?
 1. Faça um **fork** do repositório. Nesse fork esperamos encontrar uma documentação completa da solução e a listagem dos diferenciais implementados.
 2. Abra um **pull request (PR)** do seu fork para o nome repositório com o seu nome como título. Assim conseguimos te localizar melhor e ver que você já finalizou o desafio!
