@@ -1,83 +1,53 @@
 # Desafio Backend - LEDS
-___
 
-Neste desafio, você terá a oportunidade de demonstrar que possui as habilidades necessárias para atuar no time de backend do laboratório.
+*Por Lucas Cunha de Souza*
 
-# Contextualização
+## Visão geral
 
-O desafio é desenvolver um programa que permita realizar as seguintes buscas: 
-1. Listar os **órgãos, códigos e editais dos concursos públicos** que se encaixam no perfil do candidato, tomando como base o seu **CPF**; 
-2. Listar o **nome, data de nascimento e o CPF** dos candidatos que se encaixam no perfil do concurso tomando com base o **Código do Concurso** do concurso público;
+Solução desenvolvida para o Desafio LEDS Academy, com o objetivo de desenvolver o desafio proposto e atender aos critérios de avaliação estabelecidos.
 
-O arquivo **candidatos.txt** contém as informações dos candidatos:
+A aplicação lhe oferece duas opções de utilização que lhe permite:
 
-| Nome  | Data de Nascimento  | CPF |  Profissões|
-|---|---|---|---|
-| Lindsey Craft  |  19/05/1976  |  182.845.084-34  |  [carpinteiro]  | 
-| Jackie Dawson  |  14/08/1970  |  311.667.973-47  |  [marceneiro, assistente administrativo]  |
-| Cory Mendoza |   11/02/1957 |  565.512.353-92  |  [carpinteiro, marceneiro] |
+1. Buscar concursos públicos compatíveis com as profissões de um candidato, com base em seu CPF.
+2. Buscar candidatos compatíveis com as vagas de um concurso, com base no código do concurso.
 
-O arquivo **concursos.txt** contém as informações dos concursos públicos:
+### Tecnologias utilizadas
 
-| Órgão  | Edital  | Código do Concurso | Lista de vagas|
-|---|---|---|---|
-| SEDU  | 9/2016  |  61828450843  |  [analista de sistemas, marceneiro]  | 
-| SEJUS | 15/2017  |  61828450843  |  [carpinteiro,professor de matemática,assistente administrativo] |
-| SEJUS | 17/2017 |  95655123539  |  [professor de matemática] |
+- .NET 9 Framework
+- C#
 
-🤩 **As tecnologias a serem utilizadas na implementação da solução ficam a seu critério!**
 
-# Como entregar?
-1. Faça um **fork** do repositório. Nesse fork esperamos encontrar uma documentação completa da solução e a listagem dos diferenciais implementados.
-2. Abra um **pull request (PR)** do seu fork para o nome repositório com o seu nome como título. Assim conseguimos te localizar melhor e ver que você já finalizou o desafio!
+### Diferenciais utilizados
 
-🚨 **Atenção**: você deve enviar apenas o código fonte. Não serão aceitos códigos compilados.
+- Implementar o padrão de programação da tecnologia escolhida.
 
-## Avaliação
+### Justificativa de escolha
 
-O programa será avaliado levando em conta os seguintes critérios:
+Na solução desenvolvida, optamos por utilizar os padrões de projeto Template Method e Strategy, que são padrões de projeto de software que visam a reutilização de código e a organização de classes.
 
-| Critério  | Valor | 
-|---|---|
-| Legibilidade do Código |  10  |
-| Documentação do código |  10  |
-| Documentação da solução |  10  |
-| Tratamento de Erros | 10 | 
-| Total | 40 |
+O padrão Template Method é um padrão de projeto comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas desse algoritmo sem alterar sua estrutura.
 
-A sua pontuação será a soma dos valores obtidos nos critérios acima.
+Quanto ao Strategy, é um padrão de projeto comportamental que permite definir uma família de algoritmos, encapsular cada um deles e torná-los intercambiáveis. O Strategy permite que o algoritmo varie independentemente dos clientes que o utilizam, e ainda permite algumas comodidades, como por exemplo, ao usar junto de Reflector, é possível criar um menu automático através de todas as classes que herdam da classe OpcaoMenu.
 
-## Diferenciais 
-Você pode **aumentar sua pontuação** implementando os seguintes diferenciais:
+Em algumas etapas, foi realizada uma escolha de não seguir a risca o Princípio de Responsabilidade Única, aja vista que criação de classes para cada responsabilidade, como a impressão das informações obtidas da busca, pouco agregaria ao projeto além de interpretar que faz parte do escopo do das classes opções, a realização da busca.
 
-| Item  | Pontos Ganhos | 
-|---|---|
-| Criar um [serviço](https://martinfowler.com/articles/microservices.html) com o problema |  30  |
-| Utilizar banco de dados |  30  |
-| Implementar Clean Code |  20  |
-| Implementar o padrão de programação da tecnologia escolhida |  20  |
-| Qualidade de [Código com SonarQube](https://about.sonarcloud.io/) |  15  |
-| Implementar testes unitários |  15  |
-| Implementar testes comportamentais |  15  |
-| Implementar integração com [Github Action](https://github.com/features/actions)  |  10  |
-| Implementar integração com Github Action + SonarQube |  10  |
-| Implementar usando Docker | 5 |
-| Total| 170 |
+### Alimentando o projeto com dados
 
-A pontuação final será calculada somando os critérios obrigatórios e os diferenciais implementados corretamente.
+Como os arquivos candidatos.txt e concursos.txt estão originalmente vazios, tomei a liberdade de preenchê-los com dados fictícios para que fosse possível realizar os testes. Na minha interpretação, um arquivo json, apesar de mais simples de ser manipulado, foge do esperado para um txt, dessa forma, optei por alimentá-lo com linhas cujo conteúdo é separado por ponto-e-vírgula (;), além da lista de vagas e profissões estar delimitada por colchetes ([]) e as vagas e profissões separadas por vírgula (,).
 
-# Penalizações
+Segue linha de exemplo para utilização:
 
-Você será desclassificado se:
+```candidatos.txt
+João Silva;15/05/1990;12345678901;[professor de matemática, assistente administrativo]
+```
 
-1. Enviar uma solução que não funcione.
-2. Não cumprir os critérios da seção **Avaliação**.
-3. For identificado plágio.
-   
-***Que a força esteja com você. Boa sorte!***
+```concursos.txt
+SEDU;123/2023;12345678901;[professor de inglês, assistente administrativo, analista de sistemas]
+```
 
-<div align="left">
-</div>
+### Executando o projeto
+
+Para executar o projeto, é necessário dar clone no repositorio e executar o comando `dotnet run` no terminal, dentro da pasta do projeto.
 
 ###
 

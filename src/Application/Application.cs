@@ -10,7 +10,7 @@ namespace DesafioBackEnd.src.Application
 {
     internal class Application
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Inicializando aplicação...");
 

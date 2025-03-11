@@ -15,7 +15,7 @@ namespace DesafioBackEnd.src.Services.StartMenu
         public static void Generate(List<Candidato> candidatos, List<Concurso> concursos)
         {
             Assembly assembly = Assembly.GetExecutingAssembly();
-            List<OpcaoMenu> opcoes = new List<OpcaoMenu>();
+            List<OpcaoMenu> opcoes = [];
             string? opcaoSelecionada = "";
             int iteradorOpcao, opcaoIndex;
 

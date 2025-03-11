@@ -22,7 +22,7 @@ namespace DesafioBackEnd.src.Services.StartMenu.OpcoesMenu
 
             string? cpfAlvo = null;
 
-            Console.WriteLine("Digite o CPF do candidato.");
+            Console.WriteLine("Digite os números do CPF do candidato.");
 
             try
             {
