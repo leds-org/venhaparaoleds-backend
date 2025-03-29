@@ -1,98 +1,60 @@
-# Desafio Backend - LEDS
-*Bem-vindo!* 👋
+# Sobre o projeto
 
-Neste desafio, você terá a oportunidade de demonstrar que possui as habilidades necessárias para atuar no time de backend do laboratório.
+Este projeto de software, descrito nesta documentação, implementa o Frontend e o Backend de uma aplicação web de **gerenciamento de concursos online e candidatos**, feito baseado nas descrições e requisitos especificados no teste final de admissão proposto pelo **Laboratório de Extensão e Desenvolvimento de Soluções (LEDS)**, programa de extensão ligado ao **Instituto Federal do Espírito Santo (IFES)**.
 
-# Contextualização
 
-O desafio é desenvolver um programa que permita realizar as seguintes buscas: 
-1. Listar os **órgãos, códigos e editais dos concursos públicos** que se encaixam no perfil do candidato, tomando como base o seu **CPF**; 
-2. Listar o **nome, data de nascimento e o CPF** dos candidatos que se encaixam no perfil do concurso tomando com base o **Código do Concurso** do concurso público;
+# 🛠️ Tecnologias utilizadas
 
-O arquivo **candidatos.txt** contém as informações dos candidatos:
+**Framework:** Node JS
 
-| Nome  | Data de Nascimento  | CPF |  Profissões|
-|---|---|---|---|
-| Lindsey Craft  |  19/05/1976  |  182.845.084-34  |  [carpinteiro]  | 
-| Jackie Dawson  |  14/08/1970  |  311.667.973-47  |  [marceneiro, assistente administrativo]  |
-| Cory Mendoza |   11/02/1957 |  565.512.353-92  |  [carpinteiro, marceneiro] |
+**Ling de programação:** JavaScript (JS)
 
-O arquivo **concursos.txt** contém as informações dos concursos públicos:
+**Banco de Dados:** Postgres
 
-| Órgão  | Edital  | Código do Concurso | Lista de vagas|
-|---|---|---|---|
-| SEDU  | 9/2016  |  61828450843  |  [analista de sistemas, marceneiro]  | 
-| SEJUS | 15/2017  |  61828450843  |  [carpinteiro,professor de matemática,assistente administrativo] |
-| SEJUS | 17/2017 |  95655123539  |  [professor de matemática] |
+**Principais módulos:**
+- crypto (pacote usado para criptografia e descriptografia de dados no backend); 
+- express (módulo que facilita a criação de aplicações backend em node js e auxilia no gerenciamento de rotas )
 
-🤩 **As tecnologias a serem utilizadas na implementação da solução ficam a seu critério!**
+# 📌 Modelagem do Projeto
+Esta seção apresentará o projeto sob o ponto de vista arquitetural, mostrando sua estrutura, implementações além das esperadas pelo teste proposto e a organização dos módulos e componentes nos diretórios de cada parte da aplicação.
 
-# Como entregar?
-1. Faça um **fork** do repositório. Nesse fork esperamos encontrar uma documentação completa da solução e a listagem dos diferenciais implementados.
-2. Abra um **pull request (PR)** do seu fork para o nome repositório com o seu nome como título. Assim conseguimos te localizar melhor e ver que você já finalizou o desafio!
+---
 
-🚨 **Atenção**: você deve enviar apenas o código fonte. Não serão aceitos códigos compilados.
+## 💡 Diferenciais de implementação
 
-## Avaliação
+- **Criptografia de chave primária (UUID):** Para atribuir uma camada a mais de segurança à aplicação, um módulo com métodos de criptografia foi desenvolvido para criptografia e descriptografia das chaves primárias das entidades da aplicação; nesse caso, para criptografar o campo de CPF da entidade Candidato e o campo de ID da entidade Concurso. Como apontado na estrutura de diretório do projeto (no tópico posterior), esse módulo estará na pasta **"config"** com o nome **"criptography.js"**.
 
-O programa será avaliado levando em conta os seguintes critérios:
+---
 
-| Critério  | Valor | 
-|---|---|
-| Legibilidade do Código |  10  |
-| Documentação do código |  10  |
-| Documentação da solução |  10  |
-| Tratamento de Erros | 10 | 
-| Total | 40 |
+## 🏗 Padrão de Arquitetura
+Para o Backend da aplicação, é usada uma abordagem personalizada do tipo **"RCSR"(Route-Controller-Service-Repository)**, ilustrada na seguinte imagem:  
 
-A sua pontuação será a soma dos valores obtidos nos critérios acima.
+📌 **Imagem do modelo de arquitetura**:
 
-## Diferenciais 
-Você pode **aumentar sua pontuação** implementando os seguintes diferenciais:
 
-| Item  | Pontos Ganhos | 
-|---|---|
-| Criar um [serviço](https://martinfowler.com/articles/microservices.html) com o problema |  30  |
-| Utilizar banco de dados |  30  |
-| Implementar Clean Code |  20  |
-| Implementar o padrão de programação da tecnologia escolhida |  20  |
-| Qualidade de [Código com SonarQube](https://about.sonarcloud.io/) |  15  |
-| Implementar testes unitários |  15  |
-| Implementar testes comportamentais |  15  |
-| Implementar integração com [Github Action](https://github.com/features/actions)  |  10  |
-| Implementar integração com Github Action + SonarQube |  10  |
-| Implementar usando Docker | 5 |
-| Total| 170 |
+A camada **Route** será responsável por disponibilizar meios para o Frontend se comunicar à API do Backend. O **Controller** fará a mediação e controle dos dados entre as extremidades da comunicação, sendo responsável pelo JSON de resposta às requisições do cliente. O **Service** oferecerá às outras partes do Backend os métodos que acessam a camada **Repository**, responsável por fazer a comunicação direta com o banco de dados e por fazer as operações básicas de CRUD+L (Create, Read, Update, Delete and List) da aplicação. 
+ 
 
-A pontuação final será calculada somando os critérios obrigatórios e os diferenciais implementados corretamente.
+---
 
-# Penalizações
 
-Você será desclassificado se:
+## 📁 Estrutura de Diretórios 
+Seguem abaixo as estruturas de diretório de cada lado da aplicação (Frontend e Backend), levando em conta o padrão de arquitetura proposto para cada um em tópicos anteriores:
 
-1. Enviar uma solução que não funcione.
-2. Não cumprir os critérios da seção **Avaliação**.
-3. For identificado plágio.
-   
-***Que a força esteja com você. Boa sorte!***
 
-<div align="left">
-</div>
+### (🐘) Backend
 
-###
+```bash
+📂 teste-leds-backend
+ ┣ 📂 src
+ ┃ ┣ 📂 controllers      # Controladores, para mediação entre o acesso da rota pelo front e as camadas de acesso ao bd  
+ ┃ ┣ 📂 repositories     # Métodos de acesso direto ao BD (aqui estarão as consultas SQL)
+ ┃ ┣ 📂 routes           # Rotas da API   
+ ┃ ┣ 📂 services         # Métodos de acesso indireto ao BD (onde terão as regras de negócio e controle de retorno de status)
+ ┃ ┗ 📂 config           # Arquivos de configuração e módulos personalizados (ex.: database e criptography)
+ ┣ 📜 README.md          # Documentação principal
+ ┣ 📜 package.json       # Dependências do projeto
+ ┗ 📜 .gitignore         # Arquivos ignorados pelo Git
+```
 
-<br clear="both">
-
-<div align="center">
-  <a href="https://www.linkedin.com/school/ledsifes" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="https://www.instagram.com/ledsifes/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="instagram logo"  />
-  </a>
-  <a href="https://www.youtube.com/@ledsifes/?sub_confirmation=1" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
-  </a>
-</div>
-
-###
+Vale salientar que as estruturas acima ocultam outras pastas secundárias mas relevantes do projeto; como, por exemplo, as pastas com os imports de módulos necessários para cada lado do projeto (node_modules).  
