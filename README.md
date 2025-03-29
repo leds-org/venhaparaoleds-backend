@@ -1,6 +1,6 @@
 # Sobre o projeto
 
-Este projeto de software, descrito nesta documentação, implementa o Frontend e o Backend de uma aplicação web de **gerenciamento de concursos online e candidatos**, feito baseado nas descrições e requisitos especificados no teste final de admissão proposto pelo **Laboratório de Extensão e Desenvolvimento de Soluções (LEDS)**, programa de extensão ligado ao **Instituto Federal do Espírito Santo (IFES)**.
+Este projeto de software, descrito nesta documentação, implementa o Backend de uma aplicação web de **gerenciamento de concursos online e candidatos**, feito baseado nas descrições e requisitos especificados no teste final de admissão proposto pelo **Laboratório de Extensão e Desenvolvimento de Soluções (LEDS)**, programa de extensão ligado ao **Instituto Federal do Espírito Santo (IFES)**.
 
 
 # 🛠️ Tecnologias utilizadas
@@ -30,6 +30,8 @@ Esta seção apresentará o projeto sob o ponto de vista arquitetural, mostrando
 Para o Backend da aplicação, é usada uma abordagem personalizada do tipo **"RCSR"(Route-Controller-Service-Repository)**, ilustrada na seguinte imagem:  
 
 📌 **Imagem do modelo de arquitetura**:
+![diagrama de arquitetura do projeto](https://github.com/GBLucas1809/gabriel-barbosa-lucas/blob/main/arquitetura_backend.png)
+
 
 
 A camada **Route** será responsável por disponibilizar meios para o Frontend se comunicar à API do Backend. O **Controller** fará a mediação e controle dos dados entre as extremidades da comunicação, sendo responsável pelo JSON de resposta às requisições do cliente. O **Service** oferecerá às outras partes do Backend os métodos que acessam a camada **Repository**, responsável por fazer a comunicação direta com o banco de dados e por fazer as operações básicas de CRUD+L (Create, Read, Update, Delete and List) da aplicação. 
