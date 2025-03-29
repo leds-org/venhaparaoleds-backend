@@ -1,0 +1,19 @@
+{
+  "name": "leds-backend",
+  "version": "1.0.0",
+  "description": "Backend para teste final leds",
+  "keywords": [
+    "Backend",
+    "Desenvolvimento",
+    "Web",
+    "Node",
+    "Postgre"
+  ],
+  "license": "ISC",
+  "author": "Gabriel B. Lucas",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm"
+  }
+}
