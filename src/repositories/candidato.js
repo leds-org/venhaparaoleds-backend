@@ -16,7 +16,6 @@ async function listCandidatosByRole(limit, offset, role){
                 message: "Candidatos não encontrados"
             }
         }
-        
     }catch(err){
         return {
             sucess: false,

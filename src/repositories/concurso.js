@@ -13,14 +13,16 @@ async function listConcursosByRole(limit, offset, role){
         }else{
             return {
                 sucess: false,
-                message: "Nenhum concurso encontrado"
+                message: "Nenhum concurso encontrado",
+                error_code: 404
             }
         }
         
     }catch(err){
         return {
             sucess: false,
-            message: err
+            message: err,
+            error_code: 500
         }
     }
 
