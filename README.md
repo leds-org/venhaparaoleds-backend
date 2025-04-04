@@ -5,7 +5,7 @@ Este projeto de software, descrito nesta documentação, implementa o Backend de
 
 # 🛠️ Tecnologias utilizadas
 
-**Framework:** Node JS
+**Framework:** Express
 
 **Ling de programação:** JavaScript (JS)
 
@@ -13,7 +13,7 @@ Este projeto de software, descrito nesta documentação, implementa o Backend de
 
 **Principais módulos:**
 - crypto (pacote usado para criptografia e descriptografia de dados no backend); 
-- express (módulo que facilita a criação de aplicações backend em node js e auxilia no gerenciamento de rotas )
+- express (módulo que possibilita uso do framwork Express )
 
 # 📌 Modelagem do Projeto
 Esta seção apresentará o projeto sob o ponto de vista arquitetural, mostrando sua estrutura, implementações além das esperadas pelo teste proposto e a organização dos módulos e componentes nos diretórios de cada parte da aplicação.
