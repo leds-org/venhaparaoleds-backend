@@ -30,7 +30,7 @@ async function findContestByCode(code: number) {
   }
 }
 
-export default class contestService {
+export default class ContestService {
   /**
    * Método para obter candidatos por código de concurso
    * @param code - Código do concurso
