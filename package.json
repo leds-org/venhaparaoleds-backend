@@ -4,6 +4,8 @@
   "description": "*Bem-vindo!* 👋",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
     "dev": "ts-node src/server.ts",
     "test": "jest"
   },
