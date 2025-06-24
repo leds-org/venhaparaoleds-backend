@@ -18,26 +18,62 @@ O objetivo foi desenvolver uma API para gerenciar candidatos e concursos públic
 
 ## Como Rodar
 
-1. Clone o repositório:  
-   `git clone https://github.com/LucassenaSM/venhaparaoleds-backend.git`
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/LucassenaSM/venhaparaoleds-backend.git](https://github.com/LucassenaSM/venhaparaoleds-backend.git)
+    ```
    
-2. Acesse a pasta do projeto:   
-   `cd venhaparaoleds-backend` 
+2.  **Acesse a pasta do projeto:**
+    ```bash
+    cd venhaparaoleds-backend
+    ```
 
-3. Instale as dependências:  
-   `npm install`
+3. **Instale as dependências:**  
+   ```bash
+   npm install
+   ```
 
-4. Gere o cliente Prisma e o banco de dados:   
-   `npx prisma generate`
+5. **Gere o cliente Prisma e o banco de dados:**
+   ```bash
+   npx prisma generate
+   ```
 
-5. Rode o servidor:
+7. **Rode o servidor**:
 
 - Para modo desenvolvimento:  
-   `npm run dev`
+   ```bash
+  npm run dev
+   ```
   
 - Para modo produção:   
-  `npm run build` e  `npm start`
+  ```bash
+  npm run build
+  ```
+  ```bash
+  npm start
+  ```
 
+### Como Rodar com Docker
+
+Se você prefere rodar o projeto usando **Docker** e **Docker Compose**, siga estes passos:
+
+---
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/LucassenaSM/venhaparaoleds-backend.git](https://github.com/LucassenaSM/venhaparaoleds-backend.git)
+    ```
+
+2.  **Acesse a pasta do projeto:**
+    ```bash
+    cd venhaparaoleds-backend
+    ```
+
+3.  **Inicie os serviços com Docker Compose:**
+    ```bash
+    docker-compose up -d
+    ```
+    
 ---
 
 ## API Endpoints Principais
@@ -55,11 +91,16 @@ O objetivo foi desenvolver uma API para gerenciar candidatos e concursos públic
 Testes unitários estão implementados usando Jest e Supertest
 
 Para rodar os testes:  
-`npm test`
+```bash
+npm test
+```
 
 ## Observações
 
 - O banco de dados padrão é SQLite, armazenado em `prisma/dev.db`.
 - O banco já vem com alguns dados de exemplo para facilitar os testes.
-- Para explorar os dados de forma visual, você pode usar o **Prisma Studio** com o comando: `npx prisma studio`   
+- Para explorar os dados de forma visual, você pode usar o **Prisma Studio** com o comando:
+```bash
+ npx prisma studio
+```   
   
