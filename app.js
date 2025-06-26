@@ -28,3 +28,4 @@ app.use("/api/", concurso);
 
 //Exportando módulo para uso externo
 module.exports = app;
+
