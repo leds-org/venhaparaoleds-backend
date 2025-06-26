@@ -1,32 +1,20 @@
-const db = require('../config/database');
+const db = require('../config/database');//Importando módulo para conexão com banco de dados
 
-async function listCandidatosByRole(limit, offset, role){
+const PostgreErrors = require('../config/pgerrors');
 
-    try{
-        const list_candidatos = await db.query("SELECT * FROM CANDIDATO WHERE profissoes=ANY($1) LIMIT $2 OFFSET $3", [role, limit, offset]);
+async function insertNewCandidato(data){
+    const { nome, cpf, data_nascimento, profissoes } = data;
 
-        if(list_candidatos.rowCount > 0){  
-            return {
-                sucess: true,
-                candidatos: list_candidatos.rows[0]
-            }
-        }else{
-            return {
-                sucess: false,
-                message: "Candidatos não encontrados"
-            }
-        }
-        
-    }catch(err){
+    try {
+
+    } 
+    catch(err) {
         return {
-            sucess: false,
-            message: err
+
         }
     }
-
-};
-
+}
 
 module.exports = {
-    listCandidatosByRole,
+    insertNewCandidato,
 };
