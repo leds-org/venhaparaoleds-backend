@@ -1,4 +1,8 @@
-const candidatoRepos = require('../repositories/candidato');
+const candidatoRepos = require('../repositories/candidato');//Import da camada de repositorio, para acessar aos métodos de interção direta com o banco de dados
+
+const concursoRepos = require('./concurso');//Import da camada de serviço de concurso (para pegar método getConcurso)
+
+//Import do módulo de criptografia
 const crypt = require('../config/criptography');
 
 async function newCandidato(data){
@@ -22,10 +26,81 @@ async function newCandidato(data){
             response_time: Date.now() - tempo_inicial,
         }
     }
+    else{
+        return {
+            sucess:false,
+            message: insert_new_candidato.message,
+            status_code: insert_new_candidato.status_code,
+            response_time: Date.now() - tempo_inicial
+        }
+    }
 
 
 }
 
+async function getCandidato(id){
+    const tempo_inicial = Date.now();
+    if (!id) {
+        return {
+            sucess: false,
+            message: "Id do candidato não informado.",
+            status_code: 400,
+            response_time: Date.now() - tempo_inicial
+        };
+    }
+
+    //Chama método do repositório de candidato
+    const select_candidato_by_id = await candidatoRepos.selectCandidatoById(id);
+
+    if (select_candidato_by_id.sucess === true){
+        return {
+            sucess: true,
+            data: insert_new_candidato.data,
+            response_time: Date.now() - tempo_inicial
+        };
+    }
+    else{
+        return {
+            sucess: false,
+            message: insert_new_candidato.message,
+            response_time: Date.now() - tempo_inicial
+        };
+    }
+}
+
+async function getCandidatosCompativeis(codigo){
+    const tempo_inicial = Date.now();
+    if (!codigo) {
+        return {
+            sucess: false,
+            message: "Codigo do concurso não informado.",
+            status_code: 400,
+            response_time: Date.now() - tempo_inicial
+        };
+    }
+
+    //Chama método do repósitorio de candidato
+    const select_candidatos_compativeis = await candidatoRepos.selectCandidatosCompativeis(codigo);
+    
+    if(select_candidatos_compativeis.sucess === true){
+        return {
+            sucess: true,
+            data: select_candidatos_compativeis.data,
+            response_time: Date.now() - tempo_inicial
+        };
+    }else{
+        return {
+            sucess: false,
+            message: select_candidatos_compativeis.message,
+            response_time: Date.now() - tempo_inicial
+        };
+    }
+
+}
+
+
 module.exports = {
     newCandidato,
+    getCandidato,
+    getCandidatosCompativeis,
 };

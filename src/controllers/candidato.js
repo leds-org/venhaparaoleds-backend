@@ -73,22 +73,22 @@ async function procurarCandidato(req, res){
     }
 }
 
-//Função para listar os candidatos compatíveis a um candidato
+//Função para listar os concursos compatíveis a um candidato
 //Parâmetros: lista de profissoes do candidato
 //Retorna: lista de candidatos compatíveis ou mensagem de erro
 async function listarCandidatosCompativeis(req, res){
-    const { profissoes } = req.query;
-        if (!profissoes){
+    const { codigo } = req.query;
+        if (!codigo){
             return res.status(400).send(
                 {
                     sucess: false,
-                    error_message: "Ao menos uma profissão deve ser fornecida.",
+                    error_message: "Codigo do concurso nao foi fornecido.",
                     response_time: Date.now() - tempo_inicial
                 }
             )
         }
         else{
-            const get_candidatos = await candidatoService.getCandidatosCompativeis(cpf);
+            const get_candidatos = await candidatoService.getCandidatosCompativeis(codigo);
     
             if(get_candidatos.sucess === true){
                 res.status(200).send(
