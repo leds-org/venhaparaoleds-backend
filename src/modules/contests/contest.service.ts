@@ -1,5 +1,5 @@
 import prisma from "../../prismaClient";
-import { HttpException } from "../../utils/HttpException";
+import { HttpException } from "../../utils/httpException";
 
 // funcao auxiliar para encontrar um concurso pelo código
 async function findContestByCode(code: number) {
@@ -19,13 +19,6 @@ async function findContestByCode(code: number) {
     // Se o erro for uma exceção personalizada, relança
     if (error instanceof HttpException) {
       throw error;
-    } else {
-      // Caso contrário, lança uma exceção 500 com mensagem de erro
-      const message =
-        error instanceof Error
-          ? `Internal error while checking contest: ${error.message}`
-          : "Unexpected error occurred while checking contest";
-      throw new HttpException(500, message);
     }
   }
 }
@@ -68,13 +61,6 @@ export default class ContestService {
       if (error instanceof HttpException) {
         throw error;
       }
-      // Caso contrário, lança uma exceção 500 com mensagem de erro generica
-      throw new HttpException(
-        500,
-        `Error retrieving candidates for contest: ${
-          error instanceof Error ? error.message : "Unknown error"
-        }`
-      );
     }
   }
 }

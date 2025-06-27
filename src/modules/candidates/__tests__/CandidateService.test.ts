@@ -46,8 +46,8 @@ describe("CandidateService", () => {
     const contests = await service.getContestsByCPF("123.234.567-89");
 
     // Verifica se o resultado contém apenas o concurso com a profissão correspondente
-    expect(contests).toHaveLength(1);
-    expect(contests[0].agency).toBe("SEDU");
+    expect(contests && contests).toHaveLength(1);
+    expect(contests && contests[0].agency).toBe("SEDU");
   });
 });
 

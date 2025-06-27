@@ -1,4 +1,4 @@
-import { HttpException } from "../../utils/HttpException";
+import { HttpException } from "../../utils/httpException";
 import prisma from "../../prismaClient";
 
 // Função auxiliar para encontrar um candidato pelo CPF
@@ -20,14 +20,6 @@ async function findCandidateByCPF(cpf: string) {
     // Se o erro for uma exceção personalizada, relança
     if (error instanceof HttpException) {
       throw error;
-    } else {
-      // Caso contrário, lança uma exceção 500 com mensagem de erro
-
-      const message =
-        error instanceof Error
-          ? `Internal error while checking candidate: ${error.message}`
-          : "Unexpected error occurred while checking candidate";
-      throw new HttpException(500, message);
     }
   }
 }
@@ -42,6 +34,11 @@ export default class CandidateService {
     try {
       // Busca o candidato pelo CPF
       const candidate = await findCandidateByCPF(cpf);
+
+      // Garante que o candidato foi encontrado antes de acessar suas propriedades
+      if (!candidate) {
+        throw new HttpException(404, "Candidate not found");
+      }
 
       // Pega e Converte as profissões do candidato de JSON para array
       // Isso é necessário porque as profissões são armazenadas como uma string JSON no banco de dados pois usei o sqlite e ele não suporta arrays
@@ -74,13 +71,6 @@ export default class CandidateService {
       if (error instanceof HttpException) {
         throw error;
       }
-      // Caso contrário, lança uma exceção 500 com mensagem de erro
-      throw new HttpException(
-        500,
-        `Error retrieving contests for candidate: ${
-          error instanceof Error ? error.message : "Unknown error"
-        }`
-      );
     }
   }
 }

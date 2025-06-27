@@ -1,12 +1,11 @@
 import { Response, Request } from "express";
 import ContestService from "./contest.service";
-import { HttpException } from "../../utils/HttpException";
+import { HttpException } from "../../utils/httpException";
 const contestService = new ContestService();
 
 export default class ContestController {
   // Método para obter candidatos por código de concurso
   async getCandidatesByContestCode(req: Request, res: Response): Promise<any> {
-    try {
       // Extrai o código do concurso dos parâmetros da rota
       const { code } = req.params;
 
@@ -22,15 +21,5 @@ export default class ContestController {
       );
       // Retorna a lista de candidatos com status 200 OK
       return res.status(200).json(candidates);
-    } catch (e) {
-      // Em caso de erro customizado, retorna o status e mensagem
-      if (e instanceof HttpException) {
-        return res.status(e.status).json({ message: e.message });
-      }
-      // Em caso de erro inesperado, retorna status 500 e mensagem genérica
-      return res
-        .status(500)
-        .json({ message: "Erro interno inesperado no servidor." });
-    }
   }
 }
