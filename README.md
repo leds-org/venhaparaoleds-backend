@@ -88,12 +88,21 @@ Se você prefere rodar o projeto usando **Docker** e **Docker Compose**, siga es
 
 ## Testes
 
-Testes unitários estão implementados usando Jest e Supertest
+### Testes unitários e comportamentais estão implementados usando Jest e Supertest
 
 Para rodar os testes:  
 ```bash
 npm test
 ```
+### Testes Manuais com Clientes de API
+Se você preferir testar a API manualmente, pode usar uma ferramenta como Insomnia ou Postman.    
+Abaixo estão exemplos de endpoints que você pode experimentar (certifique-se de que sua aplicação esteja rodando em http://localhost:3000):
+
+Para recuperar um candidato específico:    
+`http://localhost:3000/api/candidates/311.667.973-47`
+
+Para recuperar um concurso específico:    
+`http://localhost:3000/api/contests/61828450843`
 
 ## Observações
 
