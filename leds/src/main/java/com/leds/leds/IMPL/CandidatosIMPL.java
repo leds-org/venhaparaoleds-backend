@@ -26,34 +26,47 @@ public class CandidatosIMPL implements CandidatosService {
     @Autowired
     private ConcursosRepository concursosRepository;
 
-    @Override
+       @Override
     public ResponseEntity<List<CandidatosDto>> findAll() {
+        try {
+            List<Candidatos> candidatos = candidatosRepository.findAll();
+            List<CandidatosDto> dtos = candidatos.stream()
+                    .map(CandidatosDto::new)
+                    .toList();
 
-        List<Candidatos> concursos = candidatosRepository.findAll();
-        return ResponseEntity.ok(concursos.stream().map(CandidatosDto::new).toList());
+            return ResponseEntity.ok(dtos);
+        } catch (Exception e) {
+            System.err.println("Erro ao buscar todos os candidatos: " + e.getMessage());
+            return ResponseEntity.internalServerError().build();
+        }
     }
 
     @Override
     public ResponseEntity<List<ConcursosDto>> getBuscarConcursosPorCpf(String cpf) {
-        Optional<Candidatos> candidatoOpt = candidatosRepository.findByCpf(cpf);
+        try {
+            Optional<Candidatos> candidatoOpt = candidatosRepository.findByCpf(cpf);
 
-        if (candidatoOpt.isEmpty()) {
-            return ResponseEntity.notFound().build();
+            if (candidatoOpt.isEmpty()) {
+                return ResponseEntity.notFound().build();
+            }
+
+            Candidatos candidato = candidatoOpt.get();
+
+            List<String> profissoesCandidato = candidato.getProfissoes().stream()
+                    .map(p -> p.getNome().toLowerCase().trim())
+                    .toList();
+
+            List<Concursos> concursos = concursosRepository.buscarPorProfissoes(profissoesCandidato);
+
+            List<ConcursosDto> concursosDto = concursos.stream()
+                    .map(ConcursosDto::new)
+                    .toList();
+
+            return ResponseEntity.ok(concursosDto);
+        } catch (Exception e) {
+            System.err.println("Erro ao buscar concursos por CPF [" + cpf + "]: " + e.getMessage());
+            return ResponseEntity.internalServerError().build();
         }
-
-        Candidatos candidato = candidatoOpt.get();
-
-        List<String> profissoesCandidato = candidato.getProfissoes().stream()
-                .map(p -> p.getNome().toLowerCase().trim())
-                .toList();
-
-        List<Concursos> concursos = concursosRepository.buscarPorProfissoes(profissoesCandidato);
-
-        List<ConcursosDto> concursosDto = concursos.stream()
-                .map(ConcursosDto::new)
-                .toList();
-
-        return ResponseEntity.ok(concursosDto);
     }
 
 }
