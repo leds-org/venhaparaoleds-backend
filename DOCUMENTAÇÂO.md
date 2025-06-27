@@ -3,18 +3,6 @@
 API REST desenvolvida com **Spring Boot 3**, **JPA**, **Lombok** e **H2 Database**, responsável por gerenciar candidatos, concursos públicos e relacioná-los com base em suas profissões e vagas.
 
 ---
-src/
- └── main/
-     ├── java/com/leds/leds/
-     │   ├── models/         -> Entidades (Candidatos, Concursos, Vagas, Profissao)
-     │   ├── dtos/           -> DTOs para retorno de API
-     │   ├── repositories/   -> Interfaces JPA
-     │   ├── services/       -> Interface de serviço
-     │   ├── IMPL/           -> Implementações da lógica
-     │   └── controllers/    -> Endpoints REST
-     └── resources/
-         ├── application.properties
-         └── data.sql        -> Dados para popular o banco dinâmico (opcional)
 
 
 ## 📦 Tecnologias e Dependências
@@ -31,9 +19,12 @@ src/
 
 ## ▶️ Endpoints
 GET /candidatos
-GET /candidatos/cpf
+
+GET /candidatos/cpf?cpf=xxx.xxx.xxx-xx
+
 GET /concursos
-GET /concursos/codigo
+
+GET /concursos/codigo?codigo=xxxxxxxxxxx
 
 ### ✅ Pré-requisitos
 
@@ -52,4 +43,42 @@ cd leds
 
 A aplicação iniciará por padrão em:
 📍 http://localhost:8080
+
+
+
+[
+{
+id: 1,
+orgao: "SEDU",
+edital: "9/2016",
+codigoDoConcurso: "61828450843",
+listaDeVagas: [
+{
+id: 1,
+cargo: "carpinteiro"
+},
+{
+id: 2,
+cargo: "analista de sistemas"
+},
+{
+id: 3,
+cargo: "marceneiro"
+}
+]
+},
+{
+id: 4,
+orgao: "IASES",
+edital: "14/2016",
+codigoDoConcurso: "74078423976",
+listaDeVagas: [
+{
+id: 1,
+cargo: "professor de matemática"
+}
+]
+},...
+
+
 
