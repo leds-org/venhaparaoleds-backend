@@ -115,62 +115,18 @@ async function selectCandidatoById(id){
         else{
             return {
                 sucess: false,
-                message: "Candidato nao encontrado.",
-                status_code: 404
-            };
+                message: "Candidatos não encontrados"
+            }
         }
-    } 
-
-    //Se, por algum motivo, der erro nas operações de consulta ao banco de dados, o fluxo desvia para o catch abaixo
-    catch(err) {
-        //Dado o código do erro gerado (considerando que seja um erro de banco de dados), verifica se código está registrado no pacote pgerrors
-        const err_code = err.code;
-        if(postgre_errors.hasOwnProperty(err_code)){
-            //Retorna objeto com mensagem de erro de acordo com o código gerado
-            return {
-                sucess: false,
-                message: postgre_errors.err_code.message,
-                status_code: postgre_errors.err_code.message 
-            };
-        }
-        else{
-            //Retorna um objeto com mensagem de erro desconhecido de bd caso o código seja de um erro não registrado 
-            return {
-                sucess: false,
-                message: "Erro desconhecido no banco de dados ou na aplicacao.",
-                status_code: 500
-            };
+        
+    }catch(err){
+        return {
+            sucess: false,
+            message: err
         }
     }
-}
 
-async function selectCandidatosCompativeis(codigo){
-    //...
-    
-    
-    try {
-
-    } 
-    catch(err) {
-        const err_code = err.code;
-        if(postgre_errors.hasOwnProperty(err_code)){
-            return {
-                sucess: false,
-                message: postgre_errors.err_code.message,
-                status_code: postgre_errors.err_code.message 
-            };
-        }
-        else{
-            return {
-                sucess: false,
-                message: "Erro desconhecido no banco de dados ou na aplicacao.",
-                status_code: 500
-            };
-        }
-    }
-}
-
-
+};
 
 
 module.exports = {
