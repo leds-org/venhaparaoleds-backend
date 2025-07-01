@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "9FMcdAR0+a8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leona\\OneDrive\\Área de Trabalho\\Projetos GitHub\\venhaparaoleds-leonarda\\VenhaParaOLEDS\\VenhaParaOLEDS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leona\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
+    "C:\\Users\\leona\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
