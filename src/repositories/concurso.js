@@ -1,32 +1,28 @@
 const db = require('../config/database');
+const postgre_errors = require('../config/pgerrors');
 
-async function listConcursosByRole(limit, offset, role){
+//Importa funções de criptografia e descriptografia
+import { criptInfo, decriptInfo } from '../config/criptography';
 
-    try{
-        const list_concursos = await db.query("SELECT * FROM CONCURSO WHERE profissoes=ANY($1) LIMIT $2 OFFSET $3", [role, limit, offset]);
+//Importa função para gerar o uuid
+import uuid4 from 'uuid4';
+ 
 
-        if(list_concursos.rowCount > 0){
-            return {
-                sucess: true,
-                concursos: list_concursos.rows[0]
-            }
-        }else{
-            return {
-                sucess: false,
-                message: "Nenhum concurso encontrado"
-            }
-        }
-        
-    }catch(err){
-        return {
-            sucess: false,
-            message: err
-        }
-    }
+async function insertnewConcurso(data){
 
-};
+}
 
+async function selectConcursoById(id){
+
+}
+
+async function selectConcursosCompativeis(cpf){
+
+
+}
 
 module.exports = {
-    listConcursosByRole,
+    insertnewConcurso,
+    selectConcursoById,
+    selectConcursosCompativeis
 };

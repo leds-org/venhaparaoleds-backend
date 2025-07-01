@@ -1,35 +1,29 @@
 # Sobre o projeto
-
-<<<<<<< HEAD
-Este projeto de software, descrito nesta documentação, implementa o Frontend e o Backend de uma aplicação web de **gerenciamento de concursos online e candidatos**, feito baseado nas descrições e requisitos especificados no teste final de admissão proposto pelo **Laboratório de Extensão e Desenvolvimento de Soluções (LEDS)**, programa de extensão ligado ao **Instituto Federal do Espírito Santo (IFES)**.
-=======
 Este projeto de software, descrito nesta documentação, implementa o Backend de uma aplicação web de **gerenciamento de concursos online e candidatos**, feito baseado nas descrições e requisitos especificados no desafio técnico proposto pelo **Laboratório de Extensão e Desenvolvimento de Soluções (LEDS)**, programa de extensão ligado ao **Instituto Federal do Espírito Santo (IFES)**.
->>>>>>> 2a3173a (docs(LedsAPI): Melhorando estrutura da documentação)
+
 
 
 ## 🛠️ Tecnologias utilizadas
 
-<<<<<<< HEAD
-**Framework:** Node JS
-=======
+
 **Framework:** Express JS
->>>>>>> 2a3173a (docs(LedsAPI): Melhorando estrutura da documentação)
+
 
 **Ling de programação:** Javascript (JS)
 
 **Banco de Dados/RDBMS:** PostgreSQL
 
 **Principais módulos:**
-<<<<<<< HEAD
+
 - crypto (pacote usado para criptografia e descriptografia de dados no backend); 
-- express (módulo que facilita a criação de aplicações backend em node js e auxilia no gerenciamento de rotas )
+- express (módulo que facilita a criação de aplicações backend em node js e auxilia no gerenciamento de rotas );
 
 # 📌 Modelagem do Projeto
 Esta seção apresentará o projeto sob o ponto de vista arquitetural, mostrando sua estrutura, implementações além das esperadas pelo teste proposto e a organização dos módulos e componentes nos diretórios de cada parte da aplicação.
-=======
+
 - crypto (pacote usado para criptografia e descriptografia de dados); 
 - express (possibilita uso do Express JS)
->>>>>>> 2a3173a (docs(LedsAPI): Melhorando estrutura da documentação)
+
 
 ---
 
@@ -46,9 +40,7 @@ Esta seção apresentará o projeto sob o ponto de vista arquitetural, mostrando
 ## 🏗 Padrão de Arquitetura
 Esta API possui a arquitetura construída com base na representação da imagem abaixo:
 
-<<<<<<< HEAD
 📌 **Imagem do modelo de arquitetura**:
-=======
 ![diagrama de arquitetura do projeto](https://i.imgur.com/2HCnmax.png)
 
 O projeto foi construído com um padrão específico de retorno de JSONs entre as camadas da aplicação:
@@ -66,7 +58,6 @@ O projeto foi construído com um padrão específico de retorno de JSONs entre a
 
 O pacote **config** servirá como uma camada auxiliar para o repository e para o módulo de inicialização da API; isto pois o config tem um módulo que lida com criptografia/descriptografia (utilizado pela camada repository) e o módulo de configuração da instância do banco de dados (utilizado pelo index.js da aplicação). 
 
->>>>>>> 2a3173a (docs(LedsAPI): Melhorando estrutura da documentação)
 
 ## 🐘 Modelagem do Banco de Dados
 

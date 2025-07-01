@@ -1,7 +1,5 @@
 const candidatoRepos = require('../repositories/candidato');//Import da camada de repositorio, para acessar aos métodos de interção direta com o banco de dados
 
-const concursoRepos = require('./concurso');//Import da camada de serviço de concurso (para pegar método getConcurso)
-
 //Import do módulo de criptografia
 const crypt = require('../config/criptography');
 
@@ -16,13 +14,14 @@ async function newCandidato(data){
             status_code: 400,
             response_time: Date.now() - tempo_inicial
         };
-    }
+    } 
 
     const insert_new_candidato = await candidatoRepos.insertNewCandidato(data);
 
     if(insert_new_candidato.sucess === true){
         return {
             sucess: true,
+            status_code: insert_new_candidato.status_code,
             response_time: Date.now() - tempo_inicial,
         }
     }
@@ -55,14 +54,16 @@ async function getCandidato(id){
     if (select_candidato_by_id.sucess === true){
         return {
             sucess: true,
-            data: insert_new_candidato.data,
+            data: select_candidato_by_id.data,
+            status_code: select_candidato_by_id.status_code,
             response_time: Date.now() - tempo_inicial
         };
     }
     else{
         return {
             sucess: false,
-            message: insert_new_candidato.message,
+            message: select_candidato_by_id.message,
+            status_code: select_candidato_by_id.status_code,
             response_time: Date.now() - tempo_inicial
         };
     }
@@ -70,6 +71,7 @@ async function getCandidato(id){
 
 async function getCandidatosCompativeis(codigo){
     const tempo_inicial = Date.now();
+
     if (!codigo) {
         return {
             sucess: false,
@@ -86,12 +88,14 @@ async function getCandidatosCompativeis(codigo){
         return {
             sucess: true,
             data: select_candidatos_compativeis.data,
+            status_code: select_candidatos_compativeis.status_code,           
             response_time: Date.now() - tempo_inicial
         };
     }else{
         return {
             sucess: false,
             message: select_candidatos_compativeis.message,
+            status_code: select_candidatos_compativeis.status_code,
             response_time: Date.now() - tempo_inicial
         };
     }
