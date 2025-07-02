@@ -18,7 +18,7 @@ public class ConcursoService {
         return concursoRepository.findAll();
     }
 
-    public Concurso add(Concurso concurso){
+    public Concurso save(Concurso concurso){
         return concursoRepository.save(concurso);
     }
 }

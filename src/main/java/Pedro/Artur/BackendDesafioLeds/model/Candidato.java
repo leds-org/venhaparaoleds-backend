@@ -2,26 +2,26 @@ package Pedro.Artur.BackendDesafioLeds.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.context.annotation.Primary;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name="tb_candidato")
 public class Candidato {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    private Date dataNascimento;
-    private String cpf;
+    private Long id;
     private String nome;
-    private List<String> profissoes = new ArrayList<>();
+    private String cpf;
+    private String dataNascimento; //futuramente trocar o tipo para Date
+
+    private List<String> profissoes;
 
 
 }

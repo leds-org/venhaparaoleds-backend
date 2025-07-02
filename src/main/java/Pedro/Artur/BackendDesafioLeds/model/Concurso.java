@@ -1,28 +1,23 @@
 package Pedro.Artur.BackendDesafioLeds.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
-
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name="tb_concurso")
 public class Concurso {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-
+    private Long id;
     private String orgao;
     private String edital;
     private Long codigo;
-    private List<String> profissoes = new ArrayList<>();
-
-
+    private List<String> profissoes;
 
 }
