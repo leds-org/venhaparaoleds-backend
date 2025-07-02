@@ -1,0 +1,17 @@
+version: 3.9;
+
+services: 
+  sqlserver: 
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sqlserver
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "Leds2025@Dev"
+      ACCEPT_EULA: "Y"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
