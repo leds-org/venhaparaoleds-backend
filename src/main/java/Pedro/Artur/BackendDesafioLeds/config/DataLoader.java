@@ -19,8 +19,8 @@ public class DataLoader implements CommandLineRunner {
     private final CandidatoService candidatoService;
     private final ConcursoService concursoService;
 
-    public DataLoader(CandidatoService candidatoSerive, ConcursoService concursoService){
-        this.candidatoService = candidatoSerive;
+    public DataLoader(CandidatoService candidatoService, ConcursoService concursoService){
+        this.candidatoService = candidatoService;
         this.concursoService = concursoService;
     }
 
@@ -29,7 +29,6 @@ public class DataLoader implements CommandLineRunner {
         return Arrays.stream(RawList.split(",")).map(String::trim).toList();
     }
 
-    //transforma uma string em um objeto Candidato
     public Candidato parseCandidato(String raw){
         String[] dados = raw.split(",", 4);
         String nome = dados[0];
@@ -40,7 +39,6 @@ public class DataLoader implements CommandLineRunner {
         return new Candidato(null,nome,cpf,dataNasc,profissoes);
     }
 
-    //lê as linhas do arquivo candidatos.txt e os salva no banco de dados
     public void carregaCandidato() throws IOException {
         Path path = Paths.get("src/main/resources/candidatos.txt");
         List<String> line = Files.readAllLines(path);
@@ -50,7 +48,7 @@ public class DataLoader implements CommandLineRunner {
             candidatoService.save(candidato);
         }
     }
-    //transforma uma string em um objeto Concurso
+
     public Concurso parseConcurso(String raw){
         String[] dados = raw.split(",", 4);
         String orgao = dados[0];
@@ -61,7 +59,6 @@ public class DataLoader implements CommandLineRunner {
         return new Concurso(null,orgao,edital,codigo,profissoes);
     }
 
-    //carrega os dados do arquivo concurso.txt no banco de dados
     public void carregaConcurso() throws IOException {
         Path path = Paths.get("src/main/resources/concursos.txt");
         List<String> line = Files.readAllLines(path);

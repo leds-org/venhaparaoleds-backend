@@ -18,6 +18,7 @@ public class Concurso {
     private String orgao;
     private String edital;
     private Long codigo;
+    @ElementCollection
     private List<String> profissoes;
 
 }
