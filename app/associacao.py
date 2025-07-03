@@ -21,7 +21,7 @@ def obter_candidatos_por_profissao(db: Session, profissoes: list[str]):
         or_(*[models.Candidato.profissoes.any(p) for p in profissoes])
     ).all()
 
-def obter_concurso_por_codigo_concurso(db: Session, codigo_concurso: str):
+def obter_concurso_por_codigo(db: Session, codigo_concurso: str):
     return db.query(models.Concurso).filter(models.Concurso.codigo_concurso == codigo_concurso).first()
 
 def criar_concurso(db: Session, concurso: schemas.CriarConcurso):

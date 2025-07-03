@@ -1,4 +1,4 @@
-#N -> N
+# N -> N
 from sqlalchemy import Column, String, Date
 from sqlalchemy.dialects.postgresql import ARRAY
 from ..database import Base

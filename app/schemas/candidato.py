@@ -15,7 +15,6 @@ class Candidato(DadosCandidato):
     class Config:
         orm_mode = True
 
-# Schema para a resposta da busca de candidatos por concurso
 class InfoCandidato(BaseModel):
     nome: str
     data_nascimento: date

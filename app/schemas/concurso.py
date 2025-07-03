@@ -1,23 +1,23 @@
 from pydantic import BaseModel
 from typing import List
 
-class ContestBase(BaseModel):
+class DadosConcurso(BaseModel):
     codigo_concurso: str
     orgao: str
     edital: str
     vagas: List[str]
 
-class ContestCreate(ContestBase):
+class CriarConcurso(DadosConcurso):
     pass
 
-class Contest(ContestBase):
+class Concurso(DadosConcurso):
     class Config:
         orm_mode = True
 
 # Schema para a resposta da busca de concursos por candidato
-class ContestInfo(BaseModel):
-    organ: str
-    code: str
+class InfoConcurso(BaseModel):
+    orgao: str
+    codigo_concurso: str
     edital: str
 
     class Config:
