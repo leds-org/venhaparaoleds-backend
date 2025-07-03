@@ -16,23 +16,22 @@ def criar_candidato(db: Session, candidate: schemas.CriarCandidato):
     db.refresh(db_candidate)
     return db_candidate
 
-def get_candidates_by_professions(db: Session, professions: list[str]):
+def obter_candidatos_por_profissao(db: Session, profissoes: list[str]):
     return db.query(models.Candidato).filter(
-        or_(*[models.Candidato.professions.any(p) for p in professions])
+        or_(*[models.Candidato.profissoes.any(p) for p in profissoes])
     ).all()
 
-# Funções para Concursos
-def get_contest_by_code(db: Session, code: str):
-    return db.query(models.Concurso).filter(models.Concurso.code == code).first()
+def obter_concurso_por_codigo_concurso(db: Session, codigo_concurso: str):
+    return db.query(models.Concurso).filter(models.Concurso.codigo_concurso == codigo_concurso).first()
 
-def create_contest(db: Session, contest: schemas.ContestCreate):
-    db_contest = models.Concurso(**contest.dict())
-    db.add(db_contest)
+def criar_concurso(db: Session, concurso: schemas.CriarConcurso):
+    db_concurso = models.Concurso(**concurso.dict())
+    db.add(db_concurso)
     db.commit()
-    db.refresh(db_contest)
-    return db_contest
+    db.refresh(db_concurso)
+    return db_concurso
 
-def get_contests_by_vacancies(db: Session, vacancies: list[str]):
+def obter_concurso_por_vagas(db: Session, vagas: list[str]):
     return db.query(models.Concurso).filter(
-        or_(*[models.Concurso.vacancies.any(v) for v in vacancies])
+        or_(*[models.Concurso.vagas.any(v) for v in vagas])
     ).all()
