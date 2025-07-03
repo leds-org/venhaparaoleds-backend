@@ -1,32 +1,4 @@
 # Desafio Backend - LEDS
-*Bem-vindo!* 👋
-
-Neste desafio, você terá a oportunidade de demonstrar que possui as habilidades necessárias para atuar no time de backend do laboratório.
-
-# Contextualização
-
-O desafio é desenvolver um programa que permita realizar as seguintes buscas: 
-1. Listar os **órgãos, códigos e editais dos concursos públicos** que se encaixam no perfil do candidato, tomando como base o seu **CPF**; 
-2. Listar o **nome, data de nascimento e o CPF** dos candidatos que se encaixam no perfil do concurso tomando com base o **Código do Concurso** do concurso público;
-
-O arquivo **candidatos.txt** contém as informações dos candidatos:
-
-| Nome  | Data de Nascimento  | CPF |  Profissões|
-|---|---|---|---|
-| Lindsey Craft  |  19/05/1976  |  182.845.084-34  |  [carpinteiro]  | 
-| Jackie Dawson  |  14/08/1970  |  311.667.973-47  |  [marceneiro, assistente administrativo]  |
-| Cory Mendoza |   11/02/1957 |  565.512.353-92  |  [carpinteiro, marceneiro] |
-
-O arquivo **concursos.txt** contém as informações dos concursos públicos:
-
-| Órgão  | Edital  | Código do Concurso | Lista de vagas|
-|---|---|---|---|
-| SEDU  | 9/2016  |  61828450843  |  [analista de sistemas, marceneiro]  | 
-| SEJUS | 15/2017  |  61828450843  |  [carpinteiro,professor de matemática,assistente administrativo] |
-| SEJUS | 17/2017 |  95655123539  |  [professor de matemática] |
-
-🤩 **As tecnologias a serem utilizadas na implementação da solução ficam a seu critério!**
-
 # Como entregar?
 1. Faça um **fork** do repositório. Nesse fork esperamos encontrar uma documentação completa da solução e a listagem dos diferenciais implementados.
 2. Abra um **pull request (PR)** do seu fork para o nome repositório com o seu nome como título. Assim conseguimos te localizar melhor e ver que você já finalizou o desafio!

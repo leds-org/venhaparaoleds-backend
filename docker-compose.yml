@@ -11,6 +11,19 @@ services:
       ACCEPT_EULA: "Y"
     networks:
       - app_network
+  api:
+    build:
+      context: ./VenhaParaOLEDS
+    container_name: venha_api
+    ports:
+      - "8080:8080"
+    depends_on:
+      - sqlserver
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - app_network
+
 
 networks:
   app_network:
