@@ -1,11 +1,11 @@
+#N -> N
 from sqlalchemy import Column, String, Date
-from sqlalchemy.orm import relationship
-from app.core.db import Base
-from .uniao import candidato_profissao
+from sqlalchemy.dialects.postgresql import ARRAY
+from ..database import Base
 
 class Profissao(Base):
     __tablename__ = 'profissoes'
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(String, primary_key=True, index=True)
     nome = Column(String, unique=True, index=True)
 
 class Candidato(Base):
@@ -13,4 +13,4 @@ class Candidato(Base):
     cpf = Column(String, primary_key=True, index=True)
     nome = Column(String, index=True)
     data_nascimento = Column(Date)
-    profissoes = relationship("Profissao", secondary=candidato_profissao, backref="candidatos")
+    profissoes = Column(ARRAY(String))
