@@ -10,6 +10,8 @@ namespace VenhaParaOLEDS.Models
         public required string Nome { get; set; }
         public DateTime DataNascimento { get; set; }
         public required string CPF { get; set; }
-        public required List<string> Profissoes { get; set; }
+
+        //Relação 1:N com Profissoes
+        public List<Profissao> Profissoes { get; set; } = new();
     }
 }

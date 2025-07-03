@@ -11,7 +11,9 @@ namespace VenhaParaOLEDS.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
         // Table Candidatos
         public DbSet<Candidato> Candidatos { get; set; }
+        public DbSet<Profissao> Profissoes { get; set; }
         // Table Concursos
         public DbSet<Concurso> Concursos { get; set; } 
+        public DbSet<Vaga> Vagas { get; set; }
     }
 }

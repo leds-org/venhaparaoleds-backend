@@ -41,10 +41,6 @@ namespace VenhaParaOLEDS.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.PrimitiveCollection<string>("Profissoes")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
                     b.ToTable("Candidatos");
@@ -70,13 +66,85 @@ namespace VenhaParaOLEDS.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.PrimitiveCollection<string>("Vagas")
+                    b.HasKey("Id");
+
+                    b.ToTable("Concursos");
+                });
+
+            modelBuilder.Entity("VenhaParaOLEDS.Models.Profissao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CandidatoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Concursos");
+                    b.HasIndex("CandidatoId");
+
+                    b.ToTable("Profissoes");
+                });
+
+            modelBuilder.Entity("VenhaParaOLEDS.Models.Vaga", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ConcursoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ConcursoId");
+
+                    b.ToTable("Vagas");
+                });
+
+            modelBuilder.Entity("VenhaParaOLEDS.Models.Profissao", b =>
+                {
+                    b.HasOne("VenhaParaOLEDS.Models.Candidato", "Candidato")
+                        .WithMany("Profissoes")
+                        .HasForeignKey("CandidatoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Candidato");
+                });
+
+            modelBuilder.Entity("VenhaParaOLEDS.Models.Vaga", b =>
+                {
+                    b.HasOne("VenhaParaOLEDS.Models.Concurso", "Concurso")
+                        .WithMany("Vagas")
+                        .HasForeignKey("ConcursoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Concurso");
+                });
+
+            modelBuilder.Entity("VenhaParaOLEDS.Models.Candidato", b =>
+                {
+                    b.Navigation("Profissoes");
+                });
+
+            modelBuilder.Entity("VenhaParaOLEDS.Models.Concurso", b =>
+                {
+                    b.Navigation("Vagas");
                 });
 #pragma warning restore 612, 618
         }
