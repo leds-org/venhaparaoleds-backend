@@ -13,6 +13,6 @@ namespace VenhaParaOLEDS.Models
 
         // Navegação para Candidato
         [ForeignKey("CandidatoId")]
-        public Candidato Candidato { get; set; }
+        public Candidato Candidato { get; set;}
     }
 }
