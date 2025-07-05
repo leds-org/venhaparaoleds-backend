@@ -4,6 +4,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Microsoft.OpenApi.Writers;
 using Microsoft.Data.SqlClient;
+using VenhaParaOLEDS.Services;
 
 // Método utilitário para esperar o banco
 static void EsperarSQLServer(string connectionString)
@@ -28,13 +29,13 @@ static void EsperarSQLServer(string connectionString)
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-if (!builder.Environment.IsDevelopment())
-{
-    EsperarSQLServer(connectionString);
-}
+
+EsperarSQLServer(connectionString);
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseSqlServer(connectionString + ";Initial Catalog=VenhaParaOLEDSDb"));
+
+builder.Services.AddScoped<ImportadorService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -55,6 +56,15 @@ using (var scope = app.Services.CreateAsyncScope())
     Console.WriteLine("Aplicando migrations...");
     db.Database.Migrate();
     Console.WriteLine("Migrations aplicadas com successo.");
+}
+
+
+// Importar os dados dos arquivos txt antes de rodar a aplicação
+using (var scope = app.Services.CreateScope())
+{
+    var importador = scope.ServiceProvider.GetRequiredService<ImportadorService>();
+    importador.ImportarCandidatos();
+    importador.ImportarConcursos();
 }
 
 // Middleware

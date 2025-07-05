@@ -21,6 +21,8 @@ services:
       - sqlserver
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - ./dados:/app/dados
     networks:
       - app_network
 
