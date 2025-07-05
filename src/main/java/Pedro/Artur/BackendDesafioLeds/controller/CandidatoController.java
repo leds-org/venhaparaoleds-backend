@@ -1,7 +1,7 @@
 package Pedro.Artur.BackendDesafioLeds.controller;
 
+import Pedro.Artur.BackendDesafioLeds.dtos.ConcursoResponseDTO;
 import Pedro.Artur.BackendDesafioLeds.model.Candidato;
-import Pedro.Artur.BackendDesafioLeds.model.Concurso;
 import Pedro.Artur.BackendDesafioLeds.service.CandidatoService;
 import Pedro.Artur.BackendDesafioLeds.service.ConcursoService;
 import org.springframework.web.bind.annotation.*;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/candidato")
+@RequestMapping("/candidatos")
 public class CandidatoController {
     private final CandidatoService candidatoService;
     private final ConcursoService concursoService;
@@ -20,18 +20,18 @@ public class CandidatoController {
     }
 
     @GetMapping
-    public List<Candidato> getAll(){
-        return candidatoService.getAll();
+    public List<Candidato> listarTodos(){
+        return candidatoService.ListarTodos();
     }
 
     @PostMapping
-    public Candidato add(@RequestBody Candidato candidato){
-        return candidatoService.save(candidato);
+    public Candidato adicionar(@RequestBody Candidato candidato){
+        return candidatoService.salvar(candidato);
     }
 
     @GetMapping("/{cpf}/concursos")
-    public List<Concurso> BuscarConcursosCompativeisPorCpf(@PathVariable String cpf){
-        return concursoService.BuscarConcursosCompativeisPorCpf(cpf);
+    public List<ConcursoResponseDTO> BuscarConcursosCompativeisPorCpf(@PathVariable String cpf){
+        return concursoService.buscarConcursosCompativeisPorCpf(cpf);
     }
 
 

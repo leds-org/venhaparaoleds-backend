@@ -10,7 +10,7 @@ import java.util.Set;
 
 public interface CandidatoRepository extends JpaRepository<Candidato, Long> {
     @Query("Select c From Candidato c JOIN c.profissoes p WHERE p IN :profissoes")
-    List<Candidato> findCandidatosCompativeis(@Param("profissoes") Set<String> profissoes);
+    List<Candidato> BuscarCandidatosCompativeis(@Param("profissoes") Set<String> profissoes);
 
     Candidato findByCpf(String cpf);
 }

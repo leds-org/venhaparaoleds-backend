@@ -1,5 +1,7 @@
 package Pedro.Artur.BackendDesafioLeds.service;
 
+import Pedro.Artur.BackendDesafioLeds.dtos.CandidatoResponseDTO;
+import Pedro.Artur.BackendDesafioLeds.mapper.CandidatoMapper;
 import Pedro.Artur.BackendDesafioLeds.model.Candidato;
 import Pedro.Artur.BackendDesafioLeds.model.Concurso;
 import Pedro.Artur.BackendDesafioLeds.repository.CandidatoRepository;
@@ -20,24 +22,29 @@ public class CandidatoService {
         this.concursoRepository = concursoRepository;
     }
 
-    public List<Candidato> getAll(){
+    public List<Candidato> ListarTodos(){
         return candidatoRepository.findAll();
     }
 
-    public Candidato save(Candidato candidato){
+    public Candidato salvar(Candidato candidato){
         return candidatoRepository.save(candidato);
     }
 
-    public Candidato findByCpf(String cpf){
+    public Candidato BuscarPorCpf(String cpf){
         return candidatoRepository.findByCpf(cpf);
     }
 
-    public List<Candidato> findCandidatosCompativeis(Long codigo){
+    public List<CandidatoResponseDTO> BuscarCandidatosCompativeis(Long codigo){
         List<Concurso> concursos = concursoRepository.findByCodigo(codigo);
+
         Set<String> profissoes = concursos.stream()
                 .flatMap(concurso -> concurso.getProfissoes().stream())
                 .collect(Collectors.toSet());
 
-        return candidatoRepository.findCandidatosCompativeis(profissoes);
+        List<Candidato> candidatos = candidatoRepository.BuscarCandidatosCompativeis(profissoes);
+
+        return candidatos.stream()
+                .map(CandidatoMapper::toDTO)
+                .collect(Collectors.toList());
     }
 }

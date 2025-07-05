@@ -45,7 +45,7 @@ public class DataLoader implements CommandLineRunner {
 
         for(String raw: line){
             Candidato candidato = parseCandidato(raw);
-            candidatoService.save(candidato);
+            candidatoService.salvar(candidato);
         }
     }
 
@@ -65,7 +65,7 @@ public class DataLoader implements CommandLineRunner {
 
         for(String raw: line){
             Concurso concurso = parseConcurso(raw);
-            concursoService.save(concurso);
+            concursoService.salvar(concurso);
         }
     }
 

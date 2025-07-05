@@ -18,7 +18,7 @@ public class Candidato {
     private Long id;
     private String nome;
     private String cpf;
-    private String dataNascimento; //futuramente trocar o tipo para Date
+    private String dataNascimento;
     @ElementCollection
     private List<String> profissoes;
 
