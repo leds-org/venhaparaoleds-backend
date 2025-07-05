@@ -1,5 +1,6 @@
 package Pedro.Artur.BackendDesafioLeds.controller;
 
+import Pedro.Artur.BackendDesafioLeds.Utils.CpfUtils;
 import Pedro.Artur.BackendDesafioLeds.dtos.ConcursoResponseDTO;
 import Pedro.Artur.BackendDesafioLeds.model.Candidato;
 import Pedro.Artur.BackendDesafioLeds.service.CandidatoService;
@@ -19,19 +20,9 @@ public class CandidatoController {
         this.concursoService = concursoService;
     }
 
-    @GetMapping
-    public List<Candidato> listarTodos(){
-        return candidatoService.ListarTodos();
-    }
-
-    @PostMapping
-    public Candidato adicionar(@RequestBody Candidato candidato){
-        return candidatoService.salvar(candidato);
-    }
-
     @GetMapping("/{cpf}/concursos")
     public List<ConcursoResponseDTO> BuscarConcursosCompativeisPorCpf(@PathVariable String cpf){
-        return concursoService.buscarConcursosCompativeisPorCpf(cpf);
+        return concursoService.buscarConcursosCompativeisPorCpf(CpfUtils.limpar(cpf));
     }
 
 

@@ -1,5 +1,6 @@
 package Pedro.Artur.BackendDesafioLeds.mapper;
 
+import Pedro.Artur.BackendDesafioLeds.Utils.CpfUtils;
 import Pedro.Artur.BackendDesafioLeds.dtos.CandidatoResponseDTO;
 import Pedro.Artur.BackendDesafioLeds.model.Candidato;
 
@@ -9,7 +10,7 @@ public class CandidatoMapper {
         CandidatoResponseDTO candidatoDto = new CandidatoResponseDTO();
         candidatoDto.setNome(candidato.getNome());
         candidatoDto.setDataNascimento(candidato.getDataNascimento());
-        candidatoDto.setCpf(candidato.getCpf());
+        candidatoDto.setCpf(CpfUtils.formatar(candidato.getCpf()));
 
         return candidatoDto;
     }

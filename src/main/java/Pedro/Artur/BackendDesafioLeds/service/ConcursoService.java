@@ -21,10 +21,6 @@ public class ConcursoService {
         this.candidatoRepository = candidatoRepository;
     }
 
-    public List<Concurso> listarTodos(){
-        return concursoRepository.findAll();
-    }
-
     public Concurso salvar(Concurso concurso){
         return concursoRepository.save(concurso);
     }
@@ -35,8 +31,11 @@ public class ConcursoService {
 
     public List<ConcursoResponseDTO> buscarConcursosCompativeisPorCpf(String cpf){
         Candidato candidato = candidatoRepository.findByCpf(cpf);
+
         List<String> profissoes = candidato.getProfissoes();
+
         List<Concurso> concursos = concursoRepository.BuscarConcursosCompativeisPorCpf(profissoes);
+
         return concursos.stream()
                 .map(ConcursoMapper::toDto)
                 .collect(Collectors.toList());

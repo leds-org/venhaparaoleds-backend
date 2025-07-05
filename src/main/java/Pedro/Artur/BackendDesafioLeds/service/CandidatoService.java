@@ -22,10 +22,6 @@ public class CandidatoService {
         this.concursoRepository = concursoRepository;
     }
 
-    public List<Candidato> ListarTodos(){
-        return candidatoRepository.findAll();
-    }
-
     public Candidato salvar(Candidato candidato){
         return candidatoRepository.save(candidato);
     }

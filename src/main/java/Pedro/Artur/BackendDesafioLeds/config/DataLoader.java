@@ -1,5 +1,6 @@
 package Pedro.Artur.BackendDesafioLeds.config;
 
+import Pedro.Artur.BackendDesafioLeds.Utils.CpfUtils;
 import Pedro.Artur.BackendDesafioLeds.model.Candidato;
 import Pedro.Artur.BackendDesafioLeds.model.Concurso;
 import Pedro.Artur.BackendDesafioLeds.service.CandidatoService;
@@ -32,8 +33,8 @@ public class DataLoader implements CommandLineRunner {
     public Candidato parseCandidato(String raw){
         String[] dados = raw.split(",", 4);
         String nome = dados[0];
-        String cpf = dados[1];
-        String dataNasc = dados[2];
+        String cpf = CpfUtils.limpar(dados[2]);
+        String dataNasc = dados[1];
         List<String> profissoes = parseToList(dados[3]);
 
         return new Candidato(null,nome,cpf,dataNasc,profissoes);

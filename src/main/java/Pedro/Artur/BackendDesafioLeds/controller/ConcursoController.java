@@ -20,11 +20,6 @@ public class ConcursoController {
         this.candidatoService = candidatoService;
     }
 
-    @GetMapping
-    public List<Concurso> listarTodos(){
-        return concursoService.listarTodos();
-    }
-
     @GetMapping(value = {"/{codigo}/candidatos"})
     public ResponseEntity<List<CandidatoResponseDTO>> findCandidatos(@PathVariable Long codigo){
         List<CandidatoResponseDTO> candidatos = candidatoService.BuscarCandidatosCompativeis(codigo);
