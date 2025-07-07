@@ -14,6 +14,18 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "npm"
+    "test": "npm",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-promise-router": "4.1.1",
+    "pg": "^8.11.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.32.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "uuid4": "2.0.3"
   }
 }

@@ -1,33 +1,128 @@
-const concursoService = require('../services/concurso');
+const concursoService = require('../services/concurso');//Se conecta com o serviço de concursos
 
-async function listConcursos(req, res){
-    //A requisição recebe um valor de limit, offset e uma role para ser usada na filtragem da consulta
-    const { limit, offset, role } = req.body;
+const tempo_inicial = performance.now();//Para ajudar a medir o tempo de resposta da API
 
-    //Faz a chamada de método de busca da camada Service
-    const get_concursos = await concursoService.getConcursos(limit, offset, role);
-
-    //Se a busca for bem-sucedida, retorna json com a lista dos concursos filtrados por profissão
-    if(get_concursos.sucess === true){
-        res.status(200).send(
-            {
-                sucess: true,
-                concursos: get_concursos.concursos
-            }
-        );
-    //Se houver algum erro, retorna json com mensagem de erro
-    }else{
-        res.status(get_concursos.status_code).send(
-            {
-                sucess: false,
-                error_message: get_concursos.message
-            }
-        );
-    }
+// Controller para gerenciar concursos
+// Parâmetros: codigo, orgao, edital, vagas
+// Retorna: mensagem de sucesso ou erro
+async function registrarConcurso(req, res){
+    const { codigo, orgao, edital, vagas } = req.body;
+    
+        const data = {
+            codigo,
+            orgao,
+            edital,
+            vagas
+        };
+    
+        const new_concurso = await concursoService.newConcurso(data);
+    
+        if(new_concurso.sucess === true){
+            const res_time = ((new_concurso.response_time - tempo_inicial)/1000);
+            res.status(200).send(
+                {
+                    sucess: true,
+                    response_time: res_time.toFixed(2)
+                }
+            )
+        }else{
+            const res_time = ((new_concurso.response_time - tempo_inicial)/1000);
+            res.status(get_Concursos.status_code).send(
+                {
+                    sucess: false,
+                    error_message: new_concurso.message,
+                    response_time: res_time.toFixed(2)
+                }
+            );
+        }
 
 };
 
+// Função para procurar um concurso já cadastrado
+// Parâmetros: id do concurso
+// Retorna: dados do concurso ou mensagem de erro
+async function procurarConcurso(req, res){
+    const { id } = req.query;
+
+    if (!id){
+        const res_time = ((performance.now() - tempo_inicial)/1000);
+        res.status(400).send(
+            {
+                sucess: false,
+                error_message: "ID do concurso não fornecido.",
+                response_time: res_time.toFixed(2)
+            }
+        )
+    }else{
+        const get_concurso = await concursoService.getConcurso(id);
+
+        if(get_concurso.sucess === true){
+            const res_time = ((get_concurso.response_time - tempo_inicial)/1000);
+            res.status(200).send(
+                {
+                    sucess: true,
+                    concurso: get_concurso.data,
+                    response_time: res_time.toFixed(2)
+                }
+            );
+        } 
+        else{
+            const res_time = ((get_concurso.response_time - tempo_inicial)/1000);
+            res.status(get_concurso.status_code).send(
+                {
+                    sucess: false,
+                    error_message: get_concurso.message,
+                    response_time: res_time.toFixed(2)
+                }
+            );
+        }
+
+    }
+}
+
+// Função para listar os concursos compatíveis a um candidato
+// Parâmetros: cpf do candidato
+// Retorna: lista de concursos compatíveis ou mensagem de erro
+async function listarConcursosCompativeis(req, res){
+    const { cpf } = req.query;
+    if (!cpf){
+        const res_time = ((performance.now() - tempo_inicial)/1000);
+        return res.status(400).send(
+            {
+                sucess: false,
+                error_message: "CPF do candidato não fornecido.",
+                response_time: res_time.toFixed(2)
+            }
+        )
+    }
+    else{
+        const get_concursos = await concursoService.getConcursosCompativeis (cpf);
+
+        if(get_concursos.sucess === true){
+            const res_time = ((get_concursos.response_time - tempo_inicial)/1000);
+            res.status(200).send(
+                {
+                    sucess: true,
+                    concursos: get_concursos.data,
+                    response_time: res_time.toFixed(2)
+                }
+            );
+        } 
+        else{
+            const res_time = ((get_concursos.response_time - tempo_inicial)/1000);
+            res.status(get_concursos.status_code).send(
+                {
+                    sucess: false,
+                    error_message: get_concursos.message,
+                    response_time: res_time.toFixed(2)
+                }
+            );
+        }
+    }
+}
 
 module.exports = {
-    listConcursos,
+    registrarConcurso,
+    procurarConcurso,
+    listarConcursosCompativeis,
 };

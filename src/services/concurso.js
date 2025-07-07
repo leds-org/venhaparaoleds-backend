@@ -1,47 +1,105 @@
-const concursoRepos = require('../repositories/concurso');
+const concursoRepos = require('../repositories/concurso');//Import da camada de repositorio, para acessar aos métodos de interção direta com o banco de dados
+
+//Import do módulo de criptografia
 const crypt = require('../config/criptography');
 
-async function getConcursos(limit, offset, role){
-    
-    if(limit != null && offset != null && role != null){
+async function newConcurso(data){
+    const tempo_inicial = performance.now();//Constante para marcar tempo inicial de execução
 
-        
-        const list_concursos = await concursoRepos.listConcursosByRole(limit, offset, role);
-            
-        if(list_concursos.sucess === true){
-            return {
-                sucess: true,
-                concursos: list_concursos.data,
-                status_code: 200
-            };
-        }else{
-            const { error_code } = list_concursos;
+    const { codigo, edital, orgao, vagas } = data;
 
-            if(error_code === 404){
-                return {
-                    sucess: false,
-                    status_code: list_concursos.error_code,
-                    message: list_concursos.message
-                };
-            } 
-            else{
-                return {
-                    sucess: false,
-                    status_code: list_concursos.error_code,
-                    message: "Erro de banco de dados"
-                };
-            }
-        } 
-
-    }else{
+    if (!codigo || !edital || !orgao || !vagas) {
         return {
             sucess: false,
-            message: "Faltam valores a serem preenchidos.",
-            status_code: 400
+            message: "Dados do concurso incompletos.",
+            status_code: 400,
+            response_time: performance.now() - tempo_inicial
+        };
+    }
+
+    const insert_new_concurso = await concursoRepos.insertNewConcurso(data);
+
+    if(insert_new_concurso.sucess === true){
+        return {
+            sucess: true,
+            response_time: performance.now() - tempo_inicial,
         }
+    }
+    else{
+        return {
+            sucess:false,
+            message: insert_new_concurso.message,
+            status_code: insert_new_concurso.status_code,
+            response_time: performance.now() - tempo_inicial
+        }
+    }
+
+
+}
+
+async function getConcurso(id){
+    const tempo_inicial = performance.now();
+    if (!id) {
+        return {
+            sucess: false,
+            message: "Id do concurso não informado.",
+            status_code: 400,
+            response_time: performance.now() - tempo_inicial
+        };
+    }
+
+    //Chama método do repositório de concurso
+    const select_concurso_by_id = await concursoRepos.selectConcursoById(id);
+
+    if (select_concurso_by_id.sucess === true){
+        return {
+            sucess: true,
+            data: select_concurso_by_id.data,
+            response_time: performance.now() - tempo_inicial
+        };
+    }
+    else{
+        return {
+            sucess: false,
+            message: select_concurso_by_id.message,
+            response_time: performance.now() - tempo_inicial
+        };
     }
 }
 
+async function getConcursosCompativeis(codigo){
+    const tempo_inicial = performance.now();
+    if (!codigo) {
+        return {
+            sucess: false,
+            message: "Codigo do concurso não informado.",
+            status_code: 400,
+            response_time: performance.now() - tempo_inicial
+        };
+    }
+
+    //Chama método do repósitorio de concurso
+    const select_concursos_compativeis = await concursoRepos.selectConcursosCompativeis(codigo);
+    
+    if(select_concursos_compativeis.sucess === true){
+        return {
+            sucess: true,
+            data: select_concursos_compativeis.data,
+            response_time: performance.now() - tempo_inicial
+        };
+    }else{
+        return {
+            sucess: false,
+            message: select_concursos_compativeis.message,
+            response_time: performance.now() - tempo_inicial
+        };
+    }
+
+}
+
+
 module.exports = {
-    getConcursos,
+    newConcurso,
+    getConcurso,
+    getConcursosCompativeis,
 };
