@@ -1,6 +1,6 @@
 package Pedro.Artur.BackendDesafioLeds.mapper;
 
-import Pedro.Artur.BackendDesafioLeds.Utils.CpfUtils;
+import Pedro.Artur.BackendDesafioLeds.utils.CpfUtils;
 import Pedro.Artur.BackendDesafioLeds.dtos.CandidatoResponseDTO;
 import Pedro.Artur.BackendDesafioLeds.model.Candidato;
 

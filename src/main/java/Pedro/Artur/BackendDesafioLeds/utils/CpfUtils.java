@@ -1,4 +1,4 @@
-package Pedro.Artur.BackendDesafioLeds.Utils;
+package Pedro.Artur.BackendDesafioLeds.utils;
 
 public class CpfUtils {
     public static String limpar(String cpf) {

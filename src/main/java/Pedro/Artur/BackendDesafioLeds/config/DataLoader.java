@@ -1,6 +1,6 @@
 package Pedro.Artur.BackendDesafioLeds.config;
 
-import Pedro.Artur.BackendDesafioLeds.Utils.CpfUtils;
+import Pedro.Artur.BackendDesafioLeds.utils.CpfUtils;
 import Pedro.Artur.BackendDesafioLeds.model.Candidato;
 import Pedro.Artur.BackendDesafioLeds.model.Concurso;
 import Pedro.Artur.BackendDesafioLeds.service.CandidatoService;

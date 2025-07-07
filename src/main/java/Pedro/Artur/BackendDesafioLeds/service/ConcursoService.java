@@ -1,24 +1,21 @@
 package Pedro.Artur.BackendDesafioLeds.service;
 
 import Pedro.Artur.BackendDesafioLeds.dtos.ConcursoResponseDTO;
+import Pedro.Artur.BackendDesafioLeds.exception.NotFoundCodigoException;
 import Pedro.Artur.BackendDesafioLeds.mapper.ConcursoMapper;
-import Pedro.Artur.BackendDesafioLeds.model.Candidato;
 import Pedro.Artur.BackendDesafioLeds.model.Concurso;
-import Pedro.Artur.BackendDesafioLeds.repository.CandidatoRepository;
 import Pedro.Artur.BackendDesafioLeds.repository.ConcursoRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 @Service
 public class ConcursoService {
     public final ConcursoRepository concursoRepository;
-    public final CandidatoRepository candidatoRepository;
 
-    public ConcursoService(ConcursoRepository concursoRepository, CandidatoRepository candidatoRepository){
+    public ConcursoService(ConcursoRepository concursoRepository){
         this.concursoRepository = concursoRepository;
-        this.candidatoRepository = candidatoRepository;
     }
 
     public Concurso salvar(Concurso concurso){
@@ -26,19 +23,16 @@ public class ConcursoService {
     }
 
     public List<Concurso> buscarPorCodigo(Long codigo){
-        return concursoRepository.findByCodigo(codigo);
+        List<Concurso> concursos = concursoRepository.findByCodigo(codigo);
+        if(concursos.isEmpty()){
+            throw new NotFoundCodigoException();
+        }
+        return concursos;
     }
 
-    public List<ConcursoResponseDTO> buscarConcursosCompativeisPorCpf(String cpf){
-        Candidato candidato = candidatoRepository.findByCpf(cpf);
-
-        List<String> profissoes = candidato.getProfissoes();
-
-        List<Concurso> concursos = concursoRepository.BuscarConcursosCompativeisPorCpf(profissoes);
-
-        return concursos.stream()
-                .map(ConcursoMapper::toDto)
-                .collect(Collectors.toList());
+    public List<ConcursoResponseDTO> buscarPorProfissoes(List<String> profissoes){
+        List<Concurso> concursos = concursoRepository.buscarConcursosCompativeisPorProfissoes(profissoes);
+        return concursos.stream().map(ConcursoMapper::toDTO).toList();
     }
-
 }
+
