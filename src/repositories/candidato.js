@@ -80,7 +80,7 @@ async function selectCandidatoById(id){
                 encryptedData: candidato_crypted.nome
             };
 
-            //Descriptografando dados com decriptInfo e salvando valores em um objeto
+            //Descriptografando dados com decriptInfo() e salvando valores em um objeto
             const data = {
                 nome: crypt.decriptInfo(nome_crypt_data),
 
@@ -102,7 +102,7 @@ async function selectCandidatoById(id){
         else{
             return {
                 sucess: false,
-                message: "Candidatos não encontrados",
+                message: "Candidato não encontrado",
                 status_code: 404
             }
         }

@@ -4,7 +4,8 @@ const concursoRepos = require('../repositories/concurso');//Import da camada de 
 const crypt = require('../config/criptography');
 
 async function newConcurso(data){
-    const tempo_inicial = Date.now();
+    const tempo_inicial = performance.now();//Constante para marcar tempo inicial de execução
+
     const { codigo, edital, orgao, vagas } = data;
 
     if (!codigo || !edital || !orgao || !vagas) {
@@ -12,16 +13,16 @@ async function newConcurso(data){
             sucess: false,
             message: "Dados do concurso incompletos.",
             status_code: 400,
-            response_time: Date.now() - tempo_inicial
+            response_time: performance.now() - tempo_inicial
         };
     }
 
-    const insert_new_concurso = await concursoRepos.insertNewconcurso(data);
+    const insert_new_concurso = await concursoRepos.insertNewConcurso(data);
 
     if(insert_new_concurso.sucess === true){
         return {
             sucess: true,
-            response_time: Date.now() - tempo_inicial,
+            response_time: performance.now() - tempo_inicial,
         }
     }
     else{
@@ -29,7 +30,7 @@ async function newConcurso(data){
             sucess:false,
             message: insert_new_concurso.message,
             status_code: insert_new_concurso.status_code,
-            response_time: Date.now() - tempo_inicial
+            response_time: performance.now() - tempo_inicial
         }
     }
 
@@ -37,43 +38,43 @@ async function newConcurso(data){
 }
 
 async function getConcurso(id){
-    const tempo_inicial = Date.now();
+    const tempo_inicial = performance.now();
     if (!id) {
         return {
             sucess: false,
             message: "Id do concurso não informado.",
             status_code: 400,
-            response_time: Date.now() - tempo_inicial
+            response_time: performance.now() - tempo_inicial
         };
     }
 
     //Chama método do repositório de concurso
-    const select_concurso_by_id = await concursoRepos.selectconcursoById(id);
+    const select_concurso_by_id = await concursoRepos.selectConcursoById(id);
 
     if (select_concurso_by_id.sucess === true){
         return {
             sucess: true,
-            data: insert_new_concurso.data,
-            response_time: Date.now() - tempo_inicial
+            data: select_concurso_by_id.data,
+            response_time: performance.now() - tempo_inicial
         };
     }
     else{
         return {
             sucess: false,
-            message: insert_new_concurso.message,
-            response_time: Date.now() - tempo_inicial
+            message: select_concurso_by_id.message,
+            response_time: performance.now() - tempo_inicial
         };
     }
 }
 
 async function getConcursosCompativeis(codigo){
-    const tempo_inicial = Date.now();
+    const tempo_inicial = performance.now();
     if (!codigo) {
         return {
             sucess: false,
             message: "Codigo do concurso não informado.",
             status_code: 400,
-            response_time: Date.now() - tempo_inicial
+            response_time: performance.now() - tempo_inicial
         };
     }
 
@@ -84,13 +85,13 @@ async function getConcursosCompativeis(codigo){
         return {
             sucess: true,
             data: select_concursos_compativeis.data,
-            response_time: Date.now() - tempo_inicial
+            response_time: performance.now() - tempo_inicial
         };
     }else{
         return {
             sucess: false,
             message: select_concursos_compativeis.message,
-            response_time: Date.now() - tempo_inicial
+            response_time: performance.now() - tempo_inicial
         };
     }
 

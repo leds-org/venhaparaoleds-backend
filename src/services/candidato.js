@@ -4,7 +4,7 @@ const candidatoRepos = require('../repositories/candidato');//Import da camada d
 const crypt = require('../config/criptography');
 
 async function newCandidato(data){
-    const tempo_inicial = performance.now();
+    const tempo_inicial = performance.now();//Constante para marcar tempo inicial de execução
     const { nome, cpf, data_nascimento, profissoes } = data;
 
     if (!nome || !cpf || !data_nascimento || !profissoes) {
