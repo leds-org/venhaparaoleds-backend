@@ -1,7 +1,6 @@
 package Pedro.Artur.BackendDesafioLeds.controller;
 
 import Pedro.Artur.BackendDesafioLeds.dtos.CandidatoResponseDTO;
-import Pedro.Artur.BackendDesafioLeds.service.CandidatoService;
 import Pedro.Artur.BackendDesafioLeds.service.MatchingService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,8 +17,7 @@ public class ConcursoController {
     }
 
     @GetMapping(value = {"/{codigo}/candidatos"})
-    public ResponseEntity<List<CandidatoResponseDTO>> BuscarCandidatos(@PathVariable Long codigo){
-        List<CandidatoResponseDTO> candidatos = matchingService.buscarCandidatosCompativeisPorCodigoConcurso(codigo);
-        return ResponseEntity.ok(candidatos);
+    public ResponseEntity<List<CandidatoResponseDTO>> buscarCandidatos(@PathVariable Long codigo) {
+        return ResponseEntity.ok(matchingService.buscarCandidatosCompativeisPorCodigoConcurso(codigo));
     }
 }

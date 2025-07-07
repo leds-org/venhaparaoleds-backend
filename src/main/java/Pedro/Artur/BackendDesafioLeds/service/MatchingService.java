@@ -2,6 +2,8 @@ package Pedro.Artur.BackendDesafioLeds.service;
 
 import Pedro.Artur.BackendDesafioLeds.dtos.CandidatoResponseDTO;
 import Pedro.Artur.BackendDesafioLeds.dtos.ConcursoResponseDTO;
+import Pedro.Artur.BackendDesafioLeds.exception.NoMatchCandidatoException;
+import Pedro.Artur.BackendDesafioLeds.exception.NoMatchConcursoException;
 import Pedro.Artur.BackendDesafioLeds.model.Candidato;
 import Pedro.Artur.BackendDesafioLeds.model.Concurso;
 import org.springframework.stereotype.Service;
@@ -23,7 +25,12 @@ public class MatchingService {
     public List<ConcursoResponseDTO> buscarConcursosCompativeisPorCpf(String cpf) {
         Candidato candidato = candidatoService.buscarPorCpf(cpf);
         List<String> profissoes = candidato.getProfissoes();
-        return concursoService.buscarPorProfissoes(profissoes);
+
+        List<ConcursoResponseDTO> concursos = concursoService.buscarPorProfissoes(profissoes);
+        if(concursos.isEmpty()){
+            throw new NoMatchConcursoException(cpf);
+        }
+        return concursos;
     }
 
     public List<CandidatoResponseDTO> buscarCandidatosCompativeisPorCodigoConcurso(Long codigo) {
@@ -32,7 +39,11 @@ public class MatchingService {
                 .flatMap(concurso -> concurso.getProfissoes().stream())
                 .collect(Collectors.toSet());
 
-        return candidatoService.buscarPorProfissoes(profissoes);
+        List<CandidatoResponseDTO> candidatos = candidatoService.buscarPorProfissoes(profissoes);
+        if(candidatos.isEmpty()){
+            throw new NoMatchCandidatoException();
+        }
+        return candidatos;
     }
 
 

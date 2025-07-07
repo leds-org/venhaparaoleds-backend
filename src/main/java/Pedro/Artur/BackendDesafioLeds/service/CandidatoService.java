@@ -2,6 +2,7 @@ package Pedro.Artur.BackendDesafioLeds.service;
 
 import Pedro.Artur.BackendDesafioLeds.dtos.CandidatoResponseDTO;
 import Pedro.Artur.BackendDesafioLeds.dtos.ConcursoResponseDTO;
+import Pedro.Artur.BackendDesafioLeds.exception.InvalidParameterException;
 import Pedro.Artur.BackendDesafioLeds.exception.NotFoundCpfException;
 import Pedro.Artur.BackendDesafioLeds.mapper.CandidatoMapper;
 import Pedro.Artur.BackendDesafioLeds.model.Candidato;
@@ -26,7 +27,13 @@ public class CandidatoService {
     }
 
     public Candidato buscarPorCpf(String cpf){
-        Candidato candidato = candidatoRepository.findByCpf(CpfUtils.limpar(cpf));
+        String cpf_ = CpfUtils.limpar(cpf);
+        if(!CpfUtils.validar(cpf_)){
+            throw new InvalidParameterException("Cpf Inválido");
+        }
+
+        Candidato candidato = candidatoRepository.findByCpf(cpf_);
+
         if(candidato == null){
             throw new NotFoundCpfException();
         }
