@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VenhaParaOLEDS</name>
+    </assembly>
+    <members>
+        <member name="T:VenhaParaOLEDS.Controllers.CandidatosController">
+            <summary>
+            Operações relacionadas à candidato.
+            </summary>
+        </member>
+        <member name="M:VenhaParaOLEDS.Controllers.CandidatosController.#ctor(VenhaParaOLEDS.Data.AppDbContext)">
+            <summary>
+            Construtor para injeção de dependência do contexto.
+            </summary>
+        </member>
+        <member name="M:VenhaParaOLEDS.Controllers.CandidatosController.GetConcursosCompativeis(System.String)">
+            <summary>
+            Retorna uma lista de concursos compatíveis com as profissões do candidato informado.
+            </summary>
+            <param name="cpf">CPF do candidato.</param>
+            <returns>Lista de concursos compatíveis.</returns>
+            <response code="200">Lista retornada com sucesso.</response>
+            <response code="404">Candidato não encontrado.</response>
+        </member>
+        <member name="T:VenhaParaOLEDS.Controllers.ConcursosController">
+            <summary>
+            Controlador responsável pelas operações relacionadas à concursos.
+            </summary>
+        </member>
+        <member name="M:VenhaParaOLEDS.Controllers.ConcursosController.#ctor(VenhaParaOLEDS.Data.AppDbContext)">
+            <summary>
+            Construtor do controlador de concursos.
+            </summary>
+            <param name="context">Contexto do banco de dados.</param>
+        </member>
+        <member name="M:VenhaParaOLEDS.Controllers.ConcursosController.GetCandidatosCompativeis(System.String)">
+            <summary>
+            Retorna uma lista de candidatos compatíveis com as vagas do concurso informado.
+            </summary>
+            <param name="codigo">Código identificador do concurso.</param>
+            <returns>Lista de candidatos compatíveis.</returns>
+            <response code="200">Candidatos encontrados com sucesso.</response>
+            <response code="404">Concurso não encontrado.</response>
+        </member>
+        <member name="T:VenhaParaOLEDS.Controllers.StatusController">
+            <summary>
+            Fornece endpoints para verificação da saúde e status da API.
+            </summary>
+        </member>
+        <member name="M:VenhaParaOLEDS.Controllers.StatusController.Health">
+            <summary>
+            Verifica se a API está online
+            </summary>
+            <returns>Status "Healthy"</returns>
+            <response code="200">API está saudável.</response>
+        </member>
+        <member name="M:VenhaParaOLEDS.Controllers.StatusController.GetStatus">
+            <summary>
+            Retorna informações de status da aplicação.
+            </summary>
+            <returns>Informações de versãi, ambiente e data/hora.</returns>
+            <response code="200">Status retornado com sucesso.</response>
+        </member>
+        <member name="T:VenhaParaOLEDS.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:VenhaParaOLEDS.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:VenhaParaOLEDS.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:VenhaParaOLEDS.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

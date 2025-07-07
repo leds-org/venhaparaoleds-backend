@@ -5,6 +5,7 @@ using Microsoft.OpenApi.Models;
 using Microsoft.OpenApi.Writers;
 using Microsoft.Data.SqlClient;
 using VenhaParaOLEDS.Services;
+using Microsoft.AspNetCore.Mvc.Routing;
 
 // Método utilitário para esperar o banco
 static void EsperarSQLServer(string connectionString)
@@ -39,7 +40,30 @@ builder.Services.AddScoped<ImportadorService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "API - VenhParaOLDES",
+        Version = "v1",
+        Description = "API para gerenciamento de concursos e candidatos.",
+        Contact = new OpenApiContact
+        {
+            Name = "Leonarda Amaral",
+            Email = "leonardajobs@gmail.com",
+            Url = new Uri("https://github.com/le-amaral")
+        },
+        License = new OpenApiLicense
+        {
+            Name = "MIT",
+            Url = new Uri("https://opensource.org/licenses/MIT")
+        }
+    });
+    // Caminho do arquivo XML gerado na buil (com os comentários do código)
+    var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    c.IncludeXmlComments(xmlPath);
+});
 
 //Definindo porta 8080 para o Kestrel escutar
 builder.WebHost.ConfigureKestrel(serverOptions =>

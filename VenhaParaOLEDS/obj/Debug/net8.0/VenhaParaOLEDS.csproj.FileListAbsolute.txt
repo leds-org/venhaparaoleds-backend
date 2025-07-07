@@ -6,6 +6,7 @@ C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonard
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\VenhaParaOLEDS.runtimeconfig.json
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\VenhaParaOLEDS.dll
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\VenhaParaOLEDS.pdb
+C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\VenhaParaOLEDS.xml
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\Humanizer.dll
@@ -29,8 +30,11 @@ C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonard
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\bin\Debug\net8.0\Microsoft.Identity.Client.dll
@@ -166,6 +170,7 @@ C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonard
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\obj\Debug\net8.0\VenhaPar.84E2D0E1.Up2Date
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\obj\Debug\net8.0\VenhaParaOLEDS.dll
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\obj\Debug\net8.0\refint\VenhaParaOLEDS.dll
+C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\obj\Debug\net8.0\VenhaParaOLEDS.xml
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\obj\Debug\net8.0\VenhaParaOLEDS.pdb
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\obj\Debug\net8.0\VenhaParaOLEDS.genruntimeconfig.cache
 C:\Users\leona\OneDrive\Área de Trabalho\Projetos GitHub\venhaparaoleds-leonarda\VenhaParaOLEDS\obj\Debug\net8.0\ref\VenhaParaOLEDS.dll

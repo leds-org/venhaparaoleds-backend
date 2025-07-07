@@ -5,20 +5,38 @@ using System.Reflection;
 
 namespace VenhaParaOLEDS.Controllers
 {
+    /// <summary>
+    /// Fornece endpoints para verificação da saúde e status da API.
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class StatusController : Controller
     {
+        /// <summary>
+        /// Verifica se a API está online
+        /// </summary>
+        /// <returns>Status "Healthy"</returns>
+        /// <response code="200">API está saudável.</response>
         // GET /status/health
         [HttpGet("health")]
+        [Produces("application/json")]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
+
         public IActionResult Health()
         {
-            // Retorna apenas 200 OK para indicar que a API está de pé
+            
             return Ok("Healthy");
         }
 
+        /// <summary>
+        /// Retorna informações de status da aplicação.
+        /// </summary>
+        /// <returns>Informações de versãi, ambiente e data/hora.</returns>
+        /// <response code="200">Status retornado com sucesso.</response>
         // GET /status
         [HttpGet]
+        [Produces("application/json")]
+        [ProducesResponseType(typeof(object), StatusCodes.Status200OK)]
         public IActionResult GetStatus()
         {
             var assembly = Assembly.GetExecutingAssembly();
