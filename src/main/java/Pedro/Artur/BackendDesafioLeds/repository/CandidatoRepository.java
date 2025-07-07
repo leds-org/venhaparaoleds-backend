@@ -14,3 +14,4 @@ public interface CandidatoRepository extends JpaRepository<Candidato, Long> {
 
     Candidato findByCpf(String cpf);
 }
+
