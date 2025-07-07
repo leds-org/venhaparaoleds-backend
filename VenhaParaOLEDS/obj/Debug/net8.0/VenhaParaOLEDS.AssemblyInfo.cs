@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VenhaParaOLEDS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb503940665a42467e5e95cfacd42a6fd3b86952")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f640925812b7b597219f946dfb1405abd3e86430")]
 [assembly: System.Reflection.AssemblyProductAttribute("VenhaParaOLEDS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VenhaParaOLEDS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
