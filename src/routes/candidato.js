@@ -12,18 +12,18 @@ const candidatoController = require('../controllers/candidato');
     data_nascimento: Date,
     profissoes: Object<String>
 */
-route.post("/cadastrar", candidatoController.cadastrar);
+router.post("/cadastrar", candidatoController.cadastrar);
 
 //Rota para procurar um candidato já cadastrado
 /*params:
     id: String
 */
-route.get("/procurar_candidato", candidatoController.procurarCandidato);
+router.get("/procurar_candidato", candidatoController.procurarCandidato);
 
 //Rota para listar os candidatos compatíveis a um concurso
 /*params:
     codigo: String
 */
-route.get("/listar_candidatos_compativeis", candidatoController.listarCandidatosCompativeis);
+router.get("/listar_candidatos_compativeis", candidatoController.listarCandidatosCompativeis);
 
 module.exports = router;

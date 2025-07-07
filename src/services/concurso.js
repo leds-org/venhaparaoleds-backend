@@ -1,7 +1,5 @@
 const concursoRepos = require('../repositories/concurso');//Import da camada de repositorio, para acessar aos métodos de interção direta com o banco de dados
 
-const concursoRepos = require('./concurso');//Import da camada de serviço de concurso (para pegar método getConcurso)
-
 //Import do módulo de criptografia
 const crypt = require('../config/criptography');
 

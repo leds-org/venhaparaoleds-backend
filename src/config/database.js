@@ -2,7 +2,7 @@
 const { Pool } = require('pg'); 
 
 //Módulo para carregamento de variáveis de ambiente de .env para process.env
-const dotenv = require('dotenv');
+const dotenv = require('dotenv').config();
 
 //Módulos voltados para interação com sistema de arquivos
 const fs = require('fs');
@@ -14,7 +14,8 @@ const pool = new Pool(
     {
         connectionString: process.env.DATABASE_URL, //url do bd
         ssl: {
-            rejectUnauthorized: false, //especifica se requer autenticação ssl 
+            rejectUnauthorized: true,
+            ca: process.env.CA
         }
     }
 );

@@ -10,18 +10,18 @@ const concursoController = require('../controllers/concurso');
     orgao: String,
     vagas: Object<String>
 */
-route.post("/registrar_concurso", concursoController.registrarConcurso);
+router.post("/registrar_concurso", concursoController.registrarConcurso);
 
 //Rota para procurar um concurso registrado
 /*params:
     id: String
 */
-route.get("/procurar_concurso", concursoController.procurarConcurso);
+router.get("/procurar_concurso", concursoController.procurarConcurso);
 
 //Rota para listar os concursos compativeis a um candidato
 /*params:
     cpf: String
 */
-route.get("/listar_concursos_compativeis", concursoController.listarConcursosCompativeis);
+router.get("/listar_concursos_compativeis", concursoController.listarConcursosCompativeis);
 
 module.exports = router;

@@ -4,7 +4,7 @@ const candidatoRepos = require('../repositories/candidato');//Import da camada d
 const crypt = require('../config/criptography');
 
 async function newCandidato(data){
-    const tempo_inicial = Date.now();
+    const tempo_inicial = performance.now();
     const { nome, cpf, data_nascimento, profissoes } = data;
 
     if (!nome || !cpf || !data_nascimento || !profissoes) {
@@ -12,7 +12,7 @@ async function newCandidato(data){
             sucess: false,
             message: "Dados do candidato incompletos.",
             status_code: 400,
-            response_time: Date.now() - tempo_inicial
+            response_time: performance.now() - tempo_inicial
         };
     } 
 
@@ -22,7 +22,7 @@ async function newCandidato(data){
         return {
             sucess: true,
             status_code: insert_new_candidato.status_code,
-            response_time: Date.now() - tempo_inicial,
+            response_time: performance.now() - tempo_inicial,
         }
     }
     else{
@@ -30,7 +30,7 @@ async function newCandidato(data){
             sucess:false,
             message: insert_new_candidato.message,
             status_code: insert_new_candidato.status_code,
-            response_time: Date.now() - tempo_inicial
+            response_time: performance.now() - tempo_inicial
         }
     }
 
@@ -38,13 +38,13 @@ async function newCandidato(data){
 }
 
 async function getCandidato(id){
-    const tempo_inicial = Date.now();
+    const tempo_inicial = performance.now();
     if (!id) {
         return {
             sucess: false,
             message: "Id do candidato não informado.",
             status_code: 400,
-            response_time: Date.now() - tempo_inicial
+            response_time: performance.now() - tempo_inicial
         };
     }
 
@@ -56,7 +56,7 @@ async function getCandidato(id){
             sucess: true,
             data: select_candidato_by_id.data,
             status_code: select_candidato_by_id.status_code,
-            response_time: Date.now() - tempo_inicial
+            response_time: performance.now() - tempo_inicial
         };
     }
     else{
@@ -64,20 +64,20 @@ async function getCandidato(id){
             sucess: false,
             message: select_candidato_by_id.message,
             status_code: select_candidato_by_id.status_code,
-            response_time: Date.now() - tempo_inicial
+            response_time: performance.now() - tempo_inicial
         };
     }
 }
 
 async function getCandidatosCompativeis(codigo){
-    const tempo_inicial = Date.now();
+    const tempo_inicial = performance.now();
 
     if (!codigo) {
         return {
             sucess: false,
             message: "Codigo do concurso não informado.",
             status_code: 400,
-            response_time: Date.now() - tempo_inicial
+            response_time: performance.now() - tempo_inicial
         };
     }
 
@@ -89,14 +89,14 @@ async function getCandidatosCompativeis(codigo){
             sucess: true,
             data: select_candidatos_compativeis.data,
             status_code: select_candidatos_compativeis.status_code,           
-            response_time: Date.now() - tempo_inicial
+            response_time: performance.now() - tempo_inicial
         };
     }else{
         return {
             sucess: false,
             message: select_candidatos_compativeis.message,
             status_code: select_candidatos_compativeis.status_code,
-            response_time: Date.now() - tempo_inicial
+            response_time: performance.now() - tempo_inicial
         };
     }
 

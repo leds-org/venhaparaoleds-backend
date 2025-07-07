@@ -2,11 +2,12 @@ const db = require('../config/database');//Importando módulo para conexão com 
 const postgre_errors = require('../config/pgerrors');
 
 
-//Importa funções de criptografia e descriptografia
-import { criptInfo, decriptInfo } from '../config/criptography';
+//Importa módulo de criptografia e descriptografia
+const crypt = require("../config/criptography");
 
-//Importa função para gerar o uuid
-import uuid4 from 'uuid4';
+//Importa módulo com função para gerar o uuid
+// const create_id = require('uuid4');
+const uuid4 = require('uuid4');
  
 
 async function insertNewCandidato(data){
@@ -14,69 +15,49 @@ async function insertNewCandidato(data){
     const { nome, cpf, data_nascimento, profissoes } = data;
 
     //Transformando o array de profissoes em uma string (para posterior criptografia)
-    profissoes = JSON.stringify(profissoes);
+    const profissoes_str = JSON.stringify(profissoes);
 
+
+    //criptografando os dados do candidato
+    const cript_nome = crypt.criptInfo(nome);
+    const cript_cpf = crypt.criptInfo(cpf);
+    const cript_data_nascimento = crypt.criptInfo(data_nascimento);
+    const cript_profissoes = crypt.criptInfo(profissoes_str);
+    
+    //gerando os uuids (do registro de candidato e do registro das ivs das infos. do candidato)
+    const id = uuid4();
+    const id_iv = uuid4();
+
+    //Operação de consulta ao banco de dados. Se em algum momento da operação ocorrer algum erro, o mesmo será retornado em um objeto de resposta
     try {
+        //inserindo os ivs dos dados
+        const insert_ivs = await db.query("INSERT INTO CANDIDATO_IV (id, cpf_iv, nome_iv, data_nascimento_iv, profissoes_iv) VALUES ($1, $2, $3, $4, $5)", [id_iv, cript_cpf.iv, cript_nome.iv, cript_data_nascimento.iv, cript_profissoes.iv]);
 
-        //criptografar os dados
-        const c_nome = {
-            iv: criptInfo(nome).iv, 
-            encryptedData: criptInfo(nome).encryptedData
-        };
-
-        const c_cpf = {
-            iv: criptInfo(cpf).iv, 
-            encryptedData: criptInfo(cpf).encryptedData
-        };
-        
-        const c_data_nascimento = {
-            iv: criptInfo(data_nascimento).iv, 
-            encryptedData: criptInfo(data_nascimento).encryptedData
-
-        };
-
-        const c_profissoes = {
-            iv: criptInfo(profissoes).iv, 
-            encryptedData: criptInfo(profissoes).encryptedData
-        };
-
-        
-        //gerar o uuid
-        const id = uuid4();
-        const id_iv = uuid4();
-
-        //inserir os ivs dos dados
-        const insert_ivs = await db.query("INSERT INTO CANDIDATO_IV (id, cpf_iv, nome_iv, data_nascimento_iv, profissoes_iv) VALUES ($1, $2, $3, $4)", [id_iv, c_cpf.iv, c_nome.iv, c_data_nascimento.iv, c_profissoes.iv]);
-
-        //inserir os dados criptografados
-        const insert_encrypted = await db.query("INSERT INTO CANDIDATO (id, id_iv, cpf, nome, data_nascimento, profissoes) VALUES ($1, $2, $3, $4, $5)", [id, id_iv, c_cpf.encryptedData, c_nome.encryptedData, c_data_nascimento.encryptedData, c_profissoes.encryptedData]);
+        //inserindo os dados criptografados
+        const insert_encrypted = await db.query("INSERT INTO CANDIDATO (id, id_iv, cpf, nome, data_nascimento, profissoes) VALUES ($1, $2, $3, $4, $5, $6)", [id, id_iv, cript_cpf.encryptedData, cript_nome.encryptedData, cript_data_nascimento.encryptedData, cript_profissoes.encryptedData]);
         
          return {
             sucess: true,
             status_code: 200
          };
     } 
-    catch(err) {
+    catch(err) {   
         const err_code = err.code;
+        let message = "Falha desconhecida na comunicação com o banco de dados.";
+
         if(postgre_errors.hasOwnProperty(err_code)){
-            return {
-                sucess: false,
-                message: postgre_errors.err_code.message,
-                status_code: postgre_errors.err_code.message 
-            };
+            message = postgre_errors[err_code].message;
         }
-        else{
-            return {
-                sucess: false,
-                message: "Erro desconhecido no banco de dados ou na aplicacao.",
-                status_code: 500
-            };
+
+        return {
+            sucess: false,
+            message,
+            status_code: 500
         }
     }  
 }
 
 async function selectCandidatoById(id){
-
     try {
         //Faz query de busca por candidato
         const select_candidato = await db.query("SELECT * FROM CANDIDATO WHERE id=$1;", [id]);
@@ -86,22 +67,28 @@ async function selectCandidatoById(id){
 
             //Pegando os dados criptografados do candidato
             const candidato_crypted = select_candidato.rows[0];
-
+            
+            // console.log(candidato_crypted.id_iv);
             //Consultando bd para pegar os ivs dos dados do candidato
-            const select_candidato_iv = await db.query("SELECT * FROM CANDIDATO_IV WHERE iv_id=$1",[candidato_crypted.iv_id]);
+            const select_candidato_iv = await db.query("SELECT * FROM CANDIDATO_IV WHERE id=$1",[candidato_crypted.id_iv]);
 
             //Pegando resultado da consulta aos ivs (obrigatoriamente deve ter um resultado, pois sempre que um candidato é inserido, sempre os ivs são inseridos junto)
             const candidato_ivs = select_candidato_iv.rows[0];
-            
+
+            const nome_crypt_data = {
+                iv: candidato_ivs.nome_iv, 
+                encryptedData: candidato_crypted.nome
+            };
+
             //Descriptografando dados com decriptInfo e salvando valores em um objeto
             const data = {
-                nome: decriptInfo({iv: candidato_ivs.nome_iv, encryptedData: candidato_crypted.nome}),
+                nome: crypt.decriptInfo(nome_crypt_data),
 
-                cpf: decriptInfo({iv: candidato_ivs.cpf_iv, encryptedData: candidato_crypted.cpf}),
+                cpf: crypt.decriptInfo({iv: candidato_ivs.cpf_iv, encryptedData: candidato_crypted.cpf}),
 
-                data_nascimento: decriptInfo({iv: candidato_ivs.data_nascimento_iv, encryptedData: candidato_crypted.data_nascimento}),
+                data_nascimento: crypt.decriptInfo({iv: candidato_ivs.data_nascimento_iv, encryptedData: candidato_crypted.data_nascimento}),
 
-                profissoes: decriptInfo({iv: candidato_ivs.profissoes_iv, encryptedData: candidato_crypted.profissoes})
+                profissoes: crypt.decriptInfo({iv: candidato_ivs.profissoes_iv, encryptedData: candidato_crypted.profissoes})
             };
 
             //Retorna objeto com os dados do candidato
@@ -115,19 +102,30 @@ async function selectCandidatoById(id){
         else{
             return {
                 sucess: false,
-                message: "Candidatos não encontrados"
+                message: "Candidatos não encontrados",
+                status_code: 404
             }
         }
         
     }catch(err){
+        const err_code = err.code;
+        let message = "Falha desconhecida na comunicação com o banco de dados.";
+
+        if(postgre_errors.hasOwnProperty(err_code)){
+            message = postgre_errors[err_code].message;
+        }
+
         return {
             sucess: false,
-            message: err
+            message: err,
+            status_code: 500
         }
     }
-
 };
 
+async function selectCandidatosCompativeis(){
+    
+}
 
 module.exports = {
     insertNewCandidato,
