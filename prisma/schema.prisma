@@ -1,0 +1,25 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
+}
+
+model Candidate {
+  id    Int     @id @default(autoincrement())
+  cpf   String  @unique
+  name  String
+  birthdate String
+  professions String 
+}
+
+model Contest {
+  id Int @id @default(autoincrement())
+  agency String 
+  publicNotice String
+  contestCode BigInt @unique
+  jobTitles String
+}
