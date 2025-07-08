@@ -17,7 +17,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 @DataJpaTest
 @ActiveProfiles("test")
 class CandidatoRepositoryTest {
-
     @Autowired
     CandidatoRepository candidatoRepository;
 
