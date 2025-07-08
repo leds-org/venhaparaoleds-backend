@@ -152,7 +152,7 @@ A API utiliza respostas customizadas para erro com, HTTP Status codes específic
 | **Código** | **Situação**                               | **Mensagem de Erro** | **Exemplo de requisição**               |
 |------------|--------------------------------------------|-----------------|-----------------------------------------|
 | 204        | Não existem concursos compativeis          |   | GET /candidatos/12345678900/concursos   |
-| 204        | Não existem candidatos compativeis         |   | GET /concursos/987654321912/candidadots |
+| 204        | Não existem candidatos compativeis         |   | GET /concursos/987654321912/candidatos |
 | 404        | Candidato com o CPF informado não existe   | Cpf não foi encontrado. | GET /candidatos/12345678900/concursos   |   
 | 404        | Concurso com o Codigo informado não existe | Concurso não foi encontrado. | GET /concursos/987654321912/candidatos  |
 | 400        | Cpf invalido                               | Cpf invalido.   | GET /candidatos/abc123/concursos        |
