@@ -28,7 +28,7 @@ public class MatchingService {
 
         List<ConcursoResponseDTO> concursos = concursoService.buscarPorProfissoes(profissoes);
         if(concursos.isEmpty()){
-            throw new NoMatchConcursoException(cpf);
+            throw new NoMatchConcursoException();
         }
         return concursos;
     }

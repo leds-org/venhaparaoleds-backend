@@ -5,6 +5,6 @@ public class NotFoundCodigoException extends RuntimeException{
         super(msg);
     }
     public NotFoundCodigoException(){
-        super("Codigo de concurso não encontrado em nosso sistema!");
+        super("Codigo de concurso não encontrado.");
     }
 }

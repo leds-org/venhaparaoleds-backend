@@ -5,7 +5,7 @@ public class NoMatchConcursoException extends RuntimeException {
         super("Nenhum Concurso compatível com este candidato");
     }
 
-    public NoMatchConcursoException(String message) {
-        super(message);
+    public NoMatchConcursoException(String cpf) {
+        super("Nenhum Concurso compatível com este candidato, cpf:"+cpf);
     }
 }
