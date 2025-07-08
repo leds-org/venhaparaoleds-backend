@@ -1,98 +1,201 @@
-# Desafio Backend - LEDS
-*Bem-vindo!* 👋
 
-Neste desafio, você terá a oportunidade de demonstrar que possui as habilidades necessárias para atuar no time de backend do laboratório.
+# Desafio Backend - Leds: Matching de Concursos e Candidatos
 
-# Contextualização
+**Candidato**: Artur Pedro Carvalho
 
-O desafio é desenvolver um programa que permita realizar as seguintes buscas: 
-1. Listar os **órgãos, códigos e editais dos concursos públicos** que se encaixam no perfil do candidato, tomando como base o seu **CPF**; 
-2. Listar o **nome, data de nascimento e o CPF** dos candidatos que se encaixam no perfil do concurso tomando com base o **Código do Concurso** do concurso público;
+**Email**: arturcarvalho05@gmail.com
 
-O arquivo **candidatos.txt** contém as informações dos candidatos:
+---
+### Visão Geral
 
-| Nome  | Data de Nascimento  | CPF |  Profissões|
-|---|---|---|---|
-| Lindsey Craft  |  19/05/1976  |  182.845.084-34  |  [carpinteiro]  | 
-| Jackie Dawson  |  14/08/1970  |  311.667.973-47  |  [marceneiro, assistente administrativo]  |
-| Cory Mendoza |   11/02/1957 |  565.512.353-92  |  [carpinteiro, marceneiro] |
+Esta solução busca relacionar candidatos e concursos públicos através da compatibilidade de profissões, implementando:
 
-O arquivo **concursos.txt** contém as informações dos concursos públicos:
+- API REST com endpoints para matching
 
-| Órgão  | Edital  | Código do Concurso | Lista de vagas|
-|---|---|---|---|
-| SEDU  | 9/2016  |  61828450843  |  [analista de sistemas, marceneiro]  | 
-| SEJUS | 15/2017  |  61828450843  |  [carpinteiro,professor de matemática,assistente administrativo] |
-| SEJUS | 17/2017 |  95655123539  |  [professor de matemática] |
+- Arquitetura MVC adaptada:
+    - Controllers: Gerenciam requisições/respostas HTTP
 
-🤩 **As tecnologias a serem utilizadas na implementação da solução ficam a seu critério!**
+    - Services: Lógica de negócio (regras de matching)
 
-# Como entregar?
-1. Faça um **fork** do repositório. Nesse fork esperamos encontrar uma documentação completa da solução e a listagem dos diferenciais implementados.
-2. Abra um **pull request (PR)** do seu fork para o nome repositório com o seu nome como título. Assim conseguimos te localizar melhor e ver que você já finalizou o desafio!
+    - Entities/Model: Modelagem dos dados (JPA/Hibernate)
 
-🚨 **Atenção**: você deve enviar apenas o código fonte. Não serão aceitos códigos compilados.
+    - Repository: Acesso aos dados.
 
-## Avaliação
+    - Sem Camada View, sendo substituída por DTOs estruturados
 
-O programa será avaliado levando em conta os seguintes critérios:
 
-| Critério  | Valor | 
-|---|---|
-| Legibilidade do Código |  10  |
-| Documentação do código |  10  |
-| Documentação da solução |  10  |
-| Tratamento de Erros | 10 | 
-| Total | 40 |
+---
 
-A sua pontuação será a soma dos valores obtidos nos critérios acima.
+### Tecnologias Utilizadas
 
-## Diferenciais 
-Você pode **aumentar sua pontuação** implementando os seguintes diferenciais:
+- Java 17
 
-| Item  | Pontos Ganhos | 
-|---|---|
-| Criar um [serviço](https://martinfowler.com/articles/microservices.html) com o problema |  30  |
-| Utilizar banco de dados |  30  |
-| Implementar Clean Code |  20  |
-| Implementar o padrão de programação da tecnologia escolhida |  20  |
-| Qualidade de [Código com SonarQube](https://about.sonarcloud.io/) |  15  |
-| Implementar testes unitários |  15  |
-| Implementar testes comportamentais |  15  |
-| Implementar integração com [Github Action](https://github.com/features/actions)  |  10  |
-| Implementar integração com Github Action + SonarQube |  10  |
-| Implementar usando Docker | 5 |
-| Total| 170 |
+- Spring Boot 3.5.3
 
-A pontuação final será calculada somando os critérios obrigatórios e os diferenciais implementados corretamente.
+- H2 Database
 
-# Penalizações
+---
 
-Você será desclassificado se:
+### Ferramentas e Bibliotecas
 
-1. Enviar uma solução que não funcione.
-2. Não cumprir os critérios da seção **Avaliação**.
-3. For identificado plágio.
-   
-***Que a força esteja com você. Boa sorte!***
+- Maven 4.0
 
-<div align="left">
-</div>
+- Lombok (Redução de boilerplate)
 
-###
+- Spring Data JPA
 
-<br clear="both">
+- JUnit 5 + Mockito
 
-<div align="center">
-  <a href="https://www.linkedin.com/school/ledsifes" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="https://www.instagram.com/ledsifes/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="instagram logo"  />
-  </a>
-  <a href="https://www.youtube.com/@ledsifes/?sub_confirmation=1" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
-  </a>
-</div>
+- IntelliJ IDEA (recomendada)
+---
+# Lógica de Matching (Buscas)
 
-###
+
+O sistema utiliza o mesmo critério de compatibilidade para ambas as direções (candidato→concurso e concurso→candidato), baseado na intersecção de profissões. Para exemplificar, analisemos o fluxo de compatibilidade de Concurso → Candidatos.
+ 
+**Buscar Candidatos:** 
+
+   - O sistema recebe o **código** do concurso que deseja procurar candidatos compativeis.
+   - Passa o código recebido, como parâmetro para o método `buscarCandidatosCompativeisPorCodigoConcurso()` que está dentro da classe `MatchingService`(responsavel por cuidar da compatibilidade) e aguarda a resposta.
+```java
+    @GetMapping(value = {"/{codigo}/candidatos"})
+    public ResponseEntity<List<CandidatoResponseDTO>> buscarCandidatos(@PathVariable Long codigo) {
+        return ResponseEntity.ok(matchingService.buscarCandidatosCompativeisPorCodigoConcurso(codigo));
+    }
+ ```
+- Na MatchingService, busca-se o Concurso que tem o Codigo recebido;
+- Captura somente sua lista de profissoes;
+- Envia essa lista para o método ```buscarPorProfissoes()```contida na ```CandidatoService``` e espera o retorno de uma Lista contendo Dtos de Candidatos. 
+
+```java
+    public List<CandidatoResponseDTO> buscarCandidatosCompativeisPorCodigoConcurso(Long codigo) {
+    List<Concurso> concursos = concursoService.buscarPorCodigo(codigo);
+    Set<String> profissoes = concursos.stream()
+            .flatMap(concurso -> concurso.getProfissoes().stream())
+            .collect(Collectors.toSet());
+
+    List<CandidatoResponseDTO> candidatos = candidatoService.buscarPorProfissoes(profissoes);
+```
+
+- No ```CandidatoService```, repassa essa lista ao ```CandidatoRepository``` aguarda o repository retornar com uma Lista de Candidatos, para depois retornar essa mesma lista tranformada em uma lista de objetos DTOs
+
+```java
+    public List<CandidatoResponseDTO> buscarPorProfissoes(Set<String> profissoes){
+        List<Candidato> candidatos = candidatoRepository.buscarCandidatosCompativeis(profissoes);
+        return candidatos.stream().map(CandidatoMapper::toDTO).toList();
+    }
+```
+
+- Por fim, o ```CandidatoRepository``` realiza uma consulta SQL (Query), que busca por candidatos que tenham a determinada lista de profissoes em comum, e retorna todos esses candidatos ao CandidatoService, gerando uma cadeia de retornos.
+```java
+    @Query("Select c From Candidato c JOIN c.profissoes p WHERE p IN :profissoes")
+    List<Candidato> buscarCandidatosCompativeis(@Param("profissoes") Set<String> profissoes); 
+```
+
+
+---
+### Endpoints da API
+
+Buscar concursos compatíveis com um candidato
+
+```http 
+GET /candidatos/{cpf}/concursos
+```
+
+Descrição: Retorna todos os **concursos** públicos compatíveis com a profissão do candidato informado pelo CPF, no seguinte formato de exemplo:
+```json
+[
+    {
+        "orgão": "SEDU",
+        "edital": "9/2016",
+        "codigo": "61828450843"
+    },
+    {
+        "orgão": "SEJUS",
+        "edital": "15/2017",
+        "codigo": "61828450843"
+    }
+]
+```
+
+
+---
+Buscar candidatos compatíveis com um concurso
+
+```http
+GET /concursos/{codigo}/candidatos
+```
+
+Descrição: De forma análoga retorna todos os **candidatos** que têm profissões compatíveis com o concurso de código informado.
+
+```json
+[
+    {
+        "nome": "Lindsey Craft",
+        "dataNascimento": "19/05/1976",
+        "cpf": "182.845.084-34"
+    },
+    {
+        "nome": "Jackie Dawson",
+        "dataNascimento": "14/08/1970",
+        "cpf": "311.667.973-47"
+    }
+]
+```
+---
+### Tratamento de Erros
+
+A API utiliza respostas customizadas para erro com, HTTP Status codes específicos e um corpo de resposta.
+
+**Exceptions customizadas**
+
+| **Código** | **Situação**                               | **Mensagem de Erro** | **Exemplo de requisição**               |
+|------------|--------------------------------------------|-----------------|-----------------------------------------|
+| 204        | Não existem concursos compativeis          |   | GET /candidatos/12345678900/concursos   |
+| 204        | Não existem candidatos compativeis         |   | GET /concursos/987654321912/candidadots |
+| 404        | Candidato com o CPF informado não existe   | Cpf não foi encontrado. | GET /candidatos/12345678900/concursos   |   
+| 404        | Concurso com o Codigo informado não existe | Concurso não foi encontrado. | GET /concursos/987654321912/candidatos  |
+| 400        | Cpf invalido                               | Cpf invalido.   | GET /candidatos/abc123/concursos        |
+| 400        | Código invalido                            | Codigo invalido. | GET /concursos//candidatos              |
+
+
+
+
+---
+### Banco de Dados
+- Utiliza H2 em memória (os dados são resetados a cada execução)
+- DataLoader Inicial:
+    - Popula automaticamente candidatos e concursos a partir dos arquivos `candidatos.txt` e `concursos.txt`
+
+---
+### Testes Unitários
+- Junit 5 + Mockito (Nativos do Spring Boot Test)
+- Validação de exceções customizadas e principais funcionalidades
+
+Para rodar os testes:
+```bash
+./mvnw test
+```
+
+---
+### Como Executar
+
+Pré-Requisitos
+- Git
+- Java 17+
+- Maven
+
+Clone o projeto:
+
+```bash
+git clone https://github.com/artcarvalho/venhaparaoleds-backend.git
+cd venhaparaoleds-backend
+```
+
+Execute com Maven:
+
+```bash
+./mvnw spring-boot:run
+```
+A aplicação estará acessível em: http://localhost:8080
+
