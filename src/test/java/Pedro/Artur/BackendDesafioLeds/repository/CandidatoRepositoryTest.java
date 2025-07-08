@@ -35,7 +35,8 @@ class CandidatoRepositoryTest {
                 ,Arrays.asList("carpinteiro","lenhador"));
 
         Candidato result = this.candidatoRepository.findByCpf(cpf_valido);
-        assertThat((result!=null)).isTrue();
+        assertThat(result).isNotNull();
+        assertThat(result.getCpf()).isEqualTo(cpf_valido);
     }
 
     @Test
@@ -43,7 +44,7 @@ class CandidatoRepositoryTest {
     void findByCpfCase2() {
         String cpf_inexistente = "11122233346";
         Candidato result = this.candidatoRepository.findByCpf(cpf_inexistente);
-        assertThat((result==null)).isTrue();
+        assertThat(result).isNull();
     }
 
     @Test
@@ -51,11 +52,13 @@ class CandidatoRepositoryTest {
     void buscarCandidatosCompativeisCase1(){
         Set<String> profissoesConcurso = Set.of("carpinteiro", "medico");
 
-        this.createCandidato("Pedro","22233344455","06/08/2001",Arrays.asList("carpinteiro"));
-        this.createCandidato("Jorge","33344455567","12/07/1990",Arrays.asList("medico","lenhador"));
+        this.createCandidato("Pedro","22233344455","06/08/2001",List.of("carpinteiro"));
+        this.createCandidato("Jorge","33344455567","12/07/1990",List.of("medico","lenhador"));
 
         List<Candidato> candidatosResult = this.candidatoRepository.buscarCandidatosCompativeis(profissoesConcurso);
-        assertThat(candidatosResult.isEmpty()).isFalse();
+        assertThat(candidatosResult).isNotEmpty();
+        assertThat(candidatosResult).hasSize(2);
+        assertThat(candidatosResult).extracting(Candidato::getNome).containsExactlyInAnyOrder("Pedro","Jorge");
 
     }
     @Test
@@ -63,11 +66,11 @@ class CandidatoRepositoryTest {
     void buscarCandidatosCompativeisCase2(){
         Set<String> profissoesConcurso = Set.of("jardineiro","jornalista");
 
-        this.createCandidato("Pedro","22233344455","06/08/2001",Arrays.asList("carpinteiro"));
-        this.createCandidato("Jorge","33344455567","12/07/1990",Arrays.asList("medico","lenhador"));
+        this.createCandidato("Pedro","22233344455","06/08/2001",List.of("carpinteiro"));
+        this.createCandidato("Jorge","33344455567","12/07/1990",List.of("medico","lenhador"));
 
         List<Candidato> candidatosResult = this.candidatoRepository.buscarCandidatosCompativeis(profissoesConcurso);
-        assertThat(candidatosResult.isEmpty()).isTrue();
+        assertThat(candidatosResult).isEmpty();
 
     }
 
