@@ -26,7 +26,7 @@ async function newConcurso(data){
     }
 
     // //Verifica se o código informado já está registrado no banco de dados
-    if(isRegisteredCodigo(codigo)){
+    if(await isRegisteredCodigo(codigo) === true){
         return {
             sucess: false,
             error_message: "Codigo já cadastrado.",

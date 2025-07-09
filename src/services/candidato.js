@@ -31,7 +31,7 @@ async function newCandidato(data){
 
 
     //Verificando se cpf já foi registrado
-    if(isRegisteredCpf(cpf)){
+    if(await isRegisteredCpf(cpf) === true){
         return {
             sucess: false,
             error_message: "Cpf já cadastrado.",
