@@ -154,7 +154,42 @@ Segue abaixo a estrutura de diretórios da aplicação:
 ## 🖥️ Rodando a API Localmente
 
 Para testar a aplicação, é necessário que haja uma ferramenta específica para testes de rotas (como o Postman, por exemplo) 
-e a versão mais recente do Node instalado em seu desktop. Tendo essas ferramentas instaladas, no diretório raiz do projeto, rode os seguintes comandos:
+e a versão mais recente do Node instalado em seu desktop. Desse modo, antes de executar a API, crie um .env na raiz do projeto e cole as variáveis abaixo:
+
+```bash
+DATABASE_URL=postgres://avnadmin:AVNS_BO9se-N7qrs3ZdBYgVh@leds-backend-leds-backend.c.aivencloud.com:28115/defaultdb
+SECRET_KEY=ledsodespertardaforca237232382912
+CPF_FIX_SALT=7a0f3e2d1c5b8a9e4f6d0c1b2a3e5d4c
+CODIGO_FIX_SALT=45af5ac76e82e4a29753397bc61061c6
+CA="-----BEGIN CERTIFICATE-----
+MIIEUDCCArigAwIBAgIUZajGVDoZrEXBk7EeFeEFNhHy2WcwDQYJKoZIhvcNAQEM
+BQAwQDE+MDwGA1UEAww1NTg5MzM4M2ItOTVlZC00OTY2LWI5ZjItODYzMTZjNDg5
+YTM4IEdFTiAxIFByb2plY3QgQ0EwHhcNMjUwNzAxMTg1ODQ3WhcNMzUwNjI5MTg1
+ODQ3WjBAMT4wPAYDVQQDDDU1ODkzMzgzYi05NWVkLTQ5NjYtYjlmMi04NjMxNmM0
+ODlhMzggR0VOIDEgUHJvamVjdCBDQTCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCC
+AYoCggGBALe73NwZPrJpGHICk8dyrGVJa1x8+1UxYwUaWO8jwXZvN8OoSJQ2qCiN
+Zb38k+iMCBO8XWc1Ggrp7AAQeD7od3RO7FxiDTm9/tdJYtc/urZxAE6HLqYk/wiY
+ntDock6lKE06X7I+TEB6sa402/cZwVGSndargNexQk0P2DaSImPFuOGAJM5WGKAJ
+79PV18cm67n5q9VPZqkWscKYcY5qMsk4+DSNt0nwe15ItWIBLMvRHbohsh3b9Sf0
+xyiIm+5Qkj8lF/Q9bfwORbgBRNUVRan31aMljbRlepQKXLKrFSLGJDuWCAIecmIB
+cqWoC0RIeU0Y8K3Za2Oz529hWyidkB+IshBFgZy0z4ZVyVtENHxms38i9KBwo2f0
+tGovJ7c8og4anrsktwRwt4aN1omZOb5S7PY0yfu9btyXrt3h69uEwJHOhtE39Sin
+lFeGd6JPx2Ju9AQyPo4xVBVS721yX4JpxyYl4jjyO+1DNBkFd9amgIwC2rTKiMJy
+JENzACLfjwIDAQABo0IwQDAdBgNVHQ4EFgQUOntHqBXDBDsMj3cXs43i3y4XrkUw
+EgYDVR0TAQH/BAgwBgEB/wIBADALBgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQEMBQAD
+ggGBAI8okKxQ521X4SU+9c/K2oE9joYwMXm4c8ColSbUE9maTLot6cw+qgSBLw84
+WBzszduZzf2qcQnbycaR9BlK3ZzYfOpr0m95jdzYUaPPQ/wZrzTBhqFUVaKob8GC
+XvKFm0d+DGOH+TuyCpcfVplFv9eL+WS6J94+3/+/gWux3YvtXuEcTIyiIfvdLnIb
+9fla+H6PwQNgFaHgtRYwFkzHxivoD9Xu6/4R+ENjnqzsDqWpMiTN1rPo5gQxKxus
+ZnOa1wX4e7Hdf6Q5zeA4K53ngmGWcNfAgq88bGOSIB1vQ9dgt+P/29g5RH38iXyo
+PkjlRmFcw4ghBKIOtgHb/DAPKgSvbN3lE1+V/R7hwY5FTN37OE3Lji/ni2/4IGeo
+i0rW9mEfH3QFIidKy0xVMv/0sGBv4OFW6rh9mtXkNllfwWz9El6CjY1ZpKvfVYFA
+0D4nwrlyrj8UN+STS+TpjK6oMTKEBPHLXRnDwYtgH6EQQDo09pxOnD70oRVkSpYtBFnD3A==
+-----END CERTIFICATE-----"
+```
+>***obs.:*** É de conhecimento que esta prática não é segura, mas como se trata de uma aplicação que não utiliza dados reais, se fez necessária essa prática para possibilitar o teste da API em outras máquinas
+
+Após os passos acima, no diretório raiz do projeto, rode os seguintes comandos:
 
 ```bash
 npm i # Para instalar todas as dependências do projeto
@@ -162,4 +197,4 @@ npm start # Para iniciar a execução da API
 ```
 
 Ao rodar esses comandos, a mensagem "API conectada à base de dados" deve aparecer no terminal, o que indica que a aplicação está rodando.
-Assim, é só fazer os testes utilizando a ferramenta para testes de API utilizando o formato de rota especificado na seção ***🛣️ Rotas da Aplicação***.
+Assim, é só fazer os testes utilizando a ferramenta para testes de API se baseando no formato de rota especificado na seção ***🛣️ Rotas da Aplicação***.
