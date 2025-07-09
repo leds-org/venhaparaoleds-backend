@@ -1,70 +1,138 @@
-# Desafio Backend - LEDS
-# Como entregar?
-1. Faça um **fork** do repositório. Nesse fork esperamos encontrar uma documentação completa da solução e a listagem dos diferenciais implementados.
-2. Abra um **pull request (PR)** do seu fork para o nome repositório com o seu nome como título. Assim conseguimos te localizar melhor e ver que você já finalizou o desafio!
+# VenhaParaOLEDS - Backend API
 
-🚨 **Atenção**: você deve enviar apenas o código fonte. Não serão aceitos códigos compilados.
+API RESTful desenvolvida para facilitar a compatibilidade entre candidatos e concursos com base em suas profissões. O projeto inclui importação automatizada de dados, documentação via Swagger, testes automatizados e está totalmente conteinerizado via Docker.
 
-## Avaliação
+## 🔍 Visão Geral
 
-O programa será avaliado levando em conta os seguintes critérios:
+A API possibilita:
 
-| Critério  | Valor | 
-|---|---|
-| Legibilidade do Código |  10  |
-| Documentação do código |  10  |
-| Documentação da solução |  10  |
-| Tratamento de Erros | 10 | 
-| Total | 40 |
+- Importação automática de candidatos, concursos e vagas a partir de arquivos `.txt`
+- Consulta de concursos compatíveis para um candidato via CPF
+- Consulta de candidatos compatíveis para um concurso via código
+- Monitoramento de saúde da aplicação com endpoints de status
 
-A sua pontuação será a soma dos valores obtidos nos critérios acima.
+## 🧰 Tecnologias Utilizadas
 
-## Diferenciais 
-Você pode **aumentar sua pontuação** implementando os seguintes diferenciais:
+- **.NET 8** - ASP.NET Core Web API
+- **Entity Framework Core** - Acesso e mapeamento ao banco de dados
+- **xUnit** - Testes automatizados
+- **Docker & Docker Compose** - Conteinerização da aplicação e do SQL Server
+- **SQL Server** - Banco de dados relacional (via Azure Data Studio)
+- **Swagger / Swashbuckle** - Documentação automática da API
 
-| Item  | Pontos Ganhos | 
-|---|---|
-| Criar um [serviço](https://martinfowler.com/articles/microservices.html) com o problema |  30  |
-| Utilizar banco de dados |  30  |
-| Implementar Clean Code |  20  |
-| Implementar o padrão de programação da tecnologia escolhida |  20  |
-| Qualidade de [Código com SonarQube](https://about.sonarcloud.io/) |  15  |
-| Implementar testes unitários |  15  |
-| Implementar testes comportamentais |  15  |
-| Implementar integração com [Github Action](https://github.com/features/actions)  |  10  |
-| Implementar integração com Github Action + SonarQube |  10  |
-| Implementar usando Docker | 5 |
-| Total| 170 |
+## 🚀 Como Executar o Projeto Localmente
 
-A pontuação final será calculada somando os critérios obrigatórios e os diferenciais implementados corretamente.
+### Pré-requisitos
 
-# Penalizações
+- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download)
+- [Docker](https://www.docker.com/)
+- Azure Data Studio (opcional, para acessar o banco)
 
-Você será desclassificado se:
+### Passos
 
-1. Enviar uma solução que não funcione.
-2. Não cumprir os critérios da seção **Avaliação**.
-3. For identificado plágio.
-   
-***Que a força esteja com você. Boa sorte!***
+```bash
+# Clone o repositório
+git clone https://github.com/le-amaral/venhaparaoleds-leonarda
+cd venhaparaoleds-leonarda
 
-<div align="left">
-</div>
+# Execute a aplicação com Docker Compose
+docker-compose up --build
+```
 
-###
+> A API estará acessível em: `http://localhost:8080`
 
-<br clear="both">
+### Endpoints de Verificação
 
-<div align="center">
-  <a href="https://www.linkedin.com/school/ledsifes" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="https://www.instagram.com/ledsifes/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="instagram logo"  />
-  </a>
-  <a href="https://www.youtube.com/@ledsifes/?sub_confirmation=1" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
-  </a>
-</div>
+- `GET /status/health` → Verifica se a API está online
+- `GET /status` → Retorna informações do ambiente e versão
 
-###
+## 📚 Documentação da API
+
+Acesse a documentação completa e interativa:
+
+🔗 `http://localhost:8080/swagger`
+
+- Todos os endpoints possuem XML comments
+- Testes manuais podem ser feitos via Swagger UI
+
+### ✅ Exemplo de Tela do Swagger
+
+![Tela do Swagger](swagger-screenshot.png)
+
+
+## 📂 Endpoints Principais
+
+### Candidatos
+
+- `GET /api/candidatos/{cpf}/concursos-compatíveis`  
+  Retorna todos os concursos que possuem vagas compatíveis com as profissões do candidato informado.
+
+### Concursos
+
+- `GET /api/concursos/{codigo}/candidatos-compativeis`  
+  Retorna todos os candidatos com pelo menos uma profissão compatível com as vagas do concurso informado.
+
+## 🧪 Testes Automatizados
+
+Os testes estão localizados no projeto `VenhaParaOLEDS.Tests`:
+
+```bash
+dotnet test
+```
+
+- Testes de Controllers com `WebApplicationFactory`
+- Testes de Services
+- Uso de banco de dados InMemory
+
+## 🐳 Docker
+
+### Subir containers (API + SQL Server)
+
+```bash
+docker-compose up --build
+```
+
+### Dockerfiles e Compose
+
+- `Dockerfile` → API .NET
+- `docker-compose.yml` → Orquestração de containers
+
+## 🏗️ Organização do Projeto
+
+```bash
+├── Controllers/              # Endpoints da API
+├── Data/                     # Contexto EF Core
+├── DTOs/                     # Data Transfer Objects
+├── Models/                   # Entidades de domínio
+├── Services/                 # Lógica de negócio
+├── VenhaParaOLEDS.Tests/     # Testes automatizados (xUnit)
+└── docker-compose.yml        # Orquestração de containers
+```
+
+## ☁️ Deploy Futuro (Opcional)
+
+> Para ambientes de produção ou testes em nuvem, recomenda-se:
+
+- Hospedagem da API via **Azure App Service** ou **Azure Container Apps**
+- Banco de dados no **Azure SQL Database**
+- CI/CD com **GitHub Actions** e Azure CLI
+
+## 🙌 Contribuindo
+
+1. Faça um fork do projeto
+2. Crie uma branch com sua feature: `git checkout -b minha-feature`
+3. Commit suas alterações: `git commit -m 'Minha feature'`
+4. Push na sua branch: `git push origin minha-feature`
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+## 📫 Contato
+
+Projeto mantido pela LEDS e contribuído por [@leonardaamaral](https://github.com/le-amaral)
+
+---
+
+Feito com 💡 e dedicação para a LEDS! ✨
