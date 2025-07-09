@@ -151,7 +151,6 @@ async function selectConcursosCompativeis(cpf_candidato){
         //entre as vagas do concurso e as profissões do candidato
         for(let i = 0; i < all_concursos.length; i++){
 
-            // console.log("Antes da query");
             const concurso_ivs = await db.query("SELECT * FROM CONCURSO_IV WHERE id=$1", [all_concursos[i].id_iv]);
 
             //Descriptografando a string do array de vagas e convertendo ela de novo em array

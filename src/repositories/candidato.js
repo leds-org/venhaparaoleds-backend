@@ -130,7 +130,7 @@ async function selectCandidatosCompativeis(codigo_concurso){
 
         //Buscar pelo concurso
         const concurso = await auxiliarRepos.getVagasFromConcurso(codigo_concurso);
-    
+
         if(concurso.sucess !== true){
             return {
                 sucess: false,
@@ -143,7 +143,7 @@ async function selectCandidatosCompativeis(codigo_concurso){
         const vagas = concurso.data;
 
         //Selecionando todos os candidatos
-        const select_all_candidatos = await db.query("SELECT * FROM CONCURSO");
+        const select_all_candidatos = await db.query("SELECT * FROM CANDIDATO");
         
         //Pegando a lista de registros de candidatos
         const all_candidatos = select_all_candidatos.rows;
@@ -151,19 +151,23 @@ async function selectCandidatosCompativeis(codigo_concurso){
         //Para cada item  na lista de candidatos, verifica se há compatibilidade 
         //entre as profissoes do candidato e as profissões do candidato
         for(let i = 0; i < all_candidatos.length; i++){
-
-            // console.log("Antes da query");
+            
+            //Buscando pelos ivs do candidato
             const candidato_ivs = await db.query("SELECT * FROM CANDIDATO_IV WHERE id=$1", [all_candidatos[i].id_iv]);
+            
+            //Array de profissoes criptografado e seu iv para descriptografia
+            const crypt_profissoes = all_candidatos[i].profissoes;
+            const profissoes_iv = candidato_ivs.rows[0].profissoes_iv;
 
             //Descriptografando a string do array de profissoes e convertendo ela de novo em array
-            let profissoes = crypt.decriptInfo({encryptedData: all_candidatos[i].profissoes, iv: candidato_ivs.rows[0].profissoes_iv});
+            let profissoes = crypt.decriptInfo({encryptedData: crypt_profissoes, iv: profissoes_iv});
 
             //Transformando em array de novo
             profissoes = JSON.parse(profissoes);
-
+         
             //flag que verifica se ao menos uma das profissoes do candidato está inclusa na lista de profissoes do candidato
             let profissoes_compativeis = await auxiliarRepos.getListsCommonElements(profissoes, vagas);
-            
+           
             //Se houver profissoes compatíveis entre as duas listas, 
             //adiciona os dados do candidato na lista de compativeis
             if(profissoes_compativeis.length > 0){
@@ -175,7 +179,7 @@ async function selectCandidatosCompativeis(codigo_concurso){
                     data_nascimento: crypt.decriptInfo({ encryptedData: all_candidatos[i].data_nascimento, iv: candidato_ivs.rows[0].data_nascimento_iv}),
                     profissoes: crypt.decriptInfo({ encryptedData: all_candidatos[i].profissoes, iv: candidato_ivs.rows[0].profissoes_iv})
                 };
-                
+
                 //Converte o array escrito em string para um array de fato 
                 candidato_data.profissoes = JSON.parse(candidato_data.profissoes);
 
