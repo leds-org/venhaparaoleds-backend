@@ -998,4 +998,8 @@ SEFAZ,8/2022,15294358773,"[professor de matemática,assistente administrativo,an
 SECONT,1/2015,57359110979,"[analista de sistemas,encanador,pintor,eletricista]"
 SECONT,16/2016,59770073073,[assistente administrativo]
 PMES,13/2021,10744374366,"[eletricista,encanador,pedreiro]"
+<<<<<<< HEAD
 SESA,12/2015,38448925479,"[pedreiro,encanador,carpinteiro]"
+=======
+SESA,12/2015,38448925479,"[pedreiro,encanador,carpinteiro]"
+>>>>>>> 5b7f83c735f11b0575e15f3bebee9fcb4197a7dd

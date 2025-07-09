@@ -998,4 +998,9 @@ Emanuella Gomes,29/09/1977,518.364.729-19,"[pedreiro, encanador, marceneiro]"
 Stella da Paz,29/09/1966,702.839.546-47,"[pintor, técnico em segurança do trabalho]"
 Arthur Pinto,17/02/1956,219.463.580-70,"[assistente administrativo, eletricista, marceneiro]"
 Pietra Duarte,14/12/2002,415.629.073-52,"[assistente administrativo, pintor, marceneiro]"
+<<<<<<< HEAD
 Vicente Moraes,18/01/1985,679.231.480-31,[eletricista]
+=======
+Vicente Moraes,18/01/1985,679.231.480-31,[eletricista]
+
+>>>>>>> 5b7f83c735f11b0575e15f3bebee9fcb4197a7dd
