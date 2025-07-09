@@ -8,6 +8,7 @@ function isCorrectEditalFormat(edital){
     return edital_regex.test(edital);
 }
 
+async function isRegisteredCodigo(codigo){return (await concursoRepos.selectConcursoByCodigo(codigo)).sucess;}
 
 async function newConcurso(data){
     const tempo_inicial = performance.now();//Constante para marcar tempo inicial de execução
@@ -20,19 +21,19 @@ async function newConcurso(data){
             sucess: false,
             error_message: "Dados do concurso incompletos.",
             status_code: 400,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }
 
     // //Verifica se o código informado já está registrado no banco de dados
-    // if((await concursoRepos.selectConcursoByCodigo(codigo)).sucess === true){
-    //     return {
-    //         sucess: false,
-    //         message: "Codigo já registrado.",
-    //         status_code: 400,
-    //         response_time: performance.now() - tempo_inicial
-    //     }
-    // }
+    if(isRegisteredCodigo(codigo)){
+        return {
+            sucess: false,
+            error_message: "Codigo já cadastrado.",
+            status_code: 400,
+            response_time: Math.abs(performance.now() - tempo_inicial)
+        }
+    }
 
     //Verifica se o edital segue um padrão de escrita (XX/XXXX ou X/XXXX)
     if(!isCorrectEditalFormat(edital)){
@@ -40,7 +41,7 @@ async function newConcurso(data){
             sucess: false,
             error_message: "Formato de edital inválido. Tente seguir o padrão XX/XXXX",
             status_code: 400,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         }
     }
 
@@ -52,7 +53,7 @@ async function newConcurso(data){
         return {
             sucess: true,
             status_code: insert_new_concurso.status_code,
-            response_time: performance.now() - tempo_inicial,
+            response_time: Math.abs(performance.now() - tempo_inicial),
         }
     }
     //Se não, retorna objeto com o status de erro fornecido pela resposta do repositório
@@ -61,7 +62,7 @@ async function newConcurso(data){
             sucess:false,
             error_message: insert_new_concurso.error_message,
             status_code: insert_new_concurso.status_code,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         }
     }
 
@@ -78,7 +79,7 @@ async function getConcurso(codigo){
             sucess: false,
             error_message: "Codigo do concurso não informado.",
             status_code: 400,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }
 
@@ -91,7 +92,7 @@ async function getConcurso(codigo){
             sucess: true,
             data: get_concurso_by_codigo.data,
             status_code: get_concurso_by_codigo.status_code,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }
     //Caso contrário, retorna um objeto com um status de erro fornecido pelo retorno do repositório
@@ -100,7 +101,7 @@ async function getConcurso(codigo){
             sucess: false,
             error_message: get_concurso_by_codigo.error_message,
             status_code: get_concurso_by_codigo.status_code,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }
 }
@@ -115,7 +116,7 @@ async function getConcursosCompativeis(cpf_candidato){
             sucess: false,
             error_message: "Cpf do candidato não informado.",
             status_code: 400,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }
 
@@ -129,7 +130,7 @@ async function getConcursosCompativeis(cpf_candidato){
             sucess: true,
             data: get_concursos_compativeis.data,
             status_code: get_concursos_compativeis.status_code,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
 
     //Caso contrário, retorna objeto com mensagem de erro e status fornecido pelo repositório
@@ -138,7 +139,7 @@ async function getConcursosCompativeis(cpf_candidato){
             sucess: false,
             error_message: get_concursos_compativeis.error_message,
             status_code: get_concursos_compativeis.status_code,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }
 

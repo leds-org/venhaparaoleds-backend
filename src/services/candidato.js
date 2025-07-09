@@ -12,6 +12,9 @@ function isCorrectDateFormat(date){
     return date_regex.test(date);
 }
 
+//Verifica se um cpf já está registrado no banco de dados
+async function isRegisteredCpf(cpf){return (await candidatoRepos.selectCandidatoByCpf(cpf)).sucess;}
+
 async function newCandidato(data){
     const tempo_inicial = performance.now();//Constante para marcar tempo inicial de execução
     const { nome, cpf, data_nascimento, profissoes } = data;
@@ -22,20 +25,21 @@ async function newCandidato(data){
             sucess: false,
             error_message: "Dados do candidato incompletos.",
             status_code: 400,
-            response_time: performance.now()
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     };
 
-    //Verificando se cpf já foi registrado usando operação de busca no banco de dados
-    if(await candidatoRepos.selectCandidatoByCpf(cpf).sucess === true){
+
+    //Verificando se cpf já foi registrado
+    if(isRegisteredCpf(cpf)){
         return {
             sucess: false,
             error_message: "Cpf já cadastrado.",
             status_code: 400,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         }
     }
-
+    
 
     //Verifica formato do cpf
     if(!isCorrectCpfFormat(cpf)){
@@ -43,7 +47,7 @@ async function newCandidato(data){
             sucess: false,
             error_message: "Formato inválido de cpf. Favor seguir o formato XXX.XXX.XXX-XX.",
             status_code: 400,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }
 
@@ -53,7 +57,7 @@ async function newCandidato(data){
             sucess: false,
             error_message: "Formato inválido de data. Favor seguir o padrão DD/MM/AAAA.",
             status_code: 400,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }
 
@@ -63,7 +67,7 @@ async function newCandidato(data){
         return {
             sucess: true,
             status_code: insert_new_candidato.status_code,
-            response_time: performance.now() - tempo_inicial,
+            response_time: Math.abs(performance.now() - tempo_inicial),
         }
     }
     else{
@@ -71,7 +75,7 @@ async function newCandidato(data){
             sucess:false,
             error_message: insert_new_candidato.error_message,
             status_code: insert_new_candidato.status_code,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         }
     }
 
@@ -85,7 +89,7 @@ async function getCandidato(cpf){
             sucess: false,
             error_message: "Cpf do candidato não informado.",
             status_code: 400,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }
 
@@ -95,7 +99,7 @@ async function getCandidato(cpf){
             sucess: false,
             error_message: "Formato inválido de cpf.",
             status_code: 400,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }
 
@@ -107,7 +111,7 @@ async function getCandidato(cpf){
             sucess: true,
             data: select_candidato_by_cpf.data,
             status_code: select_candidato_by_cpf.status_code,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }
     else{
@@ -115,7 +119,7 @@ async function getCandidato(cpf){
             sucess: false,
             error_message: select_candidato_by_cpf.error_message,
             status_code: select_candidato_by_cpf.status_code,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }
 }
@@ -128,7 +132,7 @@ async function getCandidatosCompativeis(codigo_concurso){
             sucess: false,
             error_message: "Codigo do concurso não informado.",
             status_code: 400,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }
 
@@ -140,14 +144,14 @@ async function getCandidatosCompativeis(codigo_concurso){
             sucess: true,
             data: select_candidatos_compativeis.data,
             status_code: select_candidatos_compativeis.status_code,           
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }else{
         return {
             sucess: false,
             error_message: select_candidatos_compativeis.error_message,
             status_code: select_candidatos_compativeis.status_code,
-            response_time: performance.now() - tempo_inicial
+            response_time: Math.abs(performance.now() - tempo_inicial)
         };
     }
 
