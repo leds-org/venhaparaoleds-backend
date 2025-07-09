@@ -10,12 +10,13 @@ namespace VenhaParaOLEDS.Services
     {
         private readonly AppDbContext _context;
         private readonly ILogger<ImportadorService> _logger;
-        private readonly string _basePath = "/app/dados";
+        private readonly string _basePath;
 
-        public ImportadorService(AppDbContext context, ILogger<ImportadorService> logger)
+        public ImportadorService(AppDbContext context, ILogger<ImportadorService> logger, string basePath = "/app/dados")
         {
             _context = context;
             _logger = logger;
+            _basePath = basePath;
         }
 
         public void ImportarCandidatos()
@@ -41,7 +42,8 @@ namespace VenhaParaOLEDS.Services
                     var nome = partes[0].Trim();
                     var dataNascimento = DateTime.ParseExact(partes[1].Trim(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
                     var cpf = partes[2].Trim();
-                    var profissoes = partes[3].Trim('[', ']', '"').Split(',').Select(p => new Profissao { Nome = p.Trim() }).ToList();
+                    var profissoesRaw = string.Join(",", partes.Skip(3)).Trim('[', ']', '"');
+                    var profissoes = profissoesRaw.Split(',').Select(p => new Profissao { Nome = p.Trim() }).ToList();
 
                     var candidato = new Candidato
                     {
@@ -90,7 +92,13 @@ namespace VenhaParaOLEDS.Services
                     var orgao = partes[0].Trim();
                     var edital = partes[1].Trim();
                     var codigo = partes[2].Trim();
-                    var vagas = partes[3].Trim('[', ']', '"').Split(',').Select(v => new Vaga { Nome = v.Trim() }).ToList();
+
+                    var vagasRaw = string.Join(",", partes.Skip(3)).Trim('[', ']', '"');
+                    var vagas = vagasRaw.Split(',')
+                                .Select(v => v.Trim())
+                                .Where(v => !string.IsNullOrWhiteSpace(v))
+                                .Select(v => new Vaga { Nome = v })
+                                .ToList();
 
                     var concurso = new Concurso
                     {
