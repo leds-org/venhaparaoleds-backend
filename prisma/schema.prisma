@@ -1,0 +1,33 @@
+// Prisma Schema File
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Candidato {
+  id               String   @id @default(cuid())
+  nome             String
+  dataDeNascimento DateTime
+  cpf              String   @unique
+  profissoes       String   // JSON string com array de profissões
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@map("candidatos")
+}
+
+model Concurso {
+  id       String   @id @default(cuid())
+  orgao    String
+  edital   String
+  codigo   String   @unique
+  vagas    String   // JSON string com array de vagas/profissões
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("concursos")
+}
