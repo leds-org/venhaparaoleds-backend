@@ -1,0 +1,12 @@
+Nome	Data de Nascimento	CPF	Profissões
+Lindsey Craft	19/05/1976	182.845.084-34	[carpinteiro]
+Jackie Dawson	14/08/1970	311.667.973-47	[marceneiro, assistente administrativo]
+Cory Mendoza	11/02/1957	565.512.353-92	[carpinteiro, marceneiro]
+Amanda Lira	22/03/1982	287.456.123-00	[professor de matemática, assistente administrativo]
+Carlos Meireles	01/01/1990	401.123.999-87	[analista de sistemas]
+Patrícia Gomes	17/11/1985	951.753.159-46	[engenheiro eletricista]
+Rafael Souza	08/08/1993	123.456.789-00	[marceneiro, engenheiro civil]
+Fernanda Lima	03/07/1979	789.456.123-55	[professor de matemática]
+Diego Almeida	10/12/1980	321.654.987-01	[carpinteiro, auxiliar administrativo]
+Tatiane Dias	30/06/1988	741.852.963-10	[assistente administrativo, engenheiro eletricista]
+Andre Souza	17/11/1985	951.753.159-20	[engenheiro eletricista]

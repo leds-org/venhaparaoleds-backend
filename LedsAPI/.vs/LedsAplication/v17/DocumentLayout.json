@@ -1,0 +1,438 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Entidades\\EmpregoVaga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Entidades\\EmpregoVaga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Services\\Casamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\Casamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Services\\ConsultasService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\ConsultasService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Services\\Leitura_candidatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\Leitura_candidatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Services\\Leitura_concursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\Leitura_concursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Entidades\\Candidatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Entidades\\Candidatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Entidades\\Profissao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Entidades\\Profissao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Entidades\\Concursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Entidades\\Concursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\ConcursoDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DTOs\\ConcursoDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Controllers\\CadastrosController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\CadastrosController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\CasamentoResultadoDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DTOs\\CasamentoResultadoDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\VagaDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DTOs\\VagaDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Context\\LedsAplicationContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Context\\LedsAplicationContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Controllers\\ImportacaoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\ImportacaoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\CandidatoDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DTOs\\CandidatoDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\ProfissaoDto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DTOs\\ProfissaoDto.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LedsAplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplicationFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LedsAplicationFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Migrations\\LedsAplicationContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\LedsAplicationContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplication||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LedsAplication||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplicacao.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LedsAplicacao.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplication.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LedsAplication.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\test.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:test.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CadastrosController.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Controllers\\CadastrosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CadastrosController.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Controllers\\CadastrosController.cs",
+              "RelativeToolTip": "Controllers\\CadastrosController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAwHkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T22:28:00.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmpregoVaga.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Entidades\\EmpregoVaga.cs",
+              "RelativeDocumentMoniker": "Entidades\\EmpregoVaga.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Entidades\\EmpregoVaga.cs",
+              "RelativeToolTip": "Entidades\\EmpregoVaga.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T17:54:58.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Concursos.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Entidades\\Concursos.cs",
+              "RelativeDocumentMoniker": "Entidades\\Concursos.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Entidades\\Concursos.cs",
+              "RelativeToolTip": "Entidades\\Concursos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T17:55:07.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Candidatos.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Entidades\\Candidatos.cs",
+              "RelativeDocumentMoniker": "Entidades\\Candidatos.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Entidades\\Candidatos.cs",
+              "RelativeToolTip": "Entidades\\Candidatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T17:55:16.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConcursoDto.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\ConcursoDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\ConcursoDto.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\ConcursoDto.cs",
+              "RelativeToolTip": "DTOs\\ConcursoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T17:30:07.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Profissao.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Entidades\\Profissao.cs",
+              "RelativeDocumentMoniker": "Entidades\\Profissao.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Entidades\\Profissao.cs",
+              "RelativeToolTip": "Entidades\\Profissao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T17:54:49.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Casamento.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Services\\Casamento.cs",
+              "RelativeDocumentMoniker": "Services\\Casamento.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Services\\Casamento.cs",
+              "RelativeToolTip": "Services\\Casamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T16:31:30.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConsultasService.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Services\\ConsultasService.cs",
+              "RelativeDocumentMoniker": "Services\\ConsultasService.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Services\\ConsultasService.cs",
+              "RelativeToolTip": "Services\\ConsultasService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T16:31:52.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Leitura_candidatos.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Services\\Leitura_candidatos.cs",
+              "RelativeDocumentMoniker": "Services\\Leitura_candidatos.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Services\\Leitura_candidatos.cs",
+              "RelativeToolTip": "Services\\Leitura_candidatos.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAjwB4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T16:32:03.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Leitura_concursos.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Services\\Leitura_concursos.cs",
+              "RelativeDocumentMoniker": "Services\\Leitura_concursos.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Services\\Leitura_concursos.cs",
+              "RelativeToolTip": "Services\\Leitura_concursos.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T16:32:13.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CasamentoResultadoDto.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\CasamentoResultadoDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\CasamentoResultadoDto.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\CasamentoResultadoDto.cs",
+              "RelativeToolTip": "DTOs\\CasamentoResultadoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T17:08:09.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VagaDto.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\VagaDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\VagaDto.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\VagaDto.cs",
+              "RelativeToolTip": "DTOs\\VagaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T17:29:53.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ImportacaoController.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Controllers\\ImportacaoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ImportacaoController.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Controllers\\ImportacaoController.cs",
+              "RelativeToolTip": "Controllers\\ImportacaoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T17:10:20.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T21:11:36.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProfissaoDto.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\ProfissaoDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\ProfissaoDto.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\ProfissaoDto.cs",
+              "RelativeToolTip": "DTOs\\ProfissaoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T17:29:02.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LedsAplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Context\\LedsAplicationContext.cs",
+              "RelativeDocumentMoniker": "Context\\LedsAplicationContext.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Context\\LedsAplicationContext.cs",
+              "RelativeToolTip": "Context\\LedsAplicationContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T14:51:55.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CandidatoDto.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\CandidatoDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\CandidatoDto.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\DTOs\\CandidatoDto.cs",
+              "RelativeToolTip": "DTOs\\CandidatoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T17:29:37.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LedsAplication.csproj",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplication.csproj",
+              "RelativeDocumentMoniker": "LedsAplication.csproj",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplication.csproj",
+              "RelativeToolTip": "LedsAplication.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-29T15:17:55.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LedsAplicationFactory.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplicationFactory.cs",
+              "RelativeDocumentMoniker": "LedsAplicationFactory.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplicationFactory.cs",
+              "RelativeToolTip": "LedsAplicationFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T21:09:37.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T16:16:10.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LedsAplicationContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Migrations\\LedsAplicationContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\LedsAplicationContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\Migrations\\LedsAplicationContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\LedsAplicationContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T21:01:47.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-29T15:17:57.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LedsAplication",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplication",
+              "RelativeDocumentMoniker": "LedsAplication",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplication",
+              "RelativeToolTip": "LedsAplication",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-29T18:22:49.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LedsAplicacao.http",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplicacao.http",
+              "RelativeDocumentMoniker": "LedsAplicacao.http",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplicacao.http",
+              "RelativeToolTip": "LedsAplicacao.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-29T18:22:50.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LedsAplication.csproj.user",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplication.csproj.user",
+              "RelativeDocumentMoniker": "LedsAplication.csproj.user",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\LedsAplication.csproj.user",
+              "RelativeToolTip": "LedsAplication.csproj.user",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2025-06-29T18:22:48.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "test.http",
+              "DocumentMoniker": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\test.http",
+              "RelativeDocumentMoniker": "test.http",
+              "ToolTip": "C:\\Users\\grong\\source\\repos\\LedsAplicacao\\LedsAplication\\test.http",
+              "RelativeToolTip": "test.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-29T16:06:36.601Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

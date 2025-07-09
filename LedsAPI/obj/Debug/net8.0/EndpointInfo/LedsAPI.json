@@ -1,0 +1,249 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "LedsAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Cadastro/candidato": {
+      "post": {
+        "tags": [
+          "Cadastro"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CandidatoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CandidatoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CandidatoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cadastro/concurso": {
+      "post": {
+        "tags": [
+          "Cadastro"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConcursoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConcursoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConcursoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Importacao/candidatos": {
+      "post": {
+        "tags": [
+          "Importacao"
+        ],
+        "parameters": [
+          {
+            "name": "path",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Importacao/concursos": {
+      "post": {
+        "tags": [
+          "Importacao"
+        ],
+        "parameters": [
+          {
+            "name": "path",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Importacao/casamentos": {
+      "get": {
+        "tags": [
+          "Importacao"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Importacao/concursos-por-cpf": {
+      "get": {
+        "tags": [
+          "Importacao"
+        ],
+        "parameters": [
+          {
+            "name": "cpf",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Importacao/candidatos-por-concurso": {
+      "get": {
+        "tags": [
+          "Importacao"
+        ],
+        "parameters": [
+          {
+            "name": "cdConcurso",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CandidatoDto": {
+        "type": "object",
+        "properties": {
+          "cpf": {
+            "type": "string",
+            "nullable": true
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "nascimento": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "profissoes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProfissaoDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ConcursoDto": {
+        "type": "object",
+        "properties": {
+          "cdConcurso": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "orgao": {
+            "type": "string",
+            "nullable": true
+          },
+          "edital": {
+            "type": "string",
+            "nullable": true
+          },
+          "vagas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VagaDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProfissaoDto": {
+        "type": "object",
+        "properties": {
+          "nomeProf": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VagaDto": {
+        "type": "object",
+        "properties": {
+          "nomeVag": {
+            "type": "string",
+            "nullable": true
+          },
+          "profissoesNecessarias": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProfissaoDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

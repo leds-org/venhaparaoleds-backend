@@ -1,0 +1,7 @@
+{
+  "LedsAPI.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Application",
+  "LedsAPI.CrossCutting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.CrossCutting",
+  "LedsAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI",
+  "LedsAPI.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Domain",
+  "LedsAPI.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Infra"
+}

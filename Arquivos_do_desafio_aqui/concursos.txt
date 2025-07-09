@@ -1,0 +1,9 @@
+Órgão	Edital	Código do Concurso	Lista de vagas
+SEDU	09/2016	61828450843	[analista de sistemas, marceneiro]
+SEJUS	15/2017	61828450844	[carpinteiro, professor de matemática, assistente administrativo]
+SEJUS	17/2017	95655123539	[professor de matemática]
+IFMG	08/2018	31234123456	[assistente administrativo, marceneiro]
+TJMG	05/2015	70111234567	[analista de sistemas, engenheiro civil]
+CEMIG	10/2014	84561234500	[engenheiro eletricista]
+SEDUC	03/2019	94561234501	[professor de matemática, assistente administrativo]
+IFSP	11/2020	12345678901	[auxiliar administrativo, carpinteiro]

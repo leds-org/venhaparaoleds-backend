@@ -1,0 +1,108 @@
+[
+  {
+    "ContainingType": "CadastroController",
+    "Method": "CadastrarCandidato",
+    "RelativePath": "api/Cadastro/candidato",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "LedsAPI.Application.DTOs.CandidatoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CadastroController",
+    "Method": "CadastrarConcurso",
+    "RelativePath": "api/Cadastro/concurso",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "LedsAPI.Application.DTOs.ConcursoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LedsAplication.Controllers.ImportacaoController",
+    "Method": "ImportarCandidatos",
+    "RelativePath": "api/Importacao/candidatos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "path",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LedsAplication.Controllers.ImportacaoController",
+    "Method": "GetCandidatosPorConcurso",
+    "RelativePath": "api/Importacao/candidatos-por-concurso",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cdConcurso",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LedsAplication.Controllers.ImportacaoController",
+    "Method": "GetCasamentos",
+    "RelativePath": "api/Importacao/casamentos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LedsAplication.Controllers.ImportacaoController",
+    "Method": "ImportarConcursos",
+    "RelativePath": "api/Importacao/concursos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "path",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LedsAplication.Controllers.ImportacaoController",
+    "Method": "GetConcursosPorCpf",
+    "RelativePath": "api/Importacao/concursos-por-cpf",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cpf",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

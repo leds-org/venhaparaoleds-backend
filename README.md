@@ -1,98 +1,98 @@
-# Desafio Backend - LEDS
-*Bem-vindo!* 👋
+# LedsAplication
 
-Neste desafio, você terá a oportunidade de demonstrar que possui as habilidades necessárias para atuar no time de backend do laboratório.
+## Descrição do projeto
 
-# Contextualização
+Esse é um breve projeto desenvolvido em **ASP.NET 8** que busca gerenciar e interligar candidatos e concursos presentes em dois arquivos `.txt`, `candidatos.txt` e `concursos.txt`.
 
-O desafio é desenvolver um programa que permita realizar as seguintes buscas: 
-1. Listar os **órgãos, códigos e editais dos concursos públicos** que se encaixam no perfil do candidato, tomando como base o seu **CPF**; 
-2. Listar o **nome, data de nascimento e o CPF** dos candidatos que se encaixam no perfil do concurso tomando com base o **Código do Concurso** do concurso público;
+O sistema permite realizar consultas cruzadas entre as vagas disponíveis nos concursos e as profissões cadastradas nos perfis dos candidatos.
 
-O arquivo **candidatos.txt** contém as informações dos candidatos:
+> ℹ️ **Também é possível executar e interagir com a aplicação via um frontend básico localizado na pasta `FrontendBasico`.**
+> Basta abrir o arquivo `index.html` no navegador após rodar o backend.
 
-| Nome  | Data de Nascimento  | CPF |  Profissões|
-|---|---|---|---|
-| Lindsey Craft  |  19/05/1976  |  182.845.084-34  |  [carpinteiro]  | 
-| Jackie Dawson  |  14/08/1970  |  311.667.973-47  |  [marceneiro, assistente administrativo]  |
-| Cory Mendoza |   11/02/1957 |  565.512.353-92  |  [carpinteiro, marceneiro] |
+---
 
-O arquivo **concursos.txt** contém as informações dos concursos públicos:
+## Tecnologias empregadas
 
-| Órgão  | Edital  | Código do Concurso | Lista de vagas|
-|---|---|---|---|
-| SEDU  | 9/2016  |  61828450843  |  [analista de sistemas, marceneiro]  | 
-| SEJUS | 15/2017  |  61828450843  |  [carpinteiro,professor de matemática,assistente administrativo] |
-| SEJUS | 17/2017 |  95655123539  |  [professor de matemática] |
+- **Backend**: ASP.NET
+- **Linguagem**: C#
+- **Banco de dados**: SQLite com Entity Framework
+- **Injeção de Dependência**: Padrão do .NET Core
+- **Mapeamento de Objetos**: `MapConverter`
 
-🤩 **As tecnologias a serem utilizadas na implementação da solução ficam a seu critério!**
+### Bibliotecas utilizadas
 
-# Como entregar?
-1. Faça um **fork** do repositório. Nesse fork esperamos encontrar uma documentação completa da solução e a listagem dos diferenciais implementados.
-2. Abra um **pull request (PR)** do seu fork para o nome repositório com o seu nome como título. Assim conseguimos te localizar melhor e ver que você já finalizou o desafio!
+- `Microsoft.Extensions.Configuration.FileExtensions`
+- `Microsoft.Extensions.Configuration.Json`
+- `Microsoft.Extensions.Configuration`
+- `Microsoft.Extensions.DependencyInjection.Abstractions`
+- `Microsoft.EntityFrameworkCore`
+- `Microsoft.EntityFrameworkCore.Design`
+- `Microsoft.EntityFrameworkCore.Migrations`
+- `Swashbuckle.AspNetCore` (Swagger para documentação da API)
 
-🚨 **Atenção**: você deve enviar apenas o código fonte. Não serão aceitos códigos compilados.
+---
 
-## Avaliação
+## Como executar o projeto
 
-O programa será avaliado levando em conta os seguintes critérios:
+### Requisitos
 
-| Critério  | Valor | 
-|---|---|
-| Legibilidade do Código |  10  |
-| Documentação do código |  10  |
-| Documentação da solução |  10  |
-| Tratamento de Erros | 10 | 
-| Total | 40 |
+- [.NET SDK 8.0](https://dotnet.microsoft.com/download/dotnet/8.0)
+- Um editor de código como [Visual Studio Code](https://code.visualstudio.com/) ou [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 
-A sua pontuação será a soma dos valores obtidos nos critérios acima.
+### Passos
 
-## Diferenciais 
-Você pode **aumentar sua pontuação** implementando os seguintes diferenciais:
+1. Clone o repositório:
 
-| Item  | Pontos Ganhos | 
-|---|---|
-| Criar um [serviço](https://martinfowler.com/articles/microservices.html) com o problema |  30  |
-| Utilizar banco de dados |  30  |
-| Implementar Clean Code |  20  |
-| Implementar o padrão de programação da tecnologia escolhida |  20  |
-| Qualidade de [Código com SonarQube](https://about.sonarcloud.io/) |  15  |
-| Implementar testes unitários |  15  |
-| Implementar testes comportamentais |  15  |
-| Implementar integração com [Github Action](https://github.com/features/actions)  |  10  |
-| Implementar integração com Github Action + SonarQube |  10  |
-| Implementar usando Docker | 5 |
-| Total| 170 |
+```bash
+git clone https://github.com/seu-usuario/LedsAplication.git
+cd LedsAplication
+```
 
-A pontuação final será calculada somando os critérios obrigatórios e os diferenciais implementados corretamente.
+2. Restaure os pacotes:
 
-# Penalizações
+```bash
+dotnet restore
+```
 
-Você será desclassificado se:
+3. Rode o projeto:
 
-1. Enviar uma solução que não funcione.
-2. Não cumprir os critérios da seção **Avaliação**.
-3. For identificado plágio.
-   
-***Que a força esteja com você. Boa sorte!***
+```bash
+dotnet run --project LedsAPI
+```
 
-<div align="left">
-</div>
+4. Acesse a API via Swagger em:
 
-###
+```
+http://localhost:{porta}/swagger
+```
 
-<br clear="both">
+> Substitua `{porta}` pela porta exibida ao rodar o projeto.
 
-<div align="center">
-  <a href="https://www.linkedin.com/school/ledsifes" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="https://www.instagram.com/ledsifes/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="instagram logo"  />
-  </a>
-  <a href="https://www.youtube.com/@ledsifes/?sub_confirmation=1" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
-  </a>
-</div>
+---
 
-###
+## Frontend Básico
+
+O projeto inclui uma interface simples localizada na pasta `FrontendBasico`, que permite interagir com o backend para:
+
+- Consultar concursos por CPF
+- Consultar candidatos por código de concurso
+- Cadastrar candidatos
+- Cadastrar concursos
+
+### Como usar:
+
+1. Após rodar o backend, abra o arquivo `FrontendBasico/index.html` no navegador.
+2. Preencha os campos e clique nos botões de ação.
+
+---
+
+## Considerações finais
+
+Este projeto foi desenvolvido como parte do **Desafio Backend da LEDS**.  
+Todos os critérios essenciais do desafio foram atendidos, com destaque para:
+
+- Importação e cadastro de dados
+- Separação em camadas (DTOs, Services, Repositórios)
+- Banco de dados relacional via EF Core
+- Testes comportamentais com banco InMemory
+- Consumo da API por frontend externo

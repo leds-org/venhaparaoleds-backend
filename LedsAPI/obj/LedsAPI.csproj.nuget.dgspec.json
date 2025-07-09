@@ -1,0 +1,389 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI\\LedsAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Application\\LedsAPI.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Application\\LedsAPI.Application.csproj",
+        "projectName": "LedsAPI.Application",
+        "projectPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Application\\LedsAPI.Application.csproj",
+        "packagesPath": "C:\\Users\\grong\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\grong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Domain\\LedsAPI.Domain.csproj": {
+                "projectPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Domain\\LedsAPI.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.CrossCutting\\LedsAPI.CrossCutting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.CrossCutting\\LedsAPI.CrossCutting.csproj",
+        "projectName": "LedsAPI.CrossCutting",
+        "projectPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.CrossCutting\\LedsAPI.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\grong\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.CrossCutting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\grong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Application\\LedsAPI.Application.csproj": {
+                "projectPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Application\\LedsAPI.Application.csproj"
+              },
+              "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Infra\\LedsAPI.Infra.csproj": {
+                "projectPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Infra\\LedsAPI.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Domain\\LedsAPI.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Domain\\LedsAPI.Domain.csproj",
+        "projectName": "LedsAPI.Domain",
+        "projectPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Domain\\LedsAPI.Domain.csproj",
+        "packagesPath": "C:\\Users\\grong\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\grong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Infra\\LedsAPI.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Infra\\LedsAPI.Infra.csproj",
+        "projectName": "LedsAPI.Infra",
+        "projectPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Infra\\LedsAPI.Infra.csproj",
+        "packagesPath": "C:\\Users\\grong\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\grong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Domain\\LedsAPI.Domain.csproj": {
+                "projectPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.Domain\\LedsAPI.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI\\LedsAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI\\LedsAPI.csproj",
+        "projectName": "LedsAPI",
+        "projectPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI\\LedsAPI.csproj",
+        "packagesPath": "C:\\Users\\grong\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\grong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.CrossCutting\\LedsAPI.CrossCutting.csproj": {
+                "projectPath": "C:\\Users\\grong\\OneDrive\\Anexos\\teste\\LedsAplicacao\\LedsAPI.CrossCutting\\LedsAPI.CrossCutting.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
