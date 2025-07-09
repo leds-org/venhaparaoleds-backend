@@ -27,10 +27,10 @@ async function registrarConcurso(req, res){
             )
         }else{
             const res_time = ((new_concurso.response_time - tempo_inicial)/1000);
-            res.status(get_Concursos.status_code).send(
+            res.status(new_concurso.status_code).send(
                 {
                     sucess: false,
-                    error_message: new_concurso.message,
+                    error_message: new_concurso.error_message,
                     response_time: res_time.toFixed(2)
                 }
             );
@@ -39,29 +39,29 @@ async function registrarConcurso(req, res){
 };
 
 // Função para procurar um concurso já cadastrado
-// Parâmetros: id do concurso
+// Parâmetros: codigo do concurso
 // Retorna: dados do concurso ou mensagem de erro
 async function procurarConcurso(req, res){
-    const { id } = req.query;
+    const { codigo } = req.query;
 
-    if (!id){
+    if (!codigo){
         const res_time = ((performance.now() - tempo_inicial)/1000);
         res.status(400).send(
             {
                 sucess: false,
-                error_message: "ID do concurso não fornecido.",
+                error_message: "Codigo do concurso não fornecido.",
                 response_time: res_time.toFixed(2)
             }
         )
     }else{
-        const get_concurso = await concursoService.getConcurso(id);
+        const get_concurso = await concursoService.getConcurso(codigo);
 
         if(get_concurso.sucess === true){
             const res_time = ((get_concurso.response_time - tempo_inicial)/1000);
             res.status(200).send(
                 {
                     sucess: true,
-                    concurso: get_concurso.data,
+                    data: get_concurso.data,
                     response_time: res_time.toFixed(2)
                 }
             );
@@ -71,7 +71,7 @@ async function procurarConcurso(req, res){
             res.status(get_concurso.status_code).send(
                 {
                     sucess: false,
-                    error_message: get_concurso.message,
+                    error_message: get_concurso.error_message,
                     response_time: res_time.toFixed(2)
                 }
             );
@@ -96,14 +96,14 @@ async function listarConcursosCompativeis(req, res){
         )
     }
     else{
-        const get_concursos = await concursoService.getConcursosCompativeis (cpf);
+        const get_concursos = await concursoService.getConcursosCompativeis(cpf);
 
         if(get_concursos.sucess === true){
             const res_time = ((get_concursos.response_time - tempo_inicial)/1000);
             res.status(200).send(
                 {
                     sucess: true,
-                    concursos: get_concursos.data,
+                    data: get_concursos.data,
                     response_time: res_time.toFixed(2)
                 }
             );
@@ -113,7 +113,7 @@ async function listarConcursosCompativeis(req, res){
             res.status(get_concursos.status_code).send(
                 {
                     sucess: false,
-                    error_message: get_concursos.message,
+                    error_message: get_concursos.error_message,
                     response_time: res_time.toFixed(2)
                 }
             );

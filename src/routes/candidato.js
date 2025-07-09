@@ -9,14 +9,14 @@ const candidatoController = require('../controllers/candidato');
 /*params:
     nome: String,
     cpf: String,
-    data_nascimento: Date,
-    profissoes: Object<String>
+    data_nascimento: String,
+    profissoes: Array<String>
 */
-router.post("/cadastrar", candidatoController.cadastrar);
+router.post("/registrar_candidato", candidatoController.cadastrar);
 
 //Rota para procurar um candidato já cadastrado
 /*params:
-    id: String
+    cpf: String
 */
 router.get("/procurar_candidato", candidatoController.procurarCandidato);
 
