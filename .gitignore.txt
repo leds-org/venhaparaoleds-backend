@@ -1,0 +1,21 @@
+# Pastas de build e objetos
+bin/
+obj/
+
+# Arquivos de usuário do Visual Studio
+.vs/
+*.user
+*.suo
+
+# Pacotes NuGet
+packages/
+*.nupkg
+
+# Outros arquivos temporários e de log
+*.log
+*.pdb
+*.tmp
+
+# MacOS e Windows específicos (se houver)
+.DS_Store
+Thumbs.db
