@@ -1,0 +1,17 @@
+### Importar candidatos
+POST http://localhost:5120/api/importacao/candidatos?path=C:\\Users\\grong\\OneDrive\\Anexos\\Arquivos_do_desafio\\candidatos.txt
+
+###
+
+### Importar concursos
+POST http://localhost:5120/api/importacao/concursos?path=C:\\Users\\grong\\OneDrive\\Anexos\\Arquivos_do_desafio\\concursos.txt
+
+###
+
+### Buscar concursos por CPF
+GET http://localhost:5120/api/importacao/concursos-por-cpf?cpf=565.512.353-92
+
+###
+
+### Buscar candidatos por código do concurso
+GET http://localhost:5120/api/importacao/candidatos-por-concurso?codigo=61828450844
