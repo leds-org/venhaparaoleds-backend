@@ -1,0 +1,335 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e9eff5; /* Um tom de azul claro para o fundo */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra mais suave e pronunciada */
+    text-align: center;
+    width: 90%;
+    max-width: 800px; /* Aumentado para melhor visualização */
+    box-sizing: border-box;
+    position: relative; /* Para posicionar mensagens de feedback */
+}
+
+h1 {
+    color: #0056b3; /* Azul mais escuro */
+    margin-bottom: 30px;
+    font-size: 2.8em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #0056b3;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+}
+
+h3 {
+    color: #007bff; /* Azul padrão */
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 1.7em;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.screen {
+    transition: opacity 0.5s ease-in-out;
+    width: 100%;
+}
+
+    .screen.hidden {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+    }
+
+.buttons-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.form-selection-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .button:hover {
+        transform: translateY(-2px);
+    }
+
+/* Tipos de botões */
+.primary-button {
+    background-color: #007bff; /* Azul vibrante */
+    color: white;
+}
+
+    .primary-button:hover {
+        background-color: #0056b3;
+    }
+
+.secondary-button {
+    background-color: #6c757d; /* Cinza */
+    color: white;
+}
+
+    .secondary-button:hover {
+        background-color: #5a6268;
+    }
+
+.small-secondary {
+    background-color: #17a2b8; /* Ciano para ações secundárias */
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.95em;
+}
+
+    .small-secondary:hover {
+        background-color: #138496;
+    }
+
+.small-red {
+    background-color: #dc3545; /* Vermelho para voltar/cancelar */
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.95em;
+    margin-top: 30px; /* Espaçamento para botões de voltar */
+}
+
+    .small-red:hover {
+        background-color: #c82333;
+    }
+
+.micro-red {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    margin-left: 8px;
+}
+
+    .micro-red:hover {
+        background-color: #c82333;
+    }
+
+/* Estilos de formulário */
+.form-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    margin-top: 20px;
+    text-align: left; /* Alinhar rótulos à esquerda */
+}
+
+    .form-container input[type="text"],
+    .form-container input[type="date"],
+    .form-container input[type="number"] {
+        width: calc(100% - 24px); /* Ajustado para padding */
+        padding: 12px;
+        margin-bottom: 18px;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 1em;
+    }
+
+        .form-container input[type="text"]:focus,
+        .form-container input[type="date"]:focus,
+        .form-container input[type="number"]:focus {
+            border-color: #80bdff;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+
+.profissoes-list,
+.vagas-list {
+    margin-top: 20px;
+    border: 1px dashed #aed6f1; /* Borda mais suave */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    background-color: #f0f8ff; /* Fundo leve para destaque */
+}
+
+.profissao-input-group,
+.vaga-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaço entre os elementos do grupo */
+}
+
+    .profissao-input-group input,
+    .vaga-input-group input {
+        flex-grow: 1;
+        margin-bottom: 0; /* Remover margin-bottom padrão */
+    }
+
+/* Estilos para blocos de consulta */
+.consulta-block {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+    .consulta-block input[type="text"],
+    .consulta-block input[type="number"] {
+        width: calc(100% - 24px);
+        padding: 12px;
+        margin-bottom: 18px;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 1em;
+    }
+
+/* Estilo para exibir JSON bruto */
+.results-raw-json {
+    margin-top: 20px;
+    text-align: left;
+    background-color: #282c34; /* Fundo escuro para código */
+    color: #abb2bf; /* Cor de texto claro */
+    padding: 15px;
+    border-radius: 8px;
+    max-height: 300px; /* Limita altura para scroll */
+    overflow-y: auto; /* Adiciona scroll vertical */
+    font-family: 'Fira Code', 'Consolas', 'Monaco', monospace; /* Fonte monoespaçada */
+    font-size: 0.9em;
+    white-space: pre-wrap; /* Quebra linhas longas */
+    word-wrap: break-word; /* Quebra palavras longas */
+}
+
+/* Feedback messages */
+.feedback-message {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+    .feedback-message.show {
+        opacity: 1;
+    }
+
+    .feedback-message.success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+
+    .feedback-message.error {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
+
+    .feedback-message.info {
+        background-color: #d1ecf1;
+        color: #0c5460;
+        border: 1px solid #bee5eb;
+    }
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px 30px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .buttons-container, .form-selection-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .form-container input, .consulta-block input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .profissao-input-group, .vaga-input-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+        .profissao-input-group input, .vaga-input-group input {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+    .micro-red {
+        width: 100%;
+        margin-left: 0;
+    }
+}

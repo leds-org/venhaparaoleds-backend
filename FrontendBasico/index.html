@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Leds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="mainTitle">Desafio Leds</h1>
+
+        <div id="initialScreen" class="screen">
+            <div class="buttons-container">
+                <button id="btnCadastro" class="button primary-button">Cadastro</button>
+                <button id="btnConsulta" class="button primary-button">Consulta</button>
+            </div>
+        </div>
+
+        <div id="cadastroScreen" class="screen hidden">
+            <h2>Area de Cadastro</h2>
+            <div id="candidatoForm" class="form-container">
+                <h3>Cadastro de Candidato</h3>
+                <label for="candidatoNome">Nome:</label>
+                <input type="text" id="candidatoNome" placeholder="Nome completo do Candidato" required>
+
+                <label for="candidatoNascimento">Data de Nascimento:</label>
+                <input type="date" id="candidatoNascimento">
+
+                <label for="candidatoCPF">CPF:</label>
+                <input type="text" id="candidatoCPF" placeholder="000.000.000-00" maxlength="14">
+
+                <div class="profissoes-list" id="candidatoProfissoesContainer">
+                    <label>Profissoes:</label>
+                    <div class="profissao-input-group">
+                        <input type="text" class="candidato-profissao-input" placeholder="Nome da profissao">
+                        <button class="remove-input-btn">Remover</button>
+                    </div>
+                </div>
+                <button id="addProfissaoBtn" class="button small-secondary">Adicionar Profissao</button>
+                <button id="submitCandidatoBtn" class="button primary-button">Cadastrar Candidato</button>
+                <div class="feedback-message" id="feedbackCandidato"></div>
+            </div>
+
+            <div id="concursoForm" class="form-container">
+                <h3>Cadastro de Concurso</h3>
+                <label for="concursoOrgao">Orgao:</label>
+                <input type="text" id="concursoOrgao" placeholder="Orgao do Concurso" required>
+
+                <label for="concursoEdital">Edital:</label>
+                <input type="text" id="concursoEdital" placeholder="Ex: 01/2023" required>
+
+                <label for="concursoCodigo">Codigo do Concurso:</label>
+                <input type="number" id="concursoCodigo" placeholder="Codigo numerico" required>
+
+                <div class="vagas-list" id="concursoVagasContainer">
+                    <label>Profissoes Requeridas para Vagas:</label>
+                    <div class="vaga-input-group">
+                        <input type="text" class="concurso-vaga-profissao-input" placeholder="Profissao necessaria para a vaga">
+                        <button class="remove-input-btn">Remover</button>
+                    </div>
+                </div>
+                <button id="addVagaBtn" class="button small-secondary">Adicionar Profissao a Vaga</button>
+                <button id="submitConcursoBtn" class="button primary-button">Cadastrar Concurso</button>
+                <div class="feedback-message" id="feedbackConcurso"></div>
+            </div>
+
+            <button id="backToMain" class="button small-red">Voltar</button>
+        </div>
+
+        <div id="consultaScreen" class="screen hidden">
+            <h2>Area de Consulta</h2>
+
+            <div class="consulta-block">
+                <h3>Buscar Concursos por CPF do Candidato</h3>
+                <input type="text" id="inputCpfConsulta" placeholder="Digite o CPF do candidato (ex: 123.456.789-00)" maxlength="14" required>
+                <button class="button primary-button" id="btnBuscarConcursos">Buscar Concursos</button>
+                <div class="feedback-message" id="feedbackConcursosConsulta"></div>
+                <pre class="results-raw-json" id="resultsConcursos"></pre>
+            </div>
+
+            <div class="consulta-block">
+                <h3>Buscar Candidatos por Codigo do Concurso</h3>
+                <input type="number" id="inputCdConcursoConsulta" placeholder="Digite o Codigo do Concurso (ex: 12345)" required>
+                <button class="button primary-button" id="btnBuscarCandidatos">Buscar Candidatos</button>
+                <div class="feedback-message" id="feedbackCandidatosConsulta"></div>
+                <pre class="results-raw-json" id="resultsCandidatos"></pre>
+            </div>
+
+            <button id="backToMainFromConsulta" class="button small-red">Voltar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
