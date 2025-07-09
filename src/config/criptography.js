@@ -6,14 +6,18 @@ const dotenv = require('dotenv').config();
 const CRIPT_INFOS = {
     algorithm: 'aes-256-cbc',//Algoritmo de criptografia
     secret: process.env.SECRET_KEY //Um valor usado na criação da chave de criptografia
+    
+}
+
+//Gera um iv aleatorio
+function generateRandomIV(){
+    return crypto.randomBytes(16);
 }
 
 //Método para criptografia de dados
-function criptInfo(data){
-
-    //Cria um vetor de inicialização, entrada responsável por misturar com um bloco de dados e randomizar a geração da chave de criptografia 
-    const iv = crypto.randomBytes(16);
-
+//obs.: O iv (vetor de inicialização),é uma entrada responsável por misturar com um 
+//bloco de dados e randomizar a geração da chave de criptografia
+function criptInfo(data, iv){
 
     //Chamada ao método de geração de chave de criptografia, randomizada a partir de dois valores: 
         // -> um valor secreto (secret);
@@ -37,6 +41,8 @@ function criptInfo(data){
     //obs.: cipher.final() fecha o bloco de cifragem, impossibilitando que novos dados sejam criptografados a partir dele
     /* ----------- */
     
+    // console.log(iv.toString('hex'));
+
     //Retorna objeto com o dado criptografado e o iv associado ao mesmo
     return {
         iv: iv.toString('hex'),
@@ -48,6 +54,7 @@ function decriptInfo(cripted_data){
 
     //Atribui o iv e o dado criptografado a variáveis
     const iv = Buffer.from(cripted_data.iv, 'hex');
+    // console.log(iv);
     const encryptedData = Buffer.from(cripted_data.encryptedData, 'hex');
 
 
@@ -80,4 +87,5 @@ function decriptInfo(cripted_data){
 module.exports = {
     criptInfo,
     decriptInfo,
+    generateRandomIV,
 }

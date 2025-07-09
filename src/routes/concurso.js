@@ -14,7 +14,7 @@ router.post("/registrar_concurso", concursoController.registrarConcurso);
 
 //Rota para procurar um concurso registrado
 /*params:
-    id: String
+    codigo: String
 */
 router.get("/procurar_concurso", concursoController.procurarConcurso);
 
