@@ -127,6 +127,8 @@ Considerando as duas entidades principais mencionadas na seção *"🐘 Modelage
     route.get("/listar_concursos_compativeis", concursoController.listarConcursosCompativeis);
 
 ```
+>***obs.:*** Todas as rotas (ao rodar a aplicação localmente) são antecedidas pelo prefixo **"http://localhost:3000/api"**
+>(a rota de pesquisa por candidato, por exemplo, ficaria "http://localhost:3000/api/procurar_candidato").
 ---
 
 ## 📁 Estrutura de Diretórios 
@@ -147,3 +149,17 @@ Segue abaixo a estrutura de diretórios da aplicação:
 
 >***obs.:*** a estrutura acima oculta outras pastas secundárias mas relevantes do projeto como, por exemplo, as pastas com os imports de módulos necessários para cada lado do projeto (node_modules).
 
+---
+
+## 🖥️ Rodando a API Localmente
+
+Para testar a aplicação, é necessário que haja uma ferramenta específica para testes de rotas (como o Postman, por exemplo) 
+e a versão mais recente do Node instalado em seu desktop. Tendo essas ferramentas instaladas, no diretório raiz do projeto, rode os seguintes comandos:
+
+```bash
+npm i # Para instalar todas as dependências do projeto
+npm start # Para iniciar a execução da API
+```
+
+Ao rodar esses comandos, a mensagem "API conectada à base de dados" deve aparecer no terminal, o que indica que a aplicação está rodando.
+Assim, é só fazer os testes utilizando a ferramenta para testes de API utilizando o formato de rota especificado na seção ***🛣️ Rotas da Aplicação***.
