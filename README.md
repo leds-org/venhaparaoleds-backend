@@ -1,98 +1,84 @@
-# Desafio Backend - LEDS
-*Bem-vindo!* 👋
+<h1>Desafio Leds</h1>
+<h3>Aluno: Arthur Corona</h3>
+<h3>email: coronaggp@gmail.com</h3>
+<p>Este projeto implementa um sistema em Node.js que realiza o cruzamento de dados entre candidatos e concursos públicos. A aplicação é capaz de determinar a compatibilidade entre eles com base nas profissões exigidas pelas vagas e nas qualificações dos candidatos.</p>
 
-Neste desafio, você terá a oportunidade de demonstrar que possui as habilidades necessárias para atuar no time de backend do laboratório.
+<h2>Funcionalidades Principais</h2>
+<p>Busca por Candidato: Fornecendo o CPF de um candidato, o sistema retorna uma lista de todos os concursos públicos para os quais ele está qualificado.</p>
 
-# Contextualização
+<p>Busca por Concurso: Fornecendo o Código de um concurso, o sistema retorna uma lista de todos os candidatos qualificados para as vagas ofertadas.</p>
 
-O desafio é desenvolver um programa que permita realizar as seguintes buscas: 
-1. Listar os **órgãos, códigos e editais dos concursos públicos** que se encaixam no perfil do candidato, tomando como base o seu **CPF**; 
-2. Listar o **nome, data de nascimento e o CPF** dos candidatos que se encaixam no perfil do concurso tomando com base o **Código do Concurso** do concurso público;
+<h2>Tecnologias Utilizadas:</h2>
+<p>Node.js: Ambiente de execução para o código JavaScript do lado do servidor.</p>
 
-O arquivo **candidatos.txt** contém as informações dos candidatos:
+<p>Jest: Framework de testes para garantir a qualidade e a corretude da lógica de negócio.</p>
 
-| Nome  | Data de Nascimento  | CPF |  Profissões|
-|---|---|---|---|
-| Lindsey Craft  |  19/05/1976  |  182.845.084-34  |  [carpinteiro]  | 
-| Jackie Dawson  |  14/08/1970  |  311.667.973-47  |  [marceneiro, assistente administrativo]  |
-| Cory Mendoza |   11/02/1957 |  565.512.353-92  |  [carpinteiro, marceneiro] |
+<h2>Estrutura do Projeto:</h2>
 
-O arquivo **concursos.txt** contém as informações dos concursos públicos:
 
-| Órgão  | Edital  | Código do Concurso | Lista de vagas|
-|---|---|---|---|
-| SEDU  | 9/2016  |  61828450843  |  [analista de sistemas, marceneiro]  | 
-| SEJUS | 15/2017  |  61828450843  |  [carpinteiro,professor de matemática,assistente administrativo] |
-| SEJUS | 17/2017 |  95655123539  |  [professor de matemática] |
+/
+├── index.js                # Ponto de entrada para uso interativo da aplicação
+├── package.json            # Metadados do projeto e scripts (npm test)
+├── src/
+│   ├── data/
+│   │   ├── candidatos.txt  # Banco de dados de candidatos em formato de texto
+│   │   ├── concursos.txt   # Banco de dados de concursos em formato de texto
+│   │   └── database.js     # MÓDULO DE DADOS: Responsável por ler e interpretar os arquivos .txt
+│   └── services/
+│       └── matchingService.js # MÓDULO DE SERVIÇO: Contém toda a lógica de negócio e otimizações
+└── tests/
+    └── matchingService.test.js # MÓDULO DE TESTES: Testes unitários para o serviço de matching
 
-🤩 **As tecnologias a serem utilizadas na implementação da solução ficam a seu critério!**
+<h2>1. Camada de Dados (src/data/database.js)</h2>
+Esta camada é responsável por abstrair a origem dos dados. Suas funções (loadCandidatos e loadConcursos) leem os arquivos .txt, processam o texto linha a linha e convertem os dados brutos em arrays de objetos JavaScript estruturados, que podem ser facilmente manipulados pela aplicação.
 
-# Como entregar?
-1. Faça um **fork** do repositório. Nesse fork esperamos encontrar uma documentação completa da solução e a listagem dos diferenciais implementados.
-2. Abra um **pull request (PR)** do seu fork para o nome repositório com o seu nome como título. Assim conseguimos te localizar melhor e ver que você já finalizou o desafio!
+<h2>2. Camada de Serviço (src/services/matchingService.js)</h2>
 
-🚨 **Atenção**: você deve enviar apenas o código fonte. Não serão aceitos códigos compilados.
+<p>Otimização de Performance (Carregamento Único): Ao iniciar, o serviço carrega todos os dados dos arquivos .txt para a memória RAM uma única vez. Isso evita a lentidão de operações de disco repetitivas a cada busca, tornando as consultas subsequentes extremamente rápidas.</p>
 
-## Avaliação
+<p>Lógica de Matching: As funções find utilizam os dados em memória para realizar o cruzamento. Elas primeiro localizam o registro inicial através do Map (busca rápida) e depois filtram a lista oposta, comparando as profissões com as vagas para encontrar todas as correspondências.</p>
 
-O programa será avaliado levando em conta os seguintes critérios:
+<h2>3. Estratégia de Testes (tests/matchingService.test.js)</h2>
+Para garantir a confiabilidade do sistema, foram implementados testes unitários com Jest.
 
-| Critério  | Valor | 
-|---|---|
-| Legibilidade do Código |  10  |
-| Documentação do código |  10  |
-| Documentação da solução |  10  |
-| Tratamento de Erros | 10 | 
-| Total | 40 |
+<p>Mocking (Simulação): Os testes não leem os arquivos .txt reais. Em vez disso, eles utilizam a técnica de mocking para simular a camada de dados. Um conjunto pequeno e controlado de dados falsos é fornecido ao serviço durante os testes.</p>
 
-A sua pontuação será a soma dos valores obtidos nos critérios acima.
+<p>Benefícios: Esta abordagem garante que os testes sejam:</p>
 
-## Diferenciais 
-Você pode **aumentar sua pontuação** implementando os seguintes diferenciais:
+<p>Rápidos: Não dependem da lentidão do sistema de arquivos.</p>
 
-| Item  | Pontos Ganhos | 
-|---|---|
-| Criar um [serviço](https://martinfowler.com/articles/microservices.html) com o problema |  30  |
-| Utilizar banco de dados |  30  |
-| Implementar Clean Code |  20  |
-| Implementar o padrão de programação da tecnologia escolhida |  20  |
-| Qualidade de [Código com SonarQube](https://about.sonarcloud.io/) |  15  |
-| Implementar testes unitários |  15  |
-| Implementar testes comportamentais |  15  |
-| Implementar integração com [Github Action](https://github.com/features/actions)  |  10  |
-| Implementar integração com Github Action + SonarQube |  10  |
-| Implementar usando Docker | 5 |
-| Total| 170 |
+<p>Determinísticos: Os resultados são sempre os mesmos, independentemente dos dados reais.</p>
 
-A pontuação final será calculada somando os critérios obrigatórios e os diferenciais implementados corretamente.
+<p>Isolados: Testa-se apenas a lógica do matchingService, sem o risco de falhas por problemas na leitura de arquivos ou formatação de dados.</p>
 
-# Penalizações
+Como Executar o Projeto
+<p>Pré-requisitos</p>
+<p>É necessário ter o Node.js (versão 16 ou superior) instalado.</p>
 
-Você será desclassificado se:
+<h2>1. Instalação de Dependências</h2>
+Clone o repositório e, no terminal, dentro da pasta raiz do projeto, execute o seguinte comando para instalar as dependências de desenvolvimento (Jest):
 
-1. Enviar uma solução que não funcione.
-2. Não cumprir os critérios da seção **Avaliação**.
-3. For identificado plágio.
-   
-***Que a força esteja com você. Boa sorte!***
+```bash
+npm install
+```
 
-<div align="left">
-</div>
 
-###
+<h2>2. Execução Interativa</h2>
+Para usar a aplicação e fazer consultas com os dados reais dos arquivos .txt, edite os exemplos no arquivo index.js e execute:
 
-<br clear="both">
 
-<div align="center">
-  <a href="https://www.linkedin.com/school/ledsifes" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="https://www.instagram.com/ledsifes/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="instagram logo"  />
-  </a>
-  <a href="https://www.youtube.com/@ledsifes/?sub_confirmation=1" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
-  </a>
-</div>
+```bash
+node index.js
+```
 
-###
+Os resultados da busca serão exibidos em tabelas no seu terminal.
+
+<h2>3. Execução dos Testes Automatizados</h2>
+Para verificar a integridade da lógica de negócio e garantir que tudo está funcionando como esperado, execute o seguinte comando:
+
+
+```bash
+npm test
+```
+O Jest irá rodar a suíte de testes e exibir um relatório de sucesso.
+
