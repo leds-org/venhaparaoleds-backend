@@ -1,0 +1,1001 @@
+Órgão,Edital,Código do Concurso,Lista de vagas
+PMES,17/2016,55312084049,"[engenheiro civil,encanador,arquiteto]"
+SECONT,16/2015,35233564365,"[pintor,arquiteto,analista de sistemas,engenheiro civil]"
+PMES,6/2022,53691664314,"[pintor,carpinteiro,analista de sistemas,marceneiro]"
+SEDURB,16/2019,19750532858,"[engenheiro civil,eletricista]"
+SEAG,4/2019,38448925479,"[pedreiro,pintor,professor de matemática,analista de sistemas]"
+PMES,15/2019,40208181099,"[analista de sistemas,engenheiro civil,eletricista]"
+SECONT,17/2016,68920621800,"[arquiteto,marceneiro,engenheiro civil,pintor]"
+DER,4/2017,19750532858,[pintor]
+SEFAZ,17/2016,22242969113,"[pedreiro,arquiteto]"
+SEDURB,8/2021,13385322316,"[marceneiro,assistente administrativo,pedreiro,eletricista]"
+SESA,7/2021,32478810655,"[encanador,pedreiro,professor de matemática,arquiteto]"
+SECONT,6/2019,61603548745,[marceneiro]
+PCES,16/2016,67761704682,"[engenheiro civil,pintor]"
+SEFAZ,16/2018,23127317727,"[encanador,eletricista,marceneiro]"
+SESA,6/2022,40208181099,"[marceneiro,engenheiro civil,professor de matemática,encanador]"
+PMES,5/2019,94186270230,"[encanador,pedreiro,pintor,professor de matemática]"
+SECONT,14/2021,32478810655,"[marceneiro,encanador,arquiteto]"
+PMES,19/2015,39880596066,"[marceneiro,arquiteto]"
+PMES,16/2015,35333816358,"[arquiteto,analista de sistemas,assistente administrativo,encanador]"
+SEAG,6/2022,66516552161,"[pintor,engenheiro civil,arquiteto,carpinteiro]"
+SEDURB,4/2017,35586857452,"[marceneiro,pintor]"
+SEDU,6/2022,65071129208,"[carpinteiro,assistente administrativo,professor de matemática]"
+DER,4/2019,25344165483,"[arquiteto,assistente administrativo]"
+SESA,4/2018,35233564365,[arquiteto]
+PMES,19/2017,83728286683,[assistente administrativo]
+SEAG,13/2024,54168068890,"[eletricista,assistente administrativo]"
+PCES,10/2024,48184335620,"[professor de matemática,encanador]"
+SEDU,16/2022,76414683033,"[pintor,assistente administrativo,carpinteiro,analista de sistemas]"
+SEDURB,5/2019,46067076644,"[encanador,eletricista,engenheiro civil,pintor]"
+PCES,9/2022,86704518771,"[assistente administrativo,professor de matemática,pedreiro]"
+PCES,6/2022,81671425637,"[arquiteto,analista de sistemas,assistente administrativo]"
+DER,15/2024,98827703865,"[eletricista,encanador]"
+SEFAZ,3/2019,35104419779,"[professor de matemática,analista de sistemas]"
+PMES,1/2015,89638202295,[encanador]
+SESA,5/2019,55312084049,"[analista de sistemas,marceneiro]"
+PMES,17/2023,76414683033,[marceneiro]
+SEDURB,15/2024,46067076644,"[carpinteiro,pintor,professor de matemática,analista de sistemas]"
+SEJUS,1/2015,73490438875,"[assistente administrativo,arquiteto,carpinteiro,pintor]"
+SEJUS,16/2022,58199019235,"[assistente administrativo,eletricista,engenheiro civil,analista de sistemas]"
+SEJUS,17/2024,36308308287,[eletricista]
+SEDURB,16/2018,52236302433,"[assistente administrativo,marceneiro,carpinteiro,pintor]"
+DER,9/2021,19750532858,"[assistente administrativo,arquiteto,carpinteiro,marceneiro]"
+PMES,15/2018,95360610032,"[pintor,analista de sistemas]"
+PCES,17/2021,13504970480,"[marceneiro,pedreiro,arquiteto,encanador]"
+SECONT,4/2017,45370417368,"[arquiteto,carpinteiro]"
+SEDU,17/2021,83788321391,"[marceneiro,analista de sistemas,carpinteiro]"
+SEAG,16/2016,39134342689,"[marceneiro,pedreiro]"
+SEFAZ,17/2015,46200607650,[marceneiro]
+SEDURB,4/2021,38275069051,"[pintor,analista de sistemas]"
+SECONT,4/2021,65372298903,"[encanador,pedreiro,eletricista]"
+SESA,6/2017,63483348699,"[pedreiro,engenheiro civil,encanador]"
+SEDURB,16/2016,57359110979,[encanador]
+SEDU,1/2015,10584574045,"[carpinteiro,assistente administrativo]"
+SECONT,13/2021,35586857452,"[arquiteto,engenheiro civil]"
+SEFAZ,16/2015,78577660576,"[marceneiro,pedreiro,assistente administrativo,arquiteto]"
+PCES,15/2024,98827703865,"[eletricista,marceneiro,assistente administrativo,pintor]"
+SESA,6/2022,28295151830,[encanador]
+SEFAZ,6/2018,23874855059,"[engenheiro civil,arquiteto]"
+SEDURB,17/2016,98827703865,"[carpinteiro,engenheiro civil,pintor,pedreiro]"
+SEDU,17/2016,78234176477,[assistente administrativo]
+SEJUS,6/2022,65807293858,"[marceneiro,engenheiro civil,encanador,arquiteto]"
+PMES,16/2022,49144418042,"[professor de matemática,assistente administrativo]"
+SEDU,6/2022,62740750878,"[pintor,marceneiro]"
+SEJUS,13/2022,78721927190,"[arquiteto,eletricista,marceneiro]"
+SEDURB,13/2021,19750532858,"[pedreiro,assistente administrativo,marceneiro]"
+SEDU,6/2019,69042388698,"[carpinteiro,engenheiro civil,pedreiro,pintor]"
+DER,5/2018,13385322316,"[analista de sistemas,pedreiro,carpinteiro]"
+SESA,3/2019,62740750878,"[analista de sistemas,engenheiro civil,professor de matemática]"
+SEAG,1/2016,16785135806,"[carpinteiro,eletricista,engenheiro civil,arquiteto]"
+SEDURB,19/2016,63912521941,"[pedreiro,professor de matemática,assistente administrativo,marceneiro]"
+SEFAZ,19/2017,26307260070,"[marceneiro,encanador,arquiteto]"
+SECONT,13/2021,56118786068,[marceneiro]
+SEFAZ,3/2021,55723713541,[pintor]
+SEDURB,9/2015,75046378851,"[eletricista,pedreiro,arquiteto,marceneiro]"
+PCES,3/2021,58667926917,"[analista de sistemas,pintor]"
+SEDURB,4/2018,84828221110,"[encanador,pedreiro]"
+SEAG,6/2024,58295526482,"[carpinteiro,pedreiro,professor de matemática,encanador]"
+SEJUS,16/2015,75046378851,"[analista de sistemas,pintor,eletricista]"
+PCES,6/2019,33445530738,[engenheiro civil]
+SECONT,1/2016,54874405508,[assistente administrativo]
+SEFAZ,13/2024,69423216311,"[professor de matemática,analista de sistemas,pintor]"
+SECONT,19/2017,81214402900,[eletricista]
+SEAG,10/2021,22651235912,"[analista de sistemas,arquiteto,eletricista]"
+PMES,4/2021,22875419425,[analista de sistemas]
+PMES,1/2015,45838332021,"[engenheiro civil,analista de sistemas,marceneiro,pintor]"
+DER,18/2024,36308308287,"[pintor,marceneiro]"
+DER,8/2023,13335092204,"[professor de matemática,eletricista,pintor]"
+PMES,4/2021,38275069051,"[carpinteiro,pedreiro,assistente administrativo,marceneiro]"
+DER,4/2017,28145662737,"[carpinteiro,engenheiro civil]"
+PCES,8/2023,70962843721,"[marceneiro,professor de matemática]"
+SEFAZ,6/2024,75046378851,"[pintor,engenheiro civil,analista de sistemas,carpinteiro]"
+SECONT,13/2024,35233564365,"[marceneiro,pintor,eletricista]"
+SEDURB,3/2016,10568063991,"[engenheiro civil,pintor]"
+SEDURB,1/2015,50629470364,"[carpinteiro,marceneiro,arquiteto,analista de sistemas]"
+SESA,20/2023,84828221110,[encanador]
+SECONT,8/2019,68377605655,"[pintor,arquiteto,analista de sistemas]"
+PCES,13/2024,26922158098,"[eletricista,marceneiro,pintor]"
+SECONT,7/2017,13335092204,"[professor de matemática,assistente administrativo]"
+SEJUS,14/2021,19750532858,"[encanador,pintor]"
+SECONT,17/2023,16785135806,[pedreiro]
+SEAG,10/2022,66516552161,"[professor de matemática,marceneiro]"
+SESA,8/2024,10584574045,"[professor de matemática,carpinteiro,pintor]"
+SEDU,15/2024,82074947067,[analista de sistemas]
+PCES,19/2017,78721927190,"[encanador,professor de matemática,arquiteto]"
+PMES,3/2021,27435418374,[pedreiro]
+PCES,9/2021,75042198075,"[marceneiro,assistente administrativo,engenheiro civil]"
+SEFAZ,13/2021,95360610032,"[professor de matemática,engenheiro civil,analista de sistemas,carpinteiro]"
+SEDU,8/2023,75042198075,"[professor de matemática,assistente administrativo,eletricista]"
+SEFAZ,17/2016,12981062152,"[carpinteiro,assistente administrativo,eletricista,engenheiro civil]"
+PMES,4/2021,65807293858,[encanador]
+SEDU,4/2019,26846433936,"[engenheiro civil,encanador]"
+PMES,4/2018,62316186884,"[professor de matemática,assistente administrativo,encanador]"
+SEAG,20/2022,82555382831,[carpinteiro]
+SEAG,14/2017,97811978837,"[professor de matemática,eletricista]"
+SEJUS,9/2022,15023592018,"[assistente administrativo,eletricista,professor de matemática]"
+SEDURB,1/2015,13335092204,[carpinteiro]
+SECONT,1/2016,12343507222,"[pedreiro,engenheiro civil,arquiteto]"
+DER,7/2015,94186270230,[pintor]
+SEJUS,13/2024,93106732616,[carpinteiro]
+SEAG,16/2019,23874855059,"[assistente administrativo,analista de sistemas]"
+SEAG,10/2024,86194519087,"[pintor,eletricista]"
+SEDURB,5/2019,30150391220,"[eletricista,pedreiro]"
+PCES,17/2021,62316186884,"[pintor,arquiteto,assistente administrativo,professor de matemática]"
+SESA,8/2023,37119585754,"[arquiteto,analista de sistemas]"
+SEDURB,6/2021,83728286683,"[assistente administrativo,professor de matemática,encanador]"
+SEFAZ,3/2021,45370417368,"[professor de matemática,analista de sistemas]"
+SEDURB,1/2015,26922158098,[encanador]
+SESA,16/2019,75046378851,"[analista de sistemas,professor de matemática,arquiteto]"
+SEDURB,17/2024,53691664314,"[encanador,arquiteto,engenheiro civil]"
+PMES,3/2020,16785135806,"[carpinteiro,pintor,assistente administrativo]"
+PMES,10/2024,57198729550,[engenheiro civil]
+SECONT,9/2015,85493174799,"[assistente administrativo,analista de sistemas]"
+SEDURB,4/2017,62316186884,[pintor]
+SEFAZ,7/2015,40208181099,"[eletricista,professor de matemática]"
+PMES,12/2021,28295151830,"[carpinteiro,eletricista,professor de matemática,pintor]"
+PMES,3/2019,27435418374,[eletricista]
+SESA,6/2021,45838332021,"[professor de matemática,arquiteto]"
+DER,9/2015,56002020070,"[analista de sistemas,assistente administrativo,carpinteiro]"
+SESA,5/2019,86501294878,"[marceneiro,carpinteiro]"
+SEJUS,3/2021,97492743248,"[encanador,pintor,marceneiro,carpinteiro]"
+SEDU,17/2016,12981062152,"[pintor,analista de sistemas,marceneiro,arquiteto]"
+SEDU,16/2015,78234176477,[assistente administrativo]
+SESA,7/2015,10744374366,[analista de sistemas]
+SEJUS,1/2016,74747722745,"[marceneiro,professor de matemática,carpinteiro]"
+DER,13/2024,43560221930,"[carpinteiro,assistente administrativo,engenheiro civil,eletricista]"
+SESA,17/2020,22651235912,"[encanador,pedreiro,marceneiro]"
+SEDU,6/2024,47784249389,"[marceneiro,pedreiro,pintor]"
+SESA,8/2023,38899300436,[professor de matemática]
+PCES,20/2022,67764613044,"[encanador,assistente administrativo,professor de matemática]"
+PCES,4/2019,94186270230,[eletricista]
+SESA,17/2024,38899300436,[assistente administrativo]
+PMES,9/2022,58667926917,"[marceneiro,engenheiro civil,encanador]"
+SEDU,17/2016,48446591891,"[pintor,pedreiro]"
+PMES,16/2017,56002020070,"[carpinteiro,assistente administrativo,arquiteto,engenheiro civil]"
+SEJUS,12/2021,35014159292,"[assistente administrativo,marceneiro,analista de sistemas]"
+SESA,16/2022,39134342689,"[engenheiro civil,carpinteiro]"
+PCES,7/2021,23127317727,"[marceneiro,encanador,pintor,assistente administrativo]"
+SESA,13/2021,91535431249,"[carpinteiro,pintor]"
+PMES,7/2021,55723713541,"[eletricista,pintor,engenheiro civil,carpinteiro]"
+SECONT,20/2022,93106732616,"[pedreiro,encanador,eletricista,professor de matemática]"
+PCES,3/2020,18220007953,"[pedreiro,arquiteto,professor de matemática,marceneiro]"
+SECONT,16/2015,53691664314,"[analista de sistemas,engenheiro civil]"
+SEDURB,17/2023,75046378851,[analista de sistemas]
+PMES,16/2015,62316186884,"[assistente administrativo,eletricista]"
+SESA,3/2021,93106732616,"[professor de matemática,encanador]"
+SEDU,4/2018,88168468345,[carpinteiro]
+PCES,9/2015,18577185839,"[engenheiro civil,analista de sistemas,marceneiro,pedreiro]"
+DER,16/2017,37119585754,[carpinteiro]
+PMES,3/2019,93142554737,"[marceneiro,analista de sistemas]"
+SEAG,1/2016,48446591891,"[eletricista,carpinteiro]"
+SEDURB,1/2024,91412625129,"[pintor,engenheiro civil,eletricista,analista de sistemas]"
+SEFAZ,17/2024,13335092204,[encanador]
+SEDU,17/2016,61603548745,"[pedreiro,carpinteiro]"
+SEDU,5/2019,94733380747,"[pedreiro,assistente administrativo,encanador,arquiteto]"
+SECONT,3/2021,37119585754,"[marceneiro,pedreiro,pintor]"
+SESA,4/2018,37817888474,"[arquiteto,analista de sistemas,professor de matemática,pintor]"
+SESA,4/2018,31674369787,[eletricista]
+DER,7/2021,39134342689,"[pintor,carpinteiro,analista de sistemas,engenheiro civil]"
+PCES,10/2021,49144418042,[marceneiro]
+SEJUS,16/2015,35586857452,"[analista de sistemas,professor de matemática,assistente administrativo]"
+SESA,1/2016,82740109515,[professor de matemática]
+SEAG,3/2021,92387146479,"[professor de matemática,pedreiro,encanador]"
+SEDU,1/2015,59577646453,[arquiteto]
+SEAG,6/2024,43560221930,"[analista de sistemas,encanador,engenheiro civil,marceneiro]"
+SEFAZ,3/2021,70962843721,"[pintor,pedreiro,professor de matemática]"
+PMES,17/2015,46778670031,"[carpinteiro,marceneiro,engenheiro civil]"
+PCES,19/2015,83728286683,[pedreiro]
+SESA,6/2018,57918423787,"[eletricista,arquiteto,analista de sistemas,assistente administrativo]"
+SESA,20/2023,10568063991,"[marceneiro,encanador,professor de matemática,pedreiro]"
+SESA,17/2019,94186270230,"[pedreiro,encanador]"
+SEAG,15/2024,11604749040,"[eletricista,carpinteiro,engenheiro civil]"
+SEFAZ,16/2015,43197457541,"[analista de sistemas,pintor,professor de matemática,pedreiro]"
+SEAG,17/2016,30150391220,"[arquiteto,eletricista]"
+SEJUS,3/2021,56835782924,"[pedreiro,marceneiro,eletricista]"
+SEJUS,6/2021,35333816358,"[assistente administrativo,carpinteiro]"
+SEJUS,16/2019,89638202295,"[engenheiro civil,marceneiro,arquiteto]"
+SESA,8/2022,26307260070,"[assistente administrativo,eletricista,encanador,arquiteto]"
+SESA,14/2017,16956543613,"[analista de sistemas,engenheiro civil,assistente administrativo,pintor]"
+PCES,7/2017,10568063991,"[eletricista,engenheiro civil]"
+SEDURB,7/2017,35333816358,"[marceneiro,pintor,pedreiro]"
+DER,14/2021,10568063991,[arquiteto]
+SEDU,19/2015,97492743248,[carpinteiro]
+SEJUS,14/2015,62740750878,"[arquiteto,pintor]"
+SEJUS,16/2018,33367068467,"[encanador,marceneiro,engenheiro civil,eletricista]"
+DER,9/2021,50522368154,"[marceneiro,encanador,carpinteiro,arquiteto]"
+PCES,17/2019,42657312759,"[pintor,engenheiro civil]"
+SEJUS,7/2021,14627535905,"[professor de matemática,eletricista,marceneiro,assistente administrativo]"
+DER,8/2021,15023592018,"[eletricista,carpinteiro]"
+SECONT,7/2021,16956543613,[arquiteto]
+PCES,10/2024,48796002063,"[eletricista,professor de matemática,analista de sistemas,arquiteto]"
+SEDU,13/2024,86501294878,"[assistente administrativo,encanador,carpinteiro,marceneiro]"
+SESA,15/2018,63912521941,"[marceneiro,assistente administrativo,eletricista,pintor]"
+SEDURB,11/2017,62597414089,"[carpinteiro,analista de sistemas,marceneiro]"
+PCES,12/2015,61603548745,"[carpinteiro,professor de matemática,engenheiro civil]"
+PCES,13/2024,69344010576,"[pintor,engenheiro civil]"
+SEAG,20/2022,81662608182,"[marceneiro,arquiteto]"
+SEAG,3/2019,91535431249,"[analista de sistemas,carpinteiro,eletricista]"
+SESA,3/2016,69042388698,[encanador]
+PCES,14/2021,11604749040,[eletricista]
+SESA,6/2018,22288670181,[analista de sistemas]
+SECONT,4/2018,66516552161,"[pedreiro,carpinteiro,pintor,professor de matemática]"
+PMES,16/2016,66516552161,[engenheiro civil]
+PMES,15/2019,35803577793,"[pedreiro,marceneiro,eletricista]"
+DER,19/2017,56942395058,"[engenheiro civil,pedreiro,pintor]"
+SEDURB,13/2024,48184335620,[carpinteiro]
+DER,3/2021,33445530738,"[pedreiro,arquiteto]"
+SESA,1/2016,94774752127,"[assistente administrativo,pintor,encanador,marceneiro]"
+SEJUS,15/2021,82555382831,[arquiteto]
+PCES,15/2021,35014159292,[encanador]
+DER,19/2020,18220007953,[encanador]
+SEFAZ,1/2016,37817888474,"[eletricista,pedreiro]"
+PCES,17/2024,13705075086,"[marceneiro,engenheiro civil,eletricista,pintor]"
+PCES,8/2023,33445530738,"[pedreiro,assistente administrativo]"
+SEFAZ,4/2017,32739824608,"[pintor,professor de matemática,analista de sistemas]"
+PCES,8/2021,33411300880,[carpinteiro]
+PMES,7/2021,50629470364,"[engenheiro civil,carpinteiro,pintor]"
+SECONT,17/2021,46778670031,"[arquiteto,pintor]"
+SEDU,6/2017,55312084049,"[encanador,pintor]"
+SESA,8/2024,69042388698,"[pintor,professor de matemática]"
+SEJUS,8/2022,13385322316,[encanador]
+SEAG,5/2019,87708442773,"[pedreiro,carpinteiro,engenheiro civil]"
+SECONT,13/2021,93645276140,[pintor]
+SEDU,7/2015,26307260070,"[analista de sistemas,arquiteto]"
+SEDURB,3/2020,45560150941,"[analista de sistemas,carpinteiro,eletricista,engenheiro civil]"
+SESA,1/2015,39134342689,"[assistente administrativo,professor de matemática]"
+SEDURB,17/2020,40677417843,"[assistente administrativo,analista de sistemas,encanador,marceneiro]"
+SESA,7/2015,52236302433,[marceneiro]
+DER,16/2017,57270523602,[carpinteiro]
+SEFAZ,14/2021,56002020070,[marceneiro]
+DER,16/2015,35104419779,"[marceneiro,eletricista,analista de sistemas,pintor]"
+SEJUS,10/2021,57198729550,[professor de matemática]
+PCES,5/2019,35333816358,"[carpinteiro,encanador,assistente administrativo,analista de sistemas]"
+SESA,4/2017,16956543613,[marceneiro]
+PMES,13/2021,69401309725,[carpinteiro]
+SEDURB,19/2015,24997251859,[professor de matemática]
+SEAG,6/2018,13504970480,[pedreiro]
+SEDURB,13/2024,13335092204,"[engenheiro civil,marceneiro]"
+SECONT,6/2018,86427712258,"[professor de matemática,marceneiro]"
+SESA,12/2021,63912521941,"[professor de matemática,marceneiro,engenheiro civil,assistente administrativo]"
+DER,4/2018,55723713541,"[pedreiro,pintor,professor de matemática,assistente administrativo]"
+SESA,18/2024,86501294878,"[pintor,marceneiro,assistente administrativo]"
+SESA,16/2016,23127317727,"[pintor,eletricista,encanador,assistente administrativo]"
+PMES,7/2017,82740109515,"[pintor,professor de matemática,engenheiro civil,pedreiro]"
+SEJUS,7/2021,56118786068,[pedreiro]
+SEFAZ,5/2018,91423572181,"[arquiteto,pedreiro,engenheiro civil]"
+PCES,6/2018,32478810655,"[engenheiro civil,pintor]"
+SESA,8/2018,97492743248,[professor de matemática]
+PMES,12/2015,67764613044,"[marceneiro,analista de sistemas,engenheiro civil]"
+SEDU,16/2016,22944662808,"[eletricista,arquiteto]"
+PMES,5/2018,31674369787,[pintor]
+SEFAZ,17/2016,37817888474,"[marceneiro,pedreiro]"
+SEFAZ,16/2016,58295526482,[arquiteto]
+PCES,4/2019,92387146479,"[engenheiro civil,encanador,professor de matemática,pedreiro]"
+SEDU,3/2016,35014159292,[assistente administrativo]
+PCES,14/2017,57270523602,"[carpinteiro,arquiteto,engenheiro civil,pintor]"
+SECONT,6/2017,52236302433,"[analista de sistemas,arquiteto,encanador]"
+DER,19/2016,81671425637,"[analista de sistemas,pedreiro,arquiteto,encanador]"
+PMES,9/2021,81103185874,[eletricista]
+SEJUS,1/2016,40677417843,"[assistente administrativo,engenheiro civil,arquiteto]"
+PCES,3/2020,92342070789,"[eletricista,arquiteto,analista de sistemas]"
+PCES,4/2021,23874855059,"[eletricista,marceneiro,engenheiro civil,arquiteto]"
+SEDU,16/2018,38704093836,[carpinteiro]
+SEJUS,9/2020,57359110979,"[professor de matemática,carpinteiro,marceneiro,encanador]"
+PMES,6/2022,64768309681,[assistente administrativo]
+SEDU,17/2024,38704093836,"[marceneiro,assistente administrativo,engenheiro civil]"
+SEAG,5/2019,49144418042,"[carpinteiro,arquiteto]"
+DER,14/2017,13385322316,"[carpinteiro,arquiteto,pintor]"
+DER,3/2019,57270523602,"[arquiteto,eletricista]"
+DER,16/2019,91535431249,"[professor de matemática,marceneiro,assistente administrativo,pedreiro]"
+SEJUS,8/2018,92342070789,"[encanador,professor de matemática]"
+SEJUS,9/2022,55723713541,[professor de matemática]
+SEDU,3/2019,65234625430,"[pintor,professor de matemática,eletricista,marceneiro]"
+PMES,16/2016,39880596066,"[assistente administrativo,eletricista,carpinteiro]"
+SEDURB,15/2021,81671425637,"[engenheiro civil,pintor]"
+DER,7/2017,46461059592,"[pintor,professor de matemática]"
+SEJUS,16/2019,94733380747,"[encanador,assistente administrativo]"
+SEAG,9/2021,47784249389,"[eletricista,marceneiro]"
+SEJUS,1/2015,81103185874,"[carpinteiro,assistente administrativo,analista de sistemas,eletricista]"
+SEDURB,7/2021,22875419425,"[marceneiro,pedreiro,encanador]"
+PMES,13/2024,37817888474,"[pintor,pedreiro]"
+PCES,5/2019,48184335620,[eletricista]
+SEFAZ,12/2015,12981062152,[encanador]
+PCES,9/2015,94733380747,"[assistente administrativo,professor de matemática]"
+PCES,13/2022,36831803983,"[pedreiro,arquiteto,eletricista]"
+SEDURB,13/2024,82740109515,[encanador]
+SECONT,17/2024,70688909728,[analista de sistemas]
+SEDU,6/2017,59577646453,"[marceneiro,pedreiro]"
+SEJUS,16/2019,38899300436,"[pintor,encanador,marceneiro,professor de matemática]"
+SEFAZ,3/2016,28295151830,"[professor de matemática,engenheiro civil]"
+SEFAZ,8/2022,36831803983,"[analista de sistemas,marceneiro,carpinteiro]"
+SEDURB,1/2024,43197457541,"[assistente administrativo,professor de matemática,carpinteiro,engenheiro civil]"
+SEJUS,6/2019,45838332021,"[eletricista,carpinteiro,analista de sistemas]"
+DER,3/2021,48184335620,[carpinteiro]
+SEFAZ,9/2022,71896894941,[arquiteto]
+PMES,17/2023,42576388845,[eletricista]
+SECONT,17/2023,65807293858,[analista de sistemas]
+SEAG,4/2019,26922158098,"[pedreiro,encanador]"
+SESA,17/2015,67764613044,[marceneiro]
+SEFAZ,19/2015,48184335620,"[eletricista,engenheiro civil,pedreiro,assistente administrativo]"
+DER,16/2021,38275069051,"[analista de sistemas,engenheiro civil,assistente administrativo,arquiteto]"
+SEDURB,16/2022,36824661712,"[marceneiro,assistente administrativo,pedreiro,analista de sistemas]"
+SESA,19/2017,70688909728,"[engenheiro civil,eletricista]"
+SEDU,17/2020,89638202295,"[engenheiro civil,professor de matemática,marceneiro,arquiteto]"
+PCES,6/2018,82740109515,"[encanador,pedreiro,eletricista]"
+SEDURB,13/2022,32739824608,"[engenheiro civil,pintor,arquiteto]"
+SEFAZ,19/2017,66516552161,[arquiteto]
+SEDURB,1/2024,14627535905,[pintor]
+DER,10/2021,84828221110,"[marceneiro,analista de sistemas,eletricista]"
+SESA,9/2019,10568063991,"[pedreiro,assistente administrativo]"
+SEAG,17/2021,35233564365,"[assistente administrativo,eletricista]"
+SEFAZ,15/2018,69423216311,[eletricista]
+SEDU,11/2017,15294358773,[analista de sistemas]
+DER,19/2017,64768309681,"[engenheiro civil,analista de sistemas,arquiteto,assistente administrativo]"
+SESA,13/2021,15294358773,"[marceneiro,assistente administrativo]"
+SESA,9/2015,13705075086,"[arquiteto,marceneiro,assistente administrativo,professor de matemática]"
+SEDU,17/2023,22875419425,"[encanador,pintor]"
+PCES,8/2024,12981062152,"[assistente administrativo,arquiteto,encanador]"
+SESA,10/2021,94774752127,"[arquiteto,carpinteiro,professor de matemática]"
+SEFAZ,13/2021,15412129354,"[assistente administrativo,encanador]"
+SEJUS,4/2021,16956543613,"[pedreiro,carpinteiro,pintor,encanador]"
+SEJUS,13/2021,78721927190,"[engenheiro civil,pedreiro,encanador,eletricista]"
+PMES,3/2021,17096219741,"[pintor,eletricista,analista de sistemas,pedreiro]"
+PCES,13/2021,92387146479,"[arquiteto,assistente administrativo]"
+SECONT,12/2017,46461059592,"[carpinteiro,arquiteto,pedreiro]"
+SEAG,14/2015,75042198075,"[carpinteiro,pintor,analista de sistemas,eletricista]"
+SEDURB,6/2021,75042198075,[analista de sistemas]
+SEFAZ,15/2024,82740109515,"[arquiteto,marceneiro,assistente administrativo]"
+SEAG,13/2024,57359110979,"[analista de sistemas,marceneiro,pedreiro]"
+SEDU,1/2024,28295151830,"[pedreiro,eletricista]"
+SESA,16/2018,35422497347,"[assistente administrativo,encanador]"
+SEDU,10/2021,43197457541,"[marceneiro,encanador]"
+SEDU,20/2023,35586857452,[pedreiro]
+SEJUS,17/2020,28295151830,[eletricista]
+SEDU,19/2020,77680569817,"[analista de sistemas,marceneiro,assistente administrativo,pintor]"
+DER,10/2022,29943530076,"[arquiteto,eletricista,marceneiro]"
+PCES,3/2019,40208181099,[carpinteiro]
+SESA,4/2018,38448925479,"[carpinteiro,pedreiro]"
+SEDURB,18/2024,69344010576,"[assistente administrativo,encanador,marceneiro,eletricista]"
+PMES,3/2019,63912521941,"[pintor,marceneiro,eletricista,encanador]"
+PCES,3/2019,67761704682,"[eletricista,marceneiro,pintor]"
+SEDU,12/2017,35803577793,[encanador]
+SEAG,3/2023,97811978837,"[carpinteiro,eletricista,arquiteto]"
+SEFAZ,3/2021,37119585754,"[pedreiro,encanador,professor de matemática]"
+PMES,8/2022,78721927190,"[pedreiro,marceneiro,carpinteiro,encanador]"
+PMES,15/2024,23127317727,"[eletricista,carpinteiro,assistente administrativo]"
+SEFAZ,5/2019,65494614682,"[pintor,eletricista,carpinteiro,assistente administrativo]"
+SESA,1/2024,91535431249,"[arquiteto,encanador,pintor]"
+SEJUS,6/2024,67761704682,"[professor de matemática,marceneiro]"
+SEJUS,3/2016,68377605655,"[engenheiro civil,professor de matemática,arquiteto,marceneiro]"
+SESA,9/2015,26547699561,"[marceneiro,analista de sistemas,assistente administrativo,encanador]"
+SEDU,4/2018,67878498208,"[engenheiro civil,arquiteto,analista de sistemas,carpinteiro]"
+PMES,15/2021,23874855059,"[pintor,carpinteiro,pedreiro,professor de matemática]"
+SECONT,16/2021,63483348699,"[encanador,assistente administrativo,professor de matemática,pedreiro]"
+SESA,13/2024,86704518771,"[marceneiro,arquiteto]"
+SEDU,7/2015,62597414089,[professor de matemática]
+SEDU,13/2021,64768309681,"[pintor,arquiteto,pedreiro]"
+SEJUS,12/2015,45838332021,"[professor de matemática,encanador,eletricista,engenheiro civil]"
+PMES,7/2017,31674369787,"[marceneiro,eletricista]"
+PCES,7/2015,62740750878,[arquiteto]
+SEJUS,16/2015,90000645613,"[marceneiro,encanador,eletricista]"
+SECONT,8/2019,10744374366,"[analista de sistemas,professor de matemática,assistente administrativo]"
+SEFAZ,20/2022,16785135806,"[marceneiro,carpinteiro,assistente administrativo]"
+SEJUS,6/2022,89638202295,"[pedreiro,arquiteto]"
+SEDURB,19/2017,12384596013,[pedreiro]
+SEJUS,12/2017,90626861667,"[encanador,analista de sistemas,arquiteto]"
+PMES,1/2016,33291325843,"[engenheiro civil,analista de sistemas]"
+SESA,16/2016,12343507222,"[encanador,analista de sistemas,professor de matemática]"
+DER,9/2022,43560221930,[engenheiro civil]
+SEJUS,1/2016,10744374366,[pedreiro]
+DER,16/2015,49144418042,[marceneiro]
+SEDU,3/2016,51422903458,"[encanador,engenheiro civil]"
+PCES,13/2024,35803577793,"[analista de sistemas,encanador]"
+SEDU,16/2022,13705075086,"[encanador,analista de sistemas,pedreiro,eletricista]"
+SEDU,20/2022,54874405508,"[carpinteiro,pintor,arquiteto,encanador]"
+SEJUS,3/2023,45370417368,"[engenheiro civil,professor de matemática,encanador]"
+PCES,10/2024,29943530076,"[marceneiro,arquiteto]"
+SEDU,5/2018,56942395058,[analista de sistemas]
+SECONT,10/2024,30150391220,[carpinteiro]
+DER,10/2022,15294358773,[engenheiro civil]
+PMES,17/2016,39134342689,"[assistente administrativo,carpinteiro]"
+SEAG,5/2019,27435418374,[encanador]
+SEJUS,9/2022,93433718455,"[eletricista,engenheiro civil]"
+SECONT,3/2023,95360610032,"[engenheiro civil,pedreiro,assistente administrativo]"
+SECONT,10/2015,59577646453,"[pedreiro,encanador,marceneiro]"
+SEDU,13/2021,56942395058,"[assistente administrativo,marceneiro,professor de matemática,carpinteiro]"
+SEDURB,5/2018,34938605654,"[marceneiro,engenheiro civil]"
+SESA,8/2021,29943530076,"[encanador,eletricista,marceneiro,analista de sistemas]"
+DER,8/2021,49144418042,"[arquiteto,pintor,assistente administrativo]"
+SEJUS,10/2024,85493174799,"[eletricista,analista de sistemas,pintor,pedreiro]"
+DER,6/2024,38899300436,"[pintor,carpinteiro]"
+PCES,6/2022,75042198075,"[analista de sistemas,pedreiro,engenheiro civil]"
+SEDU,17/2016,92387146479,"[assistente administrativo,arquiteto,professor de matemática]"
+SEDU,12/2015,40677417843,"[pintor,analista de sistemas,marceneiro,encanador]"
+SEFAZ,6/2022,58199019235,"[arquiteto,encanador,pedreiro,assistente administrativo]"
+SESA,5/2019,17096219741,"[carpinteiro,analista de sistemas]"
+SEFAZ,4/2019,63912521941,[professor de matemática]
+SEDURB,14/2015,46067076644,"[analista de sistemas,arquiteto,assistente administrativo,engenheiro civil]"
+SEFAZ,4/2017,93433718455,[marceneiro]
+SEFAZ,10/2021,36824661712,"[assistente administrativo,carpinteiro,eletricista]"
+DER,15/2019,28145662737,[eletricista]
+SEDU,8/2018,27435418374,"[pintor,analista de sistemas]"
+SEAG,3/2020,63912521941,"[marceneiro,eletricista,carpinteiro]"
+SEFAZ,17/2019,63912521941,"[eletricista,carpinteiro,professor de matemática]"
+SESA,3/2019,23139935205,[professor de matemática]
+SEJUS,15/2024,10584574045,"[encanador,pedreiro]"
+DER,12/2017,69042388698,[pedreiro]
+SECONT,10/2024,95360610032,"[assistente administrativo,analista de sistemas,engenheiro civil]"
+SEDURB,16/2016,65372298903,"[engenheiro civil,marceneiro]"
+SEJUS,19/2020,77680569817,[pedreiro]
+SEJUS,1/2015,28295151830,"[arquiteto,engenheiro civil,pintor]"
+SEJUS,9/2021,55312084049,"[carpinteiro,analista de sistemas,engenheiro civil]"
+SEAG,16/2015,48184335620,"[encanador,engenheiro civil,eletricista,assistente administrativo]"
+SEAG,6/2018,98827703865,"[analista de sistemas,assistente administrativo,carpinteiro]"
+SEAG,6/2018,82740109515,"[engenheiro civil,pedreiro]"
+SEDURB,12/2017,95360610032,"[professor de matemática,pintor,analista de sistemas]"
+SESA,5/2019,87708442773,[marceneiro]
+SECONT,10/2021,83728286683,"[pedreiro,marceneiro,encanador,analista de sistemas]"
+SEAG,17/2023,38448925479,"[engenheiro civil,assistente administrativo,professor de matemática,arquiteto]"
+SECONT,17/2022,97492743248,"[professor de matemática,eletricista,engenheiro civil]"
+SEJUS,3/2020,24955700337,"[pintor,engenheiro civil,marceneiro,arquiteto]"
+SEDURB,19/2020,30150391220,"[encanador,eletricista,professor de matemática]"
+DER,1/2016,15069188340,"[pedreiro,professor de matemática]"
+PCES,3/2021,42576388845,"[arquiteto,assistente administrativo]"
+SEFAZ,12/2015,35333816358,[marceneiro]
+PCES,1/2016,51422903458,"[arquiteto,eletricista]"
+SECONT,10/2022,25344165483,[carpinteiro]
+SEJUS,1/2016,32739824608,"[marceneiro,carpinteiro,analista de sistemas,pintor]"
+SEDU,3/2020,56118786068,[carpinteiro]
+SEDURB,10/2015,33367068467,"[engenheiro civil,carpinteiro,pintor,professor de matemática]"
+SEFAZ,14/2017,46067076644,"[arquiteto,encanador,marceneiro]"
+SEDU,9/2022,50629470364,"[eletricista,pintor,encanador]"
+PCES,14/2015,92387146479,"[carpinteiro,encanador,pedreiro,marceneiro]"
+SESA,8/2023,39880596066,"[encanador,eletricista,pintor]"
+PMES,3/2023,76414683033,"[marceneiro,professor de matemática,assistente administrativo]"
+DER,12/2015,38704093836,"[assistente administrativo,engenheiro civil,pintor,arquiteto]"
+SESA,3/2019,97811978837,"[pintor,pedreiro]"
+SEFAZ,6/2017,58667926917,"[marceneiro,engenheiro civil,assistente administrativo]"
+SESA,14/2017,33084576927,"[eletricista,encanador,professor de matemática]"
+SESA,19/2016,33291325843,[professor de matemática]
+SEFAZ,3/2019,66058420896,"[pedreiro,encanador]"
+SESA,6/2018,10744374366,[pedreiro]
+SEDURB,10/2021,64768309681,"[analista de sistemas,engenheiro civil,professor de matemática,assistente administrativo]"
+SEAG,3/2021,37494183744,"[pedreiro,carpinteiro,eletricista,assistente administrativo]"
+SEJUS,16/2016,16785135806,[eletricista]
+PCES,3/2016,32739824608,[carpinteiro]
+SEFAZ,9/2015,62597414089,[engenheiro civil]
+SEJUS,4/2018,70688909728,[engenheiro civil]
+SESA,19/2020,48184335620,"[eletricista,pedreiro,marceneiro]"
+PMES,8/2021,42657312759,[pedreiro]
+PMES,10/2021,92342070789,[encanador]
+SEDU,17/2020,88168468345,"[professor de matemática,encanador,assistente administrativo,eletricista]"
+SESA,10/2021,45838332021,"[assistente administrativo,carpinteiro,professor de matemática,marceneiro]"
+SEDURB,1/2015,32668215433,"[analista de sistemas,pintor]"
+SEJUS,10/2021,92342070789,"[carpinteiro,analista de sistemas]"
+PCES,3/2020,32739824608,"[encanador,arquiteto,professor de matemática,engenheiro civil]"
+DER,10/2015,38448925479,"[assistente administrativo,professor de matemática]"
+SEFAZ,3/2019,68920621800,"[encanador,pintor,engenheiro civil,eletricista]"
+SEFAZ,6/2022,70688909728,[assistente administrativo]
+PCES,7/2021,86427712258,"[encanador,pintor]"
+SEJUS,13/2022,58199019235,"[encanador,marceneiro,engenheiro civil]"
+PCES,8/2022,13385322316,"[eletricista,arquiteto,pintor,professor de matemática]"
+SEDU,14/2015,59577646453,"[pintor,analista de sistemas]"
+SEDURB,17/2019,91535431249,"[encanador,engenheiro civil,pintor]"
+PCES,3/2023,94733380747,"[assistente administrativo,analista de sistemas,encanador,eletricista]"
+SECONT,12/2015,40208181099,[assistente administrativo]
+DER,19/2017,70688909728,"[pedreiro,professor de matemática]"
+SEJUS,15/2024,14583742260,"[carpinteiro,arquiteto,pedreiro]"
+SEDU,1/2015,52236302433,"[marceneiro,engenheiro civil,arquiteto,encanador]"
+SEDU,7/2021,35104419779,"[pedreiro,professor de matemática,carpinteiro]"
+SEDURB,5/2019,94186270230,"[assistente administrativo,carpinteiro]"
+PMES,17/2022,56942395058,"[pedreiro,professor de matemática]"
+SEDU,8/2021,52236302433,[pedreiro]
+PCES,10/2021,97811978837,"[assistente administrativo,encanador]"
+SEDU,5/2018,54168068890,"[analista de sistemas,assistente administrativo]"
+SEJUS,5/2019,39134342689,"[carpinteiro,assistente administrativo,marceneiro,pedreiro]"
+SEJUS,19/2020,23127317727,"[analista de sistemas,encanador,pedreiro,carpinteiro]"
+SEJUS,19/2015,57918423787,"[professor de matemática,arquiteto,assistente administrativo,engenheiro civil]"
+PCES,5/2019,59770073073,[assistente administrativo]
+SEFAZ,6/2021,82074947067,[assistente administrativo]
+SEAG,17/2023,62740750878,"[pintor,marceneiro,professor de matemática]"
+PCES,17/2021,85493174799,"[assistente administrativo,pedreiro,arquiteto,professor de matemática]"
+PCES,15/2019,35014159292,"[engenheiro civil,pedreiro,marceneiro,eletricista]"
+SECONT,6/2017,18577185839,"[professor de matemática,eletricista,engenheiro civil,arquiteto]"
+SEAG,15/2021,81214402900,"[engenheiro civil,carpinteiro,marceneiro]"
+SEJUS,17/2021,71896894941,"[eletricista,arquiteto]"
+SECONT,3/2020,56835782924,"[arquiteto,eletricista,pedreiro,professor de matemática]"
+SEDU,17/2019,55723713541,"[pintor,assistente administrativo,engenheiro civil]"
+SESA,8/2021,91535431249,"[analista de sistemas,assistente administrativo,professor de matemática,eletricista]"
+SEDURB,3/2016,35333816358,"[engenheiro civil,eletricista]"
+DER,5/2019,92342070789,[marceneiro]
+PCES,1/2024,30150391220,"[carpinteiro,analista de sistemas,encanador,marceneiro]"
+SESA,18/2024,28145662737,[analista de sistemas]
+PCES,3/2016,71896894941,"[carpinteiro,pedreiro,pintor,arquiteto]"
+SEDU,14/2015,45370417368,"[assistente administrativo,encanador,pedreiro,engenheiro civil]"
+SEAG,12/2015,43560221930,"[carpinteiro,assistente administrativo]"
+SEDURB,4/2019,28295151830,"[pedreiro,arquiteto,assistente administrativo]"
+DER,9/2019,35104419779,"[carpinteiro,encanador,pedreiro]"
+DER,3/2021,69042388698,"[carpinteiro,encanador,eletricista,marceneiro]"
+SEDU,19/2017,19750532858,"[professor de matemática,marceneiro]"
+SEDURB,6/2021,22944662808,[analista de sistemas]
+SEAG,9/2019,36831803983,"[marceneiro,engenheiro civil]"
+SEDURB,16/2018,84828221110,[professor de matemática]
+SEFAZ,19/2016,55312084049,"[engenheiro civil,arquiteto,pintor]"
+SEFAZ,17/2021,13741076839,"[marceneiro,arquiteto]"
+SESA,15/2021,37494183744,"[assistente administrativo,carpinteiro]"
+SEFAZ,10/2021,47784249389,"[pedreiro,arquiteto]"
+PCES,17/2022,89638202295,"[arquiteto,eletricista,professor de matemática]"
+SESA,8/2023,34507798768,"[marceneiro,arquiteto]"
+SESA,3/2019,56118786068,"[analista de sistemas,engenheiro civil,marceneiro,encanador]"
+SESA,5/2019,28145662737,"[encanador,eletricista,engenheiro civil,assistente administrativo]"
+SEDURB,13/2024,45370417368,"[pedreiro,pintor]"
+PCES,16/2022,26547699561,"[engenheiro civil,assistente administrativo,pedreiro,encanador]"
+SEDURB,3/2020,35586857452,"[carpinteiro,assistente administrativo]"
+SESA,13/2024,31674369787,"[eletricista,assistente administrativo,marceneiro,pintor]"
+PMES,13/2022,18577185839,"[eletricista,engenheiro civil,pintor]"
+SECONT,15/2024,31674369787,"[pintor,engenheiro civil]"
+SESA,4/2018,81662608182,"[eletricista,engenheiro civil]"
+SEDURB,10/2021,64768309681,"[engenheiro civil,marceneiro,encanador]"
+SEFAZ,19/2020,33411300880,"[analista de sistemas,assistente administrativo,eletricista]"
+PCES,6/2024,23874855059,"[assistente administrativo,analista de sistemas,arquiteto]"
+DER,17/2016,54168068890,"[eletricista,carpinteiro,encanador,marceneiro]"
+SEDU,12/2015,67761704682,"[carpinteiro,encanador]"
+SEJUS,1/2016,45370417368,[eletricista]
+SEDU,7/2021,66058420896,"[professor de matemática,arquiteto,analista de sistemas]"
+PMES,3/2021,69042388698,"[arquiteto,engenheiro civil]"
+SEDURB,3/2021,35233564365,"[pintor,analista de sistemas,marceneiro,professor de matemática]"
+SEDURB,3/2019,78577660576,"[marceneiro,carpinteiro,eletricista]"
+SEDU,16/2019,58295526482,"[pedreiro,pintor]"
+SESA,6/2018,32668215433,[assistente administrativo]
+SEFAZ,17/2021,70436429846,[engenheiro civil]
+DER,10/2021,23874855059,[arquiteto]
+DER,13/2021,32478810655,[carpinteiro]
+SEJUS,10/2022,69042388698,[carpinteiro]
+SEDU,11/2017,65213162649,"[eletricista,marceneiro,professor de matemática]"
+SEFAZ,4/2019,81214402900,"[carpinteiro,assistente administrativo]"
+SEDU,5/2019,16785135806,"[carpinteiro,assistente administrativo,encanador]"
+SEAG,7/2021,56942395058,"[professor de matemática,assistente administrativo]"
+SECONT,13/2022,69423216311,"[eletricista,assistente administrativo,marceneiro]"
+DER,8/2018,18220007953,"[engenheiro civil,pedreiro,eletricista]"
+SESA,8/2021,42576388845,"[carpinteiro,pedreiro,professor de matemática,pintor]"
+PMES,9/2021,10568063991,"[professor de matemática,engenheiro civil,pedreiro]"
+SEDURB,4/2018,59577646453,[pedreiro]
+SECONT,14/2021,65234625430,"[assistente administrativo,analista de sistemas,marceneiro,carpinteiro]"
+DER,13/2021,17096219741,"[engenheiro civil,arquiteto,pintor]"
+SEAG,8/2021,91535431249,[encanador]
+PMES,3/2021,37119585754,"[eletricista,engenheiro civil,arquiteto,marceneiro]"
+SESA,8/2018,34938605654,"[eletricista,pedreiro]"
+SESA,17/2015,52236302433,"[arquiteto,eletricista,pintor,pedreiro]"
+DER,17/2020,93433718455,"[arquiteto,engenheiro civil,eletricista]"
+PCES,4/2021,97811978837,"[pedreiro,marceneiro]"
+PCES,3/2021,29696534720,"[arquiteto,pintor,analista de sistemas]"
+SESA,5/2019,56118786068,"[arquiteto,pedreiro,professor de matemática]"
+SEAG,17/2015,88168468345,"[encanador,engenheiro civil]"
+SEDU,13/2021,10803933938,"[engenheiro civil,eletricista]"
+PCES,6/2019,65071129208,[encanador]
+SESA,18/2024,80753959687,"[assistente administrativo,marceneiro,carpinteiro]"
+SECONT,16/2016,94774752127,[professor de matemática]
+SESA,4/2019,92342070789,"[analista de sistemas,eletricista,carpinteiro]"
+PMES,6/2022,90626861667,"[professor de matemática,eletricista,pintor,arquiteto]"
+SECONT,13/2024,66058420896,"[carpinteiro,engenheiro civil,encanador,pintor]"
+PMES,19/2016,35422497347,"[arquiteto,pintor,pedreiro,marceneiro]"
+PMES,10/2021,62597414089,[professor de matemática]
+SEAG,13/2022,54874405508,"[engenheiro civil,encanador]"
+PMES,19/2020,53691664314,"[marceneiro,professor de matemática,carpinteiro,eletricista]"
+SECONT,6/2024,37817888474,"[pintor,marceneiro,engenheiro civil]"
+PCES,15/2024,56002020070,"[carpinteiro,assistente administrativo,arquiteto,pintor]"
+DER,8/2021,33291325843,"[carpinteiro,encanador,pintor,marceneiro]"
+DER,3/2020,84828221110,[encanador]
+PCES,3/2021,98827703865,"[carpinteiro,arquiteto,pedreiro]"
+PCES,4/2019,25344165483,[eletricista]
+PCES,3/2021,26307260070,[assistente administrativo]
+PCES,14/2021,50629470364,[arquiteto]
+DER,19/2020,33445530738,"[engenheiro civil,pedreiro,encanador,marceneiro]"
+SESA,3/2021,50522368154,"[encanador,marceneiro,carpinteiro,analista de sistemas]"
+PMES,8/2022,39880596066,"[professor de matemática,pedreiro,eletricista]"
+PCES,8/2019,58199019235,"[analista de sistemas,marceneiro,eletricista]"
+DER,16/2015,38704093836,"[assistente administrativo,pintor,engenheiro civil]"
+SEFAZ,17/2019,18577185839,"[carpinteiro,assistente administrativo,engenheiro civil]"
+PCES,15/2019,83788321391,"[assistente administrativo,analista de sistemas,marceneiro]"
+PMES,9/2015,10584574045,"[professor de matemática,carpinteiro,marceneiro,pedreiro]"
+SESA,9/2015,67764613044,"[pintor,assistente administrativo,engenheiro civil,eletricista]"
+SEAG,17/2020,37494183744,"[analista de sistemas,marceneiro,engenheiro civil,pedreiro]"
+SEDU,3/2019,58295526482,[pintor]
+SEDURB,1/2015,93142554737,"[encanador,assistente administrativo,pintor]"
+PCES,15/2019,45838332021,"[encanador,marceneiro,pintor]"
+SEJUS,10/2021,45560150941,"[assistente administrativo,arquiteto,pedreiro]"
+SEDURB,17/2020,86194519087,[engenheiro civil]
+SEAG,17/2023,65234625430,"[assistente administrativo,carpinteiro,encanador,analista de sistemas]"
+SEAG,8/2024,56002020070,"[assistente administrativo,analista de sistemas,pintor]"
+SECONT,15/2019,15412129354,"[assistente administrativo,encanador]"
+DER,16/2017,40208181099,"[marceneiro,professor de matemática,arquiteto]"
+SEDU,8/2022,86427712258,"[marceneiro,arquiteto]"
+SEFAZ,9/2015,95360610032,"[arquiteto,pintor,engenheiro civil,encanador]"
+DER,17/2021,33411300880,"[engenheiro civil,encanador,arquiteto]"
+DER,20/2023,58199019235,"[professor de matemática,pedreiro,carpinteiro,pintor]"
+SEFAZ,8/2024,46200607650,[encanador]
+DER,17/2021,84828221110,[professor de matemática]
+SEDURB,12/2015,35803577793,"[engenheiro civil,eletricista,arquiteto]"
+SEDU,20/2023,43197457541,"[arquiteto,engenheiro civil]"
+SEAG,13/2024,15412129354,[assistente administrativo]
+SEDURB,4/2018,63483348699,"[pintor,pedreiro]"
+SESA,5/2019,58295526482,[marceneiro]
+PCES,11/2017,37817888474,[arquiteto]
+SEFAZ,13/2022,37119585754,"[pedreiro,pintor,engenheiro civil,professor de matemática]"
+PCES,16/2017,85493174799,"[engenheiro civil,marceneiro,encanador]"
+SEDURB,6/2022,50522368154,"[professor de matemática,pintor,eletricista,pedreiro]"
+SEFAZ,7/2021,37119585754,"[pintor,assistente administrativo]"
+SEDU,6/2022,48184335620,"[encanador,carpinteiro,marceneiro,pintor]"
+SEAG,15/2024,93106732616,"[pintor,professor de matemática,analista de sistemas,arquiteto]"
+SESA,15/2024,23139935205,[arquiteto]
+SEAG,9/2015,91423572181,[engenheiro civil]
+SEAG,17/2020,56118786068,"[encanador,marceneiro,engenheiro civil,analista de sistemas]"
+SEAG,15/2024,33367068467,"[carpinteiro,eletricista]"
+PMES,1/2015,24955700337,"[eletricista,professor de matemática]"
+PMES,16/2015,69423216311,[analista de sistemas]
+SECONT,6/2017,58199019235,"[professor de matemática,arquiteto,eletricista,encanador]"
+SESA,9/2019,83728286683,[arquiteto]
+PMES,5/2023,97492743248,"[marceneiro,analista de sistemas,arquiteto,pintor]"
+SEDURB,17/2023,26547699561,[pintor]
+SEFAZ,16/2016,13504970480,[arquiteto]
+SEDURB,16/2016,18577185839,"[eletricista,analista de sistemas,assistente administrativo,pintor]"
+SEDU,16/2015,12384596013,"[pintor,marceneiro,arquiteto,carpinteiro]"
+SEFAZ,13/2024,18220007953,[carpinteiro]
+PMES,19/2017,38448925479,"[carpinteiro,professor de matemática,eletricista]"
+SECONT,14/2021,66058420896,"[encanador,marceneiro,eletricista]"
+DER,17/2015,97492743248,"[engenheiro civil,assistente administrativo,eletricista]"
+PMES,7/2021,19750532858,"[arquiteto,assistente administrativo,analista de sistemas]"
+SESA,3/2019,11604749040,"[analista de sistemas,professor de matemática,engenheiro civil]"
+SEAG,16/2015,95360610032,"[assistente administrativo,carpinteiro,encanador]"
+DER,16/2016,28145662737,"[carpinteiro,encanador,arquiteto]"
+SEAG,14/2015,26547699561,"[encanador,professor de matemática,analista de sistemas]"
+SECONT,12/2017,35803577793,"[arquiteto,analista de sistemas]"
+SEFAZ,16/2015,23127317727,"[eletricista,arquiteto,carpinteiro,engenheiro civil]"
+SESA,5/2018,83728286683,"[pedreiro,engenheiro civil,pintor]"
+DER,9/2021,71896894941,"[carpinteiro,eletricista,pintor,analista de sistemas]"
+SEJUS,12/2015,38899300436,"[professor de matemática,encanador,carpinteiro]"
+SEFAZ,17/2016,62316186884,[encanador]
+SECONT,8/2018,35014159292,"[arquiteto,analista de sistemas,pedreiro,professor de matemática]"
+SECONT,16/2015,35233564365,[pintor]
+SEJUS,17/2022,51422903458,[assistente administrativo]
+SEDURB,6/2022,50629470364,[analista de sistemas]
+DER,10/2021,11604749040,"[professor de matemática,assistente administrativo]"
+SESA,3/2020,86487079991,"[professor de matemática,eletricista]"
+SESA,6/2024,58295526482,"[pedreiro,assistente administrativo,marceneiro]"
+SECONT,9/2015,57000166979,"[pedreiro,assistente administrativo]"
+SEDU,16/2016,15069188340,"[arquiteto,encanador]"
+DER,9/2019,12981062152,[engenheiro civil]
+SEJUS,18/2024,27435418374,[eletricista]
+SEJUS,17/2023,13705075086,[pedreiro]
+SEAG,11/2017,10744374366,"[assistente administrativo,arquiteto,analista de sistemas,pintor]"
+SEJUS,1/2015,77680569817,"[arquiteto,encanador]"
+DER,8/2023,93433718455,"[arquiteto,assistente administrativo,eletricista,carpinteiro]"
+PMES,19/2020,69401309725,"[encanador,assistente administrativo,arquiteto]"
+SEDURB,17/2020,14627535905,"[encanador,pedreiro,arquiteto]"
+SEFAZ,7/2015,28145662737,[carpinteiro]
+DER,8/2023,69042388698,"[eletricista,carpinteiro,arquiteto,marceneiro]"
+PCES,3/2021,35803577793,[eletricista]
+PMES,6/2018,86501294878,"[professor de matemática,marceneiro]"
+SECONT,11/2017,34938605654,"[engenheiro civil,pedreiro,eletricista]"
+SEJUS,4/2019,91412625129,"[arquiteto,carpinteiro]"
+PMES,5/2023,22242969113,"[carpinteiro,encanador,arquiteto,engenheiro civil]"
+SEDURB,17/2023,39134342689,"[assistente administrativo,professor de matemática,encanador,eletricista]"
+SEFAZ,12/2015,67764613044,"[engenheiro civil,encanador,arquiteto]"
+DER,19/2017,94733380747,"[pintor,analista de sistemas,encanador,arquiteto]"
+PCES,8/2018,86506936960,"[eletricista,assistente administrativo]"
+SEDU,8/2022,82074947067,"[encanador,assistente administrativo]"
+SEFAZ,12/2015,18577185839,"[pintor,encanador,engenheiro civil]"
+SEDURB,17/2021,50629470364,"[professor de matemática,arquiteto]"
+SEDURB,3/2023,63912521941,[marceneiro]
+SECONT,5/2023,86427712258,"[arquiteto,eletricista,analista de sistemas,pintor]"
+DER,17/2020,85493174799,"[analista de sistemas,marceneiro,encanador,engenheiro civil]"
+SEFAZ,6/2022,32371104136,"[assistente administrativo,marceneiro,eletricista,carpinteiro]"
+SEJUS,9/2020,29696534720,"[carpinteiro,encanador,assistente administrativo,professor de matemática]"
+SEDURB,13/2021,28145662737,"[engenheiro civil,arquiteto]"
+SEDURB,13/2024,36824661712,"[pedreiro,encanador,assistente administrativo]"
+SEDU,13/2021,26307260070,[engenheiro civil]
+PMES,17/2019,83788321391,"[carpinteiro,engenheiro civil]"
+DER,5/2018,65071129208,"[engenheiro civil,professor de matemática,assistente administrativo]"
+SEFAZ,17/2016,32668215433,[carpinteiro]
+SEJUS,9/2021,56942395058,"[pintor,eletricista,analista de sistemas,pedreiro]"
+SEDURB,12/2015,81103185874,"[analista de sistemas,pedreiro,engenheiro civil,eletricista]"
+SEFAZ,6/2017,48184335620,[marceneiro]
+SEAG,13/2021,92342070789,[pedreiro]
+SESA,5/2019,82555382831,"[arquiteto,professor de matemática,marceneiro,pintor]"
+SEFAZ,9/2019,22288670181,"[encanador,engenheiro civil]"
+SEJUS,10/2022,86506936960,"[eletricista,pedreiro,pintor]"
+SEDU,8/2024,89638202295,"[analista de sistemas,arquiteto,pintor]"
+SEDU,3/2021,38899300436,"[pintor,carpinteiro,assistente administrativo]"
+SECONT,12/2017,35422497347,"[pedreiro,eletricista,professor de matemática]"
+SEAG,8/2018,94186270230,"[professor de matemática,carpinteiro]"
+SECONT,19/2017,56002020070,[analista de sistemas]
+SEDURB,17/2016,97811978837,"[pedreiro,engenheiro civil]"
+SEJUS,9/2020,35333816358,"[encanador,professor de matemática]"
+SECONT,4/2021,98827703865,"[assistente administrativo,professor de matemática,arquiteto,engenheiro civil]"
+SEDU,13/2021,28145662737,[pintor]
+SEDU,3/2023,59770073073,"[pintor,analista de sistemas]"
+DER,3/2023,12384596013,"[professor de matemática,pintor]"
+SEAG,14/2017,93645276140,"[pedreiro,arquiteto]"
+SEDURB,14/2017,98827703865,"[marceneiro,eletricista]"
+SEAG,8/2018,32668215433,"[pintor,professor de matemática,arquiteto]"
+SEJUS,19/2020,48796002063,"[assistente administrativo,pedreiro,marceneiro,eletricista]"
+SEDU,8/2023,42545424293,"[pintor,marceneiro,engenheiro civil,pedreiro]"
+SEFAZ,15/2018,94774752127,"[professor de matemática,marceneiro,pintor]"
+DER,15/2019,63912521941,"[analista de sistemas,carpinteiro,professor de matemática]"
+SESA,10/2021,81662608182,"[pedreiro,carpinteiro]"
+SESA,3/2020,90626861667,[analista de sistemas]
+SEAG,16/2016,50629470364,"[engenheiro civil,arquiteto,pintor]"
+SESA,1/2016,80753959687,"[pedreiro,carpinteiro]"
+SESA,16/2015,65807293858,"[analista de sistemas,eletricista]"
+SECONT,19/2017,42383758109,"[assistente administrativo,arquiteto,engenheiro civil]"
+SEDU,6/2018,22944662808,[eletricista]
+SEDU,19/2015,56835782924,"[analista de sistemas,pedreiro,pintor,carpinteiro]"
+SESA,6/2022,33411300880,"[professor de matemática,marceneiro,pintor]"
+SEJUS,17/2024,69344010576,"[pintor,pedreiro,eletricista,carpinteiro]"
+SEAG,6/2018,53691664314,"[eletricista,encanador,assistente administrativo]"
+SESA,9/2020,38448925479,"[arquiteto,marceneiro,eletricista]"
+DER,4/2018,45560150941,"[carpinteiro,professor de matemática]"
+SEDURB,16/2015,56835782924,"[encanador,marceneiro]"
+SEJUS,16/2016,42383758109,"[arquiteto,marceneiro,professor de matemática]"
+SECONT,16/2021,45838332021,"[engenheiro civil,eletricista,pedreiro]"
+SEDURB,6/2017,59577646453,"[engenheiro civil,pintor]"
+PMES,4/2017,67764613044,[pintor]
+SEDU,18/2024,56002020070,[carpinteiro]
+SEDU,1/2015,98827703865,"[engenheiro civil,analista de sistemas,eletricista,pedreiro]"
+PMES,10/2021,57198729550,"[eletricista,professor de matemática,encanador,assistente administrativo]"
+SEDURB,3/2023,45370417368,"[encanador,pedreiro,engenheiro civil]"
+PMES,10/2022,24997251859,"[eletricista,pedreiro,encanador]"
+SEJUS,3/2019,14627535905,"[marceneiro,engenheiro civil,pintor]"
+SEDU,1/2016,13385322316,[professor de matemática]
+DER,17/2024,45370417368,"[carpinteiro,engenheiro civil,assistente administrativo]"
+DER,13/2024,26846433936,[pedreiro]
+SESA,5/2019,88191636212,"[carpinteiro,professor de matemática]"
+SEDU,18/2024,37494183744,"[pedreiro,arquiteto,carpinteiro]"
+SEAG,10/2015,78721927190,[pedreiro]
+PMES,1/2016,15069188340,"[engenheiro civil,carpinteiro]"
+SEJUS,4/2019,56118786068,"[carpinteiro,pedreiro]"
+SEAG,3/2021,82074947067,"[analista de sistemas,pintor,assistente administrativo]"
+PCES,7/2021,93106732616,"[eletricista,engenheiro civil,carpinteiro,assistente administrativo]"
+SEDU,9/2022,93433718455,"[professor de matemática,arquiteto,marceneiro]"
+SEDU,17/2015,56942395058,"[carpinteiro,eletricista]"
+SESA,13/2024,97492743248,"[carpinteiro,pintor,arquiteto,professor de matemática]"
+SECONT,13/2021,67878498208,"[assistente administrativo,carpinteiro]"
+PCES,14/2017,40677417843,"[professor de matemática,eletricista]"
+SESA,3/2021,63912521941,"[analista de sistemas,marceneiro,pedreiro]"
+SEFAZ,10/2015,47784249389,"[professor de matemática,eletricista,assistente administrativo,marceneiro]"
+SEDURB,4/2018,14583742260,"[carpinteiro,marceneiro,engenheiro civil,assistente administrativo]"
+SEDU,5/2019,24997251859,[encanador]
+DER,3/2021,42576388845,"[eletricista,assistente administrativo]"
+SECONT,7/2021,47784249389,[arquiteto]
+SEAG,16/2015,24955700337,"[pintor,encanador,analista de sistemas,marceneiro]"
+SEFAZ,1/2015,37494183744,"[assistente administrativo,pedreiro,engenheiro civil]"
+PCES,3/2019,93433718455,"[marceneiro,analista de sistemas,encanador]"
+DER,17/2020,42576388845,"[professor de matemática,arquiteto,pintor,assistente administrativo]"
+SEJUS,16/2022,64109906018,"[pedreiro,arquiteto,pintor,encanador]"
+SEDU,17/2016,82740109515,[arquiteto]
+SEJUS,14/2017,87708442773,"[engenheiro civil,arquiteto]"
+SEAG,1/2016,46778670031,[engenheiro civil]
+DER,6/2021,45560150941,[pintor]
+PCES,3/2019,18577185839,"[arquiteto,carpinteiro]"
+SEDU,7/2015,22944662808,[assistente administrativo]
+PCES,6/2018,78577660576,"[assistente administrativo,engenheiro civil,arquiteto,pedreiro]"
+SECONT,16/2019,83788321391,[engenheiro civil]
+DER,1/2024,40208181099,"[carpinteiro,professor de matemática,pedreiro]"
+SEDURB,9/2021,91535431249,"[engenheiro civil,carpinteiro,eletricista,marceneiro]"
+PMES,8/2018,58667926917,"[engenheiro civil,assistente administrativo]"
+SEJUS,1/2015,93645276140,"[engenheiro civil,arquiteto,eletricista,carpinteiro]"
+PCES,18/2024,32739824608,"[engenheiro civil,encanador,eletricista,arquiteto]"
+SESA,6/2019,91535431249,[marceneiro]
+SECONT,12/2017,10803933938,"[pedreiro,encanador,carpinteiro]"
+PCES,7/2017,23874855059,[professor de matemática]
+SEJUS,13/2021,95360610032,"[assistente administrativo,carpinteiro,engenheiro civil,pedreiro]"
+PCES,13/2021,26547699561,[assistente administrativo]
+SEAG,10/2021,36308308287,"[professor de matemática,eletricista,analista de sistemas]"
+SECONT,3/2021,13335092204,"[analista de sistemas,eletricista,professor de matemática]"
+SECONT,17/2020,38899300436,"[encanador,professor de matemática,carpinteiro,analista de sistemas]"
+SEFAZ,17/2020,52236302433,"[eletricista,pintor,pedreiro,professor de matemática]"
+PCES,10/2022,90000645613,"[encanador,arquiteto,pintor,assistente administrativo]"
+PMES,14/2021,42657312759,"[engenheiro civil,professor de matemática,encanador]"
+SEDURB,8/2018,30150391220,"[engenheiro civil,professor de matemática]"
+SEDURB,12/2017,13385322316,[pedreiro]
+DER,6/2022,35333816358,[arquiteto]
+SECONT,1/2015,70436429846,"[eletricista,assistente administrativo]"
+SEAG,8/2019,65071129208,"[eletricista,arquiteto,pintor,marceneiro]"
+SESA,15/2019,31674369787,"[pedreiro,analista de sistemas,engenheiro civil,eletricista]"
+SESA,15/2018,10568063991,"[marceneiro,assistente administrativo,arquiteto]"
+SEDU,16/2016,10744374366,"[pintor,carpinteiro,encanador,professor de matemática]"
+DER,19/2017,13504970480,"[engenheiro civil,professor de matemática,pedreiro]"
+PCES,3/2019,54874405508,"[analista de sistemas,arquiteto,encanador]"
+PMES,5/2018,45370417368,[arquiteto]
+SEJUS,10/2015,56942395058,"[professor de matemática,encanador]"
+SEAG,16/2022,97051263426,"[carpinteiro,analista de sistemas]"
+DER,9/2015,45370417368,"[marceneiro,encanador,pintor]"
+SEAG,1/2024,86501294878,"[pintor,encanador,eletricista,carpinteiro]"
+PMES,10/2022,66058420896,"[engenheiro civil,carpinteiro,pintor]"
+SEFAZ,3/2016,93645276140,"[assistente administrativo,pintor]"
+SECONT,5/2018,70436429846,[engenheiro civil]
+DER,17/2015,66058420896,"[analista de sistemas,arquiteto,encanador]"
+SEDURB,10/2024,10568063991,"[marceneiro,carpinteiro,analista de sistemas]"
+SEDURB,3/2021,64768309681,"[pintor,assistente administrativo,analista de sistemas]"
+SEAG,10/2021,33445530738,[carpinteiro]
+SECONT,6/2018,23139935205,"[carpinteiro,pedreiro,professor de matemática,engenheiro civil]"
+SEJUS,4/2019,13335092204,"[arquiteto,carpinteiro,eletricista]"
+SESA,19/2020,48446591891,"[analista de sistemas,arquiteto,encanador,marceneiro]"
+SEFAZ,14/2015,82740109515,"[encanador,carpinteiro,pedreiro]"
+SESA,6/2022,35014159292,"[arquiteto,carpinteiro]"
+SEAG,12/2015,25344165483,"[eletricista,marceneiro,pedreiro,arquiteto]"
+PMES,17/2020,38275069051,"[professor de matemática,eletricista]"
+SECONT,8/2024,97811978837,"[analista de sistemas,eletricista,marceneiro]"
+SEDURB,13/2021,36824661712,"[pedreiro,arquiteto,encanador]"
+SEDURB,5/2019,92387146479,"[assistente administrativo,engenheiro civil]"
+SESA,7/2021,87708442773,"[assistente administrativo,pintor]"
+PCES,13/2024,62740750878,[eletricista]
+SEDU,10/2021,47784249389,"[pedreiro,eletricista,pintor]"
+SEFAZ,3/2016,26307260070,"[encanador,analista de sistemas,pedreiro]"
+SEDU,10/2021,82555382831,"[arquiteto,encanador,pedreiro]"
+SESA,9/2021,35333816358,[pedreiro]
+SEDU,8/2019,35803577793,"[professor de matemática,engenheiro civil,pedreiro,analista de sistemas]"
+PCES,19/2015,88191636212,"[pedreiro,engenheiro civil]"
+SEDU,11/2017,12981062152,"[carpinteiro,professor de matemática,engenheiro civil,marceneiro]"
+SECONT,3/2016,28295151830,[analista de sistemas]
+PCES,16/2016,57359110979,[assistente administrativo]
+SEDU,1/2015,38448925479,"[carpinteiro,pintor,professor de matemática]"
+PMES,8/2024,65372298903,"[carpinteiro,arquiteto]"
+SECONT,7/2017,62597414089,"[pintor,arquiteto,assistente administrativo]"
+SECONT,15/2024,74747722745,"[pintor,analista de sistemas,encanador]"
+PCES,5/2019,85493174799,"[eletricista,assistente administrativo]"
+SEAG,3/2021,57198729550,"[analista de sistemas,eletricista,carpinteiro,professor de matemática]"
+SEJUS,6/2018,32478810655,[carpinteiro]
+DER,15/2018,56002020070,"[carpinteiro,assistente administrativo,pintor]"
+SEFAZ,6/2022,33084576927,"[arquiteto,assistente administrativo,marceneiro]"
+SEJUS,5/2019,82074947067,[pedreiro]
+DER,18/2024,13385322316,[eletricista]
+DER,15/2021,65807293858,"[analista de sistemas,pintor]"
+SESA,3/2020,87708442773,[professor de matemática]
+PCES,15/2024,32371104136,"[carpinteiro,eletricista,analista de sistemas,professor de matemática]"
+SECONT,1/2015,69042388698,[arquiteto]
+SEDU,20/2023,14627535905,"[carpinteiro,engenheiro civil,eletricista]"
+SECONT,9/2021,22651235912,"[pintor,carpinteiro,assistente administrativo,marceneiro]"
+SECONT,10/2022,57198729550,"[engenheiro civil,eletricista]"
+SEDU,3/2023,65494614682,"[arquiteto,pedreiro]"
+SEFAZ,17/2021,98827703865,"[pedreiro,engenheiro civil]"
+SEDU,17/2024,86501294878,[pintor]
+SEDURB,6/2022,81103185874,"[engenheiro civil,encanador]"
+SEDU,3/2019,47784249389,"[analista de sistemas,pintor]"
+SEDU,10/2021,22651235912,"[arquiteto,marceneiro,professor de matemática,analista de sistemas]"
+SEAG,1/2016,67878498208,[encanador]
+DER,6/2017,86506936960,"[assistente administrativo,arquiteto,pintor,eletricista]"
+SECONT,4/2019,63483348699,"[engenheiro civil,eletricista,arquiteto]"
+SESA,6/2021,13504970480,"[professor de matemática,carpinteiro,assistente administrativo]"
+SESA,20/2022,24997251859,"[engenheiro civil,analista de sistemas]"
+PCES,4/2021,56835782924,[eletricista]
+PCES,8/2022,13741076839,"[pintor,carpinteiro]"
+PMES,16/2016,42383758109,"[pintor,eletricista,arquiteto,pedreiro]"
+PCES,9/2019,38275069051,"[engenheiro civil,pintor,carpinteiro]"
+SEDURB,16/2016,97492743248,"[professor de matemática,arquiteto]"
+SECONT,9/2015,38448925479,"[eletricista,pedreiro,pintor]"
+PMES,9/2021,34938605654,"[pintor,carpinteiro]"
+DER,15/2021,13741076839,"[assistente administrativo,arquiteto,pintor,analista de sistemas]"
+SECONT,11/2017,46067076644,"[encanador,pintor]"
+SEDURB,13/2024,56002020070,"[analista de sistemas,professor de matemática,pintor,carpinteiro]"
+SEFAZ,4/2018,10568063991,"[encanador,pintor]"
+SEAG,18/2024,48446591891,"[engenheiro civil,eletricista,professor de matemática,carpinteiro]"
+DER,7/2021,14583742260,[encanador]
+SEJUS,15/2018,36308308287,[analista de sistemas]
+SEDU,17/2022,93645276140,"[engenheiro civil,professor de matemática,carpinteiro]"
+SECONT,19/2017,57000166979,"[arquiteto,engenheiro civil,eletricista]"
+DER,12/2015,16785135806,"[assistente administrativo,encanador]"
+SEJUS,17/2021,37119585754,"[carpinteiro,pintor]"
+SEJUS,6/2022,23139935205,"[carpinteiro,pedreiro,arquiteto,eletricista]"
+SEFAZ,3/2020,78234176477,[encanador]
+SESA,3/2023,66058420896,[carpinteiro]
+PCES,17/2023,42545424293,"[carpinteiro,analista de sistemas,engenheiro civil,eletricista]"
+SEAG,6/2017,56002020070,"[analista de sistemas,eletricista,engenheiro civil,pedreiro]"
+SEJUS,12/2015,65494614682,"[carpinteiro,arquiteto]"
+SEFAZ,3/2021,46778670031,"[marceneiro,professor de matemática]"
+PMES,14/2015,95360610032,[engenheiro civil]
+SEAG,3/2016,81103185874,"[carpinteiro,engenheiro civil,assistente administrativo,professor de matemática]"
+SEDURB,16/2019,11604749040,[eletricista]
+PMES,6/2019,75042198075,"[assistente administrativo,encanador]"
+DER,13/2024,46067076644,[assistente administrativo]
+DER,4/2017,93142554737,"[pedreiro,analista de sistemas,carpinteiro]"
+SEAG,3/2021,74747722745,[assistente administrativo]
+PCES,18/2024,90626861667,"[pintor,analista de sistemas,assistente administrativo,encanador]"
+PMES,16/2015,46461059592,"[pintor,engenheiro civil,carpinteiro,arquiteto]"
+SEFAZ,3/2021,22242969113,"[assistente administrativo,encanador,marceneiro,eletricista]"
+SEJUS,3/2019,69042388698,[analista de sistemas]
+SESA,13/2024,82740109515,"[marceneiro,carpinteiro]"
+PMES,15/2018,13335092204,"[marceneiro,encanador]"
+SEDU,1/2015,33411300880,"[arquiteto,marceneiro,carpinteiro]"
+SEAG,7/2015,65071129208,"[encanador,marceneiro,arquiteto]"
+SEDU,8/2022,88168468345,"[marceneiro,carpinteiro]"
+SEJUS,16/2016,93645276140,[pintor]
+SECONT,16/2016,38704093836,[pintor]
+PMES,7/2015,86704518771,"[eletricista,professor de matemática]"
+DER,17/2016,16785135806,"[eletricista,assistente administrativo]"
+SEAG,10/2024,77680569817,"[pedreiro,analista de sistemas]"
+SEJUS,13/2022,13705075086,"[carpinteiro,pedreiro,professor de matemática]"
+SEJUS,1/2024,97051263426,[professor de matemática]
+SESA,9/2020,92387146479,"[carpinteiro,pintor]"
+SEAG,14/2015,10744374366,"[pedreiro,assistente administrativo,professor de matemática,pintor]"
+SEFAZ,13/2021,74747722745,"[pedreiro,analista de sistemas]"
+SEFAZ,19/2016,92387146479,"[marceneiro,analista de sistemas]"
+SEJUS,3/2016,84828221110,[arquiteto]
+PCES,3/2020,35422497347,"[analista de sistemas,marceneiro,engenheiro civil,pedreiro]"
+SEAG,3/2021,57000166979,"[engenheiro civil,eletricista,encanador]"
+DER,12/2015,35014159292,"[eletricista,engenheiro civil,pedreiro]"
+SECONT,5/2018,57918423787,"[analista de sistemas,engenheiro civil]"
+PCES,9/2019,58199019235,"[pintor,eletricista,arquiteto]"
+DER,20/2023,56835782924,"[pintor,analista de sistemas,carpinteiro,engenheiro civil]"
+PCES,7/2015,48446591891,"[engenheiro civil,analista de sistemas,pintor,carpinteiro]"
+SESA,5/2018,45838332021,"[marceneiro,analista de sistemas]"
+PCES,17/2023,48446591891,"[engenheiro civil,professor de matemática,analista de sistemas]"
+DER,5/2019,37119585754,"[pedreiro,assistente administrativo,professor de matemática]"
+SECONT,10/2021,58295526482,"[pintor,encanador,carpinteiro,eletricista]"
+SEDU,8/2018,82740109515,[engenheiro civil]
+DER,17/2016,26922158098,"[professor de matemática,pedreiro]"
+DER,11/2017,15412129354,"[analista de sistemas,assistente administrativo,carpinteiro,engenheiro civil]"
+SEFAZ,4/2019,23139935205,"[arquiteto,marceneiro,carpinteiro,assistente administrativo]"
+PMES,1/2015,33445530738,"[engenheiro civil,arquiteto]"
+DER,15/2018,81103185874,"[engenheiro civil,pintor,professor de matemática,pedreiro]"
+PMES,3/2020,34507798768,"[encanador,eletricista,assistente administrativo]"
+SEDURB,12/2015,89638202295,"[professor de matemática,carpinteiro,engenheiro civil]"
+SEAG,5/2018,64109906018,"[professor de matemática,eletricista]"
+SEAG,17/2023,81103185874,"[pedreiro,marceneiro,pintor]"
+SESA,7/2017,91535431249,[pedreiro]
+DER,9/2019,35586857452,"[marceneiro,eletricista,pintor]"
+SECONT,17/2019,63912521941,"[engenheiro civil,analista de sistemas]"
+DER,17/2020,38899300436,[engenheiro civil]
+PMES,7/2017,69401309725,"[assistente administrativo,engenheiro civil]"
+DER,7/2021,35586857452,"[encanador,professor de matemática]"
+SEAG,17/2016,45370417368,"[analista de sistemas,professor de matemática,pedreiro]"
+SEDURB,19/2016,78234176477,"[pintor,analista de sistemas,assistente administrativo,pedreiro]"
+SECONT,3/2019,69423216311,[analista de sistemas]
+PCES,3/2020,32371104136,"[carpinteiro,eletricista,pintor,encanador]"
+SEAG,3/2023,97051263426,"[marceneiro,assistente administrativo,eletricista]"
+SEFAZ,18/2024,16785135806,"[assistente administrativo,carpinteiro,arquiteto,engenheiro civil]"
+SEDU,14/2017,75042198075,"[pedreiro,eletricista,engenheiro civil]"
+SESA,7/2021,23127317727,"[pedreiro,analista de sistemas,pintor,engenheiro civil]"
+PCES,13/2022,86427712258,[encanador]
+SEFAZ,9/2020,43560221930,[pedreiro]
+SEDU,1/2015,94186270230,"[eletricista,marceneiro]"
+SEJUS,13/2021,48446591891,[pedreiro]
+SESA,16/2016,29943530076,[engenheiro civil]
+PMES,12/2015,93142554737,"[engenheiro civil,marceneiro,eletricista,pintor]"
+SEDURB,10/2024,78721927190,"[encanador,pintor,carpinteiro,marceneiro]"
+SECONT,7/2021,37119585754,[assistente administrativo]
+SECONT,1/2015,22651235912,[analista de sistemas]
+SECONT,13/2024,97811978837,[professor de matemática]
+SECONT,20/2023,88168468345,"[engenheiro civil,pintor,arquiteto]"
+SEDU,5/2019,87708442773,"[eletricista,analista de sistemas,pintor]"
+SEDURB,15/2018,97811978837,"[arquiteto,analista de sistemas]"
+SECONT,5/2018,42576388845,"[analista de sistemas,engenheiro civil,marceneiro,arquiteto]"
+SEDURB,6/2019,73490438875,"[carpinteiro,pedreiro]"
+SEDU,7/2015,59770073073,"[assistente administrativo,pedreiro,engenheiro civil]"
+SEDURB,20/2022,37119585754,"[arquiteto,assistente administrativo]"
+PMES,18/2024,86427712258,"[pintor,marceneiro,assistente administrativo]"
+DER,6/2018,83788321391,"[professor de matemática,carpinteiro,marceneiro,analista de sistemas]"
+PCES,15/2021,59770073073,"[professor de matemática,arquiteto]"
+SEFAZ,3/2020,35422497347,"[arquiteto,assistente administrativo]"
+PMES,9/2019,75042198075,"[arquiteto,assistente administrativo]"
+SECONT,5/2019,18577185839,"[analista de sistemas,professor de matemática,carpinteiro]"
+PMES,16/2016,35014159292,"[engenheiro civil,eletricista,pintor,carpinteiro]"
+DER,13/2024,31674369787,"[encanador,professor de matemática,marceneiro]"
+SEAG,15/2021,53691664314,[arquiteto]
+SEDU,3/2021,63912521941,[assistente administrativo]
+DER,5/2019,78577660576,"[marceneiro,analista de sistemas]"
+PMES,11/2017,86506936960,"[pintor,engenheiro civil]"
+SEJUS,16/2019,15412129354,[assistente administrativo]
+SEDU,14/2017,35803577793,"[assistente administrativo,eletricista]"
+SECONT,14/2017,40208181099,[eletricista]
+SESA,3/2021,65807293858,[professor de matemática]
+DER,12/2017,86194519087,"[assistente administrativo,analista de sistemas,eletricista]"
+SEJUS,9/2015,86194519087,"[professor de matemática,marceneiro]"
+PCES,3/2021,62740750878,[analista de sistemas]
+DER,13/2024,17096219741,"[carpinteiro,analista de sistemas,arquiteto,marceneiro]"
+SEFAZ,8/2022,15294358773,"[professor de matemática,assistente administrativo,analista de sistemas,arquiteto]"
+SECONT,1/2015,57359110979,"[analista de sistemas,encanador,pintor,eletricista]"
+SECONT,16/2016,59770073073,[assistente administrativo]
+PMES,13/2021,10744374366,"[eletricista,encanador,pedreiro]"
+SESA,12/2015,38448925479,"[pedreiro,encanador,carpinteiro]"
