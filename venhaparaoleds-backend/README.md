@@ -1,86 +1,92 @@
-Documentação do Projeto: Sistema de Matching de Concursos
-1. Visão Geral
-Este projeto é uma aplicação Node.js projetada para resolver o "Desafio Leds". Sua principal função é cruzar informações entre um banco de dados de candidatos e um de concursos públicos, ambos armazenados em arquivos de texto (.txt).
+Projeto: Sistema de Matching de Concursos (Desafio Leds)
+Este projeto implementa um sistema em Node.js que realiza o cruzamento de dados entre candidatos e concursos públicos. A aplicação é capaz de determinar a compatibilidade entre eles com base nas profissões exigidas pelas vagas e nas qualificações dos candidatos.
 
-O sistema oferece duas funcionalidades centrais:
+O sistema foi desenvolvido com foco em performance, código limpo e testabilidade, servindo como uma solução robusta e escalável para o desafio proposto.
 
-Dado o CPF de um candidato, listar todos os concursos para os quais ele está qualificado.
+✨ Funcionalidades Principais
+Busca por Candidato: Fornecendo o CPF de um candidato, o sistema retorna uma lista de todos os concursos públicos para os quais ele está qualificado.
 
-Dado o Código de um concurso, listar todos os candidatos qualificados para ele.
+Busca por Concurso: Fornecendo o Código de um concurso, o sistema retorna uma lista de todos os candidatos qualificados para as vagas ofertadas.
 
-A aplicação foi desenvolvida com foco em performance, organização e qualidade de código, incluindo testes automatizados para garantir a confiabilidade da lógica de negócio.
+🛠️ Tecnologias Utilizadas
+Node.js: Ambiente de execução para o código JavaScript do lado do servidor.
 
-2. Tecnologias Utilizadas
-Node.js: Ambiente de execução para o código JavaScript no servidor.
+Jest: Framework de testes para garantir a qualidade e a corretude da lógica de negócio.
 
-Jest: Framework para a criação e execução dos testes unitários automatizados.
-
-3. Estrutura do Projeto
-O código está organizado em uma arquitetura de camadas para separar as responsabilidades:
+📁 Estrutura do Projeto
+O projeto segue uma arquitetura de camadas para garantir a separação de responsabilidades e a manutenibilidade do código.
 
 /
-├── index.js                # Ponto de entrada da aplicação (para uso interativo)
-├── package.json            # Define as dependências e scripts do projeto
+├── index.js                # Ponto de entrada para uso interativo da aplicação
+├── package.json            # Metadados do projeto e scripts (npm test)
 ├── src/
 │   ├── data/
-│   │   ├── candidatos.txt  # "Banco de dados" de candidatos
-│   │   ├── concursos.txt   # "Banco de dados" de concursos
-│   │   └── database.js     # Módulo responsável por LER e PARSEAR os arquivos .txt
+│   │   ├── candidatos.txt  # Banco de dados de candidatos em formato de texto
+│   │   ├── concursos.txt   # Banco de dados de concursos em formato de texto
+│   │   └── database.js     # MÓDULO DE DADOS: Responsável por ler e interpretar os arquivos .txt
 │   └── services/
-│       └── matchingService.js # Cérebro da aplicação, contém a lógica de negócio
+│       └── matchingService.js # MÓDULO DE SERVIÇO: Contém toda a lógica de negócio e otimizações
 └── tests/
-    └── matchingService.test.js # Testes unitários para o serviço de matching
-4. Como o Código Funciona
-O fluxo de dados e a lógica da aplicação podem ser entendidos em três partes principais:
+    └── matchingService.test.js # MÓDULO DE TESTES: Testes unitários para o serviço de matching
+⚙️ Como o Sistema Funciona
+A arquitetura foi pensada para ser eficiente e escalável.
 
-4.1. Camada de Dados (src/data/database.js)
-Responsabilidade: Atuar como a ponte entre os dados brutos (arquivos .txt) e a aplicação.
+1. Camada de Dados (src/data/database.js)
+Esta camada é responsável por abstrair a origem dos dados. Suas funções (loadCandidatos e loadConcursos) leem os arquivos .txt, processam o texto linha a linha e convertem os dados brutos em arrays de objetos JavaScript estruturados, que podem ser facilmente manipulados pela aplicação.
 
-Funcionamento: Ele contém funções (loadCandidatos, loadConcursos) que leem os arquivos de texto, quebram cada linha e transformam o texto em um formato estruturado que o JavaScript entende (um array de objetos). A lógica de parsing foi construída para ser resiliente a pequenas variações de formatação nos arquivos.
+2. Camada de Serviço (src/services/matchingService.js)
+Este é o cérebro da aplicação e contém as otimizações de performance mais importantes.
 
-4.2. Camada de Serviço (src/services/matchingService.js)
-Este é o coração da aplicação, onde a "mágica" acontece. Ele foi otimizado para performance.
+Otimização de Performance (Carregamento Único): Ao iniciar, o serviço carrega todos os dados dos arquivos .txt para a memória RAM uma única vez. Isso evita a lentidão de operações de disco repetitivas a cada busca, tornando as consultas subsequentes extremamente rápidas.
 
-Otimização de Performance: Ao ser iniciado, o serviço carrega uma única vez todos os dados dos arquivos para a memória RAM. Isso evita a lentidão de ter que ler os arquivos do disco a cada nova busca, tornando a aplicação extremamente rápida, mesmo com arquivos grandes.
+Indexação de Dados com Map: Para acelerar as buscas por um candidato ou concurso específico, os dados são pré-indexados em Maps do JavaScript. Um Map permite uma busca por chave (CPF ou Código do Concurso) com performance de tempo constante (O(1)), o que é drasticamente mais rápido do que percorrer um array inteiro (O(n)), especialmente com milhares de registros.
 
-Indexação com Map: Após carregar os dados, o serviço os pré-indexa em estruturas de dados do tipo Map. Um Map funciona como o índice de um livro, permitindo uma busca por chave (CPF ou Código do Concurso) de forma praticamente instantânea (complexidade O(1)), em vez de ter que percorrer a lista inteira (complexidade O(N)).
+Lógica de Matching: As funções find... utilizam os dados em memória para realizar o cruzamento. Elas primeiro localizam o registro inicial através do Map (busca rápida) e depois filtram a lista oposta, comparando as profissões com as vagas para encontrar todas as correspondências.
 
-Lógica de Matching: As funções findContestsForCandidate e findCandidatesForContest implementam a lógica de cruzamento. Após encontrar o candidato ou concurso inicial usando o índice Map, elas percorrem a lista oposta, comparando as profissões com as vagas disponíveis para encontrar as correspondências.
+3. Estratégia de Testes (tests/matchingService.test.js)
+Para garantir a confiabilidade do sistema, foram implementados testes unitários com Jest.
 
-4.3. Testes Automatizados (tests/matchingService.test.js)
-Qualidade e Confiança: A pasta tests contém os testes unitários que garantem que a lógica do matchingService está funcionando corretamente.
+Mocking (Simulação): Os testes não leem os arquivos .txt reais. Em vez disso, eles utilizam a técnica de mocking para simular a camada de dados. Um conjunto pequeno e controlado de dados falsos é fornecido ao serviço durante os testes.
 
-Isolamento com Mocking: Os testes não dependem dos arquivos .txt reais. Em vez disso, eles usam a técnica de "mocking" (jest.mock). Nós "enganamos" o serviço durante o teste, fornecendo a ele um conjunto de dados pequeno, falso e controlado. Isso garante que os testes sejam:
+Benefícios: Esta abordagem garante que os testes sejam:
 
-Rápidos: Não há leitura de disco.
+Rápidos: Não dependem da lentidão do sistema de arquivos.
 
-Previsíveis: Os resultados são sempre os mesmos.
+Determinísticos: Os resultados são sempre os mesmos, independentemente dos dados reais.
 
-Isolados: Um teste da lógica de matching não falhará por um erro na leitura do arquivo, por exemplo.
+Isolados: Testa-se apenas a lógica do matchingService, sem o risco de falhas por problemas na leitura de arquivos ou formatação de dados.
 
-5. Como Executar o Projeto
+🚀 Como Executar o Projeto
 Pré-requisitos
-Ter o Node.js instalado.
+É necessário ter o Node.js (versão 16 ou superior) instalado.
 
-Passo a Passo
-Instalar as Dependências:
-No terminal, na raiz do projeto, execute o comando para instalar o Jest:
+1. Instalação de Dependências
+Clone o repositório e, no terminal, dentro da pasta raiz do projeto, execute o seguinte comando para instalar as dependências de desenvolvimento (Jest):
 
 Bash
 
 npm install
-Executar a Aplicação (Uso Interativo):
-Para fazer buscas com CPFs e códigos específicos (usando os dados dos arquivos .txt), edite os valores de exemplo no arquivo index.js e execute:
+2. Execução Interativa
+Para usar a aplicação e fazer consultas com os dados reais dos arquivos .txt, edite os exemplos no arquivo index.js e execute:
 
 Bash
 
 node index.js
-O resultado será exibido em tabelas no terminal.
+Os resultados da busca serão exibidos em tabelas no seu terminal.
 
-Executar os Testes Automatizados:
-Para verificar se toda a lógica de negócio está funcionando corretamente de acordo com os casos de teste definidos, execute:
+3. Execução dos Testes Automatizados
+Para verificar a integridade da lógica de negócio e garantir que tudo está funcionando como esperado, execute o seguinte comando:
 
 Bash
 
 npm test
-A saída deve mostrar que todos os testes passaram com sucesso.
+O Jest irá rodar a suíte de testes e exibir um relatório de sucesso.
+
+🌱 Próximos Passos e Melhorias
+Este projeto serve como uma base sólida que pode ser expandida. Algumas sugestões de melhorias incluem:
+
+Criar uma API REST: Utilizar o framework Express.js para expor as funcionalidades como endpoints HTTP.
+
+Adotar um Banco de Dados Real: Migrar os dados dos arquivos .txt para um sistema de banco de dados como SQLite (para simplicidade) ou PostgreSQL (para robustez).
+
+Construir uma Interface de Usuário: Desenvolver um front-end (React, Vue, etc.) para consumir a API e proporcionar uma experiência mais amigável.
