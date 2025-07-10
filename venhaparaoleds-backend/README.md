@@ -1,98 +1,86 @@
-# Desafio Backend - LEDS
-*Bem-vindo!* 👋
+Documentação do Projeto: Sistema de Matching de Concursos
+1. Visão Geral
+Este projeto é uma aplicação Node.js projetada para resolver o "Desafio Leds". Sua principal função é cruzar informações entre um banco de dados de candidatos e um de concursos públicos, ambos armazenados em arquivos de texto (.txt).
 
-Neste desafio, você terá a oportunidade de demonstrar que possui as habilidades necessárias para atuar no time de backend do laboratório.
+O sistema oferece duas funcionalidades centrais:
 
-# Contextualização
+Dado o CPF de um candidato, listar todos os concursos para os quais ele está qualificado.
 
-O desafio é desenvolver um programa que permita realizar as seguintes buscas: 
-1. Listar os **órgãos, códigos e editais dos concursos públicos** que se encaixam no perfil do candidato, tomando como base o seu **CPF**; 
-2. Listar o **nome, data de nascimento e o CPF** dos candidatos que se encaixam no perfil do concurso tomando com base o **Código do Concurso** do concurso público;
+Dado o Código de um concurso, listar todos os candidatos qualificados para ele.
 
-O arquivo **candidatos.txt** contém as informações dos candidatos:
+A aplicação foi desenvolvida com foco em performance, organização e qualidade de código, incluindo testes automatizados para garantir a confiabilidade da lógica de negócio.
 
-| Nome  | Data de Nascimento  | CPF |  Profissões|
-|---|---|---|---|
-| Lindsey Craft  |  19/05/1976  |  182.845.084-34  |  [carpinteiro]  | 
-| Jackie Dawson  |  14/08/1970  |  311.667.973-47  |  [marceneiro, assistente administrativo]  |
-| Cory Mendoza |   11/02/1957 |  565.512.353-92  |  [carpinteiro, marceneiro] |
+2. Tecnologias Utilizadas
+Node.js: Ambiente de execução para o código JavaScript no servidor.
 
-O arquivo **concursos.txt** contém as informações dos concursos públicos:
+Jest: Framework para a criação e execução dos testes unitários automatizados.
 
-| Órgão  | Edital  | Código do Concurso | Lista de vagas|
-|---|---|---|---|
-| SEDU  | 9/2016  |  61828450843  |  [analista de sistemas, marceneiro]  | 
-| SEJUS | 15/2017  |  61828450843  |  [carpinteiro,professor de matemática,assistente administrativo] |
-| SEJUS | 17/2017 |  95655123539  |  [professor de matemática] |
+3. Estrutura do Projeto
+O código está organizado em uma arquitetura de camadas para separar as responsabilidades:
 
-🤩 **As tecnologias a serem utilizadas na implementação da solução ficam a seu critério!**
+/
+├── index.js                # Ponto de entrada da aplicação (para uso interativo)
+├── package.json            # Define as dependências e scripts do projeto
+├── src/
+│   ├── data/
+│   │   ├── candidatos.txt  # "Banco de dados" de candidatos
+│   │   ├── concursos.txt   # "Banco de dados" de concursos
+│   │   └── database.js     # Módulo responsável por LER e PARSEAR os arquivos .txt
+│   └── services/
+│       └── matchingService.js # Cérebro da aplicação, contém a lógica de negócio
+└── tests/
+    └── matchingService.test.js # Testes unitários para o serviço de matching
+4. Como o Código Funciona
+O fluxo de dados e a lógica da aplicação podem ser entendidos em três partes principais:
 
-# Como entregar?
-1. Faça um **fork** do repositório. Nesse fork esperamos encontrar uma documentação completa da solução e a listagem dos diferenciais implementados.
-2. Abra um **pull request (PR)** do seu fork para o nome repositório com o seu nome como título. Assim conseguimos te localizar melhor e ver que você já finalizou o desafio!
+4.1. Camada de Dados (src/data/database.js)
+Responsabilidade: Atuar como a ponte entre os dados brutos (arquivos .txt) e a aplicação.
 
-🚨 **Atenção**: você deve enviar apenas o código fonte. Não serão aceitos códigos compilados.
+Funcionamento: Ele contém funções (loadCandidatos, loadConcursos) que leem os arquivos de texto, quebram cada linha e transformam o texto em um formato estruturado que o JavaScript entende (um array de objetos). A lógica de parsing foi construída para ser resiliente a pequenas variações de formatação nos arquivos.
 
-## Avaliação
+4.2. Camada de Serviço (src/services/matchingService.js)
+Este é o coração da aplicação, onde a "mágica" acontece. Ele foi otimizado para performance.
 
-O programa será avaliado levando em conta os seguintes critérios:
+Otimização de Performance: Ao ser iniciado, o serviço carrega uma única vez todos os dados dos arquivos para a memória RAM. Isso evita a lentidão de ter que ler os arquivos do disco a cada nova busca, tornando a aplicação extremamente rápida, mesmo com arquivos grandes.
 
-| Critério  | Valor | 
-|---|---|
-| Legibilidade do Código |  10  |
-| Documentação do código |  10  |
-| Documentação da solução |  10  |
-| Tratamento de Erros | 10 | 
-| Total | 40 |
+Indexação com Map: Após carregar os dados, o serviço os pré-indexa em estruturas de dados do tipo Map. Um Map funciona como o índice de um livro, permitindo uma busca por chave (CPF ou Código do Concurso) de forma praticamente instantânea (complexidade O(1)), em vez de ter que percorrer a lista inteira (complexidade O(N)).
 
-A sua pontuação será a soma dos valores obtidos nos critérios acima.
+Lógica de Matching: As funções findContestsForCandidate e findCandidatesForContest implementam a lógica de cruzamento. Após encontrar o candidato ou concurso inicial usando o índice Map, elas percorrem a lista oposta, comparando as profissões com as vagas disponíveis para encontrar as correspondências.
 
-## Diferenciais 
-Você pode **aumentar sua pontuação** implementando os seguintes diferenciais:
+4.3. Testes Automatizados (tests/matchingService.test.js)
+Qualidade e Confiança: A pasta tests contém os testes unitários que garantem que a lógica do matchingService está funcionando corretamente.
 
-| Item  | Pontos Ganhos | 
-|---|---|
-| Criar um [serviço](https://martinfowler.com/articles/microservices.html) com o problema |  30  |
-| Utilizar banco de dados |  30  |
-| Implementar Clean Code |  20  |
-| Implementar o padrão de programação da tecnologia escolhida |  20  |
-| Qualidade de [Código com SonarQube](https://about.sonarcloud.io/) |  15  |
-| Implementar testes unitários |  15  |
-| Implementar testes comportamentais |  15  |
-| Implementar integração com [Github Action](https://github.com/features/actions)  |  10  |
-| Implementar integração com Github Action + SonarQube |  10  |
-| Implementar usando Docker | 5 |
-| Total| 170 |
+Isolamento com Mocking: Os testes não dependem dos arquivos .txt reais. Em vez disso, eles usam a técnica de "mocking" (jest.mock). Nós "enganamos" o serviço durante o teste, fornecendo a ele um conjunto de dados pequeno, falso e controlado. Isso garante que os testes sejam:
 
-A pontuação final será calculada somando os critérios obrigatórios e os diferenciais implementados corretamente.
+Rápidos: Não há leitura de disco.
 
-# Penalizações
+Previsíveis: Os resultados são sempre os mesmos.
 
-Você será desclassificado se:
+Isolados: Um teste da lógica de matching não falhará por um erro na leitura do arquivo, por exemplo.
 
-1. Enviar uma solução que não funcione.
-2. Não cumprir os critérios da seção **Avaliação**.
-3. For identificado plágio.
-   
-***Que a força esteja com você. Boa sorte!***
+5. Como Executar o Projeto
+Pré-requisitos
+Ter o Node.js instalado.
 
-<div align="left">
-</div>
+Passo a Passo
+Instalar as Dependências:
+No terminal, na raiz do projeto, execute o comando para instalar o Jest:
 
-###
+Bash
 
-<br clear="both">
+npm install
+Executar a Aplicação (Uso Interativo):
+Para fazer buscas com CPFs e códigos específicos (usando os dados dos arquivos .txt), edite os valores de exemplo no arquivo index.js e execute:
 
-<div align="center">
-  <a href="https://www.linkedin.com/school/ledsifes" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="https://www.instagram.com/ledsifes/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="instagram logo"  />
-  </a>
-  <a href="https://www.youtube.com/@ledsifes/?sub_confirmation=1" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
-  </a>
-</div>
+Bash
 
-###
+node index.js
+O resultado será exibido em tabelas no terminal.
+
+Executar os Testes Automatizados:
+Para verificar se toda a lógica de negócio está funcionando corretamente de acordo com os casos de teste definidos, execute:
+
+Bash
+
+npm test
+A saída deve mostrar que todos os testes passaram com sucesso.
