@@ -1,0 +1,1001 @@
+Nome,Data de Nascimento,CPF,Profissões
+Ana Sophia Araújo,18/12/2004,438.150.926-98,"[marceneiro, carpinteiro, eletricista]"
+Antônio Carvalho,19/05/1969,380.416.975-93,[engenheiro civil]
+Emilly Almeida,20/02/2006,265.917.803-86,[marceneiro]
+Ana Luiza Moraes,28/11/1977,940.538.716-20,"[arquiteto, marceneiro, pedreiro]"
+Evelyn Moreira,16/10/1993,310.582.794-32,[carpinteiro]
+Emilly Ramos,05/10/1997,529.816.043-33,[engenheiro civil]
+Sabrina Farias,15/08/1965,764.589.123-82,[arquiteto]
+Enzo Azevedo,20/12/1975,641.782.953-73,"[carpinteiro, arquiteto, engenheiro civil]"
+Melissa Ramos,23/03/1964,423.596.871-82,"[arquiteto, pedreiro, engenheiro civil]"
+Juliana Moreira,05/06/1969,287.065.194-58,"[encanador, eletricista]"
+Lara Campos,07/09/1980,674.805.231-90,[assistente administrativo]
+Gustavo Pinto,07/04/1965,704.916.825-49,"[pedreiro, pintor, eletricista]"
+Lívia da Paz,25/11/1964,520.483.761-26,[engenheiro civil]
+Erick Caldeira,22/11/1970,918.530.746-75,"[marceneiro, encanador]"
+Bárbara Ferreira,30/05/1990,963.451.287-91,"[marceneiro, pintor]"
+Manuela Porto,26/09/1962,391.204.765-07,"[encanador, eletricista]"
+Breno Caldeira,30/01/1970,105.849.237-32,[técnico em segurança do trabalho]
+Marcelo Costela,23/09/2003,973.685.102-86,"[marceneiro, pedreiro, encanador]"
+Larissa Moraes,30/04/1983,670.598.412-02,"[eletricista, pintor, engenheiro civil]"
+Felipe da Mota,12/06/1967,872.319.604-13,"[marceneiro, carpinteiro, engenheiro civil]"
+Maria Clara Castro,11/12/1957,801.675.342-62,"[marceneiro, engenheiro civil]"
+João Caldeira,15/09/1965,609.237.541-99,[pedreiro]
+Diogo Gonçalves,25/04/1969,089.527.461-20,"[técnico em segurança do trabalho, pintor]"
+Marcela da Cruz,16/05/1958,812.046.935-60,[pintor]
+Elisa Barbosa,25/08/1996,165.298.734-73,"[engenheiro civil, eletricista]"
+Raul Jesus,13/08/1985,510.349.762-06,"[marceneiro, assistente administrativo, engenheiro civil]"
+Emanuella Costela,02/04/1978,135.298.640-05,[técnico em segurança do trabalho]
+Maria Clara Jesus,24/08/1999,124.067.938-69,"[eletricista, arquiteto]"
+Cecília Mendes,10/05/1968,487.205.319-23,[pintor]
+Isaac Costela,09/11/1997,427.953.068-83,[engenheiro civil]
+Srta. Maria Cecília Azevedo,17/08/1979,982.310.754-88,[pintor]
+Sr. Rodrigo Farias,20/11/1999,156.489.702-85,"[eletricista, marceneiro]"
+Alice da Luz,16/08/2004,563.210.749-34,[encanador]
+Eduardo Ramos,18/04/1978,438.051.792-60,"[pintor, engenheiro civil, técnico em segurança do trabalho]"
+Vitor Freitas,25/05/1978,865.092.143-42,"[técnico em segurança do trabalho, assistente administrativo]"
+Calebe Pinto,10/01/1978,561.347.209-25,"[assistente administrativo, engenheiro civil]"
+Luiz Henrique Teixeira,29/03/2001,356.082.497-47,"[arquiteto, encanador, eletricista]"
+Sra. Lívia Lima,19/11/1999,659.824.103-06,"[encanador, pedreiro, arquiteto]"
+Isis da Luz,21/05/1996,946.802.751-11,"[engenheiro civil, assistente administrativo]"
+Maria Martins,22/02/1986,793.481.062-87,"[técnico em segurança do trabalho, marceneiro, carpinteiro]"
+Vitor Gabriel Duarte,14/04/2000,438.105.679-57,[assistente administrativo]
+Kamilly da Mota,21/05/2003,679.180.453-00,"[assistente administrativo, pedreiro, marceneiro]"
+Samuel Silveira,11/02/1986,083.697.142-69,"[pedreiro, técnico em segurança do trabalho]"
+Mariana Santos,17/07/1983,872.536.901-68,"[eletricista, arquiteto, carpinteiro]"
+Luiza Duarte,10/03/1973,714.825.930-41,"[marceneiro, arquiteto, eletricista]"
+Davi Lucas Dias,26/07/1980,231.869.570-95,"[pintor, marceneiro, eletricista]"
+Kaique Nogueira,20/11/2006,906.382.417-31,"[assistente administrativo, técnico em segurança do trabalho]"
+Sofia Viana,21/07/1995,379.285.016-86,[eletricista]
+Nicole Nunes,13/10/2003,279.460.385-00,"[assistente administrativo, arquiteto, marceneiro]"
+Pedro Pereira,26/09/1963,720.836.154-17,"[eletricista, arquiteto, engenheiro civil]"
+Dr. Guilherme Peixoto,02/09/1971,170.548.263-53,[pintor]
+Amanda Araújo,01/05/1971,302.169.874-31,[arquiteto]
+Pietra Fernandes,09/09/2006,521.678.043-26,"[carpinteiro, pintor, técnico em segurança do trabalho]"
+Murilo Nascimento,29/06/1981,319.052.647-80,[marceneiro]
+Dr. Rafael Moura,12/03/1959,850.639.712-02,"[eletricista, engenheiro civil]"
+Laís da Costa,20/02/1984,284.763.519-09,[engenheiro civil]
+Sr. Bryan Freitas,06/03/1985,376.209.851-40,"[marceneiro, encanador, técnico em segurança do trabalho]"
+João Gabriel Ferreira,30/08/1977,490.817.523-32,[arquiteto]
+Maria Eduarda Duarte,01/07/2001,798.605.241-49,[assistente administrativo]
+Srta. Gabriela Moura,15/09/1986,895.374.216-19,"[técnico em segurança do trabalho, arquiteto, assistente administrativo]"
+Henrique Fernandes,11/03/1970,135.074.962-16,"[arquiteto, pedreiro]"
+Sra. Emilly Souza,11/02/1995,413.286.570-35,[arquiteto]
+Dra. Ana Freitas,07/08/1957,084.513.976-20,"[engenheiro civil, eletricista, pedreiro]"
+Luana Pires,08/09/1977,204.638.719-87,"[pintor, técnico em segurança do trabalho, arquiteto]"
+Murilo Barros,29/10/1964,241.708.395-79,[engenheiro civil]
+Isis Porto,17/08/1984,469.780.532-10,[marceneiro]
+Rafael Cardoso,10/03/1965,321.709.486-78,"[carpinteiro, arquiteto]"
+Arthur Dias,08/02/1974,471.582.630-53,[encanador]
+Clarice da Costa,30/07/1972,210.894.567-94,[carpinteiro]
+Olivia Jesus,12/02/2002,647.308.512-26,[carpinteiro]
+Eloah Araújo,18/09/1960,304.781.926-22,[marceneiro]
+Diego Pinto,12/09/1997,719.236.450-99,[pintor]
+Isaac Oliveira,15/09/2001,746.980.351-39,[arquiteto]
+Igor Correia,27/01/2007,680.543.972-83,[eletricista]
+Isabelly Sales,22/01/1997,703.241.659-43,"[técnico em segurança do trabalho, engenheiro civil, assistente administrativo]"
+Antônio Duarte,20/10/2002,240.837.165-17,"[encanador, técnico em segurança do trabalho, engenheiro civil]"
+Pedro da Costa,01/06/1988,489.365.170-66,"[pedreiro, engenheiro civil]"
+Caroline Silva,15/04/2005,214.639.708-03,[marceneiro]
+Sra. Maria Sophia Rodrigues,12/08/1964,789.264.315-09,"[pedreiro, pintor, encanador]"
+Samuel Duarte,31/05/1993,639.028.417-96,"[técnico em segurança do trabalho, carpinteiro]"
+Alícia Costela,06/09/1988,951.630.842-24,"[marceneiro, carpinteiro, pedreiro]"
+Milena da Costa,05/08/1959,745.893.012-88,"[pintor, marceneiro, engenheiro civil]"
+Dr. Marcelo Azevedo,09/07/1996,134.950.872-14,[engenheiro civil]
+Bárbara Jesus,21/06/1956,059.268.374-56,"[técnico em segurança do trabalho, assistente administrativo, pedreiro]"
+Júlia da Mata,25/01/1966,216.458.390-60,[eletricista]
+Lucas Gabriel Fernandes,10/10/1985,407.259.183-14,"[engenheiro civil, marceneiro]"
+Dr. Pedro Miguel Pereira,23/06/2001,479.135.086-39,"[arquiteto, marceneiro]"
+Isabella Gonçalves,01/02/2002,406.289.571-49,[arquiteto]
+Yago Dias,24/10/1995,538.421.097-41,[marceneiro]
+Yuri Pires,09/10/1956,952.078.364-47,[assistente administrativo]
+Yuri Viana,26/05/1979,894.612.357-55,"[técnico em segurança do trabalho, encanador]"
+Lucas Gabriel Cardoso,30/01/1964,365.098.274-92,[pedreiro]
+Isadora Ferreira,13/04/1994,651.873.029-30,[assistente administrativo]
+Clarice Campos,28/09/1997,746.019.852-85,"[carpinteiro, pedreiro]"
+Caio Duarte,30/01/1991,267.954.380-74,"[técnico em segurança do trabalho, eletricista]"
+Milena Castro,20/10/1987,964.052.137-06,"[arquiteto, técnico em segurança do trabalho]"
+João Guilherme Castro,28/02/2001,589.032.167-68,[engenheiro civil]
+Rafael da Rosa,03/03/1998,908.621.457-67,"[engenheiro civil, carpinteiro]"
+Vitor Hugo Vieira,06/08/1968,938.214.057-32,"[arquiteto, carpinteiro, pintor]"
+Marcelo Fernandes,18/05/1966,102.879.563-77,[carpinteiro]
+Benjamin Costela,22/12/2004,681.503.479-84,"[técnico em segurança do trabalho, arquiteto, assistente administrativo]"
+Lívia das Neves,11/05/1996,084.359.712-79,[arquiteto]
+Nina Cavalcanti,12/11/1987,718.249.035-88,[assistente administrativo]
+Maysa Vieira,18/12/2002,564.379.802-65,[encanador]
+Milena Vieira,22/07/2003,367.192.584-19,[engenheiro civil]
+Srta. Gabrielly Pereira,08/10/1975,452.830.967-00,"[marceneiro, engenheiro civil]"
+Ana Luiza Moura,11/05/1963,805.793.241-41,"[encanador, carpinteiro, marceneiro]"
+Srta. Esther Lima,07/06/1978,183.957.604-93,"[encanador, arquiteto]"
+Isadora Correia,25/05/2006,436.795.021-25,"[eletricista, engenheiro civil]"
+Diego Fogaça,27/04/2002,458.017.362-71,"[pintor, engenheiro civil, eletricista]"
+Dra. Alice Carvalho,10/04/2005,836.972.154-00,"[assistente administrativo, eletricista]"
+Sra. Stephany Cardoso,30/01/1958,290.578.341-97,"[pintor, marceneiro]"
+Maria Pires,08/09/1982,431.280.657-80,[técnico em segurança do trabalho]
+Natália Lima,04/08/1957,360.712.589-95,"[encanador, marceneiro, arquiteto]"
+Igor Costa,11/01/1955,762.134.895-09,"[engenheiro civil, arquiteto, eletricista]"
+João Vitor Barbosa,09/03/1984,071.624.358-07,[pintor]
+Dra. Kamilly Gonçalves,04/05/1962,605.143.289-24,[engenheiro civil]
+Felipe Pinto,29/07/1994,681.325.790-03,"[eletricista, assistente administrativo]"
+Luiz Gustavo Correia,11/08/1990,835.271.406-62,"[arquiteto, eletricista]"
+Eduardo da Luz,30/06/1995,219.653.478-19,"[arquiteto, carpinteiro, eletricista]"
+Maria Fernanda Martins,08/03/1997,527.039.816-86,"[marceneiro, assistente administrativo, eletricista]"
+Sr. Henrique Rezende,03/04/1985,095.628.471-01,[marceneiro]
+Maria Luiza Vieira,13/10/2004,073.248.195-32,"[arquiteto, assistente administrativo, eletricista]"
+Joaquim Cardoso,01/11/1988,203.576.149-25,"[encanador, engenheiro civil]"
+João Pedro Oliveira,16/03/2007,509.826.317-40,"[pintor, engenheiro civil, eletricista]"
+Dra. Maria da Costa,09/03/1977,125.873.960-77,"[técnico em segurança do trabalho, eletricista, carpinteiro]"
+Matheus Nascimento,17/04/1998,521.963.807-68,[pedreiro]
+Diego da Rosa,03/10/1977,738.160.249-04,"[carpinteiro, encanador]"
+Heloísa Costela,22/02/1995,628.154.973-28,"[assistente administrativo, eletricista]"
+Juan Moreira,12/07/2000,374.659.120-16,[técnico em segurança do trabalho]
+Yuri Ribeiro,15/09/1967,578.623.409-65,"[pedreiro, arquiteto, carpinteiro]"
+Beatriz Fernandes,19/01/1958,751.840.263-71,[marceneiro]
+Levi Silva,12/07/1964,613.972.085-03,"[assistente administrativo, arquiteto, carpinteiro]"
+Lívia Moura,19/07/1970,615.802.749-94,"[encanador, arquiteto]"
+Daniel Azevedo,09/01/1974,729.340.561-80,[pedreiro]
+Davi Lucas Vieira,28/12/2003,986.021.573-12,[carpinteiro]
+Kaique Ramos,11/10/1958,170.546.928-02,"[pintor, carpinteiro]"
+Kevin Almeida,04/05/1996,536.190.248-98,"[engenheiro civil, encanador]"
+Lorena Barbosa,04/10/1997,654.802.913-51,"[marceneiro, pintor, pedreiro]"
+Dra. Marina Cavalcanti,01/01/2007,952.074.836-92,"[assistente administrativo, engenheiro civil, encanador]"
+Letícia Rocha,28/06/1997,291.530.846-24,[pedreiro]
+Augusto Lopes,08/08/1975,867.201.945-85,[assistente administrativo]
+Helena Fogaça,21/12/1962,568.937.201-30,"[pintor, pedreiro, engenheiro civil]"
+Sra. Isadora Silveira,26/08/1972,169.347.250-34,"[assistente administrativo, marceneiro]"
+Igor Gonçalves,11/05/1975,762.539.801-30,"[carpinteiro, técnico em segurança do trabalho]"
+Larissa Freitas,07/01/1998,016.248.935-89,[engenheiro civil]
+Cauê Campos,24/07/1970,596.407.123-61,"[pintor, eletricista]"
+Dr. Leonardo Cardoso,22/07/1993,285.397.104-04,[engenheiro civil]
+Srta. Luna Silveira,01/11/1980,814.623.957-91,[engenheiro civil]
+Sra. Catarina Costa,27/09/1963,172.530.869-02,"[pintor, eletricista]"
+Srta. Maria Clara Viana,05/04/1974,428.679.105-01,[eletricista]
+Erick Sales,16/04/1956,589.341.067-00,"[arquiteto, pedreiro]"
+Raquel Rocha,11/04/1990,691.720.385-86,"[arquiteto, pintor, carpinteiro]"
+Yago Vieira,15/01/1998,928.340.576-56,[eletricista]
+Davi Luiz da Cruz,16/06/1976,354.602.179-70,[encanador]
+Pedro Lucas Jesus,24/04/1996,812.469.573-37,"[carpinteiro, marceneiro]"
+Amanda Araújo,11/01/1960,043.687.912-31,"[pedreiro, pintor, arquiteto]"
+Fernanda Rocha,02/03/1971,647.059.132-99,"[encanador, arquiteto]"
+Letícia da Rocha,26/08/1977,925.678.410-67,[pedreiro]
+Sr. Ian Duarte,31/03/1986,147.960.852-11,"[engenheiro civil, eletricista, carpinteiro]"
+Kamilly Farias,15/05/1965,593.617.482-46,"[pedreiro, carpinteiro, engenheiro civil]"
+Alexia Carvalho,06/04/1981,873.142.096-69,"[pedreiro, marceneiro]"
+Maria Vitória Ribeiro,12/12/1973,801.372.456-53,"[pintor, encanador, marceneiro]"
+João Barros,23/04/1993,835.420.971-79,"[eletricista, arquiteto, encanador]"
+Emilly Costa,04/04/1963,165.824.703-53,"[pedreiro, pintor, encanador]"
+Maitê Nunes,13/07/1988,098.152.346-33,"[eletricista, arquiteto, assistente administrativo]"
+Otávio Silva,06/01/1964,592.347.861-73,[pedreiro]
+Dra. Fernanda Ribeiro,20/08/1955,591.342.087-04,"[pedreiro, assistente administrativo, eletricista]"
+Pietro Dias,05/08/2003,072.456.398-92,"[arquiteto, carpinteiro]"
+Murilo Correia,26/06/1967,075.316.842-17,"[eletricista, engenheiro civil]"
+Dra. Ana Carolina Cunha,18/10/1989,385.794.610-57,"[encanador, pintor]"
+Maria Alice Mendes,04/09/1991,547.162.809-85,"[técnico em segurança do trabalho, encanador]"
+Thales da Rocha,22/06/2001,759.246.801-85,"[engenheiro civil, arquiteto, técnico em segurança do trabalho]"
+Isabel da Conceição,08/04/1974,041.236.598-70,"[assistente administrativo, marceneiro, eletricista]"
+Emanuelly Fogaça,04/11/1963,138.054.926-42,"[encanador, pintor, marceneiro]"
+Caio Oliveira,23/12/1976,712.048.395-14,[eletricista]
+Milena da Paz,10/12/2005,459.806.127-85,[engenheiro civil]
+Kaique da Luz,22/12/1956,672.580.413-62,[carpinteiro]
+Dr. Lorenzo Viana,08/03/1990,729.810.645-76,[engenheiro civil]
+Eloah da Mata,18/06/1955,543.187.926-09,"[encanador, marceneiro]"
+João Castro,28/01/1967,275.109.386-86,"[pedreiro, engenheiro civil]"
+Isaac Jesus,20/02/1994,904.521.863-15,"[pedreiro, técnico em segurança do trabalho, encanador]"
+Gabriela da Cruz,02/02/1982,841.526.709-67,[assistente administrativo]
+Brenda Ramos,21/05/2005,956.843.102-06,"[carpinteiro, marceneiro, pedreiro]"
+Lavínia Souza,24/05/2002,518.049.726-49,[assistente administrativo]
+Igor Silveira,27/07/1984,137.048.695-20,"[arquiteto, técnico em segurança do trabalho, carpinteiro]"
+Kamilly Ramos,16/11/1992,087.529.314-04,"[engenheiro civil, marceneiro, técnico em segurança do trabalho]"
+Srta. Maria Luiza Cardoso,01/08/1957,651.408.397-84,[técnico em segurança do trabalho]
+Carolina Cunha,13/08/2006,659.378.024-38,"[arquiteto, encanador, pintor]"
+Isabel Costa,24/08/1966,862.510.497-58,"[encanador, arquiteto]"
+Rebeca Viana,13/05/1983,863.172.950-77,"[arquiteto, técnico em segurança do trabalho]"
+Srta. Alícia Peixoto,06/05/1996,038.964.517-66,[técnico em segurança do trabalho]
+Vicente Barbosa,16/11/1981,738.601.254-35,"[eletricista, engenheiro civil]"
+Maria Vitória Martins,16/08/1970,423.785.096-00,"[eletricista, arquiteto, técnico em segurança do trabalho]"
+Nicole Pereira,29/04/1992,705.963.241-70,"[engenheiro civil, eletricista, técnico em segurança do trabalho]"
+Brenda Jesus,13/02/1980,287.169.530-02,[eletricista]
+Júlia Peixoto,04/06/1992,826.197.530-40,[eletricista]
+Isadora Carvalho,14/12/1990,304.957.862-92,"[pintor, arquiteto]"
+Rebeca da Rosa,15/02/1987,354.018.627-17,[assistente administrativo]
+Samuel da Rocha,29/06/1981,385.629.471-64,[engenheiro civil]
+Francisco Moreira,26/05/1989,791.653.208-59,"[assistente administrativo, engenheiro civil]"
+Dr. Augusto das Neves,10/12/2004,204.765.318-53,[pedreiro]
+Isaac Dias,07/05/1980,937.452.618-28,"[pintor, arquiteto]"
+Bárbara Moraes,08/01/1966,287.140.539-50,"[pedreiro, carpinteiro]"
+Juan Cunha,03/06/1997,312.084.956-15,[pedreiro]
+Maysa Rocha,14/05/1999,708.463.951-93,"[encanador, carpinteiro]"
+Esther Aragão,04/09/1988,621.047.593-07,"[pedreiro, técnico em segurança do trabalho, carpinteiro]"
+Dr. João Vitor Cardoso,21/11/1979,673.512.048-53,"[eletricista, pedreiro]"
+João Nascimento,02/03/1980,870.591.642-94,"[arquiteto, encanador]"
+Valentina Melo,03/01/1993,180.964.357-01,"[engenheiro civil, técnico em segurança do trabalho, encanador]"
+Rodrigo Freitas,16/06/1991,902.678.154-76,"[pedreiro, técnico em segurança do trabalho]"
+Sra. Ana Julia Jesus,22/07/1965,936.542.870-00,[pedreiro]
+Dra. Ana Júlia Santos,25/03/2005,501.378.269-40,"[pedreiro, assistente administrativo]"
+Sr. Pedro Miguel Fogaça,28/02/1985,735.489.126-64,"[assistente administrativo, arquiteto]"
+Vitor Gonçalves,10/04/1971,194.836.572-37,[pedreiro]
+Bryan Almeida,25/06/1975,754.016.832-35,"[encanador, carpinteiro, marceneiro]"
+Maria Eduarda Silva,08/04/1982,109.248.675-58,"[pedreiro, assistente administrativo, técnico em segurança do trabalho]"
+Juan Nogueira,07/04/1960,832.591.467-09,[carpinteiro]
+Luiz Felipe da Conceição,22/10/1958,264.398.015-89,"[pedreiro, pintor]"
+Thiago Sales,29/11/1994,937.012.654-61,[técnico em segurança do trabalho]
+Isis Melo,16/06/1984,562.784.139-73,"[pintor, pedreiro]"
+João Vitor Lopes,02/05/1974,735.826.904-74,"[pedreiro, eletricista]"
+Maria Cecília da Mata,22/11/2000,807.513.249-14,[técnico em segurança do trabalho]
+Nicole Sales,22/12/1963,439.518.706-48,[arquiteto]
+Luana Nunes,12/11/1990,860.924.735-00,[pintor]
+Natália Moraes,27/10/1965,906.723.845-74,[marceneiro]
+Enzo Gabriel Silva,29/04/2005,893.726.450-10,"[carpinteiro, encanador, engenheiro civil]"
+Sr. Lucca Cavalcanti,10/08/1974,618.957.243-09,[carpinteiro]
+Valentina da Rocha,18/12/1989,759.038.261-21,"[assistente administrativo, engenheiro civil, encanador]"
+Thales Correia,15/01/1956,512.984.670-20,"[marceneiro, engenheiro civil]"
+Dr. Lucas Gabriel Dias,24/01/1982,296.304.178-04,"[eletricista, pintor]"
+Agatha da Rosa,03/07/1968,418.697.250-85,[encanador]
+Ana Sophia Ferreira,22/02/2000,785.436.920-83,"[marceneiro, assistente administrativo, eletricista]"
+Dr. Lorenzo da Luz,04/05/2000,412.708.653-07,[encanador]
+Sr. Luiz Gustavo Nogueira,18/12/1982,926.317.580-21,[eletricista]
+Esther Cunha,27/03/1967,570.628.349-47,"[pedreiro, encanador, engenheiro civil]"
+Maria Eduarda Santos,11/12/1998,769.358.402-10,[encanador]
+Alice das Neves,18/05/1974,043.821.756-07,"[engenheiro civil, marceneiro, eletricista]"
+Maitê Correia,22/06/1993,145.803.967-66,"[encanador, marceneiro, carpinteiro]"
+Dra. Sophia Farias,05/10/1974,074.293.586-83,"[arquiteto, pedreiro]"
+Dra. Olivia Monteiro,13/11/2002,962.415.803-70,"[pintor, marceneiro, encanador]"
+Emilly Teixeira,17/12/1965,548.726.031-17,[pedreiro]
+Guilherme Costela,27/03/2002,239.571.840-88,"[marceneiro, pedreiro]"
+Marina Fogaça,23/03/1997,697.058.321-02,"[técnico em segurança do trabalho, assistente administrativo]"
+Sra. Laís Rodrigues,09/10/1976,901.532.847-14,"[assistente administrativo, arquiteto]"
+Kevin da Rosa,02/03/1988,459.278.163-55,"[eletricista, arquiteto, técnico em segurança do trabalho]"
+Sr. Augusto Castro,10/02/1997,701.693.485-39,"[pedreiro, eletricista]"
+Ryan Costela,25/09/1998,429.058.761-58,"[engenheiro civil, marceneiro]"
+Milena da Cunha,10/01/1958,643.750.892-29,"[técnico em segurança do trabalho, engenheiro civil]"
+Ana Julia Costela,25/11/1994,387.062.519-86,"[encanador, pedreiro]"
+Ana Julia Dias,27/07/1980,198.265.730-86,"[carpinteiro, técnico em segurança do trabalho]"
+Nicole da Conceição,27/02/1959,802.371.465-17,"[assistente administrativo, técnico em segurança do trabalho]"
+Bryan Castro,12/01/1964,165.329.480-98,[pintor]
+Marcos Vinicius Gomes,27/06/2001,043.865.127-80,"[pintor, eletricista]"
+Pedro Barros,15/10/1970,761.934.025-43,"[eletricista, arquiteto, carpinteiro]"
+Dr. Cauê Nogueira,07/03/1993,652.930.478-92,"[engenheiro civil, marceneiro, encanador]"
+Francisco da Rosa,18/03/1957,064.587.312-80,"[pedreiro, técnico em segurança do trabalho, engenheiro civil]"
+Pedro Miguel Teixeira,02/02/1991,924.086.173-40,"[técnico em segurança do trabalho, encanador, arquiteto]"
+Maria Sophia Campos,11/08/1975,630.178.594-01,[marceneiro]
+Raul da Luz,18/08/1962,029.138.476-50,"[engenheiro civil, pedreiro]"
+Vinicius Fogaça,18/05/2004,105.632.897-59,"[engenheiro civil, eletricista, pintor]"
+Laís Silva,03/01/1979,072.816.943-69,"[arquiteto, encanador]"
+Vicente Silva,04/09/1954,093.872.564-56,"[pedreiro, arquiteto]"
+Marcos Vinicius Peixoto,12/10/1969,536.927.041-43,"[pintor, técnico em segurança do trabalho]"
+Luiz Fernando Barros,15/09/1966,380.976.214-87,"[eletricista, encanador]"
+Marcos Vinicius Ramos,17/01/1955,534.726.189-73,[marceneiro]
+Luna da Paz,06/05/2004,832.096.175-03,"[engenheiro civil, pintor, marceneiro]"
+Olivia Alves,19/04/1977,064.917.532-80,"[arquiteto, assistente administrativo, engenheiro civil]"
+Danilo Freitas,31/10/1960,036.528.974-47,[técnico em segurança do trabalho]
+Beatriz Novaes,05/08/1959,906.517.243-25,"[encanador, arquiteto]"
+Pietra Martins,23/02/1976,743.015.692-43,"[eletricista, marceneiro, engenheiro civil]"
+Levi Rezende,15/11/1975,615.983.274-37,"[engenheiro civil, pintor]"
+Bryan da Cruz,09/03/2001,403.621.857-35,[eletricista]
+Dr. Luiz Gustavo Barros,01/08/2000,492.035.168-24,[arquiteto]
+Daniel Costa,26/04/1955,032.187.946-50,[eletricista]
+Anthony Campos,17/12/1967,721.680.493-78,[carpinteiro]
+Murilo Pinto,19/10/2003,670.359.148-20,"[eletricista, assistente administrativo, técnico em segurança do trabalho]"
+Guilherme Freitas,07/11/1984,203.597.461-52,[carpinteiro]
+Bryan Freitas,25/07/1980,263.541.089-51,"[eletricista, técnico em segurança do trabalho, arquiteto]"
+Maria Cecília Rodrigues,30/11/1977,985.321.046-06,"[pintor, assistente administrativo]"
+Yago Freitas,28/06/1958,785.641.902-49,[eletricista]
+Eduarda Fogaça,26/10/1990,036.215.478-35,"[marceneiro, encanador]"
+Dra. Isabella Araújo,16/05/2002,523.674.801-17,"[técnico em segurança do trabalho, marceneiro]"
+Bryan Caldeira,01/05/1970,930.487.256-10,"[carpinteiro, assistente administrativo, arquiteto]"
+Joaquim da Luz,09/07/1976,092.451.876-67,"[eletricista, marceneiro, engenheiro civil]"
+João Lucas Novaes,19/05/1994,154.298.367-37,[arquiteto]
+Gabrielly da Luz,17/08/2002,853.941.762-64,"[encanador, engenheiro civil]"
+Davi Almeida,10/04/2002,960.142.857-76,"[pedreiro, técnico em segurança do trabalho, arquiteto]"
+Bianca Melo,22/03/2005,135.290.674-07,"[encanador, pedreiro]"
+Emanuel Farias,02/09/2001,154.608.792-30,"[encanador, carpinteiro]"
+Sra. Bárbara Oliveira,21/01/1988,659.034.178-84,"[marceneiro, engenheiro civil, arquiteto]"
+Arthur Gonçalves,14/11/1955,541.027.369-99,"[marceneiro, assistente administrativo]"
+Ana Laura Mendes,04/12/1994,970.351.682-30,[assistente administrativo]
+Isaac da Rocha,07/06/1967,684.529.107-11,"[marceneiro, assistente administrativo, carpinteiro]"
+Maria Julia Vieira,29/11/1987,205.836.971-86,"[técnico em segurança do trabalho, encanador]"
+Caio Araújo,01/08/1968,241.309.678-78,"[carpinteiro, engenheiro civil]"
+Emanuella Carvalho,07/03/1998,862.739.150-59,"[eletricista, técnico em segurança do trabalho]"
+Leonardo Rezende,04/06/1972,340.157.826-07,[engenheiro civil]
+Júlia Dias,04/03/1992,068.453.172-08,"[encanador, engenheiro civil]"
+João Vitor Azevedo,01/09/1988,982.031.467-40,"[marceneiro, arquiteto]"
+Augusto Pereira,01/11/1959,632.947.580-65,[assistente administrativo]
+João Pedro Novaes,26/01/1992,547.608.391-00,"[assistente administrativo, marceneiro]"
+Danilo Castro,09/09/1961,914.672.385-46,[assistente administrativo]
+Luiza Ribeiro,19/01/1957,246.185.307-07,"[encanador, eletricista]"
+Sr. Benjamin Ribeiro,11/10/1972,509.627.418-76,"[marceneiro, técnico em segurança do trabalho]"
+Daniel Jesus,10/02/2005,754.839.061-01,"[eletricista, pedreiro, encanador]"
+Juan Rodrigues,09/03/2006,850.417.239-23,"[arquiteto, técnico em segurança do trabalho, encanador]"
+Yago Souza,14/03/1993,023.619.547-61,[encanador]
+João Guilherme da Paz,22/02/1973,576.908.132-59,[pedreiro]
+Lavínia da Luz,18/10/1986,985.216.073-77,"[pintor, eletricista, carpinteiro]"
+Ana Beatriz da Cruz,11/06/1993,398.512.740-97,[engenheiro civil]
+Alana Ribeiro,04/07/1963,203.946.517-07,"[encanador, carpinteiro, eletricista]"
+Dr. Fernando da Rosa,05/04/1986,486.905.231-89,"[carpinteiro, assistente administrativo, técnico em segurança do trabalho]"
+Rodrigo Cavalcanti,14/04/1987,154.826.739-28,"[técnico em segurança do trabalho, eletricista, assistente administrativo]"
+Davi Lucas Silveira,04/08/2006,306.521.874-71,"[pedreiro, técnico em segurança do trabalho, marceneiro]"
+Francisco Peixoto,13/01/1982,603.251.794-25,"[pintor, pedreiro]"
+Fernanda da Cunha,03/04/1999,824.031.956-42,"[pintor, marceneiro]"
+Helena Carvalho,17/08/1969,534.829.761-55,[pintor]
+Ana Vitória Ribeiro,26/02/1958,917.840.326-03,"[técnico em segurança do trabalho, eletricista]"
+Ana Beatriz da Costa,07/11/1963,356.491.280-06,"[pedreiro, arquiteto, carpinteiro]"
+Luigi Melo,11/06/1997,250.739.164-25,"[marceneiro, pintor]"
+Valentina Carvalho,23/04/1963,968.375.402-38,"[pintor, marceneiro]"
+Catarina Moura,17/06/1955,583.096.147-48,"[arquiteto, carpinteiro]"
+Cauê Cavalcanti,08/08/1980,842.067.913-50,"[arquiteto, técnico em segurança do trabalho, pedreiro]"
+Nina Cunha,28/10/1977,753.190.642-25,[engenheiro civil]
+Thomas Aragão,18/08/1994,821.950.367-02,"[pintor, técnico em segurança do trabalho, arquiteto]"
+Mariane Barros,02/12/1994,019.756.382-12,[engenheiro civil]
+Marcos Vinicius Fernandes,14/10/1986,230.987.654-29,"[arquiteto, assistente administrativo]"
+Ana Lívia Silva,01/06/2003,914.063.825-15,"[técnico em segurança do trabalho, encanador]"
+Luiz Henrique da Paz,10/11/1978,642.083.175-07,[carpinteiro]
+Sr. Alexandre Alves,16/03/2000,197.804.523-97,"[encanador, engenheiro civil, assistente administrativo]"
+Pedro Dias,01/08/1985,497.061.582-94,"[arquiteto, carpinteiro]"
+Gabrielly Pereira,04/10/2004,190.785.243-32,"[pedreiro, marceneiro, engenheiro civil]"
+Emanuelly Carvalho,10/11/1979,521.369.874-37,[técnico em segurança do trabalho]
+Milena da Cunha,13/03/1962,209.834.571-23,[assistente administrativo]
+Paulo Nascimento,27/11/1978,902.368.514-89,"[eletricista, arquiteto]"
+Francisco Lopes,06/05/1955,835.467.019-84,"[eletricista, pedreiro, técnico em segurança do trabalho]"
+Isabel Nogueira,13/08/1964,809.514.367-75,"[engenheiro civil, técnico em segurança do trabalho]"
+Vitor Gabriel Rodrigues,27/04/1976,354.071.986-57,"[assistente administrativo, pedreiro, engenheiro civil]"
+Lorenzo Pires,30/06/1993,719.320.654-07,"[arquiteto, assistente administrativo, marceneiro]"
+João Oliveira,09/12/1956,890.674.235-56,"[pedreiro, pintor]"
+Natália Ramos,11/09/1977,503.672.941-25,"[eletricista, carpinteiro, encanador]"
+Sra. Ana Sophia Castro,04/03/2006,305.276.498-56,"[eletricista, técnico em segurança do trabalho, assistente administrativo]"
+Davi Luiz Sales,22/01/1964,614.785.093-84,"[arquiteto, técnico em segurança do trabalho]"
+Valentina da Mota,12/04/2003,516.094.782-58,"[pintor, arquiteto]"
+Maria Sophia Santos,31/08/1963,708.436.529-00,"[pedreiro, técnico em segurança do trabalho, pintor]"
+Dra. Camila Costela,19/07/1961,659.341.287-28,[engenheiro civil]
+Levi Cunha,27/11/1963,684.957.230-00,"[pedreiro, engenheiro civil, encanador]"
+Emanuel Gonçalves,23/03/2001,528.467.019-11,[pintor]
+Maria Julia Peixoto,20/05/2000,846.709.531-84,"[técnico em segurança do trabalho, pedreiro, arquiteto]"
+Benjamin Caldeira,08/02/1968,429.581.067-30,"[assistente administrativo, técnico em segurança do trabalho, carpinteiro]"
+Vitor Gabriel Viana,12/09/1956,571.496.823-91,[arquiteto]
+Luiz Gustavo Gomes,28/08/2001,068.352.971-40,"[pintor, marceneiro, técnico em segurança do trabalho]"
+Pedro Henrique Pires,07/11/1969,583.691.240-89,[arquiteto]
+Ana Julia da Mata,30/04/1966,816.032.475-80,"[carpinteiro, assistente administrativo]"
+Eloah Almeida,30/12/1976,720.184.956-58,"[assistente administrativo, marceneiro]"
+Vitória Vieira,14/11/1978,153.940.672-52,"[eletricista, pintor]"
+João Felipe das Neves,07/01/1969,598.214.360-05,"[pedreiro, marceneiro, pintor]"
+Raul Monteiro,30/10/1984,390.528.716-12,"[arquiteto, pedreiro, pintor]"
+Rebeca Gomes,08/03/1956,857.302.169-12,"[técnico em segurança do trabalho, arquiteto, carpinteiro]"
+Davi Luiz Teixeira,14/10/1990,013.568.792-68,"[marceneiro, engenheiro civil, eletricista]"
+Pietra Pinto,02/07/1998,120.358.764-35,[marceneiro]
+Davi Fernandes,24/06/1992,134.865.792-82,"[marceneiro, encanador]"
+João Pedro Costa,24/11/1990,019.572.684-76,"[assistente administrativo, eletricista]"
+Ana Laura Gomes,30/07/2006,768.950.342-00,[carpinteiro]
+Vinicius Novaes,22/08/1991,429.568.073-74,"[carpinteiro, eletricista]"
+Augusto Almeida,22/06/1993,961.278.530-95,"[pintor, pedreiro]"
+Diego das Neves,24/06/1996,431.759.026-34,[engenheiro civil]
+Maria Clara Cardoso,13/04/1974,149.758.362-46,"[pedreiro, assistente administrativo, arquiteto]"
+Raul Duarte,23/04/1961,413.275.698-09,[marceneiro]
+Dra. Brenda Moreira,11/01/1976,620.815.349-24,"[pedreiro, engenheiro civil, técnico em segurança do trabalho]"
+Renan Melo,01/03/1987,795.623.048-92,"[assistente administrativo, engenheiro civil, técnico em segurança do trabalho]"
+Daniel Teixeira,14/11/1967,418.096.325-60,"[eletricista, técnico em segurança do trabalho, encanador]"
+Marcos Vinicius Ferreira,27/06/1991,872.931.604-96,"[carpinteiro, técnico em segurança do trabalho, eletricista]"
+Maitê Carvalho,03/07/1981,580.914.627-94,"[arquiteto, assistente administrativo, marceneiro]"
+Bruna da Luz,15/01/1993,927.801.356-03,"[pintor, eletricista]"
+João Lucas Dias,01/06/1957,385.967.041-75,"[pedreiro, eletricista, técnico em segurança do trabalho]"
+Thales Silveira,13/08/1997,492.356.780-56,"[engenheiro civil, pedreiro]"
+Eloah Nascimento,02/09/1969,865.923.470-74,"[marceneiro, engenheiro civil]"
+Beatriz Pires,09/10/1965,314.865.790-00,"[encanador, pintor]"
+Daniela Peixoto,21/12/1976,178.394.526-55,"[eletricista, encanador, carpinteiro]"
+Felipe Barbosa,16/03/1963,928.540.167-85,"[pedreiro, eletricista, carpinteiro]"
+Diego Silveira,03/02/1982,904.813.756-00,"[carpinteiro, técnico em segurança do trabalho, eletricista]"
+Juan da Conceição,24/02/1994,284.159.370-32,[encanador]
+João Miguel Nogueira,02/07/1963,103.467.928-78,"[engenheiro civil, encanador]"
+Lucas Azevedo,31/08/1990,819.357.024-32,"[eletricista, assistente administrativo, marceneiro]"
+Kamilly Moura,16/06/1957,863.975.240-00,"[carpinteiro, eletricista, técnico em segurança do trabalho]"
+Beatriz Fernandes,21/12/1986,314.769.205-16,[encanador]
+Dra. Vitória Almeida,31/10/1993,810.359.246-33,"[assistente administrativo, marceneiro]"
+Davi Lucas Pereira,04/11/1998,948.673.251-55,"[pintor, pedreiro]"
+Julia da Rocha,15/08/1982,897.124.365-19,[engenheiro civil]
+Isabel Novaes,27/07/2004,213.758.064-08,[arquiteto]
+Sr. Davi Lucca Nogueira,09/10/1997,012.346.958-98,"[arquiteto, encanador]"
+João Lucas Cardoso,12/12/1995,068.457.239-74,"[assistente administrativo, eletricista]"
+Pedro Miguel Sales,16/05/1984,034.197.625-34,"[eletricista, pintor]"
+Alícia Moreira,13/10/1970,021.836.579-95,[técnico em segurança do trabalho]
+Alana Campos,21/08/1960,845.261.937-55,[assistente administrativo]
+Agatha Ferreira,31/05/1966,681.409.275-11,[pedreiro]
+Eloah Teixeira,16/08/1993,476.931.285-73,"[pintor, marceneiro, pedreiro]"
+Alice Rocha,31/05/1962,416.587.293-82,[eletricista]
+Maria Alice Alves,11/03/2002,439.082.675-10,"[marceneiro, técnico em segurança do trabalho, pintor]"
+Gabrielly Moraes,17/05/1969,942.561.370-25,"[eletricista, pedreiro, pintor]"
+Vicente Duarte,24/07/1972,398.614.207-03,[engenheiro civil]
+Bruno Sales,09/04/1996,089.632.415-05,"[carpinteiro, arquiteto]"
+Carolina Silva,29/07/1973,632.048.579-56,"[encanador, engenheiro civil]"
+Isabel Novaes,17/03/2001,271.543.960-16,"[marceneiro, técnico em segurança do trabalho, eletricista]"
+Renan da Rocha,27/04/1980,915.246.873-91,"[pedreiro, marceneiro, assistente administrativo]"
+Gabriel Ribeiro,22/03/1996,592.361.874-55,[carpinteiro]
+Dr. Guilherme Porto,29/09/1966,923.608.147-96,"[técnico em segurança do trabalho, marceneiro]"
+Catarina da Conceição,04/10/2004,270.135.694-61,[engenheiro civil]
+Fernanda Fernandes,03/10/1992,906.851.734-10,"[assistente administrativo, pedreiro, técnico em segurança do trabalho]"
+Marina Castro,11/02/1985,549.287.610-49,"[arquiteto, pedreiro]"
+Ana Vitória Monteiro,30/09/2000,932.675.481-28,"[assistente administrativo, pedreiro, marceneiro]"
+Sra. Ana Júlia Nascimento,05/04/1996,472.618.395-82,"[encanador, pedreiro]"
+Bruno da Cruz,19/11/1977,358.726.914-91,"[carpinteiro, pintor]"
+Dr. Juan da Cunha,06/01/1967,023.589.147-97,[técnico em segurança do trabalho]
+Caio Campos,14/09/1986,809.634.751-93,"[engenheiro civil, pintor]"
+Brenda Cardoso,23/01/1999,643.152.780-17,[pintor]
+Luiz Miguel da Cunha,12/06/1956,058.637.241-53,"[pintor, carpinteiro, pedreiro]"
+Samuel Viana,20/07/1966,976.458.213-37,"[engenheiro civil, marceneiro]"
+Daniela Carvalho,27/07/1984,456.217.039-52,"[marceneiro, engenheiro civil]"
+Dr. Lucas Teixeira,25/01/1955,794.032.165-06,"[encanador, carpinteiro, arquiteto]"
+Juan Pinto,13/05/1981,326.791.804-96,"[engenheiro civil, assistente administrativo]"
+Eduarda Silveira,12/07/2006,948.567.210-11,"[engenheiro civil, marceneiro, encanador]"
+Diego Cunha,17/03/1974,178.254.309-05,"[engenheiro civil, encanador, pintor]"
+Davi Lucas Barros,27/11/1990,021.867.359-03,[encanador]
+Bryan da Costa,03/07/1955,735.826.910-12,[eletricista]
+Sr. Vitor Gabriel da Conceição,25/04/1958,461.937.852-64,[assistente administrativo]
+Cauã Farias,08/09/1980,730.189.652-21,"[eletricista, assistente administrativo, marceneiro]"
+Gabriela Martins,18/04/1965,081.236.759-68,"[carpinteiro, assistente administrativo, encanador]"
+Clara Correia,23/07/1970,650.124.793-43,"[engenheiro civil, pintor]"
+Augusto Ribeiro,07/05/2001,925.601.437-80,[assistente administrativo]
+Mariane Mendes,10/03/2006,095.714.836-48,"[carpinteiro, assistente administrativo]"
+Ian Monteiro,10/05/1984,306.251.784-08,"[pedreiro, arquiteto, marceneiro]"
+Sra. Maria Eduarda Gonçalves,08/06/1991,732.495.810-97,"[marceneiro, técnico em segurança do trabalho, arquiteto]"
+Luiz Miguel da Costa,30/01/1985,495.308.627-92,"[arquiteto, marceneiro]"
+Pedro Henrique Moreira,23/04/2007,935.704.861-84,"[arquiteto, engenheiro civil]"
+Brenda Gomes,15/06/1976,651.049.832-42,"[carpinteiro, arquiteto, eletricista]"
+Eduardo Cavalcanti,13/07/1987,310.459.628-05,"[carpinteiro, encanador]"
+João Guilherme das Neves,27/09/1995,103.578.624-90,"[pedreiro, encanador]"
+Dr. João Lucas Caldeira,25/06/1996,480.572.639-38,"[marceneiro, técnico em segurança do trabalho, arquiteto]"
+Thiago Dias,06/09/1990,638.451.927-55,[marceneiro]
+Srta. Stella Moraes,26/05/2000,761.984.325-64,"[encanador, assistente administrativo]"
+Bruna Teixeira,29/04/1995,758.429.361-19,[assistente administrativo]
+Sra. Maria Duarte,28/10/1992,836.742.519-73,"[encanador, arquiteto]"
+Agatha Azevedo,10/11/1973,902.786.153-68,"[pintor, pedreiro, eletricista]"
+Vitor Freitas,06/03/1992,892.063.754-74,"[arquiteto, pedreiro]"
+João Guilherme Farias,11/05/1970,491.836.720-87,[marceneiro]
+Sra. Vitória Rocha,08/04/1966,714.059.362-07,"[arquiteto, engenheiro civil, pedreiro]"
+Dr. Leandro Peixoto,15/09/1962,306.824.719-50,"[engenheiro civil, pedreiro]"
+Sr. Davi Lucas Barros,05/05/2000,671.832.504-07,"[técnico em segurança do trabalho, pedreiro]"
+Sr. Lucas Barros,21/10/1991,641.389.705-84,"[marceneiro, pintor]"
+Catarina Rodrigues,27/05/1981,938.102.765-02,"[pintor, eletricista]"
+Raul Oliveira,29/04/1983,593.264.017-07,"[assistente administrativo, técnico em segurança do trabalho]"
+Dr. Pedro Henrique da Conceição,22/06/1984,038.521.976-86,[marceneiro]
+Pedro Henrique da Conceição,29/01/1974,051.238.974-88,[marceneiro]
+Dra. Clara da Rocha,08/09/1991,847.951.063-39,"[marceneiro, pintor]"
+Davi Luiz Caldeira,30/10/1973,340.957.812-97,[arquiteto]
+Mirella Moreira,04/11/1961,046.138.972-03,[encanador]
+Maria Alice Carvalho,10/03/1967,387.450.691-66,"[arquiteto, pintor, marceneiro]"
+Dr. João Vitor da Cruz,02/10/1955,598.721.604-49,"[pintor, pedreiro]"
+Alice Freitas,07/11/1969,256.810.394-98,"[carpinteiro, eletricista, arquiteto]"
+Eduarda da Costa,10/07/1983,457.918.620-67,"[marceneiro, arquiteto]"
+Henrique Souza,15/09/1963,628.704.531-08,[assistente administrativo]
+Thomas Araújo,03/08/2006,568.237.104-62,"[técnico em segurança do trabalho, engenheiro civil, marceneiro]"
+Diego Araújo,21/05/2006,943.815.067-66,"[arquiteto, pintor]"
+Sra. Beatriz Santos,27/08/1995,752.638.409-00,[eletricista]
+Enzo Gabriel Azevedo,22/04/1982,046.157.892-11,"[engenheiro civil, pedreiro, carpinteiro]"
+Mariana Rodrigues,23/04/2001,573.860.921-21,"[eletricista, carpinteiro, assistente administrativo]"
+Mariana Teixeira,30/03/1990,081.369.725-59,"[eletricista, pintor]"
+Srta. Maria Eduarda Nogueira,16/08/1989,034.862.719-03,"[carpinteiro, assistente administrativo]"
+Evelyn Barros,14/06/2001,827.653.094-00,[encanador]
+Yago Viana,17/09/1963,695.301.827-59,"[pedreiro, marceneiro, assistente administrativo]"
+Ana Laura Fernandes,21/07/1976,218.053.967-30,"[carpinteiro, marceneiro, engenheiro civil]"
+Dra. Mariana da Cruz,09/04/1980,860.912.574-20,"[pedreiro, técnico em segurança do trabalho]"
+Vitor Barros,20/01/1983,497.251.036-61,"[assistente administrativo, pintor]"
+Pedro Henrique Fernandes,02/05/1955,798.406.352-47,"[pintor, marceneiro]"
+Mirella Ribeiro,18/05/1985,671.490.823-78,[assistente administrativo]
+Marina da Rocha,30/10/1957,290.587.143-14,[encanador]
+Sr. Benjamin Cavalcanti,16/11/1982,294.756.138-46,[marceneiro]
+Bryan Jesus,20/06/1976,561.834.072-08,"[técnico em segurança do trabalho, pedreiro]"
+Cauã Freitas,26/11/1976,863.514.072-90,"[encanador, técnico em segurança do trabalho]"
+Rebeca Gomes,25/07/1983,954.768.201-67,"[eletricista, engenheiro civil]"
+Sabrina Sales,07/01/1988,234.105.768-35,"[marceneiro, pintor, pedreiro]"
+Srta. Yasmin Peixoto,05/09/1982,058.471.923-04,[eletricista]
+Sra. Eloah Campos,12/06/1975,485.607.213-71,"[encanador, técnico em segurança do trabalho, eletricista]"
+Dra. Mariana Araújo,15/06/1966,358.796.024-00,[engenheiro civil]
+Brenda Ramos,16/01/1991,576.904.231-16,"[encanador, carpinteiro]"
+Maria Alice Aragão,03/09/1968,958.012.674-76,[engenheiro civil]
+Maria Alice da Cunha,10/05/1993,962.407.835-10,"[engenheiro civil, assistente administrativo]"
+Juan Carvalho,29/04/1988,357.621.809-21,"[eletricista, pintor]"
+Sr. Yago da Paz,20/10/1960,780.634.195-10,[carpinteiro]
+Sabrina Souza,16/08/1975,521.647.980-58,"[pedreiro, assistente administrativo]"
+Joana Silveira,21/05/1962,049.587.216-49,[pedreiro]
+Luiz Henrique Lima,12/01/1956,943.215.687-73,"[engenheiro civil, arquiteto, pintor]"
+Natália Costa,20/01/1973,294.067.531-70,[pedreiro]
+Gabrielly Fogaça,19/02/1964,432.079.581-41,"[carpinteiro, pedreiro, encanador]"
+Cauê Araújo,15/07/1986,016.973.458-75,"[marceneiro, pintor]"
+Isabella Lima,12/02/1977,381.694.705-01,"[pedreiro, encanador, arquiteto]"
+Lorenzo Lima,29/01/2001,793.164.258-91,"[marceneiro, pedreiro]"
+Samuel Melo,07/08/1976,790.836.215-02,[pintor]
+Gustavo Henrique Monteiro,20/08/1995,921.350.864-60,[encanador]
+Luiz Otávio Rezende,11/10/1981,963.418.572-09,"[pintor, marceneiro]"
+Joaquim da Rocha,24/09/2001,968.427.105-02,"[marceneiro, engenheiro civil]"
+Dra. Maria Julia Rodrigues,13/04/1962,975.403.162-25,"[encanador, pedreiro]"
+Noah Cavalcanti,24/02/2001,965.370.482-65,"[marceneiro, pedreiro, eletricista]"
+Sophia Almeida,08/01/2006,297.483.605-47,"[pintor, engenheiro civil, encanador]"
+Gabrielly Jesus,23/04/1993,465.098.371-10,[marceneiro]
+João Lucas Vieira,12/02/1958,085.926.137-95,"[marceneiro, arquiteto, engenheiro civil]"
+Gabrielly Nascimento,17/02/1982,693.517.804-57,"[pintor, assistente administrativo]"
+Dr. Davi Lucas Gomes,06/02/2000,290.756.183-95,[marceneiro]
+Larissa Cunha,06/04/1960,267.854.390-00,[eletricista]
+Maitê Pereira,26/01/1992,765.183.029-68,[assistente administrativo]
+Srta. Raquel Santos,28/10/1972,685.094.321-98,"[assistente administrativo, marceneiro, encanador]"
+Nathan Rocha,28/06/2001,124.370.569-80,"[técnico em segurança do trabalho, encanador, arquiteto]"
+Sarah Cardoso,19/01/2001,840.297.316-78,"[encanador, pintor, arquiteto]"
+Sabrina Melo,25/02/1983,548.107.236-07,[técnico em segurança do trabalho]
+Pedro Lucas Ribeiro,04/11/1993,204.657.819-85,[técnico em segurança do trabalho]
+Cauê Santos,25/09/1959,492.875.603-74,"[eletricista, encanador]"
+Camila da Costa,11/05/1999,752.981.306-40,"[carpinteiro, pintor, marceneiro]"
+Sr. Danilo da Costa,01/04/1988,693.571.428-19,"[técnico em segurança do trabalho, encanador]"
+Pedro Ferreira,29/11/2005,102.365.798-86,[carpinteiro]
+Nina Nogueira,18/10/1986,426.083.951-98,"[eletricista, marceneiro]"
+Nina Barbosa,16/02/1961,856.492.713-64,"[marceneiro, arquiteto, pedreiro]"
+Fernando Novaes,17/11/1985,395.761.280-21,"[encanador, arquiteto]"
+Alana Campos,26/04/1955,618.532.749-09,"[carpinteiro, técnico em segurança do trabalho, engenheiro civil]"
+Diogo Azevedo,12/02/1956,910.458.723-50,"[encanador, técnico em segurança do trabalho]"
+Otávio Costela,01/02/1980,921.578.460-85,"[assistente administrativo, carpinteiro, técnico em segurança do trabalho]"
+Laís Freitas,09/11/2006,654.102.897-49,[pintor]
+Sr. Francisco Ferreira,11/08/1966,719.843.625-00,"[marceneiro, arquiteto, assistente administrativo]"
+Danilo Viana,24/10/2006,631.852.094-51,[engenheiro civil]
+Murilo Fernandes,24/05/2007,709.158.426-02,"[técnico em segurança do trabalho, encanador, assistente administrativo]"
+Davi Lucas Melo,17/02/1981,907.365.824-10,"[pintor, eletricista]"
+João Pedro Rocha,01/10/1962,985.276.304-00,"[pedreiro, pintor]"
+Dr. Bruno Ramos,02/04/2006,432.908.167-96,"[encanador, carpinteiro, pintor]"
+Pedro Lucas Moraes,11/08/1987,173.906.528-02,[pintor]
+Joana Campos,15/04/1991,478.062.513-08,[arquiteto]
+Ana Vitória da Rosa,30/12/1998,872.541.039-32,"[pedreiro, eletricista, arquiteto]"
+Milena Aragão,27/07/1986,903.561.872-68,"[encanador, assistente administrativo, pintor]"
+Caio Ramos,05/02/1996,218.034.769-31,[encanador]
+Heloísa Nunes,25/07/1976,182.790.534-41,"[assistente administrativo, pintor, eletricista]"
+Guilherme da Conceição,20/01/2006,625.413.780-17,"[pedreiro, assistente administrativo, marceneiro]"
+Caio Nascimento,03/06/2007,207.865.143-53,"[arquiteto, pedreiro]"
+Olivia Ribeiro,13/08/2001,239.574.810-23,"[pintor, assistente administrativo, marceneiro]"
+Paulo Azevedo,29/01/1995,271.596.304-16,"[pedreiro, arquiteto, pintor]"
+Cauã Souza,05/01/1961,953.781.206-59,[pintor]
+Davi Lucas Ribeiro,10/05/1988,290.758.461-85,"[assistente administrativo, engenheiro civil]"
+Isaac Ramos,13/06/1957,102.983.547-05,"[técnico em segurança do trabalho, engenheiro civil]"
+Sra. Maria Sophia Martins,07/01/1983,359.602.184-70,[assistente administrativo]
+Sra. Catarina Nascimento,08/07/1969,178.039.425-04,[marceneiro]
+João Pedro Moura,14/10/1963,735.216.904-07,"[marceneiro, arquiteto]"
+Daniel Correia,07/03/1986,762.891.530-21,"[arquiteto, carpinteiro, pintor]"
+Mariana da Cunha,04/11/1993,831.946.725-09,"[assistente administrativo, pedreiro, encanador]"
+Emilly Alves,06/03/2004,638.274.190-69,[assistente administrativo]
+Agatha Peixoto,06/07/1957,079.346.528-10,"[encanador, assistente administrativo, técnico em segurança do trabalho]"
+Luna Duarte,27/02/1960,806.172.493-69,[pedreiro]
+Lucca Lima,06/07/1965,709.316.542-70,"[engenheiro civil, técnico em segurança do trabalho]"
+Dra. Agatha Cardoso,10/09/1980,580.236.147-62,"[eletricista, técnico em segurança do trabalho, engenheiro civil]"
+Helena Caldeira,12/07/1989,501.326.879-68,"[engenheiro civil, eletricista, técnico em segurança do trabalho]"
+Pedro Campos,29/08/1992,325.140.987-50,[pintor]
+Srta. Giovanna Moraes,11/09/1972,864.092.713-87,"[encanador, técnico em segurança do trabalho, arquiteto]"
+Marcela Costa,30/06/1986,894.372.061-04,"[pedreiro, arquiteto]"
+Bruno Novaes,02/09/1966,418.720.639-69,"[pedreiro, assistente administrativo, engenheiro civil]"
+Luiz Henrique Aragão,14/06/1974,682.379.450-00,"[assistente administrativo, eletricista, carpinteiro]"
+Diogo Campos,01/01/1956,385.942.716-46,"[técnico em segurança do trabalho, pintor, marceneiro]"
+Fernanda Costela,11/05/1975,243.795.061-34,"[arquiteto, marceneiro, eletricista]"
+Lorenzo da Cunha,07/08/1996,284.165.709-49,[assistente administrativo]
+Ian Costela,03/07/1984,452.190.768-76,"[técnico em segurança do trabalho, arquiteto]"
+Dr. Marcelo da Cruz,25/10/1990,410.368.597-20,[pedreiro]
+Vicente Viana,11/01/1989,547.281.390-50,[engenheiro civil]
+Sra. Amanda Cunha,21/08/2000,814.037.952-23,"[pintor, carpinteiro]"
+Igor Caldeira,20/11/1995,389.621.074-22,"[carpinteiro, pedreiro]"
+Natália Carvalho,30/04/1989,637.245.091-70,"[pintor, engenheiro civil, pedreiro]"
+Bianca Pereira,28/08/1979,650.298.417-76,[pintor]
+Thomas Pires,17/12/2004,674.153.802-07,[carpinteiro]
+Emanuel Jesus,19/10/1986,851.430.672-35,"[marceneiro, pintor]"
+Camila Rezende,01/11/2002,923.178.506-03,[assistente administrativo]
+Fernanda Sales,24/07/1992,730.691.248-87,[eletricista]
+Pietro Gomes,21/11/1982,273.069.851-59,"[assistente administrativo, técnico em segurança do trabalho]"
+Luana Pinto,20/01/1972,715.496.083-39,"[encanador, carpinteiro]"
+Ana Carolina da Conceição,03/04/1976,725.108.463-53,[carpinteiro]
+Gustavo Gonçalves,17/07/1990,183.659.027-02,"[engenheiro civil, assistente administrativo]"
+Giovanna Lopes,10/02/2001,495.087.263-00,"[encanador, arquiteto, pedreiro]"
+Luiz Henrique Gomes,20/11/1979,765.108.429-20,[eletricista]
+Matheus Souza,17/09/1990,816.305.947-84,[eletricista]
+Dr. Ryan Moreira,18/12/1963,785.192.043-41,[carpinteiro]
+Cauê da Conceição,28/04/2001,342.160.978-04,[pedreiro]
+Anthony Rocha,14/01/2006,603.894.517-20,"[encanador, técnico em segurança do trabalho, marceneiro]"
+Augusto Campos,11/01/1975,018.476.593-57,[técnico em segurança do trabalho]
+Bryan da Conceição,12/04/2005,458.197.620-02,"[arquiteto, carpinteiro, engenheiro civil]"
+Nathan Alves,28/06/1990,394.170.586-57,"[assistente administrativo, eletricista, pedreiro]"
+Sr. Leonardo Cavalcanti,23/10/1966,568.147.309-01,[encanador]
+Lucas Gabriel Correia,13/11/1989,275.894.031-05,"[engenheiro civil, pedreiro]"
+Ana Sophia Nogueira,20/10/1973,749.183.260-13,[marceneiro]
+Lucas Moura,14/09/1966,071.364.952-61,"[pintor, marceneiro, carpinteiro]"
+Juliana Cavalcanti,15/12/2004,215.896.307-77,"[técnico em segurança do trabalho, carpinteiro]"
+Rebeca Sales,15/06/1973,946.238.517-37,"[pedreiro, pintor, eletricista]"
+Vitor Ramos,08/11/1961,147.395.062-70,"[carpinteiro, pintor, marceneiro]"
+Luiz Felipe Araújo,09/09/1966,652.748.031-80,"[engenheiro civil, marceneiro]"
+Catarina Gonçalves,23/07/1999,794.826.031-50,"[pintor, assistente administrativo, carpinteiro]"
+João Pedro Porto,28/11/1975,678.091.235-21,"[arquiteto, pintor]"
+Larissa Cunha,07/10/1975,671.453.980-01,"[assistente administrativo, técnico em segurança do trabalho, arquiteto]"
+Ana Carolina Novaes,04/06/1972,765.829.034-38,"[assistente administrativo, encanador, marceneiro]"
+João Guilherme Monteiro,30/12/2004,905.386.214-51,"[técnico em segurança do trabalho, carpinteiro, eletricista]"
+Sr. Rafael Farias,09/05/1971,341.502.679-52,[carpinteiro]
+Luiz Otávio Martins,17/01/1957,768.203.519-68,[carpinteiro]
+Joana Martins,18/06/1993,179.568.243-46,"[eletricista, arquiteto]"
+Paulo Jesus,24/03/1979,637.504.182-17,"[arquiteto, técnico em segurança do trabalho]"
+Heitor Nunes,15/11/1969,918.425.067-49,"[carpinteiro, engenheiro civil]"
+Cecília Monteiro,20/09/1959,489.357.201-60,"[pintor, carpinteiro]"
+Eloah Silva,06/05/1985,820.564.193-51,"[pintor, eletricista, marceneiro]"
+Rafael Rezende,25/09/1972,860.412.379-22,"[pedreiro, encanador]"
+Vinicius Jesus,17/02/1984,651.873.290-30,"[técnico em segurança do trabalho, pedreiro, pintor]"
+Rodrigo Duarte,13/02/1982,312.806.749-03,[técnico em segurança do trabalho]
+Larissa Pereira,11/07/1998,032.719.654-80,"[técnico em segurança do trabalho, pintor, eletricista]"
+Amanda Rodrigues,09/11/1955,015.429.386-51,[pedreiro]
+Rebeca Cunha,25/07/1970,189.456.270-49,[pedreiro]
+Noah Costa,12/02/2007,596.781.302-03,"[assistente administrativo, arquiteto, eletricista]"
+Davi da Rosa,08/03/1973,764.890.321-04,"[marceneiro, encanador]"
+Srta. Gabrielly Viana,05/05/1983,734.612.895-82,"[eletricista, encanador]"
+Anthony Azevedo,27/10/2004,034.782.659-83,"[encanador, pedreiro]"
+Eduarda Pires,08/12/1980,064.291.853-89,[técnico em segurança do trabalho]
+Marina Lopes,05/09/2006,604.983.721-03,"[técnico em segurança do trabalho, carpinteiro]"
+Dr. Caio da Cruz,12/01/2002,481.239.670-04,"[pintor, pedreiro, eletricista]"
+Pedro da Mata,20/05/1997,720.318.469-22,"[carpinteiro, marceneiro, pedreiro]"
+Davi Lucca Farias,22/08/1989,265.381.904-05,"[arquiteto, assistente administrativo]"
+Eduardo Cardoso,16/09/1982,526.341.078-62,[assistente administrativo]
+Lucas Gabriel da Paz,25/04/1972,206.437.985-10,"[técnico em segurança do trabalho, carpinteiro, assistente administrativo]"
+Sr. Miguel Costa,18/06/1955,867.953.042-56,[engenheiro civil]
+Yuri Fogaça,05/02/1974,762.314.580-08,"[pintor, encanador, pedreiro]"
+Carolina Oliveira,07/06/1964,048.173.652-26,"[carpinteiro, assistente administrativo, técnico em segurança do trabalho]"
+André Ribeiro,26/07/1963,563.978.204-83,"[pintor, técnico em segurança do trabalho]"
+Ana Carolina Barros,25/02/1977,375.486.091-75,[encanador]
+Mariane Nascimento,01/02/1975,652.409.138-89,[arquiteto]
+Luna Mendes,10/05/1986,215.743.860-26,"[pedreiro, pintor]"
+Sr. Cauê Sales,16/08/1973,564.278.910-49,"[eletricista, engenheiro civil, marceneiro]"
+Dr. Vitor Hugo da Costa,25/04/1992,703.186.459-39,[assistente administrativo]
+Davi Lucca Rezende,14/03/1984,170.324.695-07,"[arquiteto, pedreiro]"
+Thiago da Conceição,01/12/1962,513.628.497-82,"[marceneiro, eletricista, arquiteto]"
+Mirella da Rosa,19/03/1994,082.391.675-86,"[técnico em segurança do trabalho, engenheiro civil, eletricista]"
+Sr. Gustavo Henrique Costa,29/04/1981,519.807.326-12,"[técnico em segurança do trabalho, engenheiro civil, marceneiro]"
+Marina Fogaça,09/12/1994,059.843.267-10,[marceneiro]
+Benjamin Gomes,29/06/1976,016.932.875-95,"[assistente administrativo, técnico em segurança do trabalho]"
+Anthony da Rocha,03/08/1965,694.581.072-02,[pintor]
+Sarah Lima,10/02/2001,925.708.134-60,"[pintor, marceneiro, eletricista]"
+Lorena Fogaça,25/10/1992,961.832.754-09,"[assistente administrativo, encanador]"
+Augusto Silva,04/10/1977,732.845.019-32,"[arquiteto, engenheiro civil]"
+Ana Júlia Rocha,11/12/1974,294.617.350-06,[engenheiro civil]
+Ana Julia Barbosa,09/06/1989,186.307.294-22,[engenheiro civil]
+Ana Júlia Santos,11/08/1955,172.693.045-99,"[carpinteiro, pintor]"
+Sra. Gabrielly Ramos,15/01/2006,745.619.803-93,"[encanador, pintor, técnico em segurança do trabalho]"
+Ana Lívia Pinto,12/11/1990,096.871.342-40,"[assistente administrativo, marceneiro, arquiteto]"
+Sofia Rodrigues,09/02/1975,956.720.148-01,"[pedreiro, técnico em segurança do trabalho]"
+Carlos Eduardo Aragão,12/11/2001,309.751.468-66,"[pedreiro, encanador, marceneiro]"
+Heitor Rezende,01/08/1964,760.915.342-70,[pintor]
+Levi Farias,15/03/1968,460.275.318-35,"[marceneiro, técnico em segurança do trabalho, arquiteto]"
+Dra. Maria Vitória Vieira,16/04/1974,076.345.892-92,"[arquiteto, pintor, assistente administrativo]"
+Alexia Pereira,22/09/1993,581.293.407-04,"[encanador, assistente administrativo, arquiteto]"
+Melissa Monteiro,04/01/1985,602.751.349-70,"[arquiteto, carpinteiro]"
+Luiz Fernando das Neves,29/06/1994,572.893.461-73,[arquiteto]
+Yasmin da Cruz,25/10/1996,341.597.802-88,[eletricista]
+Luiza Castro,23/10/1982,743.180.562-44,[assistente administrativo]
+Sr. Davi Santos,04/09/1956,156.049.723-80,"[engenheiro civil, pintor]"
+Emanuella Mendes,04/09/1978,084.157.923-79,"[eletricista, marceneiro, encanador]"
+Yasmin Ramos,06/12/2005,198.640.532-05,[arquiteto]
+João Guilherme da Cruz,25/01/2004,478.501.296-01,"[assistente administrativo, eletricista]"
+Eduardo Pires,17/10/1982,037.264.198-96,"[arquiteto, marceneiro, assistente administrativo]"
+Dr. João Guilherme Farias,26/10/1964,863.175.492-73,"[encanador, assistente administrativo, arquiteto]"
+Leonardo da Conceição,29/11/2006,081.925.367-77,"[encanador, pintor, carpinteiro]"
+João Vitor Azevedo,05/06/1999,204.367.951-16,[marceneiro]
+Sr. Guilherme Souza,15/01/1996,267.514.398-73,[encanador]
+Juliana da Paz,08/01/1975,105.379.286-77,"[engenheiro civil, pedreiro]"
+Maria Clara Lima,23/12/1989,520.749.861-49,"[carpinteiro, técnico em segurança do trabalho, eletricista]"
+Sra. Lívia Correia,24/04/2004,054.872.936-00,"[eletricista, técnico em segurança do trabalho, engenheiro civil]"
+Fernanda Almeida,04/05/1985,538.269.147-91,"[pedreiro, eletricista, técnico em segurança do trabalho]"
+Sarah Farias,30/08/1961,583.627.041-44,[carpinteiro]
+Ana Júlia Carvalho,25/09/1958,627.130.859-77,[técnico em segurança do trabalho]
+Maria Eduarda Silveira,02/07/2007,647.539.821-73,"[técnico em segurança do trabalho, encanador]"
+Danilo Santos,25/02/1963,792.546.083-00,[pintor]
+Lorena Azevedo,20/04/2005,285.043.671-26,"[assistente administrativo, pintor, arquiteto]"
+Evelyn Barbosa,28/01/1990,215.967.480-01,"[pintor, pedreiro, assistente administrativo]"
+Danilo Peixoto,24/10/1957,493.157.086-01,"[arquiteto, encanador]"
+Augusto Peixoto,31/03/1987,947.235.108-50,[pintor]
+Natália Porto,21/08/1964,516.387.240-08,[técnico em segurança do trabalho]
+Laura Freitas,16/06/1998,120.458.763-90,[eletricista]
+Pedro Henrique Viana,03/10/1993,083.674.952-92,"[engenheiro civil, assistente administrativo]"
+Guilherme da Rocha,12/03/1971,971.645.280-20,[carpinteiro]
+Alexia Mendes,29/03/1984,260.849.317-31,"[pedreiro, encanador]"
+Caio Viana,11/12/1965,428.701.695-58,[assistente administrativo]
+Paulo Martins,07/11/1966,094.382.167-31,"[encanador, pintor]"
+João Miguel Costa,12/01/1958,398.745.601-93,[assistente administrativo]
+Ian Rezende,21/02/1992,617.038.945-10,"[arquiteto, técnico em segurança do trabalho]"
+Vitor Hugo Costela,26/03/1975,967.054.183-20,"[eletricista, técnico em segurança do trabalho]"
+Bárbara Farias,30/01/1991,687.093.245-00,[marceneiro]
+Benício Rocha,05/02/1973,946.251.703-70,"[arquiteto, técnico em segurança do trabalho]"
+Dra. Maria Fernanda Campos,17/12/1974,169.874.250-94,[engenheiro civil]
+Lívia Lopes,01/12/2000,547.216.809-02,"[pintor, carpinteiro, arquiteto]"
+Helena Aragão,31/07/2001,207.861.394-04,"[técnico em segurança do trabalho, encanador]"
+Maria Alice Cardoso,03/09/1998,180.653.792-30,"[arquiteto, carpinteiro]"
+Isabella Nogueira,23/07/1966,017.283.946-78,[pedreiro]
+Rodrigo Moraes,15/07/1967,143.972.068-13,[eletricista]
+Dra. Maria da Rocha,27/12/1954,361.824.905-51,"[pintor, pedreiro, encanador]"
+Sarah da Luz,13/12/1958,921.784.653-82,[pedreiro]
+Renan Aragão,29/08/2001,847.036.215-17,[encanador]
+Cauã Silveira,03/04/1986,750.819.263-02,"[engenheiro civil, pintor, eletricista]"
+Sr. João Vitor da Mota,12/04/1977,103.578.942-60,[pedreiro]
+Dr. Bernardo Castro,25/05/1956,760.452.893-74,"[técnico em segurança do trabalho, arquiteto, eletricista]"
+Eduarda Mendes,16/03/1958,583.049.761-10,"[encanador, marceneiro, assistente administrativo]"
+Ana Vitória Cardoso,19/08/1958,065.879.143-57,[pedreiro]
+Heitor Pinto,24/12/1958,108.235.769-30,"[pintor, arquiteto]"
+Noah Alves,10/05/1985,679.480.235-00,"[assistente administrativo, engenheiro civil]"
+Manuela Melo,03/07/1994,318.046.725-80,"[arquiteto, pedreiro, carpinteiro]"
+Maitê Fernandes,08/09/1978,678.195.032-03,[carpinteiro]
+Nathan Pinto,02/06/1989,542.137.869-19,[pintor]
+Luiz Henrique da Conceição,27/05/1958,380.921.457-41,"[arquiteto, técnico em segurança do trabalho]"
+Joaquim da Mota,13/12/1999,795.648.231-37,[encanador]
+Helena da Cruz,21/08/1961,709.186.435-20,"[assistente administrativo, pintor, arquiteto]"
+Lucca Melo,11/11/2004,639.102.587-86,[pedreiro]
+Matheus Correia,11/03/1964,473.592.086-29,"[eletricista, pintor, técnico em segurança do trabalho]"
+Gustavo Henrique da Luz,26/05/1969,425.691.708-01,"[encanador, eletricista, técnico em segurança do trabalho]"
+Francisco Castro,06/12/1955,261.978.305-40,[pintor]
+Sr. Luiz Miguel Pinto,18/11/2002,192.865.374-09,"[marceneiro, pedreiro]"
+Dr. Pedro Miguel Farias,24/08/1957,934.612.508-05,"[eletricista, carpinteiro, técnico em segurança do trabalho]"
+Luiz Gustavo Rodrigues,27/09/1968,179.843.265-09,"[encanador, engenheiro civil]"
+Igor Moura,05/04/1990,798.243.056-29,"[carpinteiro, técnico em segurança do trabalho, assistente administrativo]"
+Levi Duarte,11/06/1981,346.981.250-06,"[encanador, pedreiro, assistente administrativo]"
+Vitor Gabriel Cardoso,31/07/1974,785.140.326-07,"[engenheiro civil, carpinteiro, marceneiro]"
+Lavínia Rezende,07/12/1983,657.293.041-61,[carpinteiro]
+Francisco Cardoso,09/12/1978,149.627.035-52,"[pintor, pedreiro]"
+Sr. Marcelo da Paz,19/03/1977,354.286.170-71,[pedreiro]
+Dra. Maria Cecília Ferreira,31/01/1955,495.637.018-01,"[engenheiro civil, pedreiro, técnico em segurança do trabalho]"
+Daniela Dias,22/09/2003,379.465.821-37,"[carpinteiro, assistente administrativo, engenheiro civil]"
+Sr. Ian da Mota,06/09/1983,637.840.259-00,"[pintor, técnico em segurança do trabalho, pedreiro]"
+Vicente Alves,06/07/1988,593.768.210-68,"[assistente administrativo, técnico em segurança do trabalho]"
+Valentina Azevedo,21/12/1963,256.317.098-21,"[pintor, arquiteto, encanador]"
+Lucas Cavalcanti,17/11/1976,974.016.583-48,"[eletricista, técnico em segurança do trabalho, engenheiro civil]"
+Diego da Paz,26/03/1959,643.128.097-04,[eletricista]
+Sr. Davi Luiz Martins,18/06/1982,621.743.580-26,"[eletricista, engenheiro civil, encanador]"
+Cecília Costela,01/07/1968,467.195.230-07,"[engenheiro civil, técnico em segurança do trabalho]"
+Raquel Ramos,31/03/1973,302.986.174-04,"[técnico em segurança do trabalho, pintor]"
+Luiza Ramos,27/12/1985,901.253.647-25,"[eletricista, encanador, marceneiro]"
+Mariana da Luz,30/09/1982,326.971.045-34,"[arquiteto, pedreiro, encanador]"
+Davi Lucca Freitas,30/03/1997,841.567.390-66,"[assistente administrativo, eletricista]"
+Sr. Vitor Gabriel Cavalcanti,28/10/1988,567.128.043-53,[eletricista]
+Pedro Miguel Rezende,09/06/1980,563.709.248-65,"[marceneiro, pintor, técnico em segurança do trabalho]"
+Dr. Luigi Rezende,23/02/1959,183.579.640-01,"[eletricista, técnico em segurança do trabalho, engenheiro civil]"
+Anthony Castro,25/07/1966,416.805.297-49,[arquiteto]
+Sr. Enrico Azevedo,09/06/2000,837.504.612-44,"[arquiteto, eletricista]"
+Ana Beatriz Almeida,24/10/1957,638.215.074-62,[marceneiro]
+André Mendes,30/07/1967,139.657.408-57,"[encanador, engenheiro civil, arquiteto]"
+Ana Lívia Martins,17/06/1976,839.475.062-10,[arquiteto]
+João Gabriel Martins,26/04/1966,065.931.782-68,[engenheiro civil]
+Emilly Moura,29/06/1957,136.248.075-44,[marceneiro]
+Caio Martins,07/06/1997,625.178.309-59,"[pintor, técnico em segurança do trabalho]"
+Otávio Porto,09/07/1980,830.174.569-00,[assistente administrativo]
+Sra. Sophia Farias,04/09/1996,102.736.985-59,[arquiteto]
+Pedro Azevedo,14/09/1970,975.128.046-01,[pedreiro]
+Esther Araújo,01/02/1970,593.140.628-05,"[técnico em segurança do trabalho, encanador, engenheiro civil]"
+Isis Silveira,22/05/1976,270.836.149-03,"[pintor, eletricista]"
+Cauê Carvalho,27/04/1966,983.140.726-13,"[carpinteiro, marceneiro, engenheiro civil]"
+Davi Luiz da Paz,03/03/1971,623.894.750-00,"[carpinteiro, assistente administrativo, pedreiro]"
+Yuri Rocha,12/12/1959,568.139.427-19,[carpinteiro]
+Lucca Aragão,08/05/2006,691.824.750-67,"[técnico em segurança do trabalho, assistente administrativo]"
+João Miguel Rezende,25/04/1975,746.893.015-57,"[eletricista, carpinteiro, arquiteto]"
+Sra. Catarina da Costa,29/05/1967,095.367.421-52,"[encanador, marceneiro]"
+Luiza Lima,15/02/1998,916.073.854-57,"[eletricista, técnico em segurança do trabalho]"
+Vitor Monteiro,07/03/1989,750.836.194-66,"[arquiteto, encanador, técnico em segurança do trabalho]"
+João Guilherme Araújo,18/12/2001,247.519.680-76,[arquiteto]
+Carlos Eduardo Carvalho,09/05/1998,691.473.582-46,"[eletricista, engenheiro civil]"
+Sra. Lívia Teixeira,24/04/1999,649.750.821-01,[pintor]
+Gabriel da Rocha,03/06/2005,640.137.859-00,[técnico em segurança do trabalho]
+Kamilly Gomes,20/05/2004,628.715.430-62,"[eletricista, assistente administrativo, carpinteiro]"
+Ana Sophia Porto,03/02/1993,329.051.478-14,"[pintor, eletricista, engenheiro civil]"
+Marina Cavalcanti,23/10/1997,214.036.978-50,[encanador]
+Nathan Duarte,09/01/1987,710.926.435-16,"[pedreiro, encanador, pintor]"
+Vitória Almeida,25/01/1980,984.362.517-09,[pedreiro]
+Heloísa Lopes,22/10/1970,568.402.793-83,"[marceneiro, assistente administrativo, arquiteto]"
+Pietra Nunes,08/11/2003,201.649.735-16,"[pintor, engenheiro civil]"
+Nina Ribeiro,17/07/1989,630.527.941-16,[eletricista]
+Laura Dias,17/10/1995,761.235.089-03,"[engenheiro civil, técnico em segurança do trabalho]"
+Otávio da Mota,13/12/2002,280.137.956-59,"[pintor, eletricista]"
+Levi Correia,25/04/1987,839.160.457-84,"[encanador, carpinteiro, eletricista]"
+Igor Nogueira,25/08/2006,439.580.126-98,"[pintor, engenheiro civil, carpinteiro]"
+Ryan Melo,24/09/1969,915.376.402-16,"[marceneiro, técnico em segurança do trabalho, eletricista]"
+Carlos Eduardo Gonçalves,20/06/1960,195.748.026-20,[pedreiro]
+Ian Nascimento,05/10/1993,049.861.352-60,"[arquiteto, eletricista, marceneiro]"
+Sr. Luiz Henrique das Neves,03/10/1961,607.219.534-25,"[eletricista, pintor, engenheiro civil]"
+Noah Gomes,05/06/1964,054.789.231-41,[assistente administrativo]
+Clara Sales,04/05/1974,605.179.428-01,"[assistente administrativo, técnico em segurança do trabalho]"
+Luigi Novaes,09/11/1974,206.935.714-70,"[encanador, pintor, pedreiro]"
+Luiz Miguel Gomes,19/09/1973,386.012.745-44,"[arquiteto, técnico em segurança do trabalho, engenheiro civil]"
+Milena da Cruz,11/10/1993,278.915.460-02,[encanador]
+Dra. Alana Moreira,26/11/2003,912.368.054-70,[arquiteto]
+Camila Barros,27/06/1962,856.193.702-59,"[arquiteto, pintor]"
+João Vitor Rodrigues,06/02/1975,926.750.381-21,[encanador]
+Pedro Lucas Pires,01/07/1979,018.963.754-48,[carpinteiro]
+Ryan Castro,06/11/1994,267.583.940-00,"[arquiteto, engenheiro civil, assistente administrativo]"
+Igor Campos,27/01/2003,826.750.391-95,[pintor]
+Luiz Henrique Teixeira,27/01/2003,139.746.025-34,"[técnico em segurança do trabalho, marceneiro, engenheiro civil]"
+Sr. Augusto Costela,20/08/1993,321.480.697-13,"[encanador, técnico em segurança do trabalho, marceneiro]"
+Sr. Kevin Almeida,27/05/1971,409.573.126-52,"[técnico em segurança do trabalho, carpinteiro, encanador]"
+Sra. Manuela Moraes,02/10/1995,893.506.142-51,[arquiteto]
+Heitor da Rosa,20/08/1963,983.425.167-09,"[técnico em segurança do trabalho, carpinteiro]"
+Marcos Vinicius Fernandes,29/03/1972,629.308.745-38,"[técnico em segurança do trabalho, eletricista, carpinteiro]"
+Cecília Cardoso,06/05/1997,435.976.180-57,"[eletricista, carpinteiro]"
+Dr. João Miguel Araújo,30/07/1995,314.076.958-00,"[engenheiro civil, marceneiro, carpinteiro]"
+Ana Laura Moreira,13/03/1977,423.805.791-05,"[pintor, marceneiro]"
+Yuri Costa,17/06/1966,847.092.531-88,"[carpinteiro, marceneiro, técnico em segurança do trabalho]"
+Ana Luiza Barros,13/02/1966,562.794.310-61,[eletricista]
+André Silva,14/01/2003,298.347.051-23,"[assistente administrativo, encanador]"
+Srta. Nicole Peixoto,07/08/2002,729.834.615-64,"[pedreiro, pintor, encanador]"
+Raquel Dias,09/04/1975,146.720.835-35,"[pedreiro, encanador]"
+Davi Luiz Caldeira,04/04/1960,487.603.192-40,[arquiteto]
+Nina Teixeira,28/12/2001,160.497.325-07,[pintor]
+Vicente Souza,19/01/2001,907.154.682-94,[assistente administrativo]
+Sr. Luiz Gustavo Moraes,19/12/1957,679.120.534-25,"[pedreiro, arquiteto, assistente administrativo]"
+Stella Costa,29/03/1974,479.210.385-14,"[engenheiro civil, carpinteiro, arquiteto]"
+Maitê Azevedo,05/01/1986,970.284.316-22,"[técnico em segurança do trabalho, arquiteto]"
+Sr. Alexandre Monteiro,31/08/2003,265.083.479-00,"[arquiteto, pedreiro]"
+Maitê da Costa,14/06/1982,170.952.634-34,[engenheiro civil]
+Dr. João Guilherme Pereira,25/11/1966,841.356.709-20,"[pintor, assistente administrativo]"
+Sra. Agatha Moraes,06/10/2002,319.208.746-31,"[engenheiro civil, marceneiro]"
+Davi Lucca da Paz,12/02/1987,416.397.852-64,[pedreiro]
+Rebeca Nogueira,12/06/1963,190.862.743-31,"[carpinteiro, engenheiro civil, arquiteto]"
+Renan Mendes,28/09/1983,906.325.781-30,[marceneiro]
+Pedro Henrique da Costa,16/02/2004,823.906.147-87,"[carpinteiro, técnico em segurança do trabalho, encanador]"
+Lucas Cavalcanti,20/03/2002,823.641.509-06,[carpinteiro]
+Alícia Freitas,31/07/1967,260.417.859-11,"[técnico em segurança do trabalho, engenheiro civil]"
+Gabriela Dias,05/08/1969,567.043.819-10,"[engenheiro civil, carpinteiro, assistente administrativo]"
+João Guilherme Freitas,22/05/1978,635.019.487-00,"[eletricista, engenheiro civil, pintor]"
+Gustavo Henrique Ribeiro,26/07/1973,916.823.574-73,"[encanador, pintor, engenheiro civil]"
+Caio Alves,23/12/2000,825.976.401-67,"[assistente administrativo, arquiteto]"
+Nathan Nogueira,09/06/1960,129.047.583-05,[pedreiro]
+Breno Viana,16/08/1996,547.618.902-58,"[eletricista, carpinteiro]"
+Kaique Vieira,04/12/2002,485.230.791-14,"[encanador, assistente administrativo, pedreiro]"
+Marcela Santos,28/12/1955,249.708.563-38,"[técnico em segurança do trabalho, carpinteiro, pintor]"
+Sra. Luna Teixeira,11/06/1989,127.643.598-37,"[pedreiro, arquiteto, pintor]"
+Diego Almeida,22/05/1965,930.648.217-50,"[pedreiro, encanador, assistente administrativo]"
+Thales Fogaça,28/01/1992,123.049.867-22,"[pedreiro, assistente administrativo]"
+Daniel Fogaça,03/01/1958,391.052.476-16,"[técnico em segurança do trabalho, engenheiro civil, arquiteto]"
+Dra. Emanuella Cunha,16/04/1982,945.076.281-30,"[assistente administrativo, técnico em segurança do trabalho]"
+Fernando Aragão,26/01/1991,916.524.830-98,[arquiteto]
+Dr. Emanuel Novaes,03/02/1965,736.218.054-35,"[pedreiro, arquiteto]"
+Carolina da Luz,10/05/1967,972.580.643-38,"[assistente administrativo, pedreiro, engenheiro civil]"
+Nina da Mota,25/03/1959,216.835.094-98,"[engenheiro civil, pintor]"
+Srta. Maria Castro,20/03/1980,601.985.742-58,"[marceneiro, técnico em segurança do trabalho, pintor]"
+Danilo Alves,21/02/1955,185.670.943-48,[arquiteto]
+Laura da Cruz,03/06/1975,572.104.839-50,"[engenheiro civil, carpinteiro, eletricista]"
+Augusto Cavalcanti,26/07/1991,416.807.539-75,"[encanador, carpinteiro]"
+Bianca Moraes,06/02/1999,436.570.892-92,[engenheiro civil]
+Calebe Gomes,25/10/1978,159.208.743-41,"[arquiteto, engenheiro civil, técnico em segurança do trabalho]"
+Helena da Mata,26/09/2000,624.785.019-02,[pintor]
+Isadora Ferreira,27/11/2002,102.659.784-67,"[carpinteiro, engenheiro civil]"
+Rebeca Rocha,31/01/1959,164.902.853-98,[marceneiro]
+Dr. Luiz Felipe Pereira,03/04/1987,652.981.347-00,"[técnico em segurança do trabalho, engenheiro civil, arquiteto]"
+Maria Alice Sales,26/09/1990,836.049.127-50,"[engenheiro civil, arquiteto]"
+João Guilherme Almeida,02/05/1968,057.198.264-67,"[eletricista, pedreiro]"
+Lorenzo da Conceição,12/01/1992,638.910.542-89,"[arquiteto, pintor]"
+Sabrina Araújo,15/11/2001,650.874.913-75,"[eletricista, pintor]"
+Danilo Moreira,12/02/1964,139.048.765-20,"[técnico em segurança do trabalho, encanador, marceneiro]"
+Srta. Sofia Souza,14/01/2002,476.523.019-80,"[técnico em segurança do trabalho, pintor, engenheiro civil]"
+Benício Azevedo,13/08/1995,289.035.471-79,"[pintor, pedreiro]"
+Lívia Lima,10/10/2002,362.704.958-65,[encanador]
+Mariane Caldeira,25/05/1969,621.953.478-64,[assistente administrativo]
+Bárbara Barros,13/10/1979,634.095.281-05,[eletricista]
+Erick Gomes,30/07/1965,819.740.253-14,"[encanador, pedreiro, eletricista]"
+Alícia Duarte,26/10/1972,107.862.593-02,[engenheiro civil]
+Dr. João Vitor Santos,06/10/1967,569.170.284-01,"[engenheiro civil, pedreiro]"
+Stephany da Costa,11/02/1956,967.402.153-16,"[engenheiro civil, técnico em segurança do trabalho, pintor]"
+Pedro Lucas Carvalho,24/05/2003,392.651.740-99,"[técnico em segurança do trabalho, encanador]"
+Dr. João Guilherme Pinto,23/03/1957,638.490.127-78,"[assistente administrativo, pintor]"
+André da Conceição,25/08/2006,481.306.257-17,[assistente administrativo]
+Bernardo Freitas,25/09/1993,591.073.284-60,"[arquiteto, técnico em segurança do trabalho, assistente administrativo]"
+Milena Cunha,09/12/1962,970.263.458-00,"[carpinteiro, arquiteto, encanador]"
+Isabelly Silva,03/01/1997,591.834.670-84,[carpinteiro]
+Melissa Caldeira,05/12/2004,380.172.956-77,[pedreiro]
+Enzo Gabriel Nogueira,16/12/1985,157.384.602-35,[engenheiro civil]
+Thomas Cavalcanti,07/07/1981,639.207.481-31,[assistente administrativo]
+Samuel Ribeiro,13/04/1962,470.913.528-23,[engenheiro civil]
+Sr. Noah Nascimento,30/09/1958,567.108.924-76,"[técnico em segurança do trabalho, pintor, carpinteiro]"
+Fernando da Luz,10/03/1960,214.309.685-24,"[encanador, técnico em segurança do trabalho, arquiteto]"
+Emanuella da Mata,27/02/1958,165.829.437-82,[carpinteiro]
+Lorena Teixeira,17/05/2001,265.743.098-83,"[arquiteto, pedreiro, carpinteiro]"
+Thiago da Conceição,13/07/1976,502.316.789-59,[arquiteto]
+Luiz Henrique Almeida,28/02/1985,271.085.396-59,"[eletricista, arquiteto, encanador]"
+Isis da Rosa,10/03/1978,390.267.514-43,[arquiteto]
+Sra. Milena Ramos,05/09/1982,658.943.207-47,"[pedreiro, assistente administrativo, marceneiro]"
+Lara Moura,16/07/1966,826.397.540-92,[arquiteto]
+Calebe Carvalho,16/09/1998,061.354.927-99,[engenheiro civil]
+Maria Luiza Azevedo,10/12/1999,463.179.502-61,[encanador]
+Ana Vitória Monteiro,27/01/1986,690.214.853-89,"[eletricista, pintor, encanador]"
+Kaique Duarte,14/10/1954,608.712.459-49,"[marceneiro, pintor]"
+Larissa Duarte,26/04/1992,639.704.851-93,"[técnico em segurança do trabalho, engenheiro civil]"
+Srta. Juliana Lopes,13/09/1989,263.051.894-98,"[engenheiro civil, eletricista, marceneiro]"
+Emanuella Vieira,29/04/1965,531.068.924-98,"[carpinteiro, marceneiro, pedreiro]"
+Pedro Henrique Viana,11/11/1959,960.581.324-60,"[pedreiro, arquiteto]"
+Erick das Neves,16/09/1974,389.572.016-02,"[carpinteiro, encanador]"
+Pedro Lucas Aragão,11/12/1997,918.340.567-48,"[assistente administrativo, marceneiro, técnico em segurança do trabalho]"
+Diego Carvalho,08/10/1959,753.906.814-01,"[pintor, marceneiro]"
+Marina Cardoso,23/10/1968,695.731.480-48,"[carpinteiro, engenheiro civil, arquiteto]"
+Rafael Azevedo,24/06/1962,597.468.031-66,"[encanador, técnico em segurança do trabalho, eletricista]"
+Diogo Araújo,22/12/1990,082.179.643-78,[marceneiro]
+Enzo Gabriel Cardoso,10/01/2004,248.310.965-98,"[eletricista, arquiteto, carpinteiro]"
+Sofia Sales,05/03/1984,863.215.940-24,[pintor]
+Vitória Lima,10/10/1965,376.984.210-31,[engenheiro civil]
+Joana Pereira,04/02/1968,958.703.164-48,"[assistente administrativo, pedreiro, marceneiro]"
+Júlia Gonçalves,06/08/1995,856.071.249-67,"[assistente administrativo, engenheiro civil]"
+Sr. Breno da Rosa,17/03/1999,592.670.413-80,"[pedreiro, arquiteto, pintor]"
+Sra. Clara Rezende,12/02/1993,531.824.790-32,"[assistente administrativo, marceneiro]"
+Matheus Freitas,30/03/2003,916.532.407-25,"[pintor, carpinteiro, marceneiro]"
+Luiz Felipe Sales,08/09/1957,461.037.259-25,"[engenheiro civil, marceneiro]"
+Murilo Aragão,24/11/1973,097.213.864-13,"[encanador, pedreiro]"
+Sr. Bernardo Ribeiro,22/12/1960,648.293.051-42,"[carpinteiro, eletricista]"
+Mariana Barros,08/04/1981,478.650.239-10,"[técnico em segurança do trabalho, engenheiro civil]"
+Enzo Gabriel Barros,18/03/1955,215.673.809-21,"[arquiteto, pedreiro]"
+Thiago Moura,31/01/1991,094.685.713-00,"[assistente administrativo, pedreiro]"
+Isaac Nascimento,13/11/1972,297.018.543-14,[encanador]
+Lavínia Costa,03/01/1990,837.592.461-09,"[engenheiro civil, marceneiro]"
+Bryan Ferreira,23/08/2006,415.987.036-84,[eletricista]
+Enrico Alves,17/02/2000,376.190.248-40,[pedreiro]
+Thales Ramos,04/02/1999,281.769.350-77,"[assistente administrativo, pedreiro, pintor]"
+Caroline Campos,29/05/1973,624.970.135-43,"[marceneiro, encanador]"
+Srta. Eduarda Aragão,11/11/1985,240.358.619-60,[eletricista]
+Marcos Vinicius Cardoso,15/08/1978,632.849.701-69,"[pintor, eletricista]"
+João Lucas Castro,05/11/1957,693.217.584-37,[assistente administrativo]
+Maria Sales,17/10/1989,610.587.942-30,[assistente administrativo]
+Murilo Fogaça,01/10/1970,189.274.356-64,"[técnico em segurança do trabalho, arquiteto]"
+Enzo Gabriel Fogaça,13/03/1988,329.856.470-29,"[arquiteto, pedreiro, marceneiro]"
+Diego Santos,03/03/2002,974.651.830-57,[marceneiro]
+Diego Melo,24/06/1985,207.398.164-03,"[arquiteto, marceneiro]"
+Renan Alves,04/12/1994,570.316.842-26,"[encanador, pintor, pedreiro]"
+Nina Gonçalves,14/01/1970,892.610.457-58,[eletricista]
+Luiza Monteiro,21/08/1991,479.230.615-99,"[pedreiro, marceneiro]"
+Stephany Rocha,05/03/1962,480.136.952-98,"[arquiteto, engenheiro civil, assistente administrativo]"
+Felipe Pinto,17/12/1978,319.750.268-02,"[pedreiro, assistente administrativo, arquiteto]"
+Camila Ferreira,17/09/2000,596.432.708-74,"[eletricista, encanador]"
+Manuela Mendes,04/03/1996,167.425.039-80,"[assistente administrativo, marceneiro]"
+Bianca Rezende,02/11/2000,284.761.953-46,[pedreiro]
+Gustavo Alves,21/05/1985,034.679.512-52,"[pedreiro, eletricista]"
+Leandro Moraes,07/06/1999,094.125.683-98,"[marceneiro, pintor]"
+Thomas da Paz,26/11/1983,914.803.256-51,"[engenheiro civil, técnico em segurança do trabalho]"
+Juliana Castro,12/04/1972,492.837.160-78,"[encanador, engenheiro civil, técnico em segurança do trabalho]"
+Daniel Peixoto,21/03/1992,348.027.956-29,[assistente administrativo]
+Valentina Pinto,14/01/1961,287.594.613-73,"[carpinteiro, pedreiro]"
+Letícia Peixoto,03/06/1982,708.639.125-59,"[encanador, pedreiro]"
+Nathan Silva,22/11/1979,284.031.596-33,"[técnico em segurança do trabalho, pintor]"
+Sophie Silveira,26/10/1985,019.257.634-80,"[encanador, assistente administrativo]"
+Miguel Rocha,30/06/2001,501.946.823-15,"[pintor, engenheiro civil]"
+Bianca Sales,14/10/1963,324.580.967-00,"[pintor, assistente administrativo]"
+Bernardo Almeida,30/11/1964,918.760.345-48,"[pintor, eletricista]"
+Ana Carolina Costa,29/11/1974,672.914.835-73,"[técnico em segurança do trabalho, engenheiro civil, pintor]"
+Mariana Costa,04/12/1983,209.156.478-85,"[eletricista, pedreiro]"
+Luana Gonçalves,14/03/1974,175.823.460-17,"[marceneiro, engenheiro civil]"
+Kamilly Pereira,01/08/1964,047.983.621-31,"[arquiteto, assistente administrativo, carpinteiro]"
+Pedro Pires,27/05/1957,527.938.061-02,"[técnico em segurança do trabalho, engenheiro civil, encanador]"
+Lívia da Rocha,29/03/1978,861.759.234-64,"[marceneiro, pedreiro]"
+Raquel Cunha,11/06/1973,461.853.970-48,"[técnico em segurança do trabalho, assistente administrativo, eletricista]"
+Rafaela Santos,08/04/2007,842.579.631-82,[eletricista]
+Augusto Araújo,16/05/2004,231.508.476-80,"[assistente administrativo, pedreiro, arquiteto]"
+Srta. Ana Lívia da Luz,20/01/2004,691.042.835-89,[técnico em segurança do trabalho]
+Sophie Moura,11/10/1995,025.973.468-38,"[técnico em segurança do trabalho, pedreiro, arquiteto]"
+Fernando Rodrigues,10/04/1984,438.517.602-71,"[carpinteiro, pintor, marceneiro]"
+Natália Castro,09/05/1968,029.834.715-60,[engenheiro civil]
+Sabrina Souza,07/04/1988,397.425.108-14,"[pintor, assistente administrativo, carpinteiro]"
+Marina Nascimento,29/04/1959,912.647.038-13,"[pedreiro, pintor, encanador]"
+Benjamin Viana,08/01/1977,034.628.597-65,[carpinteiro]
+Breno Teixeira,27/08/1993,384.970.521-88,[eletricista]
+Pietro Araújo,12/09/1956,564.120.873-62,[arquiteto]
+Ana Carolina Duarte,02/02/1988,105.834.629-60,"[arquiteto, encanador, engenheiro civil]"
+Gabriel Barbosa,01/08/1961,073.528.419-97,"[pintor, pedreiro]"
+Benício Araújo,23/02/2007,386.570.941-93,"[encanador, arquiteto]"
+Pietra Costela,29/09/1983,682.039.714-31,[pintor]
+Dr. Benício Duarte,17/04/1970,103.754.862-08,[técnico em segurança do trabalho]
+Breno Caldeira,15/02/1963,724.085.136-26,[eletricista]
+Julia Rocha,02/04/1999,198.247.365-73,"[marceneiro, encanador]"
+Leonardo Jesus,22/06/1979,843.925.071-14,"[assistente administrativo, pintor, eletricista]"
+Rafaela Rodrigues,17/07/1973,132.649.780-40,"[técnico em segurança do trabalho, engenheiro civil]"
+João Lucas da Conceição,10/12/1956,378.069.512-02,"[técnico em segurança do trabalho, pintor, encanador]"
+Joana Jesus,02/04/1960,046.397.815-39,[técnico em segurança do trabalho]
+Emanuel Nascimento,19/01/1967,680.527.941-02,"[técnico em segurança do trabalho, pintor, marceneiro]"
+Vitor Gabriel da Rosa,12/01/2006,056.739.421-25,"[carpinteiro, marceneiro]"
+Dra. Esther Teixeira,16/01/1986,684.135.902-05,[pintor]
+Rodrigo Freitas,28/04/1960,384.279.061-96,"[marceneiro, assistente administrativo, engenheiro civil]"
+Dr. Rafael Fernandes,10/12/1998,901.246.587-76,"[assistente administrativo, arquiteto, encanador]"
+Alexia Pires,08/02/1955,705.394.168-00,"[arquiteto, pedreiro]"
+Ana Júlia Freitas,13/01/1996,851.372.496-37,"[engenheiro civil, pedreiro]"
+Enzo da Luz,01/07/1964,903.856.127-02,"[assistente administrativo, encanador, pedreiro]"
+Gabrielly Barbosa,29/02/1992,304.286.579-74,"[carpinteiro, engenheiro civil]"
+Sr. Breno Santos,14/09/1984,189.762.435-28,"[encanador, pedreiro]"
+Pedro Pereira,07/10/1973,205.497.361-07,"[carpinteiro, engenheiro civil]"
+Evelyn Araújo,30/05/1965,504.178.923-14,[eletricista]
+Dr. Enrico Nascimento,25/02/1994,026.759.431-34,"[marceneiro, encanador, assistente administrativo]"
+Sabrina Costa,01/06/1990,078.261.594-58,"[pintor, engenheiro civil]"
+Vitor Moreira,19/03/1970,751.893.460-48,"[marceneiro, eletricista]"
+Sr. João Guilherme Rocha,08/09/1995,376.148.590-57,"[técnico em segurança do trabalho, arquiteto, pintor]"
+Emanuella Gomes,29/09/1977,518.364.729-19,"[pedreiro, encanador, marceneiro]"
+Stella da Paz,29/09/1966,702.839.546-47,"[pintor, técnico em segurança do trabalho]"
+Arthur Pinto,17/02/1956,219.463.580-70,"[assistente administrativo, eletricista, marceneiro]"
+Pietra Duarte,14/12/2002,415.629.073-52,"[assistente administrativo, pintor, marceneiro]"
+Vicente Moraes,18/01/1985,679.231.480-31,[eletricista]
